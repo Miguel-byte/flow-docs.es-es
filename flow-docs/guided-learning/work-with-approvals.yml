@@ -1,0 +1,35 @@
+### YamlMime:YamlDocument
+documentType: Tutorial
+title: Uso de aprobaciones
+metadata:
+  title: Uso de aprobaciones | Microsoft Flow
+  description: Aprenda a administrar la aprobación de documentos y los procesos en Microsoft Flow.
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: administer-flows
+  nextTutorialTitle: Administer flows
+  displayType: one-column
+  author: MSFTMan
+  manager: anneta
+  ms.service: flow
+  ms.topic: get-started-article
+  ms.date: 10/04/2017
+  ms.author: deonhe
+items:
+  - durationInMinutes: 1
+    content: |
+      Aprenda a administrar la aprobación de documentos y los procesos en Microsoft Flow.
+  - title: Creación de una solicitud de aprobación
+    durationInMinutes: 4
+    content: |
+      > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
+
+      [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
+  - title: Proceso de una solicitud de aprobación
+    durationInMinutes: 7
+    content: |
+      > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
+
+      [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
+  - content: |
+      Ha completado la sección **Uso de aprobaciones** del aprendizaje guiado de Microsoft Flow.

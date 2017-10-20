@@ -1,0 +1,138 @@
+- name: Introducción
+  items:
+    - name: Introducción
+      href: getting-started.md
+    - name: Registro
+      href: sign-up-sign-in.md
+    - name: Creación de un flujo desde una plantilla
+      href: get-started-logic-template.md
+    - name: Creación de un flujo desde cero
+      href: get-started-logic-flow.md
+    - name: Creación de un flujo de equipo
+      href: create-team-flows.md
+    - name: Introducción a los entornos
+      href: environments-overview-maker.md
+    - name: Preguntas más frecuentes
+      href: frequently-asked-questions.md
+- name: Compilar un flujo
+  items:
+    - name: Agregar una acción
+      href: multi-step-logic-flow.md
+    - name: Adición de una condición
+      href: add-condition.md
+    - name: Ejecución de un flujo de forma programada
+      href: run-scheduled-tasks.md
+    - name: Desencadenamiento de un flujo con correo electrónico
+      href: email-triggers.md
+    - name: Proceso de una lista de elementos
+      href: apply-to-each.md
+    - name: Uso de operaciones de datos
+      href: data-operations.md
+    - name: Filtrado y copia de datos
+      href: odata-filters.md
+    - name: Creación de un flujo con Dynamics 365
+      href: connection-dynamics365.md
+    - name: Agregar datos a Common Data Service
+      href: common-data-model-intro.md
+    - name: Visualización de un flujo
+      href: see-a-flow-run.md
+    - name: Publicación de una plantilla
+      href: publish-a-template.md
+    - name: Solución de problemas de un flujo
+      href: fix-flow-failures.md
+- name: Creación de flujos de aprobación
+  items:
+    - name: Aprobaciones únicas
+      href: modern-approvals.md
+    - name: Aprobaciones secuenciales
+      href: sequential-modern-approvals.md
+    - name: Aprobaciones en paralelo
+      href: parallel-modern-approvals.md
+    - name: Aprobaciones integradas
+      href: common-data-model-approve.md
+- name: Uso de la aplicación móvil
+  items:
+    - name: Crear un flujo
+      href: mobile-create-flow.md
+    - name: Creación de un flujo de botón
+      href: introduction-to-button-flows.md
+    - name: Creación de un flujo de botones con tokens de desencadenadores
+      href: introduction-to-button-trigger-tokens.md
+    - name: Creación de un flujo de botones con entradas del usuario
+      href: button-flow-with-user-input-tokens.md
+    - name: Uso compartido de un botón
+      href: share-buttons.md
+    - name: Supervisión de la actividad de flujos
+      href: mobile-monitor-activity.md
+    - name: Administración de flujos
+      href: mobile-manage-flows.md
+- name: Uso de dispositivos físicos
+  items:
+    - name: Uso de un Flic
+      href: flic-button-flows.md
+    - name: Uso de un botón Bttn
+      href: bttn-button-flows.md
+- name: Conexiones
+  items:
+    - name: Conexiones disponibles
+      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
+    - name: Administración de conexiones
+      href: add-manage-connections.md
+    - name: Administración de puertas de enlace
+      href: gateway-manage.md
+    - name: Información acerca de las puertas de enlace
+      href: gateway-reference.md
+- name: 'Desarrollo: desarrolladores empresariales'
+  items:
+    - name: Microsoft Flow para desarrolladores empresariales
+      href: dev-enterprise-intro.md
+    - name: Registro y uso de conectores personalizados
+      href: register-custom-api.md
+    - name: Descripción de un conector personalizado con Postman
+      href: postman-collection.md
+    - name: Extensiones de OpenAPI para conectores personalizados
+      href: customapi-how-to-swagger.md
+    - name: Uso de Azure Active Directory con un conector personalizado
+      href: customapi-azure-resource-manager-tutorial.md
+    - name: Compilación de un conector personalizado para una API web
+      href: customapi-web-api-tutorial.md
+    - name: Uso de un webhook para desencadenar un flujo
+      href: customapi-webhooks.md
+- name: 'Desarrollo: partners y fabricantes de software independientes'
+  items:
+    - name: Microsoft Flow para partners de Microsoft y fabricantes de software independientes
+      href: dev-isv-partner-intro.md
+    - name: Introducción a la certificación conectores de API
+      href: api-connector-overview.md
+    - name: Desarrollo de conectores de API para la certificación
+      href: api-connector-dev.md
+    - name: Envío de conectores de API para la certificación
+      href: api-connector-submission.md
+    - name: Preguntas más frecuentes sobre la certificación conectores de API
+      href: api-connector-faq.md
+    - name: Integración con sitios web y otras tecnologías
+      href: embed-flow-dev.md
+    - name: Permitir a los clientes la realización de pruebas de los flujos
+      href: dev-appsource-test-drive.md
+- name: Administración
+  items:
+    - name: Preguntas y respuestas sobre los flujos de su organización
+      href: organization-q-and-a.md
+    - name: Precios
+      href: billing-questions.md
+    - name: Introducción al centro de administración
+      href: admin-center-introduction.md
+    - name: Administración de entornos
+      href: environments-overview-admin.md
+    - name: Establecimiento de una directiva que ayude a evitar la pérdida de datos
+      href: prevent-data-loss.md
+    - name: Introducción a los grupos de datos
+      href: introduction-to-data-groups.md
+- name: Referencia
+  items:
+    - name: Información general de las regiones
+      href: regions-overview.md
+    - name: Límites y configuración
+      href: limits-and-config.md
+    - name: Notas de la versión
+      href: release-notes.md
