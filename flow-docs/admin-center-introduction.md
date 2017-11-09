@@ -1,6 +1,6 @@
 ---
-title: "Use el centro de administración para administrar entornos y la prevención de pérdida de datos. | Microsoft Docs"
-description: "Los administradores del inquilino y del entorno usan el centro de administración de Flow para administrar las directivas y entornos de prevención de pérdida de datos en las implementaciones de Microsoft Flow."
+title: "Uso del Centro de administración para administrar directivas y directivas de datos | Microsoft Docs"
+description: "Los administradores de inquilinos y de entornos usan el centro de administración de Microsoft Flow para administrar las directivas de datos y los en las implementaciones de Microsoft Flow."
 services: 
 suite: flow
 documentationcenter: na
@@ -13,30 +13,33 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/24/2016
+ms.date: 10/31/2017
 ms.author: deonhe
-ms.openlocfilehash: a7d4e26203912d157a35696ae6297fd54b59d734
-ms.sourcegitcommit: 122870842a07183ab3b90e07d99b60d822d6c5ae
+ms.openlocfilehash: 368b208a6f1d47f76a6f195edcd8055a03c06800
+ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="the-admin-center"></a>El Centro de administración
-![introducción](./media/admin-center-introduction/overview.png)  
 
-## <a name="what-is-the-admin-center"></a>¿Qué es el Centro de administración?
-El Centro de administración es la ubicación central donde los administradores de inquilinos y los administradores de entornos administran entornos y directivas de prevención de pérdida de datos (DLP) para una organización. Los cambios que se realicen en el Centro de administración estarán disponibles inmediatamente para los usuarios de la organización.  
+El Centro de administración es la ubicación central en la que tanto los administradores de inquilinos como los administradores de entornos administran las directivas de datos y los entornos de una organización. Los cambios que se realicen en el Centro de administración estarán disponibles inmediatamente para los usuarios de la organización.
+
+![introducción](./media/admin-center-introduction/overview.png)
 
 ## <a name="access-the-admin-center"></a>Acceso al Centro de administración
-* Al Centro de administración de Flow se accede a través de https://admin.flow.microsoft.com.   
+
+* Desplácese hasta https://admin.flow.microsoft.com para acceder al Centro de administración de Microsoft Flow.
 
 ## <a name="environments"></a>Entornos
-Obtenga más información acerca de cómo se utilizan los [entornos](environments-overview-admin.md) para administrar usuarios, permisos y roles.  
 
-## <a name="data-loss-prevention-dlp-policies"></a>Directivas de prevención de pérdida de datos (DLP)
-Obtenga más información acerca de cómo se usan las [directivas de prevención de pérdida de datos](prevent-data-loss.md) para crear reglas que administran cómo se comparten los datos profesionales entre servicios de los flujos.  
+Obtenga más información acerca del uso de [entornos](environments-overview-admin.md) para administrar usuarios, permisos y roles.
+
+## <a name="data-policies"></a>Directivas de datos
+
+Obtenga más información acerca del uso de [directivas de datos](prevent-data-loss.md) para crear reglas que administren la forma en que se comparten los datos profesionales entre los servicios de los flujos.
 
 ## <a name="next-steps"></a>Pasos siguientes
-* [Más información acerca de los entornos](environments-overview-admin.md)   
-* [Más información sobre Microsoft Flow](getting-started.md)   
 
+* [Más información acerca de los entornos](environments-overview-admin.md)
+* [Más información sobre Microsoft Flow](getting-started.md)
