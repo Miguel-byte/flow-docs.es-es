@@ -7,33 +7,33 @@ Para aprobar una solicitud:
    
      Nota: Si usa un dispositivo móvil con la aplicación Microsoft Flow instalada, inicie la aplicación Microsoft Flow; de lo contrario, el centro de aprobaciones se abre en el explorador.
    
-    ![correo electrónico de solicitud](includes/media/modern-approvals/email-approval-request.png)
+    ![correo electrónico de solicitud](media/modern-approvals/email-approval-request.png)
 2. Escriba un comentario y, después, seleccione el botón **Confirmar**.
    
-    ![escribir comentario](includes/media/modern-approvals/request-in-approval-center.png)
+    ![escribir comentario](media/modern-approvals/request-in-approval-center.png)
 
 ### <a name="from-the-approvals-center"></a>Desde el centro de aprobaciones
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com).
    
-    ![iniciar sesión](includes/media/modern-approvals/sign-in.png)
+    ![iniciar sesión](media/modern-approvals/sign-in.png)
 2. Seleccione la pestaña **Aprobaciones**.
    
-    ![crear desde cero](includes/media/modern-approvals/approvals-tab.png)
+    ![crear desde cero](media/modern-approvals/approvals-tab.png)
 3. Seleccione **Aprobar** en la solicitud que desea aprobar.
    
-    ![crear desde cero](includes/media/modern-approvals/approvals-cards.png)
+    ![crear desde cero](media/modern-approvals/approvals-cards.png)
 4. Agregue una nota y, después, seleccione el botón **Confirmar**.
    
-    ![agregar nota y confirmar](includes/media/modern-approvals/approval-selection-card.png)
+    ![agregar nota y confirmar](media/modern-approvals/approval-selection-card.png)
 
 ### <a name="from-the-microsoft-flow-app"></a>Desde la aplicación Microsoft Flow
 1. En el teléfono móvil con la aplicación Microsoft Flow instalada, seleccione **Aprobar** desde el correo electrónico de aprobación de solicitud.
 2. Seleccione **Confirmar** en la esquina superior derecha de la pantalla.
    
-    ![seleccionar confirmar](includes/media/modern-approvals/mobile-approval.png)
+    ![seleccionar confirmar](media/modern-approvals/mobile-approval.png)
 3. Se muestra una página de procedimiento realizado correctamente; esta página indica que se ha registrado su aprobación.
    
-    ![página correcta](includes/media/modern-approvals/mobile-approval-confirmation.png)
+    ![página correcta](media/modern-approvals/mobile-approval-confirmation.png)
 
 Nota: En Android, iOS y Windows Phone, las pantallas pueden diferir ligeramente; sin embargo, la funcionalidad es la misma en todos los dispositivos.
 

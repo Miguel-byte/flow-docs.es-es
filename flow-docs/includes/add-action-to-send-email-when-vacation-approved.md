@@ -1,12 +1,12 @@
 1. Seleccione **Agregar una acción** en la sección **IF YES, DO NOTHING** (En caso positivo, no hacer nada) de la condición.
    
-    ![agregar nuevo paso](includes/media/modern-approvals/add-action-after-condition.png)
+    ![agregar nuevo paso](media/modern-approvals/add-action-after-condition.png)
 2. Escriba **enviar correo electrónico** en el cuadro de búsqueda en la tarjeta **Elegir una acción**.
    
-    ![buscar acciones de correo electrónico](includes/media/modern-approvals/search-send-email-yes.png)
+    ![buscar acciones de correo electrónico](media/modern-approvals/search-send-email-yes.png)
 3. Seleccione la acción **Office 365 Outlook - Enviar un correo electrónico**.
    
-    ![seleccionar la acción enviar correo electrónico](includes/media/modern-approvals/select-send-email-yes.png)
+    ![seleccionar la acción enviar correo electrónico](media/modern-approvals/select-send-email-yes.png)
 4. Configure la tarjeta de correo electrónico que se adapte a sus necesidades.
    
      Nota: Los campos **A**, **Asunto** y **Cuerpo** son necesarios.
