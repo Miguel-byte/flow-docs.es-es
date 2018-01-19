@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-ms.openlocfilehash: 6a05153864e37682ece83d8e5d90fa43a3ad01e1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
+ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
 En este tema se describe cómo los usuarios de su organización pueden usar Flow y cómo controlar el servicio Flow.
@@ -101,12 +101,12 @@ Al eliminar el servicio o la licencia de Flow para un usuario de su organizació
 Tenga en cuenta que esto solo eliminará el icono de Flow de forma predeterminada. Un usuario aún podrá utilizar Microsoft Flow como usuario individual.
 
 ### <a name="why-did-10000-licenses-for-microsoft-flow-show-up-in-my-office-365-tenant"></a>¿Por qué han aparecido 10 000 licencias para Microsoft Flow en mi inquilino de Office 365?
-Cualquier persona puede probar Microsoft Flow Plan 1 o 2 durante 90 días, y estas licencias de prueba representan la capacidad disponible de nuevos usuarios de Flow en el inquilino. No hay ningún cargo por esas licencias. En concreto, hay dos motivos posibles por los que puede que aparezca una capacidad de 10 000 licencias (prueba) para Flow en el portal de administración de Office 365:
+Cualquier persona puede probar el plan 1 o 2 de Microsoft Flow durante 90 días, y estas licencias de prueba representan la capacidad disponible de nuevos usuarios de Flow en el inquilino. No hay ningún cargo por esas licencias. En concreto, hay dos motivos posibles por los que puede que aparezca una capacidad de 10 000 licencias (prueba) para Flow en el portal de administración de Office 365:
 
 1. Si al menos un usuario en el inquilino ha participado en la versión preliminar pública de Flow que estuvo activa de abril a octubre de 2016, verá 10 000 licencias etiquetadas como "Microsoft PowerApps and Logic flows" (Flujos de Microsoft PowerApps y lógica).
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Si al menos un usuario en el inquilino se suscribió a la prueba de Flow Plan 2 yendo a través de la suscripción de prueba **Opción 1**, que se describe en la sección sobre [cómo realizan los usuarios la suscripción a PowerApps](#how-do-users-sign-up-for-powerapps), verá 10 000 licencias con la etiqueta "Microsoft Power Apps & Flow".
+2. Si al menos un usuario en el inquilino se suscribió a la prueba de Flow Plan 2 yendo a través de la suscripción de prueba **Opción 1**, que se describe en la sección sobre [cómo realizan los usuarios la suscripción a PowerApps](#how-do-people-sign-up-for-flow), verá 10 000 licencias con la etiqueta "Microsoft Power Apps & Flow".
    
     ![](./media/organization-q-and-a/licenses1.png)
 
