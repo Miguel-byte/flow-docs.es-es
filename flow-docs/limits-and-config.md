@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/02/2017
 ms.author: stepsic
-ms.openlocfilehash: 27e12df6ae5754f921d37992fa6759d152fd1afc
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Límites y configuración en Microsoft Flow
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
@@ -108,4 +108,16 @@ Las llamadas realizadas desde una API conectada a través de un flujo (por ejemp
 | Estados Unidos (acceso prioritario) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
 Por ejemplo, si debe crear una lista blanca de direcciones IP para Azure SQL Database, debe usar estas direcciones.
+
+En la tabla siguiente se enumeran los servicios a los que se conecta Microsoft Flow. Asegúrese de que ninguno de estos servicios están bloqueado en la red.
+
+Dominios | Protocolos | Usos
+--------|  ---------| -----
+management.azure.com|HTTPS|Acceso a Azure Resource Manager.
+login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|HTTPS|Acceso a la biblioteca de autenticación de Active Directory (ADAL).
+graph.microsoft.com </br>graph.windows.net</br>|HTTPS|Acceso a la Graph API de Azure AD: para obtener información del usuario, como una foto del perfil.
+*.azure-apim.net|HTTPS|Acceso al runtime para los conectores.
+*.flow.microsoft.com|HTTPS|Acceso al sitio de Microsoft Flow.
+*.powerapps.com|HTTPS|Acceso al sitio de PowerApps.
+psux.azureedge.net|HTTPS|Acceso a la red CDN de Microsoft Flow.
 
