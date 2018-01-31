@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 05/01/2017
 ms.author: mblythe
 ms.openlocfilehash: 3709f8e9bb09171a8e31a8b64695d064f0b8146a
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>Microsoft Flow para fabricantes de software independientes y asociados de Microsoft
 Como asociado de Microsoft o fabricante de software independiente, puede acelerar la adopción de clientes mediante la ampliación de sus productos para que se integren con los datos y procesos empresariales de los clientes. Compile conectores que permitan a los clientes conectarse a sus productos a través de Microsoft Flow. Puede generar nuevos clientes potenciales para su empresa mediante la compilación de aplicaciones y su publicación en AppSource para que los nuevos clientes las prueben.
