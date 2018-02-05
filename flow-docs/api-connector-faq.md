@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/19/2017
 ms.author: astay
 ms.openlocfilehash: 1715700fa6a94bb35733865556a2c9be0ba3ce9f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="api-connector-faq-microsoft-flow"></a>Preguntas más frecuentes sobre conectores de API (Microsoft Flow)
 ## <a name="requirements"></a>Requisitos
@@ -43,7 +43,7 @@ ms.lasthandoff: 10/15/2017
 
 ## <a name="certification"></a>Certificación
 **P**: No soy partner de Microsoft ni fabricante de software independiente (ISV). ¿Puedo crear conectores? </br>
-**R**: Sí, puede registrar estos conectores para su uso interno en la organización, pero si desea certificar y liberar públicamente un conector, debe poseer el servicio subyacente o presentar derechos explícitos para usar la API.
+**R:** Sí, puede registrar estos conectores para su uso interno en la organización, pero si desea certificar y liberar públicamente un conector, debe poseer el servicio subyacente o presentar derechos explícitos para usar la API.
 
 ## <a name="other"></a>Otros
 **P:**  Mis API usan un host dinámico. ¿Cómo se implementa con OpenAPI? </br>

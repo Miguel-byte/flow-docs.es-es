@@ -1,6 +1,6 @@
 ---
-title: Microsoft Flow para desarrolladores empresariales | Microsoft Docs
-description: "Introducción para desarrolladores empresariales sobre cómo desarrollar para Microsoft Flow."
+title: Microsoft Flow para desarrolladores empresariales, desarrolladores de software independientes y asociados | Microsoft Docs
+description: "Una introducción al desarrollo de soluciones para Microsoft Flow."
 services: 
 suite: flow
 documentationcenter: na
@@ -13,23 +13,37 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/01/2017
+ms.date: 01/29/2018
 ms.author: mblythe
-ms.openlocfilehash: 128cef8d8267f3a98310764a24907b795c1a76de
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: d24d7bc18aae4ecd3c7734ca066669b68e376937
+ms.sourcegitcommit: 2d6cd915a666e9032882871f70aadaea4f877c6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
-# <a name="microsoft-flow-for-enterprise-developers"></a>Microsoft Flow para desarrolladores empresariales
-Como desarrollador empresarial, capacite a su organización para compilar soluciones personalizadas sólidas en Microsoft Flow. Use conectores personalizados que se conecten a sus servicios web y de datos, inserte aplicaciones en el sitio web de la organización y trabaje con datos en Common Data Service.
+# <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow para desarrolladores empresariales, fabricantes de software independientes y asociados
 
-## <a name="build-custom-connectors"></a>Compilación de conectores personalizados
-Desarrolle conectores personalizados para conectarse a los servicios web y de datos de la organización a través de Microsoft Flow. [Más información](register-custom-api.md)
+Como desarrollador, puede ampliar Microsoft Flow, lo que permite soluciones más eficaces para las organizaciones y los clientes.
 
-## <a name="build-azure-functions"></a>Compilación de instancias de Azure Functions
-Cree instancias de Azure Functions para ampliar aplicaciones con lógica personalizada del lado del servidor. [Más información](https://powerapps.microsoft.com/blog/using-azure-functions-in-powerapps/)
+## <a name="microsoft-flow-for-enterprise-developers"></a>Microsoft Flow para desarrolladores empresariales
 
-## <a name="embed-apps"></a>Inserción de aplicaciones
-No inserte Microsoft Flow directamente en sus experiencias de sitio web para crear soluciones integradas, flujos de trabajo de superficie o procesos en los que otros usuarios de su organización ya hacen su trabajo. [Más información](embed-flow-dev.md)
+Como desarrollador empresarial, capacite a su organización para compilar soluciones personalizadas sólidas en Microsoft Flow:
+
+- **Creación de conectores personalizados**: desarrolle conectores personalizados para conectarse a los servicios web y de datos de la organización a través de Microsoft Flow. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
+
+- **Creación de instancias de Azure Functions**: diseñe instancias de Azure Functions para ampliar aplicaciones con lógica personalizada del lado del servidor. [Más información](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+
+- **Inserción de Microsoft Flow**: inserte Microsoft Flow directamente en sus experiencias de sitio web para crear soluciones integradas, flujos de trabajo de superficie o procesos en los que otros usuarios de su organización ya hacen su trabajo. [Más información](embed-flow-dev.md)
+
+## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>Microsoft Flow para fabricantes de software independientes y asociados de Microsoft
+
+Como asociado de Microsoft o fabricante de software independiente, acelere la adopción de clientes mediante la ampliación de sus productos para que se integren con los datos y procesos empresariales de los clientes:
+
+- **Creación y certificación de conectores personalizados**: ponga el producto en Microsoft Cloud mediante la creación de un conector que permita a Microsoft Flow comunicarse con el servicio. [Más información](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+
+- **Publicación de plantillas**: una vez que tenga un conector, debe publicar plantillas que muestren cómo usar el servicio. Estas plantillas servirán como ejemplos que los usuarios pueden aprender y posteriormente extender a sus propios flujos de trabajo exclusivos. [Más información](publish-a-template.md)
+
+- **Inserción de Microsoft Flow**: inserte Microsoft Flow desde la aplicación para habilitar la integración profunda y en contexto entre la aplicación y los restantes servicios que admite Microsoft Flow. [Más información](embed-flow-dev.md)
+
+- **Listado de la solución en AppSource**: genere nuevos clientes potenciales para su empresa mediante la creación de una aplicación y su publicación en AppSource para que los nuevos clientes la prueben. [Más información](dev-appsource-test-drive.md)
 
