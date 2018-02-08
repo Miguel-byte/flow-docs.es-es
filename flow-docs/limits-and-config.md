@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/02/2017
+ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
-ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
+ms.openlocfilehash: 60caaba88e825e97a49c3cf65d0ecceff586046c
+ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Límites y configuración en Microsoft Flow
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
@@ -48,7 +48,7 @@ Estos son los límites de una sola ejecución de flujo.
 
 | Nombre | Límite | Notas |
 | --- | --- | --- |
-| Duración de la ejecución |30 días |Incluye flujos de trabajo con pasos pendientes, como aprobaciones. Pasados 30 días, se agotará el tiempo de espera de los pasos pendientes. |
+| Duración de la ejecución |30 días |Incluye flujos de trabajo con pasos pendientes, como aprobaciones. Después de 30 días, cualquier paso pendiente agotará el tiempo de espera. Las aprobaciones que agoten el tiempo de espera se quitarán del centro de aprobaciones. Si algún usuario intenta aprobar una solicitud que haya agotado el tiempo de espera, recibirá un mensaje de error. |
 | Retención de almacenamiento |30 días |Contados desde la hora de inicio de la ejecución. |
 | Intervalo de periodicidad mínimo |1 minuto | |
 | Intervalo de periodicidad máximo |500 días | |
@@ -107,7 +107,7 @@ Las llamadas realizadas desde una API conectada a través de un flujo (por ejemp
 | Estados Unidos |104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
 | Estados Unidos (acceso prioritario) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
-Por ejemplo, si debe crear una lista blanca de direcciones IP para Azure SQL Database, debe usar estas direcciones.
+Por ejemplo, use las direcciones IP que deba autorizar para Azure SQL Database.
 
 En la tabla siguiente se enumeran los servicios a los que se conecta Microsoft Flow. Asegúrese de que ninguno de estos servicios están bloqueado en la red.
 
