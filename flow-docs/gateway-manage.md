@@ -13,15 +13,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/15/2017
+ms.date: 02/05/2018
 ms.author: deonhe
-ms.openlocfilehash: 41f5d40ca2ad5fcce3a7967beef7104dd532b1d8
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 642cf26110a09404c8bd453f894540963904ebda
+ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Administración de un puerta de enlace de datos local en Microsoft Flow
+
 Instale y administre una puerta de enlace de datos local para integrar de forma segura varias aplicaciones que están en la nube con sus datos y aplicaciones locales a través de Microsoft Flow.
 
 Con una puerta de enlace, puede conectarse a datos locales a través de estas conexiones:
@@ -34,37 +35,42 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 * DB2
 
 > [!IMPORTANT]
-> Las puertas de enlace de datos de Microsoft SharePoint admiten tráfico HTTP, pero no tráfico HTTPS.
-> 
-> 
+> Las puertas de enlace de datos de Microsoft SharePoint admiten tráfico HTTP y HTTPS.
+
 
 ## <a name="prerequisites"></a>Requisitos previos
+
 * El nombre de usuario y la contraseña que se usaron para [registrarse](sign-up-sign-in.md) en Microsoft Flow.
 * Permisos administrativos en una puerta de enlace.
-  
-  De manera predeterminada, tiene estos permisos en todas las puertas de enlace que instale y un administrador de otra puerta de enlace puede concederle estos permisos para dicha puerta.
+
+  Tiene estos permisos de manera predeterminada para cada puerta de enlace que instale. Además, un administrador de otra puerta de enlace puede conceder estos permisos para esa puerta de enlace.
 * Una licencia que admita puertas de enlace Para más información, consulte la sección "Conectividad" de la [página de precios](https://flow.microsoft.com/pricing/).
-* Las puertas de enlace y las conexiones locales solo puede crearlas en su [entorno predeterminado](environments-overview-maker.md).
+
+> [!NOTE]
+> Las puertas de enlace y las conexiones locales solo puede crearlas en su [entorno predeterminado](environments-overview-maker.md).
+
+
 
 ## <a name="view-your-gateways"></a>Visualización de las puertas de enlace
-En la esquina superior derecha del [sitio web de Microsoft Flow](https://flow.microsoft.com), haga clic o pulse el icono del engranaje y, después, haga clic pulse **Puertas de enlace**.
+
+En la esquina superior derecha del [sitio web de Microsoft Flow](https://flow.microsoft.com), seleccione el icono del engranaje y, después, seleccione **Puertas de enlace**.
 
 ![Puerta de enlace bajo administración][1]
 
-**Nota**: Si ha creado o se le ha concedido acceso a una puerta de enlace en PowerApps, aparecerá en la lista **Mis puertas de enlace** de Microsoft Flow.
+> [!NOTE]
+> Si ha creado o se le ha concedido acceso a una puerta de enlace en PowerApps, aparecerá en la lista **Mis puertas de enlace** de Microsoft Flow.
+
+
 
 ## <a name="install-a-gateway"></a>Instalación de una puerta de enlace
-1. Descargue el [Asistente para instalación de puerta de enlace](http://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
-   
-    Otra forma de descargar este asistente se puede hacer clic o pulsar el icono de engranaje de la esquina superior derecha del [sitio web de Microsoft Flow](https://flow.microsoft.com), hacer clic o pulsar **Puertas de enlace** y, después, hacer clic o pulsar **Crear puerta de enlace**.
-   
-    ![Instalación de puerta de enlace][2]
-2. Ejecute el asistente y especifique las mismas credenciales con las que ha iniciado sesión en Microsoft Flow.
-   
-    Después de registrar y configurar la puerta de enlace correctamente, se muestra en la lista **Mis puertas de enlace** de Microsoft Flow.
+
+1. Descargue el [Asistente para instalación de puerta de enlace](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Ejecute el asistente y especifique las mismas credenciales con las que ha iniciado sesión en Microsoft Flow.
+
+    Después de registrar y configurar la puerta de enlace correctamente, se muestra en la lista **Puertas de enlace** de Microsoft Flow.
 
 Para más información, consulte [Información acerca de las puertas de enlace de datos locales de Microsoft Flow](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png
-[2]: ./media/manage-gateway/list-gateways.png

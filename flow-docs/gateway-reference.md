@@ -10,16 +10,16 @@ editor:
 tags: 
 ms.service: flow
 ms.devlang: na
-ms.topic: article
+ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 06b0198ffa75a3de673460dc13037205f58ad515
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
+ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Información acerca de las puertas de enlace de datos locales de Microsoft Flow
 Use la puerta de enlace de datos local con Microsoft Flow para establecer conexiones seguras con los orígenes de datos locales, como Microsoft SQL Server.
@@ -28,7 +28,7 @@ Use la puerta de enlace de datos local con Microsoft Flow para establecer conexi
 ### <a name="prerequisites"></a>Requisitos previos
 Mínimos:
 
-* [.NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)
+* [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)
 * Versión de 64 bits de Windows 7 o Windows Server 2008 R2 (o posterior)
 
 Recomendados:
@@ -49,7 +49,7 @@ Otras consideraciones relacionadas:
 > 
 > 
 
-1. [Descargue el instalador](http://go.microsoft.com/fwlink/?LinkID=820931) y ejecútelo.
+1. [Descargue el instalador](https://go.microsoft.com/fwlink/?LinkID=820931) y ejecútelo.
    
     ![Ejecutar el instalador](./media/gateway-reference/run-installer.png)
 2. En la primera pantalla del Asistente para la instalación, seleccione **Siguiente** para confirmar el aviso acerca de la instalación de una puerta de enlace en un portátil.
@@ -63,7 +63,7 @@ Otras consideraciones relacionadas:
 6. En los cuadros de diálogo de **Control de cuentas de usuario**, seleccione **Sí** para continuar.
 7. En la pantalla **Puerta de enlace de datos local**, escriba la dirección de correo electrónico de la cuenta que va a usar para iniciar sesión en la puerta de enlace, seleccione **Iniciar sesión** y complete el proceso de inicio de sesión.
    
-    ![Iniciar sesión](./media/gateway-reference/sign-in.png)
+    ![Inicio de sesión](./media/gateway-reference/sign-in.png)
 
 ## <a name="register-new-gateway-or-take-over-existing-gateway"></a>Registro de una puerta de enlace nueva o toma de control de una existente
 1. Seleccione **Registrar una nueva puerta de enlace en este equipo** o **Migre, restaure o adquiera una puerta de enlace existente**y, después, seleccione **Siguiente**.
@@ -81,18 +81,25 @@ Otras consideraciones relacionadas:
 La puerta de enlace se ejecuta como un servicio de Windows y, al igual que cualquier otro servicio de Windows, se puede iniciar y detener de varias maneras. Por ejemplo, puede abrir un símbolo del sistema con permisos elevados en la máquina en que se ejecuta la puerta de enlace y, después, ejecutar cualquiera de estos comandos:
 
 * Para detener el servicio, ejecute este comando:
-  
-    ````net stop PBIEgwService````
+
+```batchfile
+    net stop PBIEgwService
+```
+
 * Para iniciar el servicio, ejecute este comando:
-  
-    ````net start PBIEgwService````
+
+```batchfile
+    net start PBIEgwService
+```
 
 ## <a name="configure-a-firewall-or-proxy"></a>Configuración de un firewall o proxy
 Para obtener información acerca de cómo proporcionar información del proxy a la puerta de enlace, consulte [Configuración de proxy para la puerta de enlace de datos local](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/).
 
 Para asegurarse de si el firewall o proxy, pueden bloquear las conexiones, ejecute el siguiente comando desde un símbolo del sistema de PowerShell. Este comando prueba la conectividad con Azure Service Bus. Este comando solo prueba la conectividad de la red, no afecta al servicio de servidor en la nube ni a la puerta de enlace. Ayuda a determinar si la máquina tiene conectividad con Internet.
 
-````Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350````
+```powershell
+Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+```
 
 Los resultados deberían ser similares a la salida siguiente. Si el valor de **TcpTestSucceeded** no es *true*, es posible que algún firewall lo haya bloqueado.
 
@@ -157,7 +164,7 @@ No es la cuenta que se usa para conectarse a orígenes de datos locales ni la cu
 **Respuesta:** no. La puerta de enlace usa conexiones de salida con Azure Service Bus.
 
 **Pregunta:** ¿qué ocurre si bloqueo las conexiones de salida? ¿Qué necesito abrir?
-**Respuesta:** consulte los [puertos](gateway-reference.md#ports) y hosts que utiliza la puerta de enlace.
+**Respuesta:** consulte los [puertos](gateway-reference.md#configure-ports) y hosts que utiliza la puerta de enlace.
 
 **Pregunta:** ¿tiene que estar la puerta de enlace instalada en la misma máquina que el origen de datos?
 **Respuesta:** no. La puerta de enlace se conectará al origen de datos con la información de conexión que se proporcionó. A este respecto, considere la puerta de enlace como una aplicación cliente. Solo será preciso que se pueda conectar con el nombre del servidor que se proporcionó.
