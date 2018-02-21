@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/22/2017
 ms.author: deonhe
-ms.openlocfilehash: 0e0309793cfcb45ca7ee72910803a4abc27d2f26
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 6b152f0ec85558889970db2784fe8c2dcbf526ed
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Creación de un flujo de aprobación que requiere que todos lo aprueben
 En este tutorial se muestra cómo crear un flujo de trabajo de aprobación que requiere que todos (todos los aprobadores asignados) acuerden que se apruebe una solicitud de vacaciones, pero que cualquier aprobador pueda rechazar toda la solicitud.
@@ -28,12 +28,12 @@ Este tipo de flujo de trabajo de aprobación es útil en una organización que r
 
 ## <a name="prerequisites"></a>Requisitos previos
 * Acceso a [Microsoft Flow](https://flow.microsoft.com), Office 365 Outlook y Usuarios de Office 365.
-* Una [lista](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) de SharePoint Online.
+* Una [lista](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) de SharePoint Online.
   
     En este tutorial se da por supuesto que ya ha creado una lista de SharePoint Online que se usa para solicitar vacaciones. Consulte el tutorial de [aprobaciones en paralelo](parallel-modern-approvals.md), ya que en él encontrará un ejemplo que detalla cómo sería su lista de SharePoint.
 * Familiaridad con los conceptos básicos de la creación de flujos.
   
-    Puede revisar cómo agregar [acciones, desencadenadores](multi-step-logic-flow.md#add-another-action) y [condiciones](add-a-condition.md). En los pasos siguientes se da por hecho que sabe cómo realizar estas acciones.
+    Puede revisar cómo agregar [acciones, desencadenadores](multi-step-logic-flow.md#add-another-action) y [condiciones](add-condition.md). En los pasos siguientes se da por hecho que sabe cómo realizar estas acciones.
 
 > [!NOTE]
 > Aunque en este tutorial se usan SharePoint Online y Office 365 Outlook, puede utilizar otros servicios como Zendesk, Salesforce, Gmail o cualquiera de los más de [150 servicios](https://flow.microsoft.com/connectors/) que admite Microsoft Flow.

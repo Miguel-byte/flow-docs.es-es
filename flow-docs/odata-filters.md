@@ -15,16 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 37b53fa50afdc6865c5ba905957405f0e4b67520
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrado y copia de datos con Microsoft Flow
 En este tutorial se muestra cómo crear un flujo que supervise un origen para los elementos nuevos o cambiado, y, luego, copia dichos cambios a un destino. Puede crear un flujo como este si los usuarios escriben datos en una ubicación, pero el equipo los necesita en otra ubicación o formato.
 
-Aunque este tutorial copia datos de una [lista](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) de Microsoft SharePoint (el origen) a una tabla de [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (el destino), es posible copiar datos entre cualesquiera de los más de [150 servicios](https://flow.microsoft.com/connectors/) que admite Microsoft Flow.
+Aunque este tutorial copia datos de una [lista](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) de Microsoft SharePoint (el origen) a una tabla de [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) (el destino), es posible copiar datos entre cualesquiera de los más de [150 servicios](https://flow.microsoft.com/connectors/) que admite Microsoft Flow.
 
 > [!IMPORTANT]
 > Los cambios que se realizan en el destino no se copian en el origen porque no se admiten las sincronizaciones bidireccionales. Si intenta configurar una sincronización bidireccional, creará un bucle infinito en el que los cambios se envían continuamente entre el origen y el destino.
@@ -35,7 +35,7 @@ Aunque este tutorial copia datos de una [lista](https://support.office.com/en-us
 * Acceso a un origen de datos y a un destino. En este tutorial no se incluyen los pasos para crear el origen y el destino.
 * Tener acceso a [Microsoft Flow](https://flow.microsoft.com).
 * Un conocimiento básico de cómo se almacenan los datos.
-* Familiaridad con los conceptos básicos de la creación de flujos. Puede revisar cómo agregar [acciones, desencadenadores](multi-step-logic-flow.md#add-another-action) y [condiciones](add-a-condition.md). En los pasos siguientes se da por hecho que sabe cómo realizar estas acciones.
+* Familiaridad con los conceptos básicos de la creación de flujos. Puede revisar cómo agregar [acciones, desencadenadores](multi-step-logic-flow.md#add-another-action) y [condiciones](add-condition.md). En los pasos siguientes se da por hecho que sabe cómo realizar estas acciones.
 
 > [!TIP]
 > No es necesario que coincidan todos los nombres de columna del origen y del destino, pero cuando inserte o actualice un elemento debe especificar los datos de todas las columnas *necesarias*. Microsoft Flow identifica automáticamente los campos requeridos.

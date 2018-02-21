@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: a63ccacb1e6d9bd63d5a11a8db6ea01a9fc37333
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Cree de un flujo que use Common Data Service
 Mejore la eficacia operativa con una vista unificada de los datos empresariales mediante la creación de un flujo que use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Implemente esta base de datos profesional segura que incluye las entidades empresariales estándar con formato correcto (como Ventas, Compras, Atención al cliente y Productividad) de su organización. Almacene los datos de la organización en una o varias [entidades personalizadas](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), que ofrecen varias ventajas sobre los orígenes de datos externos, como Microsoft Excel y Salesforce.
@@ -37,7 +37,7 @@ Por ejemplo, puede sacar provecho de Common Data Service en Microsoft Flow de la
 
 * Regístrese en [Microsoft Flow](https://flow.microsoft.com) y [PowerApps](https://web.powerapps.com).
   
-    Si surgiera cualquier problema, compruebe si [Microsoft Flow](sign-up-sign-in.md) y [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) admiten el tipo de cuenta que tiene y si su organización no ha bloqueado la suscripción.
+    Si surgiera cualquier problema, compruebe si [Microsoft Flow](sign-up-sign-in.md) y [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) admiten el tipo de cuenta que tiene y si su organización no ha bloqueado la suscripción.
 * Si es la primera vez que utiliza Common Data Service, abra la pestaña **Entidades** de [powerapps.com](https://web.powerapps.com/#/entities) y haga clic o pulse **Create my database** (Crear mi base de datos).
 
 ## <a name="sign-in-to-your-environment"></a>Inicie sesión en su entorno

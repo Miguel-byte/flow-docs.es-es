@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: 41c416557dbb491432448c33369767f9705278c9
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Compilación de un bucle de aprobación con Microsoft Flow y Microsoft Common Data Service
 Common Data Service puede proporcionar una forma de compilar flujos que tengan la información almacenada en una base de datos independiente de un flujo. El mejor ejemplo son las aprobaciones. Si almacena el estado de la aprobación en una entidad, el flujo puede funcionar encima.
@@ -34,7 +34,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
 
 **Requisitos previos**
 
-* Regístrese en [Microsoft Flow](sign-up-sign-in.md) y [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/).
+* Regístrese en [Microsoft Flow](sign-up-sign-in.md) y [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Cree conexiones a Dropbox y Office 365 Outlook, como se describe en [Manage your connections](https://powerapps.microsoft.com/tutorials/add-manage-connections/) (Administración de conexiones).
 
 ## <a name="build-the-entity"></a>Compilación de la entidad
