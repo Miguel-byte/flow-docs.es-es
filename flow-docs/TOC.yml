@@ -50,6 +50,8 @@
       href: sequential-modern-approvals.md
     - name: Aprobaciones en paralelo
       href: parallel-modern-approvals.md
+    - name: Todos los usuarios deben aprobar
+      href: all-assigned-must-approve.md
     - name: Aprobaciones integradas
       href: common-data-model-approve.md
 - name: Uso de la aplicación móvil
