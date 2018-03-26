@@ -1,13 +1,13 @@
 ---
-title: "Preguntas más frecuentes | Microsoft Docs"
+title: Preguntas más frecuentes | Microsoft Docs
 description: Respuestas a varias preguntas comunes sobre Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 5b8deda5f22bcc1fa7cfa37a0d4244f26c2004a4
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
+ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ## <a name="audience-and-strategy"></a>Destinatarios y estrategia
@@ -99,10 +99,21 @@ Comience con los siguientes recursos:
 * [Blog](https://flow.microsoft.com)
 * [Canal de YouTube](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 * [Tema](getting-started.md)
-* [Comunidad](http://powerusers.microsoft.com)
+* [Comunidad](https://powerusers.microsoft.com)
 
 ### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>¿Qué sistemas operativos admite la aplicación móvil Microsoft Flow?
 La aplicación móvil de Microsoft Flow está disponible en [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+
+### <a name="can-flows-be-turned-off-or-disabled"></a>¿Se pueden desactivar o deshabilitar los flujos?
+
+Sí, cada flujo tiene un conmutador de activación/desactivación que permite detener el flujo de procesamiento de solicitudes.
+
+Vea esta tabla para comprender cómo responde el flujo cuando se vuelve a activar.
+
+Tipo de desencadenador|Descripción
+-------|--------
+Sondeo, como el desencadenador **Periodicidad**|Cuando el flujo se activa de nuevo, se procesan todos los eventos sin procesar o pendientes.
+Webhook|Cuando el flujo se activa de nuevo, solo procesa nuevos eventos que se generan después de activar el flujo.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>¿Qué regiones e idiomas admite Microsoft Flow?
 Microsoft Flow está disponible en 42 idiomas y [seis regiones](regions-overview.md).
