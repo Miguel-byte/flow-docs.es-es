@@ -1,13 +1,13 @@
 ---
-title: "Información acerca de puertas de enlace de datos locales | Microsoft Docs"
-description: "Información de referencia, acerca de la instalación y para la solución de problemas de las puertas de enlace de datos locales"
-services: 
+title: Información acerca de puertas de enlace de datos locales | Microsoft Docs
+description: Información de referencia, acerca de la instalación y para la solución de problemas de las puertas de enlace de datos locales
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -114,7 +114,7 @@ Los resultados deberían ser similares a la salida siguiente. Si el valor de **T
 
 Si desea ser exhaustivo, sustituya los valores de **ComputerName** y **Port** por los que aparecen en el apartado **Configurar puertos** de este mismo tema.
 
-El firewall también puede bloquear las conexiones que Azure Service Bus establece con los centros de datos de Azure. En ese caso, incluirá en una lista blanca (desbloqueará) todas las [direcciones IP](https://www.microsoft.com/download/details.aspx?id=41653) de su región para dichos centros de datos.
+El firewall también puede bloquear las conexiones que Azure Service Bus establece con los centros de datos de Azure. En ese caso, incluirá en una lista de permitidos (desbloqueará) todas las [direcciones IP](https://www.microsoft.com/download/details.aspx?id=41653) de su región para dichos centros de datos.
 
 ## <a name="configure-ports"></a>Configuración de puertos
 La puerta de enlace crea una conexión de salida con Azure Service Bus. Se comunica por los puertos de salida: TCP 443 (valor predeterminado), 5671, 5672 y 9350 a 9354. La puerta de enlace no requiere puertos de entrada.
@@ -132,7 +132,7 @@ Más información acerca de las [soluciones híbridas](https://azure.microsoft.c
 | login.microsoftonline.com |443 |HTTPS |
 | *.msftncsi.com |443 |Se utiliza para probar la conectividad a Internet si no se puede acceder a la puerta de enlace. |
 
-Si necesita incluir en la lista blanca direcciones IP, en lugar de dominios, puede descargar y usar la [lista de intervalos de direcciones IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653). En algunos casos, las conexiones de Azure Service Bus se establecerán con la dirección IP, en lugar de con los nombres de dominio completo.
+Si necesita incluir en la lista de permitidos direcciones IP, en lugar de dominios, puede descargar y usar la [lista de intervalos de direcciones IP del centro de datos de Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653). En algunos casos, las conexiones de Azure Service Bus se establecerán con la dirección IP, en lugar de con los nombres de dominio completo.
 
 ## <a name="sign-in-account"></a>Cuenta de inicio de sesión
 Los usuarios iniciarán sesión con una cuenta profesional o educativa. Es la cuenta de su organización. Si se ha registrado para acceder a una oferta de Office 365, pero no ha especificado su correo electrónico profesional, podría ser similar a nancy@contoso.onmicrosoft.com. La cuenta, en un servicio en la nube, se almacena en un inquilino de Azure Active Directory (AAD). En la mayoría de los casos, el UPN de la cuenta de AAD coincidirá con la dirección de correo electrónico.
