@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
-ms.openlocfilehash: 631c53aaa19e137e1df82f8070192f6f4271339e
-ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+ms.openlocfilehash: cf1a618b9e0ed76147eb4ede2aed42111c66b4a5
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Uso de entornos en Microsoft Flow
 
@@ -79,18 +79,20 @@ Vaya a [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e inicie ses
 ## <a name="create-an-environment"></a>Creación de un entorno
 
 1. En el [Centro de administración de Microsoft Flow](https://admin.flow.microsoft.com), seleccione **Entornos**. Verá todos los entornos existentes: ![entornos](./media/environments-overview-admin/environments-list.png)
-1. Seleccione **Nuevo entorno** y proporcione la información necesaria:
+2. Seleccione **Nuevo entorno** y proporcione la información necesaria:
 
-   | Propiedad | Descripción |
-   | --- | --- |
-   | Nombre de entorno |Escriba el nombre del entorno, como `Human Resources` o `Europe flows`. |
-   | Región |Elija la ubicación para hospedar el entorno. Para obtener un rendimiento óptimo, use la región más cercana a los usuarios.|
-   |Tipo de entorno | Elija un tipo de entorno en función de la licencia, ya sea de producción o de evaluación.| 
+
+   |     Propiedad     |                                                 Descripción                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Nombre de entorno |              Escriba el nombre del entorno, como `Human Resources` o `Europe flows`.              |
+   |      Región      | Elija la ubicación para hospedar el entorno. Para obtener un rendimiento óptimo, use la región más cercana a los usuarios. |
+   | Tipo de entorno |                  Elija un tipo de entorno en función de la licencia, ya sea de producción o de evaluación.                   |
+
      ![configuración del entorno](./media/environments-overview-admin/new-environment-dialog.png)
-1. Haga clic en **Crear entorno**.
-1. Ahora tiene la opción **Crear base de datos** u **Omitir**.
-1. Si elige la opción **Crear base de datos**, se le pedirá que indique una **moneda** y un **idioma** para la base de datos. Además, también puede elegir tener implementados datos y aplicaciones de ejemplo.
-   
+3. Haga clic en **Crear entorno**.
+4. Ahora tiene la opción **Crear base de datos** u **Omitir**.
+5. Si elige la opción **Crear base de datos**, se le pedirá que indique una **moneda** y un **idioma** para la base de datos. Además, también puede elegir tener implementados datos y aplicaciones de ejemplo.
+
    ![configuración de base de datos](./media/environments-overview-admin/create-database-dialog2.png)
 
 

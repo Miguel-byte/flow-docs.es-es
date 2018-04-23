@@ -2,6 +2,7 @@
 Un entorno es un espacio virtual que se utiliza para almacenar, administrar y compartir aplicaciones, flujos y datos empresariales en Common Data Service. Los entornos están geolocalizados, por lo que todas las aplicaciones y los datos almacenados en la base de datos de un entorno también lo están.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Términos con los que debe familiarizarse
+
 | **Término** | **Descripción** |
 | --- | --- |
 | **Centro de administración** |El centro de administración es un [portal web](https://admin.flow.microsoft.com) para administrar todos los entornos y las directivas de prevención de pérdida de datos. |

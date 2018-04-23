@@ -1,6 +1,7 @@
 Con una lista cada vez mayor de [servicios](https://flow.microsoft.com/services) disponibles para crear flujos de trabajo con [Microsoft Flow](https://flow.microsoft.com), puede que necesite proteger datos empresariales confidenciales o críticos almacenados en servicios empresariales, como SharePoint o Salesforce. Es posible que su organización necesite crear una directiva que garantice que los datos empresariales confidenciales no se publiquen en servicios de consumidor, como Twitter y Facebook. Con Microsoft Flow, puede crear fácilmente directivas de **prevención de pérdida de datos** (DLP) para controlar de forma estricta con qué servicios al consumidor pueden compartirse sus datos empresariales cuando los usuarios creen flujos.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Términos con los que debe familiarizarse
+
 | Término | Descripción |
 | --- | --- |
 | **DLP** |Abreviatura de prevención de pérdida de datos. Creará una directiva DLP para administrar el uso compartido de datos entre **servicios**. |

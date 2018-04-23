@@ -1,13 +1,13 @@
 ---
-title: "Más información sobre los entornos de Microsoft Flow | Microsoft Docs"
+title: Más información sobre los entornos de Microsoft Flow | Microsoft Docs
 description: Aprenda a usar entornos para aislar los flujos
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-an-environment"></a>Elección de un entorno
 
@@ -73,7 +73,7 @@ Siga estos pasos para cambiar de entorno:
 Antes de crear un flujo, seleccione el entorno en el que se agregará el flujo y sus recursos.
 
 > [!NOTE]
-Si crea un flujo en el entorno incorrecto, tendrá que eliminarlo y, posteriormente, volver a crearlo en el entorno correcto.
+> Si crea un flujo en el entorno incorrecto, tendrá que eliminarlo y, posteriormente, volver a crearlo en el entorno correcto.
 
 Considere los siguientes factores al elegir en qué entorno quiere hospedar los flujos:
 
@@ -82,7 +82,7 @@ Considere los siguientes factores al elegir en qué entorno quiere hospedar los 
 * Verá todos los entornos en los que se pueden editar recursos. Sin embargo, tendrá que pedir a un administrador que lo agregue como creador a todos los entornos en los que desee crear flujos.
 
 > [!NOTE]
-Siempre podrá crear flujos en el entorno predeterminado.
+> Siempre podrá crear flujos en el entorno predeterminado.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
