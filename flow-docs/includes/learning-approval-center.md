@@ -54,7 +54,7 @@ De forma predeterminada, esta plantilla inicia un proceso de aprobación cada ve
 12. Seleccione **ApprovalStatus** y establezca el valor en **Sí**, luego, seleccione **ApproverComments** y establezca el valor en **Comments** desde la lista de contenido dinámico. 
     
      ![Estado y comentarios](./media/learning-approval-center/approver-status.png)
-13. Cerca de la parte inferior del cuadro **En caso negativo*,* no hacer nada**, seleccione **Agregar una acción**.
+13. Cerca de la parte inferior del cuadro **EN CASO NEGATIVO, NO HACER NADA**, seleccione **Agregar una acción**.
     
      ![No agregar una ninguna acción](./media/learning-approval-center/add-a-no-action.png)
 14. Mediante los mismos pasos que utilizó para la configuración de **En caso positivo**, cree una acción **SharePoint – Actualizar elemento** y configure los campos con los mismos valores, salvo  **ApprovalStatus**, donde debe elegir **No**. 

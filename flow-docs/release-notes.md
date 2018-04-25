@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/12/2018
+ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
-ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
+ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="release-notes"></a>Notas de la versión
 ## <a name="top-questions"></a>Preguntas importantes
@@ -44,6 +44,39 @@ ms.lasthandoff: 03/23/2018
 3. Los desencadenadores de archivo no se activarán para los archivos que se agreguen dentro de carpetas anidadas dentro de la carpeta que seleccione.
 
 ## <a name="whats-new"></a>Novedades
+
+### <a name="release-2018-04-12"></a>Versión del 12/4/2018
+
+- **Devolver datos a PowerApps a partir de un flujo**: cree flujos a los que se pueda llamar desde una aplicación compilada con PowerApps y que permitan devolver los datos a la aplicación. Use el diseñador de flujos visual, que permite arrastrar y colocar, para crear la lógica que necesite para sus aplicaciones. 
+- **Agregar varios registros a entradas de matriz**: se ha agregado un creador de listas en Microsoft Flow que se puede usar para agregar varios datos adjuntos a un correo electrónico, por ejemplo.
+- **Probar flujos con datos ejecutados anteriormente**: se ha agregado un nuevo botón Probar flujo en el diseñador. Con él podrá probar el flujo con datos desencadenadores a partir de ejecuciones de flujos anteriores.
+- **Nuevos campos workflow()**: ahora puede acceder al nombre del entorno y al nombre para mostrar del flujo con la expresión workflow().
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/return-data-to-powerapps/) acerca de esta versión.
+
+### <a name="release-2018-04-04"></a>Versión del 4/4/2018
+
+- **Aprobaciones de Common Data Service**: las aprobaciones modernas se crean con la última versión de Common Data Service for Apps. Esto significa que puede crear flujos que lean el estado de las aprobaciones que envíe o reciba con el conector de CDS.
+- **Buscar errores en aplicar a ambos**: vaya directamente a los errores en bucles en la vista de ejecución de flujo, incluso aunque haya cientos de elementos en el bucle.
+- **Volver a asignar aprobaciones**: puede asignar cualquier aprobación que reciba de otra persona para delegar en ella la aprobación. 
+- **Listas de salas**: con el conector de Office 365 Outlook se han agregado acciones para obtener datos de salas de la organización.
+- **Ver detalles de los botones de flujos**: al ejecutar un flujo compartido con usted, ahora puede ver todas las acciones que usa el flujo.
+- **Región de Reino Unido**: ahora puede crear entornos para almacenar datos en el Reino Unido.
+- **Dos nuevos conectores**: se ha agregado compatibilidad para AtBot Admin y Marketing Content Hub.
+- **Nueva página de aterrizaje de documentación**: se ha actualizado la página de aterrizaje de documentación. Ahora el contenido está agrupado según el nivel de experiencia: principiante, usuario intermedio o experto. 
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/approvals-in-cds-and-seven-updates/) acerca de esta versión.
+
+### <a name="release-2018-03-13"></a>Versión del 13/3/2018
+
+- **Historial de aprobación**: vea todas las solicitudes de aprobación que ha enviado, incluidas las respuestas y los comentarios enviados, y la hora exacta en la que se hicieron.
+- **Cuatro nuevos conectores**: se ha agregado Excel Online (Business), Excel Online (OneDrive), Azure SQL Data Warehouse y Pitney Bowes Tax Calculator.
+- **Información en pantalla de contenido dinámico**: mantenga el puntero sobre el contenido dinámico para ver de dónde procede, dentro de las acciones, y obtener una vista previa de las expresiones sin abrir el editor de expresiones.
+- **Control de simultaneidad**: habilite el control de simultaneidad para hacer que un flujo concreto no se ejecute varias veces al mismo tiempo.
+- **Reintento exponencial**: se trata de un nuevo tipo de directiva de reintentos que separa los reintentos de forma exponencial en el tiempo.
+- **Conformidad de accesibilidad**: se han publicado nuevos documentos de conformidad en los que se describe el cumplimiento de Microsoft Flow con los estándares de accesibilidad.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/approval-history-accessibility/) acerca de esta versión.
 
 ### <a name="release-2018-02-09"></a>Versión 2018-02-09
 

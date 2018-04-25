@@ -1,13 +1,13 @@
 ---
 title: Filtrado y copia de datos | Microsoft Docs
 description: Aprenda a filtrar y copiar datos de un origen a un destino con Microsoft Flow
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.openlocfilehash: 7c182328c341043ffc155a679f39bcbc2130a0bc
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrado y copia de datos con Microsoft Flow
 En este tutorial se muestra cómo crear un flujo que supervise un origen para los elementos nuevos o cambiado, y, luego, copia dichos cambios a un destino. Puede crear un flujo como este si los usuarios escriben datos en una ubicación, pero el equipo los necesita en otra ubicación o formato.
@@ -106,7 +106,7 @@ En la tarjeta Condición:
     ![configurar una condición](media/odata-filters/configure-condition.png)
 5. Seleccione **Editar en modo avanzado**.
    
-    Cuando se abre el modo avanzado, se ve la expresión **@equals(body('Get_rows')? ['value'], 0)** en el cuadro. Edite esta expresión mediante la adición de **length()** a la función **body('Get_items')? [' value']**. Ahora la expresión completa es como esta: **@equals(length(body('Get_rows')? ['value']), 0)**
+    Cuando se abre el modo avanzado, se muestra la expresión **\@equals(body('Get_rows')? ['value'], 0)** en el cuadro. Edite esta expresión mediante la adición de **length()** a la función **body('Get_items')? [' value']**. Ahora la expresión completa es como esta: **@equals(length(body('Get_rows')? ['value']), 0)**
    
     La tarjeta **Condición** ahora es como la que aparece en esta imagen:
    

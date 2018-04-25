@@ -1,13 +1,13 @@
 ---
-title: "Creación de un flujo a partir de una plantilla | Microsoft Docs"
+title: Creación de un flujo a partir de una plantilla | Microsoft Docs
 description: Cree un flujo de cualquiera de las diversas plantillas integradas.
-services: 
+services: ''
 suite: flow
 documentationcenter: na
 author: aftowen
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
 ms.author: anneta
-ms.openlocfilehash: 876723b62274f3a306c0a8472095b131e223408b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b755d9abe70740a97ad85aaa60b8a3f4685a7b26
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Creación de un flujo desde una plantilla en Microsoft Flow
 Cree un flujo desde una de las muchas plantillas integradas que pueden, por ejemplo, enviarle un mensaje Slack cuando un administrador le envíe un correo electrónico en Office 365.
@@ -54,7 +54,7 @@ Cree un flujo desde una de las muchas plantillas integradas que pueden, por ejem
 1. Seleccione la barra de título de un evento para expandirla y, a continuación, personalizarla (por ejemplo, mediante la especificación de un filtro en el correo electrónico que le interese).
 2. Se expandirán automáticamente las acciones que requieran su intervención.
    
-    Por ejemplo, la acción **Post message** se expande porque es preciso que especifique un canal, como su *@username*. También puede personalizar el contenido del mensaje. De forma predeterminada, el mensaje contendrá solo el asunto, pero se puede incluir más información.
+    Por ejemplo, la acción **Publicar mensaje** se expande porque es preciso especificar un canal, por ejemplo, su *\@nombredeusuario*. También puede personalizar el contenido del mensaje. De forma predeterminada, el mensaje contendrá solo el asunto, pero se puede incluir más información.
    
     ![Especificar el canal de Slack](./media/get-started-logic-template/specify-keyword.png)
 3. Cerca de la parte superior de la pantalla, especifique el nombre del flujo y seleccione **Crear flujo**.
