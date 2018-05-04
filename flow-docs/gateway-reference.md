@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: KFile
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Información acerca de las puertas de enlace de datos locales de Microsoft Flow
 Use la puerta de enlace de datos local con Microsoft Flow para establecer conexiones seguras con los orígenes de datos locales, como Microsoft SQL Server.
@@ -114,7 +114,7 @@ Los resultados deberían ser similares a la salida siguiente. Si el valor de **T
 
 Si desea ser exhaustivo, sustituya los valores de **ComputerName** y **Port** por los que aparecen en el apartado **Configurar puertos** de este mismo tema.
 
-El firewall también puede bloquear las conexiones que Azure Service Bus establece con los centros de datos de Azure. En ese caso, incluirá en una lista de permitidos (desbloqueará) todas las [direcciones IP](https://www.microsoft.com/download/details.aspx?id=41653) de su región para dichos centros de datos.
+El firewall también puede bloquear las conexiones que Azure Service Bus establece con los centros de datos de Azure. En ese caso, incluirá en una lista blanca (desbloqueará) todas las [direcciones IP](https://www.microsoft.com/download/details.aspx?id=41653) de su región para dichos centros de datos.
 
 ## <a name="configure-ports"></a>Configuración de puertos
 La puerta de enlace crea una conexión de salida con Azure Service Bus. Se comunica por los puertos de salida: TCP 443 (valor predeterminado), 5671, 5672 y 9350 a 9354. La puerta de enlace no requiere puertos de entrada.
@@ -141,6 +141,10 @@ Los usuarios iniciarán sesión con una cuenta profesional o educativa. Es la cu
 La puerta de enlace de datos local está configurada para usar *NT SERVICE\PBIEgwService* para las credenciales de inicio de sesión de los servicios de Windows. De manera predeterminada, tiene el derecho de inicio de sesión como servicio. Esto se da en el contexto de la máquina en la que va a instalar la puerta de enlace.
 
 No es la cuenta que se usa para conectarse a orígenes de datos locales ni la cuenta profesional o educativa con la que inicia sesión en los servicios en la nube.
+
+## <a name="tenant-level-administration"></a>Administración de nivel de inquilino
+
+No hay actualmente un único lugar donde los administradores de inquilinos puedan administrar todas las puertas de enlace que otros usuarios han instalado y configurado.  Si es usted un administrador de inquilinos, recomendamos que pida a los usuarios de su organización que lo agreguen como administrador para cada puerta de enlace que instalen. Esto le permite administrar todas las puertas de enlace de su organización a través de la página Configuración de puerta de enlace, o los [comandos de PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="general-questions"></a>Preguntas generales
