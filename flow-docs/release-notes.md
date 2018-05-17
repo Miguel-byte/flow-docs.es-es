@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
+ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="release-notes"></a>Notas de la versión
 ## <a name="top-questions"></a>Preguntas importantes
@@ -44,6 +44,14 @@ ms.lasthandoff: 04/16/2018
 3. Los desencadenadores de archivo no se activarán para los archivos que se agreguen dentro de carpetas anidadas dentro de la carpeta que seleccione.
 
 ## <a name="whats-new"></a>Novedades
+
+### <a name="release-2014-05-01"></a>Versión del 01/05/2014
+
+- **Texto enriquecido en los mensajes de aprobación**: use Markdown para dar formato a los detalles de aprobación que envíe.
+- **Botones con varias entradas de selección**: cree botones de flujo que usen una lista de selección múltiple para recopilar más de un valor a la vez.
+- **Trabajar con flujos más amplios**: ahora, la aplicación móvil Microsoft Flow admite la vista horizontal y el diseñador web tiene una barra de desplazamiento horizontal.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) acerca de esta versión.
 
 ### <a name="release-2018-04-12"></a>Versión del 12/4/2018
 
