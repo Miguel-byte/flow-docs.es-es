@@ -1,13 +1,13 @@
 ---
-title: "Creación de un flujo con Dynamics 365 (en línea) | Microsoft Docs"
-description: "Cree flujos de trabajo útiles mediante una conexión de Dynamics 365 y Microsoft Flow"
-services: 
+title: Creación de un flujo con Dynamics 365 (en línea) | Microsoft Docs
+description: Cree flujos de trabajo útiles mediante una conexión de Dynamics 365 y Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 5ef3de417b1557644ce9bfcd935353e017ceb676
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
@@ -73,7 +73,7 @@ Si no hay una plantilla disponible para lo que necesita, cree un flujo desde el 
 12. Haga clic o pulse **Crear flujo**.
 
 ## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Creación de una tarea de Wunderlist desde una tarea de Dynamics 365
-En este tutorial, se muestra cómo crear una tarea en [Wunderlist](http://www.wunderlist.com) siempre que se crea una tarea en Dynamics 365. Wunderlist es un servicio basado en Internet que se puede usar para crear listas de tareas pendientes, agregar avisos o realizar un seguimiento de los recados.
+En este tutorial, se muestra cómo crear una tarea en [Wunderlist](https://www.wunderlist.com) siempre que se crea una tarea en Dynamics 365. Wunderlist es un servicio basado en Internet que se puede usar para crear listas de tareas pendientes, agregar avisos o realizar un seguimiento de los recados.
 
 1. Inicie sesión en el [sitio web de Microsoft Flow](https://flow.microsoft.com/).
 2. Haga clic o pulse **Mis flujos** y, después, haga clic o pulse **Crear desde cero**.
@@ -129,7 +129,7 @@ En este ejemplo también se asigna la tarea a un usuario concreto en función de
 
   ![recordId y tipo de usuario de flujo](./media/connection-dynamics365/flow-recordid-user.png)
 
-Para buscar el identificador de un registro, consulte [Búsqueda del identificador de registro](#find-the-record-id) en este mismo tema.
+Para buscar el identificador de un registro, consulte [Búsqueda del identificador de registro](#find-the-records-id) en este mismo tema.
 
 > **Importante:** los campos cuya descripción sea "Para uso interno" no deben contener ningún valor. Entre estos campos se incluyen **Ruta recorrida**, **Parámetros adicionales** y **Número de versión de regla de zona horaria.**
 > 

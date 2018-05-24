@@ -1,13 +1,13 @@
 ---
-title: "Creación de un flujo de trabajo de aprobación moderno con varios aprobadores | Microsoft Docs"
-description: "Creación de un flujo de trabajo de aprobación moderno con varios aprobadores "
-services: 
+title: Creación de un flujo de trabajo de aprobación moderno con varios aprobadores | Microsoft Docs
+description: 'Creación de un flujo de trabajo de aprobación moderno con varios aprobadores '
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Administración de aprobaciones secuenciales con Microsoft Flow
 Algunos flujos de trabajo requieren la aprobación previa antes de que se requiera al aprobador final que cierre la sesión. Por ejemplo, una compañía puede tener una directiva de aprobación secuencial que requiere la aprobación previa de las facturas de más de 1000 USD antes de que estén aprobados por el departamento de finanzas.
