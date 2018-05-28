@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 06e327963a44f74141492ec14f2bef7cab802b79
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 9b2447ce0a7c9bc353e47ee1edb4bea55f2c49f4
+ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Límites y configuración en Microsoft Flow
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
@@ -31,7 +31,8 @@ Límites para una única solicitud saliente.
 
 | Nombre | Límite |
 | --- | --- |
-| Tiempo de espera de solicitud |120 segundos |
+| Tiempo de espera de solicitud para las llamadas sincrónicas |120 segundos |
+| Tiempo de espera de solicitud para las llamadas asincrónicas|Configurable. El máximo es 30 días. |
 
 ### <a name="message-size"></a>Tamaño del mensaje
 
@@ -55,6 +56,7 @@ Estos son los límites de una sola ejecución de flujo.
 | Retención de almacenamiento |30 días |Contados desde la hora de inicio de la ejecución. |
 | Intervalo de periodicidad mínimo |1 minuto | |
 | Intervalo de periodicidad máximo |500 días | |
+| Retención máxima del historial de ejecución |28 días, según las reglas del RGPD. | |
 
 ## <a name="looping-and-debatching-limits"></a>Repetición en bucle y fragmentación de límites
 Estos son los límites de una sola ejecución de flujo.
