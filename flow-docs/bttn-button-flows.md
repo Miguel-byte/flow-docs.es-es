@@ -1,13 +1,13 @@
 ---
 title: Inicio de flujos con botones Bttn | Microsoft Docs
-description: "Más información acerca de cómo iniciar los flujos con un bttn"
-services: 
+description: Más información acerca de cómo iniciar los flujos con un bttn
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/30/2017
 ms.author: deonhe
 ms.openlocfilehash: c4010f95ad2db3c4f3b97b39f0b45934c7b69c48
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440323"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Ejecutar los flujos con botones físicos (bttn) de The Button Corporation (versión preliminar)
 Desencadene los flujos presionando un bttn (un botón físico realizado por [The Button Corporation](https://my.bt.tn/)). Por ejemplo, puede presionar un bttn que desencadene un flujo para llevar a cabo estas tareas:

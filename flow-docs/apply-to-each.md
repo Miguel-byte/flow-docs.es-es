@@ -1,13 +1,13 @@
 ---
-title: "Utilice la acción Aplicar a cada uno para recorrer en iteración una matriz de elementos. | Microsoft Docs"
-description: "Utilice Microsoft Flow para recorrer en iteración una matriz de elementos y comprobar varias condiciones y actuar en función de esas condiciones."
-services: 
+title: Utilice la acción Aplicar a cada uno para recorrer en iteración una matriz de elementos. | Microsoft Docs
+description: Utilice Microsoft Flow para recorrer en iteración una matriz de elementos y comprobar varias condiciones y actuar en función de esas condiciones.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 03/16/2017
 ms.author: deonhe
 ms.openlocfilehash: 37f1ce939db23694bcd92e7f1af75bf6c474be91
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440467"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Utilización de la acción Aplicar a cada uno en Microsoft Flow para procesar periódicamente una lista de elementos
 Algunos desencadenadores pueden iniciar inmediatamente un flujo basado en un evento, como cuando llega un nuevo correo electrónico a la Bandeja de entrada. Estos desencadenadores son excelentes, pero a veces se quiere ejecutar un flujo que consulte un origen de datos según una programación predefinida mediante la realización de determinadas acciones en función de las propiedades de los elementos del origen de datos. Para ello, puede iniciar el flujo según una programación (por ejemplo, una vez al día) y usar una acción de bucle como **Aplicar a cada** para procesar una lista de elementos. Por ejemplo, podría utilizar **Aplicar a cada uno** para actualizar registros de una base de datos o una lista de elementos de Microsoft SharePoint.

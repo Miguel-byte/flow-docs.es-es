@@ -2,11 +2,11 @@
 title: Uso de aprobaciones
 metadata:
   title: Uso de aprobaciones | Microsoft Flow
-  description: "Aprenda a administrar la aprobación de documentos y los procesos en Microsoft Flow."
+  description: Aprenda a administrar la aprobación de documentos y los procesos en Microsoft Flow.
   audience: Business User
   level: Beginner
   nextTutorialHref: administer-flows
-  nextTutorialTitle: "Administración de flujos"
+  nextTutorialTitle: Administración de flujos
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -15,25 +15,27 @@ metadata:
   ms.date: 02/22/2018
   ms.author: deonhe
   ms.openlocfilehash: b3b77f073464ae15eaf3ca49ce6664ed5d03cfe8
-  ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
+  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 02/27/2018
+  ms.lasthandoff: 06/04/2018
+  ms.locfileid: "29563027"
 items:
 - durationInMinutes: 1
-  content: "Aprenda a administrar la aprobación de documentos y los procesos en Microsoft Flow.\n"
-- title: "Creación de una solicitud de aprobación"
+  content: >
+    Aprenda a administrar la aprobación de documentos y los procesos en Microsoft Flow.
+- title: Creación de una solicitud de aprobación
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
 
 
     [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
-- title: "Proceso de una solicitud de aprobación"
+- title: Proceso de una solicitud de aprobación
   durationInMinutes: 7
   content: >
     > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
 
 
     [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
-- content: "Ha completado la sección **Uso de aprobaciones** del aprendizaje guiado de Microsoft Flow.\0"
+- content: Ha completado la sección **Uso de aprobaciones** del aprendizaje guiado de Microsoft Flow.

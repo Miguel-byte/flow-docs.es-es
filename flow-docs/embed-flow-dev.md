@@ -1,13 +1,13 @@
 ---
-title: "Integración de Microsoft Flow con sitios web y aplicaciones | Microsoft Docs"
-description: "Inserte las experiencias de Microsoft Flow en su aplicación o sitio web"
-services: 
+title: Integración de Microsoft Flow con sitios web y aplicaciones | Microsoft Docs
+description: Inserte las experiencias de Microsoft Flow en su aplicación o sitio web
+services: ''
 suite: flow
 documentationcenter: na
 author: bbarath
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: barathb
-ms.openlocfilehash: 12664286a9e7d88fb5e24607d600b42f95398cee
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: af03ee70b09ba5ee1164a9a7ea5019b13c19eec6
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440053"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integre Microsoft Flow con sitios web y aplicaciones
 Inserte Microsoft Flow en su aplicación o sitio web para proporcionar a los usuarios una manera sencilla de automatizar sus tareas profesionales o personales.
@@ -33,7 +34,7 @@ Para crear flujos, los usuarios necesitarán **cuenta Microsoft** o una cuenta p
 ## <a name="show-templates-for-your-scenarios"></a>Presentación de plantillas para sus escenarios
 Para empezar, agregue este código para mostrar las plantillas de flujo directamente en su sitio web:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/{locale}/widgets/templates/?q={search term}
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
@@ -59,7 +60,7 @@ Si el usuario está en un contexto determinado en su sitio web o aplicación, di
 ### <a name="full-sample"></a>Ejemplo completo
 Para mostrar las cuatro plantillas principales sobre Wunderlist en alemán e iniciar el usuario con **myCoolList**:
 
-```
+```html
 <iframe src="https://flow.microsoft.com/de-de/widgets/templates/?q=wunderlist
 &pagesize=4&destination=details&parameters.listName=myCoolList"></iframe>
 ```
@@ -75,20 +76,20 @@ Use el SDK de Flow autenticado para permitir a los usuarios crear y administrar 
 ### <a name="include-the-javascript-for-the-authenticated-sdk"></a>Inclusión de JavaScript en el SDK autenticado
 Para incluir el SDK en el código HTML, siga este ejemplo. También puede descargar, minimizar e incluir el SDK con su producto.
 
-```
+```javascript
 <script src="https://flow.microsoft.com/content/msflowsdk-1.1.js" async defer></script>
 ```
 
 ### <a name="create-a-container-to-contain-the-view"></a>Creación de un contenedor para la vista
 Agregue una etiqueta div de HTML:
 
-```
+```html
 <div id="flowDiv" class="flowContainer"></div>
 ```
 
 Se recomienda aplicar cierto estilo a este contenedor para que aparezca con las dimensiones adecuadas:
 
-```
+```html
 <head>
     <style>
         .flowContainer iframe {
@@ -106,7 +107,7 @@ Tenga en cuenta que el IFrame no se representará correctamente por debajo de lo
 ### <a name="authentication-against-the-sdk"></a>Autenticación con el SDK
 Tanto para enumerar los flujos que el usuario ya ha creado como para crear flujos a partir de plantillas, especifique un authToken desde AAD.
 
-```
+```javascript
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
@@ -132,7 +133,7 @@ Tanto para enumerar los flujos que el usuario ya ha creado como para crear flujo
 
 Puede encontrar `environmentId` mediante la siguiente llamada de API que devuelve la lista de los entornos a los que el usuario tiene acceso:
 
-```
+```http
 GET https://management.azure.com/providers/Microsoft.ProcessSimple/environments
 ?api-version=2016-11-01 
 ```
@@ -141,7 +142,7 @@ Esto devuelve una respuesta JSON con la lista de entornos y, en esta, puede sele
 
 En este ejemplo, `requestParam` se define como:
 
-```
+```javascript
 export interface IRpcRequestParam {
     callInfo: IRpcCallInfo,
     data?: any;
@@ -150,7 +151,7 @@ export interface IRpcRequestParam {
 
 Además, `widgetDoneCallback` es una función de devolución de llamada a la que se debe llamar una vez que el host tiene el token. Esto se hace porque la adquisición del token es probablemente un proceso asincrónico. Los parámetros que deben pasarse al llamar a esta función son `(errorResult: any, successResult: any)`. El parámetro successResult dependerá del tipo de devolución de llamada. Para `GetAccessToken` el tipo es:
 
-```
+```javascript
 export interface IGetAccessTokenResult {
     token: string;
 }

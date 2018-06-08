@@ -1,13 +1,13 @@
 ---
-title: "Introducción | Microsoft Docs"
-description: "Formas rápidas de empezar a automatizar el trabajo y la vida con Microsoft Flow"
-services: 
+title: Introducción | Microsoft Docs
+description: Formas rápidas de empezar a automatizar el trabajo y la vida con Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: hero-article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
 ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
-ms.sourcegitcommit: 95e9c124868ce09d961b5776c957b051fd621b88
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439999"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Introducción a Microsoft Flow #
 

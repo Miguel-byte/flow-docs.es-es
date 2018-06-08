@@ -1,13 +1,13 @@
 ---
-title: "Ejecución de flujos de forma programada | Microsoft Docs"
-description: "Automatice tareas repetitivas mediante la ejecución de flujos de forma programada, por ejemplo cada día o cada hora."
-services: 
+title: Ejecución de flujos de forma programada | Microsoft Docs
+description: Automatice tareas repetitivas mediante la ejecución de flujos de forma programada, por ejemplo cada día o cada hora.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 09/14/2017
 ms.author: stepsic
 ms.openlocfilehash: eaeaf62da694daf7f8e6d876c3d225337fdbe592
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23981256"
 ---
 # <a name="run-flows-on-a-schedule"></a>Ejecución de flujos de forma programada
 Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por correo electrónico):

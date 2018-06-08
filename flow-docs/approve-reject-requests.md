@@ -1,13 +1,13 @@
 ---
-title: "Ver, aprobar o rechazar solicitudes de aprobación. | Microsoft Docs"
-description: "Aprenda a ver, aprobar o rechazar las solicitudes de aprobación en Microsoft Flow."
-services: 
+title: Ver, aprobar o rechazar solicitudes de aprobación. | Microsoft Docs
+description: Aprenda a ver, aprobar o rechazar las solicitudes de aprobación en Microsoft Flow.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 07/15/2017
 ms.author: deonhe
 ms.openlocfilehash: 016673948ffaeaf98e81cc2c561d9ff9f5f627e4
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439531"
 ---
 # <a name="manage-approval-requests-in-microsoft-flow"></a>Administración de solicitudes de aprobación en Microsoft Flow
 Microsoft Flow facilita la automatización de [procesos de flujo de trabajo de aprobación](modern-approvals.md). En este tutorial, aprenderá a ver, aprobar y rechazar solicitudes de aprobación enviadas desde Microsoft Flow.
