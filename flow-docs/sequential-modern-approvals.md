@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442321"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Administración de aprobaciones secuenciales con Microsoft Flow
 Algunos flujos de trabajo requieren la aprobación previa antes de que se requiera al aprobador final que cierre la sesión. Por ejemplo, una compañía puede tener una directiva de aprobación secuencial que requiere la aprobación previa de las facturas de más de 1000 USD antes de que estén aprobados por el departamento de finanzas.

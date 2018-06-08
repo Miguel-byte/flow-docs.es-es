@@ -1,13 +1,13 @@
 ---
-title: "Creación de un flujo desde un teléfono | Microsoft Docs"
-description: "Cree un flujo desde una plantilla que, por ejemplo, envía una notificación push cuando se recibe correo desde la dirección que especifique"
-services: 
+title: Creación de un flujo desde un teléfono | Microsoft Docs
+description: Cree un flujo desde una plantilla que, por ejemplo, envía una notificación push cuando se recibe correo desde la dirección que especifique
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
 ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440305"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Creación de un flujo desde un teléfono mediante Microsoft Flow
 Cree un flujo desde un teléfono mediante una plantilla, que se puede encontrar de cualquiera de las tres formas siguientes: búsqueda en una lista de servicios, examen de categorías o especificación de palabras clave. Siga los pasos de este tema para crear un flujo que envíe una notificación push a su teléfono cuando reciba un correo electrónico de un administrador.

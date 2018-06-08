@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: "Administración de flujos"
+title: Administración de flujos
 metadata:
-  title: "Administración de flujos | Microsoft Flow"
-  description: "Aprenda a usar entornos y directivas de protección de datos para administrar flujos y orígenes de datos."
+  title: Administración de flujos | Microsoft Flow
+  description: Aprenda a usar entornos y directivas de protección de datos para administrar flujos y orígenes de datos.
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -13,13 +13,15 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
   ms.openlocfilehash: 234d245f42ef76864709890a3d27724a68834109
-  ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 06/04/2018
+  ms.locfileid: "26580723"
 items:
 - durationInMinutes: 1
-  content: "Aprenda a usar entornos y directivas de protección de datos para administrar flujos y orígenes de datos.\n"
+  content: >
+    Aprenda a usar entornos y directivas de protección de datos para administrar flujos y orígenes de datos.
 - title: Uso de entornos para administrar flujos
   durationInMinutes: 8
   content: >
@@ -27,11 +29,11 @@ items:
 
 
     [!INCLUDE [learning-environments](../includes/learning-environments.md)]
-- title: "Uso de directivas de prevención de pérdida de datos"
+- title: Uso de directivas de prevención de pérdida de datos
   durationInMinutes: 6
   content: >
     > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
 
 
     [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
-- content: "Ha completado la sección **Administración de flujos** del aprendizaje guiado de Microsoft Flow.\0"
+- content: Ha completado la sección **Administración de flujos** del aprendizaje guiado de Microsoft Flow.

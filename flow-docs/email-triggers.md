@@ -1,13 +1,13 @@
 ---
-title: "Ejecute flujos en función de las propiedades del correo electrónico. | Microsoft Docs"
-description: "Inicie un flujo basándose en propiedades como el asunto, la dirección o el destinatario de un correo electrónico."
-services: 
+title: Ejecute flujos en función de las propiedades del correo electrónico. | Microsoft Docs
+description: Inicie un flujo basándose en propiedades como el asunto, la dirección o el destinatario de un correo electrónico.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 395cb9bc1d58e50e5ac8ebac9afaed544f3261ec
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440017"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Desencadenamiento de un flujo basado en las propiedades del correo electrónico
 Use el desencadenador **Cuando llega un correo electrónico nuevo** para crear un flujo que se ejecuta cuando una o varias de estas propiedades coinciden con los criterios proporcionados:
