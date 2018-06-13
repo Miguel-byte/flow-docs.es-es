@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 1e1fe346ba6ffb264985da0115714246a621ef5a
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 5b813bbd8ba9b4e5a778d9fa424704b61ed6dd31
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552074"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Respuesta a solicitudes de exportación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -39,16 +40,15 @@ Microsoft Flow ofrece las experiencias siguientes para buscar o exportar datos p
 |-----------------|------------------|-------------------|
 |Registros generados por el sistema|[Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/)|
 |Historial de ejecución|Portal de creador de Microsoft Flow||
-|Trabajos de usuario|| |
 |Flujos|Portal de creador de Microsoft Flow||
 |Permisos de flujo| Portal de creador de Microsoft Flow y centro de administración de Microsoft Flow||
-|Detalles del usuario|| |
-|Conexiones|Portal de creador de Microsoft Flow| |
-|Permisos de conexión|Portal de creador de Microsoft Flow| |
-|Conectores personalizados.|Portal de creador de Microsoft Flow| |
-|Permisos de conector personalizado|Portal de creador de Microsoft Flow| |
-|Puerta de enlace|Portal de creador de Microsoft Flow|Cmdlets de PowerShell de puerta de enlace local|
-|Permisos de puerta de enlace|Portal de creador de Microsoft Flow|
+|Detalles del usuario||Cmdlets de PowerApps|
+|Conexiones|Portal de creador de Microsoft Flow|Cmdlets de PowerApps |
+|Permisos de conexión|Portal de creador de Microsoft Flow|Cmdlets de PowerApps |
+|Conectores personalizados.|Portal de creador de Microsoft Flow|Cmdlets de PowerApps |
+|Permisos de conector personalizado|Portal de creador de Microsoft Flow|Cmdlets de PowerApps |
+|Puerta de enlace|Portal de creador de Microsoft Flow|Cmdlets de PowerShell de puerta de enlace de datos local|
+|Permisos de puerta de enlace|Portal de creador de Microsoft Flow|Cmdlets de PowerShell de puerta de enlace de datos local|
 
 ## <a name="export-a-flow"></a>Exportación de un flujo
 
@@ -105,10 +105,35 @@ Las conexiones permiten a los flujos conectarse a las API, las aplicaciones de S
     ![Muestra de conexiones](./media/gdpr-dsr-export/show-connections.png)
 1. Copie los resultados y, a continuación, péguelos en un editor de documentos, como Microsoft Word.
 
+Cmdlets de PowerShell de administración de PowerApps
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connections for the user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "UserConnections.txt"
+```
+
 ## <a name="export-a-list-of-a-users-connection-permissions"></a>Exportación de una lista de permisos de conexión de un usuario
 
 Un usuario puede exportar las asignaciones de roles de conexión para todas las conexiones a las que tiene acceso a través de la función Get-ConnectionRoleAssignment en los [cdmlets de PowerShell de PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
-![Exportación de permisos de conexión](./media/gdpr-dsr-export/export-connection-permissions.png)
+
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
+```
+Cmdlets de PowerShell de administración de PowerApps
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt" 
+```
 
 ## <a name="export-a-users-custom-connectors"></a>Exportación de los conectores personalizados de un usuario
 
@@ -125,13 +150,41 @@ Siga estos pasos para exportar una lista de conectores de cliente:
 
 Además de la experiencia proporcionada en Microsoft Flow, puede usar la función Get-Connector de los [cmdlets de PowerShell de PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) para exportar todos los conectores personalizados.
 
-![Exportación de PowerShell de conectores personalizados](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
+~~~~
+Add-PowerAppsAccount
+Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
+~~~~
+
+Cmdlets de PowerShell de administración de PowerApps
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all custom connectors for user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserCustomConnectors.txt"  
+```
 
 ## <a name="export-a-users-custom-connector-permissions"></a>Exportación de los permisos de conector personalizado de un usuario
 
 Un usuario puede exportar todos los permisos de conector personalizado que haya creado a través de la función Get-ConnectorRoleAssignment en los [cdmlets de PowerShell de PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
 
-![Exportación de PowerShell de permisos de conector personalizado](./media/gdpr-dsr-export/export-connector-permissions.png)
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
+```
+
+Cmdlets de PowerShell de administración de PowerApps
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"   
+```
 
 ## <a name="export-approval-history"></a>Exportación del historial de aprobaciones
 
@@ -144,3 +197,18 @@ El historial de aprobaciones de Microsoft Flow captura un registro histórico de
 1. Una lista muestra las aprobaciones que el usuario ha recibido. Los usuarios pueden mostrar las aprobaciones que enviaron seleccionando la flecha abajo junto a **Recibidas** y, a continuación, seleccionando **Enviadas**.
 
     ![Visualización de aprobaciones recibidas](./media/gdpr-dsr-export/view-received-approvals.png)
+
+## <a name="export-user-details"></a>Exportar los detalles del usuario
+Los detalles del usuario ofrecen una vinculación entre un usuario y un inquilino específico. Un administrador puede exportar esta información si llama al cmdlet **Get-AdminFlowUserDetails** y pasa el identificador de objeto para el usuario.
+
+Cmdlets de PowerShell de administración de PowerApps
+
+```PowerShell
+Add-PowerAppsAccount
+
+Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+## <a name="export-gateway-settings"></a>Exportar la configuración de puerta de enlace
+Las respuestas a las solicitudes de exportación del interesado para puertas de enlace de datos locales se pueden encontrar [aquí](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+

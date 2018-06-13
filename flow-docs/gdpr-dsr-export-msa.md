@@ -1,0 +1,113 @@
+---
+title: Solicitudes de exportación del interesado de acuerdo con el RGPD en Microsoft Flow para cuentas de Microsoft (MSA) | Microsoft Docs
+description: Obtenga información sobre cómo usar Microsoft Flow para responder a solicitudes de exportación del interesado de acuerdo con el RGPD para cuentas de Microsoft.
+services: ''
+suite: flow
+documentationcenter: na
+author: KentWeareMSFT
+manager: anneta
+editor: ''
+tags: ''
+ms.service: flow
+ms.devlang: na
+ms.topic: article
+ms.tgt_pltfrm: na
+ms.workload: na
+ms.date: 5/25/2018
+ms.author: keweare
+ms.openlocfilehash: 6c1bf3038020f56e5eae57e345391ace2fe65d7f
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34563317"
+---
+# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Respuesta a solicitudes de exportación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
+
+Como parte de nuestro compromiso de acompañarle en su viaje de adaptación al Reglamento general de protección de datos (RGPD), hemos elaborado una documentación que le ayudará a prepararse. En esta documentación no solo se describe lo que estamos haciendo para prepararnos para el RGPD, sino que también se incluyen ejemplos de medidas que puede adoptar ya para cumplir con el RGPD al usar Microsoft Flow.
+
+## <a name="manage-export-requests"></a>Administrar solicitudes de exportación
+
+El *derecho de portabilidad de datos* permite al interesado solicitar una copia de sus datos personales en un formato electrónico (es decir, en un "formato estructurado, de uso común, de lectura mecánica e interoperable") que se pueda transmitir a otro responsable de los datos.
+
+Use el [Panel de privacidad de Microsoft](https://account.microsoft.com/privacy/), o bien [Microsoft Flow](https://flow.microsoft.com/) para buscar o exportar datos personales para un usuario específico.
+
+|Datos personales|Ubicación|
+|-----------------|-------------------|
+|Actividad de productos y servicios|Panel de privacidad de Microsoft|
+|Flujos|Portal de creador de Microsoft Flow|
+|Historial de ejecución|Portal de creador de Microsoft Flow|
+|Fuente de actividades|Portal de creador de Microsoft Flow|
+|Conexiones|Portal de creador de Microsoft Flow|
+
+## <a name="export-product-and-service-activity"></a>Exportar actividad de productos y servicios
+
+1. Inicie sesión en el [Panel de privacidad de Microsoft](https://account.microsoft.com/privacy/) con su cuenta de Microsoft (MSA).
+1. Seleccione **Historial de actividades**.
+
+    ![Historial de actividades](./media/gdpr-dsr-export-msa/activityhistory.png) Puede examinar el historial de actividades para las distintas aplicaciones de Microsoft y los servicios que usa.
+1. Para exportar los datos de **Actividad de productos y servicios**, haga clic en **Descargar los datos** y después en **CREAR UN NUEVO ARCHIVO**.
+
+    ![Descargar los datos](./media/gdpr-dsr-export-msa/downloaddata.png)
+
+1. Seleccione **Uso de aplicaciones y servicios** y, después, haga clic en **Crear archivo**.
+
+    ![Descargar los datos](./media/gdpr-dsr-export-msa/create-archive.png)
+1. Se creará un archivo nuevo. Haga clic en **Descargar** para obtener los datos exportados de actividad de productos y servicios.
+
+    ![Descargar](./media/gdpr-dsr-export-msa/download.png)
+
+## <a name="export-a-flow"></a>Exportación de un flujo
+
+Un usuario final que tenga acceso a un flujo puede exportarlo siguiendo estos pasos:
+
+1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com/).
+
+1. Seleccione **Mis flujos** y, después, seleccione el flujo que se va a exportar.
+
+1. Seleccione **... Más** y, a continuación, seleccione **Exportar**.
+
+    ![Exportación de flujo](./media/gdpr-dsr-export/export-flow.png)
+
+1. Seleccione **Paquete (.zip)**.
+
+El flujo estará ahora disponible como un paquete comprimido. Para obtener más información, consulte la entrada de blog sobre [cómo exportar e importar un flujo](https://flow.microsoft.com/blog/import-export-bap-packages/).
+
+## <a name="export-run-history"></a>Exportación de historial de ejecuciones
+
+En el historial de ejecuciones se incluye una lista de todas las ejecuciones de un flujo. Estos datos incluyen el estado del flujo, la hora de inicio, la duración y los datos de entrada/salida para los desencadenadores y las acciones.
+
+Un usuario final que tenga acceso al flujo puede seguir estos pasos para exportar estos datos:
+
+1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com/).
+1. Seleccione el vínculo **Mis flujos** y, a continuación, seleccione el flujo cuyo historial de ejecución desea exportar.
+1. En el panel **HISTORIAL DE EJECUCIÓN**, seleccione **Ver todo**.
+
+    ![Historial de ejecución](./media/gdpr-dsr-export/run-history.png)
+
+1. Seleccione **Descargar CSV**.
+
+    ![Descargar CSV](./media/gdpr-dsr-export/download-csv.png)
+
+El historial de ejecuciones se descarga como un archivo .csv para que pueda abrirlo en Microsoft Excel o un editor de texto y analizar los resultados.
+
+## <a name="export-a-users-activity-feed"></a>Exportación de la fuente de actividad de un usuario
+
+En [Microsoft Flow](https://flow.microsoft.com/), la fuente de actividad muestra el historial de actividades, errores y notificaciones de un usuario. Un usuario puede ver su fuente de actividad siguiendo estos pasos:
+
+1. Inicie sesión en [Microsoft Flow](http://flow.microsoft.com/), seleccione el icono de campana cerca de la esquina superior derecha y, a continuación, seleccione **Mostrar todas las actividades**.
+
+    ![Muestra de la fuente de actividades](./media/gdpr-dsr-export/show-activity-feed.png)
+
+1. En la pantalla **Actividad**, copie los resultados y, después, péguelos en un editor de texto como Microsoft Word.
+
+    ![Muestra de la fuente de actividades](./media/gdpr-dsr-export/export-activity-feed.png)
+
+## <a name="export-a-users-connections"></a>Exportación de las conexiones de un usuario
+
+Las conexiones permiten a los flujos conectarse a las API, las aplicaciones de SaaS y otros sistemas de terceros. Siga estos pasos para ver las conexiones:
+
+1. Inicie sesión en [Microsoft Flow](http://flow.microsoft.com/), seleccione el icono de engranaje cerca de la esquina superior derecha y, a continuación, seleccione **Conexiones**.
+
+    ![Muestra de conexiones](./media/gdpr-dsr-export/show-connections.png)
+1. Copie los resultados y, después, péguelos en un editor de texto como Microsoft Word.

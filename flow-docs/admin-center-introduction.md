@@ -1,13 +1,13 @@
 ---
-title: "Uso del Centro de administración para administrar directivas y directivas de datos | Microsoft Docs"
-description: "Los administradores de inquilinos y de entornos usan el centro de administración de Microsoft Flow para administrar las directivas de datos y los en las implementaciones de Microsoft Flow."
-services: 
+title: Uso del Centro de administración para administrar directivas y directivas de datos | Microsoft Docs
+description: Los administradores de inquilinos y de entornos usan el centro de administración de Microsoft Flow para administrar las directivas de datos y los en las implementaciones de Microsoft Flow.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/31/2017
 ms.author: deonhe
 ms.openlocfilehash: 368b208a6f1d47f76a6f195edcd8055a03c06800
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23981328"
 ---
 # <a name="the-admin-center"></a>El Centro de administración
 
@@ -29,7 +30,7 @@ El Centro de administración es la ubicación central en la que tanto los admini
 
 ## <a name="access-the-admin-center"></a>Acceso al Centro de administración
 
-* Desplácese hasta https://admin.flow.microsoft.com para acceder al Centro de administración de Microsoft Flow.
+* Vaya a https://admin.flow.microsoft.com para tener acceso al centro de administración de Microsoft Flow.
 
 ## <a name="environments"></a>Entornos
 

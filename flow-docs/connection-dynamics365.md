@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
-ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
+ms.openlocfilehash: 2db995eafaf8e73af7cd29b8a2469d4abaab2356
+ms.sourcegitcommit: 7d04ee86361fe5d70ee89cde06d01754ada757b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34689385"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799680"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
@@ -91,6 +91,11 @@ En este tutorial, se muestra cómo crear una tarea en [Wunderlist](https://www.w
 8. En **Id. de la lista**, seleccione **Bandeja de entrada**.
 9. En **Título**, seleccione **Asunto** en el panel de contenido dinámico.
 10. Haga clic o pulse **Crear flujo**.  
+
+## <a name="trigger-based-logic"></a>Lógica basada en desencadenadores
+Los desencadenadores como **Al crear un registro**, **Al actualizar un registro** y **Al eliminar un registro** inician el flujo a los pocos minutos de que se produzca el evento.  En casos aislados, el flujo puede tardar hasta dos horas en desencadenarse.
+
+Cuando se produce el desencadenador, el flujo recibe una notificación, pero se ejecuta en los datos que existen en el momento de ejecución de la acción.  Por ejemplo, si el flujo se desencadena cuando se crea un registro, y actualiza el registro dos veces antes de la ejecución de flujo, el flujo se ejecuta una sola vez con los datos más recientes.
 
 ## <a name="specify-advanced-options"></a>Especificación de opciones avanzadas
 Cuando se agrega un paso a un flujo, se puede hacer clic o pulsar **Mostrar opciones avanzadas** para agregar un filtro o un pedido por la consulta que controla cómo se filtran los datos en el flujo.

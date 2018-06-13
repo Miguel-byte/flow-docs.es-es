@@ -1,13 +1,13 @@
 ---
-title: "Preguntas y respuestas sobre el registro en Flow en su organización | Microsoft Docs"
-description: "Preguntas y respuestas frecuentes acerca de las licencias, administración y el registro de usuarios a Flow en su inquilino de Office 365"
-services: 
+title: Preguntas y respuestas sobre el registro en Flow en su organización | Microsoft Docs
+description: Preguntas y respuestas frecuentes acerca de las licencias, administración y el registro de usuarios a Flow en su inquilino de Office 365
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
 ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
-ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23442501"
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
 En este tema se describe cómo los usuarios de su organización pueden usar Flow y cómo controlar el servicio Flow.
@@ -122,7 +123,7 @@ La licencia gratuita de Microsoft Flow solo se incluye con fines de seguimiento.
 Los usuarios pueden utilizar Microsoft Flow a nivel individual o como parte de su organización. Las licencias a nivel de organización siempre estarán visibles en el Portal de Office 365. Sin embargo, si un usuario se suscribe para una versión de evaluación, su administrador de Office 365 no la administrará y no se mostrará en el portal.
 
 ### <a name="how-does-an-individual-find-out-what-plan-they-are-on"></a>¿Cómo averigua un individuo en qué plan está?
-Cualquier usuario puede ver su plan, solo es preciso que se dirija a la página de precios de Flow, [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). En dicha página se puede ver el plan o la versión de evaluación activos.
+Cualquier usuario puede ver su plan si visita la página de precios de Flow en [https://flow.microsoft.com/pricing](https://flow.microsoft.com/pricing). En dicha página se puede ver el plan o la versión de evaluación activos.
 
 ### <a name="will-microsoft-flow-sign-up-impact-the-identities-in-my-organization"></a>¿La suscripción a Microsoft Flow afectará a las identidades de mi organización?
 Si su organización ya tiene un entorno de Office 365 existente y todos los usuarios de su organización tienen cuentas de Office 365, la administración de las identidades no se verá afectada.

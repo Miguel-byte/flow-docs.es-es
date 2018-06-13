@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/18/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 9f9513ca0239f72c36e96387fc010040936bbd02
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: c57296bed460dbf94aa597542413783292e1a8f7
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552177"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Respuesta a solicitudes del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -42,6 +43,9 @@ Puede realizar las operaciones que requieren privilegios de administrador, que s
     [Una licencia de prueba](http://web.powerapps.com/trial) expira en 30 días.
 
 - [Administrador global de Office 365](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) o [administrador global de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+
+### <a name="unmanaged-tenants"></a>Inquilinos no administrados
+Si es miembro de un [inquilino no administrado](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), lo que significa que el inquilino de Azure AD no tiene un administrador global, todavía podrá seguir los pasos descritos en este artículo para exportar y quitar sus propios datos personales. 
 
 ## <a name="responding-to-dsrs-for-microsoft-flow-customer-data"></a>Respuesta a los derechos de titulares de datos para los datos de cliente de Microsoft Flow
 

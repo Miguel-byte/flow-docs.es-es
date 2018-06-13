@@ -15,11 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: d750ee2bc672d08bff940341349663b4721f9a57
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561319"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Respuesta a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -33,17 +34,17 @@ En la siguiente tabla se muestra cuáles datos personales se eliminan automátic
 |------|------|
 |Entorno*|Registros generados por el sistema|
 |Permisos del entorno**|Historial de ejecución|
-|Flujos|Trabajos de usuario|
+|Flujos|Fuente de actividades|
 |Permisos de flujo|Puerta de enlace |
-|Detalles del usuario|Permisos de puerta de enlace |
+|Detalles del usuario|Permisos de puerta de enlace|
 |Conexiones*||
 |Permisos de conexión||
 |Conector personalizado*||
 |Permisos de conector personalizado||
 
-* Cada uno de estos recursos contiene registros "Creado por" y "Modificado por" que incluyen datos personales. Por motivos de seguridad, estos registros se conservan hasta que se elimina el recurso.
+*Cada uno de estos recursos contiene registros "Creado por" y "Modificado por" que incluyen datos personales. Por motivos de seguridad, estos registros se conservan hasta que se elimina el recurso.
 
-* En el caso de entornos que incluyen una base de datos de Common Data Service for Apps, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+**En el caso de los entornos que incluyen una base de datos de Common Data Service for Apps, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
 
 En el caso de los datos y recursos que requieren una revisión manual, Microsoft Flow ofrece las experiencias siguientes para buscar o cambiar los datos personales de un usuario específico:
 
@@ -59,11 +60,11 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 |Entorno|Centro de administración de Microsoft Flow|Cmdlets de PowerApps||
 |Permisos del entorno*|Centro de administración de Microsoft Flow|Cmdlets de PowerApps||
 |Historial de ejecución||| Eliminación a través de la directiva de retención de 28 días|
-|Fuente de actividades ||Cmdlets de PowerApps||
+|Fuente de actividades |||Eliminación a través de la directiva de retención de 28 días|
 |Trabajos de usuario|| ||
 |Flujos|Portal de creador de Microsoft Flow**|||
 |Permisos de flujo|Portal de creador de Microsoft Flow|||
-|Detalles del usuario|| ||
+|Detalles del usuario||Cmdlets de PowerApps||
 |Conexiones|Portal de creador de Microsoft Flow| ||
 |Permisos de conexión|Portal de creador de Microsoft Flow| ||
 |Conector personalizado|Portal de creador de Microsoft Flow| ||
@@ -76,7 +77,7 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 
 ## <a name="manage-delete-requests"></a>Administración de las solicitudes de eliminación
 
-En los pasos siguientes se describen las funciones administrativas que existen para atender las solicitudes de eliminación de acuerdo con el RGPD.
+En los pasos siguientes se describen las funciones administrativas que existen para atender las solicitudes de eliminación de acuerdo con el RGPD. Estos pasos se deben realizar en el orden descrito a continuación.
 
 > [!IMPORTANT]
 > Para evitar daños en los datos, siga estos pasos en orden.
@@ -124,7 +125,8 @@ Estos pasos copian flujos existentes para un usuario saliente. Si asigna una pro
     ![Confirmación de la eliminación del flujo](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Habilite la copia del flujo; para ello, abra **Mis flujos** y, a continuación, ponga el control de alternancia en **Activado**.
-    ![Habilitación de flujo](./media/gdpr-dsr-delete/toggle-on.png)
+
+    ![Habilitación del flujo](./media/gdpr-dsr-delete/toggle-on.png)
 
 1. La copia ahora realiza la misma lógica de flujo de trabajo que la versión original.
 
@@ -141,6 +143,7 @@ Estos pasos copian flujos existentes para un usuario saliente. Si asigna una pro
 1. En Microsoft Excel, busque, filtre y, a continuación, elimine los datos de aprobación según sea necesario.
 
 Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener más instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+
 
 ## <a name="delete-connections-created-by-a-user"></a>Eliminación de las conexiones creadas por un usuario
 
@@ -159,8 +162,14 @@ Get-Connection | Remove-Connection
 
 Cmdlets de PowerShell de administración de PowerApps
 
-No disponible.
+```PowerShell
+Add-PowerAppsAccount
 
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all connections for the DSR user and deletes them 
+Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
+
+```
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Eliminación de los permisos del usuario para conexiones compartidas
 
 Cmdlets de PowerShell de creador de PowerApps
@@ -174,14 +183,20 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
+Cmdlets de PowerShell de administración de PowerApps
+
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all shared connections for the DSR user and deletes their permissions 
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment  
+
+```
 > [!NOTE]
 > Las asignaciones de roles de propietario no se pueden eliminar sin eliminar el recurso de conexión.
 >
 >
-
-Cmdlets de PowerShell de administración de PowerApps
-
-No disponible.
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Eliminación de conectores personalizados creados por el usuario
 
@@ -199,8 +214,14 @@ Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
 Cmdlets de PowerShell de administración de PowerApps
+```PowerShell
+Add-PowerAppsAccount
 
-No disponible.
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connectors created by the DSR user and deletes them 
+Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector  
+
+```
 
 ## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>Eliminación de los permisos del usuario para conectores compartidos
 
@@ -215,14 +236,21 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
+Cmdlets de PowerShell de administración de PowerApps
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connector role assignments for the DSR user and deletes them 
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment  
+
+```
+
 > [!NOTE]
 > Las asignaciones de roles de propietario no se pueden eliminar sin eliminar el recurso de conexión.
 >
 >
 
-Cmdlets de PowerShell de administración de PowerApps
-
-No disponible.
 
 ## <a name="delete-or-reassign-all-environments-created-by-the-user"></a>Eliminación o reasignación de todos los entornos creados por el usuario
 
@@ -246,3 +274,43 @@ Es posible asignar permisos a los usuarios (como Administrador de entorno, Cread
 Con la introducción de Common Data Service for Apps, si se crea una base de datos dentro del entorno, estas "asignaciones de roles" se almacenan como registros dentro de la instancia de la base de datos de Common Data Service for Apps.
 
 Para obtener más información acerca de cómo quitar el permiso de un usuario en un entorno, vaya a [Uso de entornos en Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
+
+## <a name="delete-gateway-settings"></a>Eliminar la configuración de puerta de enlace
+Las respuestas a las solicitudes de eliminación del interesado para puertas de enlace de datos locales se pueden encontrar [aquí](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+
+## <a name="delete-user-details"></a>Eliminar los detalles del usuario
+Los detalles del usuario ofrecen una vinculación entre un usuario y un inquilino específico. Antes de ejecutar este comando, asegúrese de que se hayan reasignado o eliminado todos los flujos de este usuario. Una vez que se haya completado esto, un administrador puede eliminar los detalles del usuario mediante una llamada al cmdlet **Remove-AdminFlowUserDetails** y pasar el identificador de objeto para el usuario.
+
+
+Cmdlets de PowerShell de administración de PowerApps
+```PowerShell
+Add-PowerAppsAccount
+Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+> [!IMPORTANT]
+> Si un usuario sigue siendo el propietario de flujos individuales o del equipo, este comando devolverá un error. Para resolverlo, elimine todos los flujos o flujos del equipo restantes para este usuario y vuelva a ejecutar el comando.
+>
+>
+## <a name="delete-the-user-from-azure-active-directory"></a>Eliminar el usuario de Azure Active Directory
+Una vez completados los pasos anteriores, el último paso consiste en eliminar la cuenta del usuario de Azure Active Directory mediante los pasos descritos en la documentación de Azure sobre solicitudes del interesado del RGPD que se puede encontrar en el [Portal de confianza de servicios de Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+
+## <a name="delete-the-user-from-unmanaged-tenant"></a>Eliminar el usuario del inquilino no administrado
+En caso de que sea miembro de un inquilino no administrado, tendrá que realizar una acción **Cerrar cuenta** desde el [portal de privacidad profesional y educativa](https://go.microsoft.com/fwlink/?linkid=873123).
+
+Para determinar si es o no un usuario de un inquilino administrado o no administrado, realice las acciones siguientes:
+1. Abra la dirección URL siguiente en un explorador y asegúrese de reemplazar la dirección de correo electrónico en la dirección URL:[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+1. Si es miembro de un **inquilino no administrado**, verá `"IsViral": true` en la respuesta.
+
+    {
+
+     "Login": "foobar@unmanagedcontoso.com",
+
+    "DomainName": "unmanagedcontoso.com",
+
+    "IsViral": **true**,
+    
+    }
+
+1. En caso contrario, pertenece a un inquilino administrado.
+

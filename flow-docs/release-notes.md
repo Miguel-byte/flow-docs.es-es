@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2018
+ms.date: 06/04/2018
 ms.author: stepsic
-ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
-ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
+ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
+ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755584"
 ---
 # <a name="release-notes"></a>Notas de la versión
 ## <a name="top-questions"></a>Preguntas importantes
@@ -45,7 +46,17 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="whats-new"></a>Novedades
 
-### <a name="release-2014-05-01"></a>Versión del 01/05/2014
+### <a name="release-2018-05-21"></a>Versión 21-05-2018
+
+- **Flujos "propiedad de" listas y bibliotecas de SharePoint**: los flujos que funcionan con listas y bibliotecas de SharePoint se pueden compartir con esas listas o bibliotecas. Por tanto, en lugar de que se compartan con individuos o grupos, se comparten con todos los usuarios con acceso a la lista. A medida que se agreguen o quiten usuarios de la lista o biblioteca, su pertenencia cambia en consecuencia de forma automática.
+- **Análisis de detalles de error**: un nuevo informe insertado en el que se proporciona información sobre todos los errores que se producen dentro de un flujo.
+- **Compartir flujos con grupos de Office 365**: puede convertir un grupo moderno de Office 365 en el propietario de un flujo, y compartir flujos de botón con grupos de Office 365 para que cualquier integrante del grupo pueda ejecutar el flujo.
+- **Mejoras del conector de SharePoint**: hay dos nuevas funciones del conector de SharePoint: desencadenar flujos cuando se eliminan archivos o elementos, y llamar a cualquier punto de conexión HTTP que sea compatible con la API REST de SharePoint.
+- **Dos nuevos conectores**: se ha agregado compatibilidad para Azure Data Factory y MailParser.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/share-with-sharepoint-office-365/) acerca de esta versión.
+
+### <a name="release-2018-05-01"></a>Versión 01-05-2018
 
 - **Texto enriquecido en los mensajes de aprobación**: use Markdown para dar formato a los detalles de aprobación que envíe.
 - **Botones con varias entradas de selección**: cree botones de flujo que usen una lista de selección múltiple para recopilar más de un valor a la vez.
