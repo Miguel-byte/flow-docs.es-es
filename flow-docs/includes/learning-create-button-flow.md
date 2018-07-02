@@ -3,7 +3,7 @@ En este tema, aprenderá a **crear un flujo de botón** para la empresa Contoso 
 Los flujos de botón se pueden usar para **enviar correo electrónico** a un equipo para **alertarles de las tareas** que se deben realizar. La **propiedad** de los flujos se **puede asignar a un** trabajador o la pueden **compartir varios** miembros de un equipo.  
 
 1. En primer lugar, vaya al [sitio web de Microsoft Flow](https://ms.flow.microsoft.com) e inicie sesión.
-2. Una vez que lo haya hecho, seleccione **Mis flujos**y, después, **Crear desde cero**.
+2. Una vez que haya iniciado sesión, seleccione **Mis flujos** y, después, **Crear desde cero**.
    
     ![Crear desde cero](./media/learning-create-button-flow/2-create-from-blank.png)
    
