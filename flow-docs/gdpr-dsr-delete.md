@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
+ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561319"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175141"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Respuesta a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -258,10 +258,10 @@ Como administrador, tendrá que elegir entre dos opciones al procesar una solici
 
 1. Si determina que nadie más de su organización va a utilizar el entorno, puede optar por eliminarlo.
 1. Si determina que el entorno sigue siendo necesario, puede optar por no eliminar el entorno y agregarse a usted mismo (u otro usuario de su organización) como administrador del entorno.
-    > [!IMPORTANT]
-    > La eliminación de un entorno eliminará permanentemente todos los recursos en el entorno, como aplicaciones, flujos, conexiones, etc., así que revise el contenido de un entorno antes de su eliminación.
-    >
-    >
+> [!IMPORTANT]
+> La eliminación de un entorno eliminará permanentemente todos los recursos en el entorno, como aplicaciones, flujos, conexiones, etc., así que revise el contenido de un entorno antes de su eliminación.
+>
+>
 
 ## <a name="give-access-to-a-users-environments-from-the-microsoft-flow-admin-center"></a>Concesión de acceso a los entornos de un usuario desde el centro de administración de Microsoft Flow
 
