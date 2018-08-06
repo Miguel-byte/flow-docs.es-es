@@ -73,7 +73,7 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 
 *Con la introducción de Common Data Service for Apps, si se crea una base de datos dentro del entorno, los permisos del entorno y los permisos de aplicaciones controlados por modelo se almacenan como registros dentro de la instancia de la base de datos de Common Data Service for Apps. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
 
-**Un administrador solo podrá obtener acceso a estos recursos desde el portal de creador de Microsoft Flow si el administrador le asignado acceso desde el centro de administración de Microsoft Flow.
+\*\*Un administrador solo podrá obtener acceso a estos recursos desde el portal de creador de Microsoft Flow si el administrador le asignado acceso desde el centro de administración de Microsoft Flow.
 
 ## <a name="manage-delete-requests"></a>Administración de las solicitudes de eliminación
 
