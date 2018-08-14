@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34453317"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718313"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ## <a name="audience-and-strategy"></a>Destinatarios y estrategia
@@ -80,7 +80,7 @@ Las plantillas son flujos predefinidos para escenarios comunes y muy utilizados.
 Se puede conectar a más de 100 servicios estándar de Microsoft y de terceros, como Office 365, Twitter, SharePoint, OneDrive, Dropbox, SQL Server y muchos otros. También es posible conectarse a servicios premium como Salesforce y Common Data Service para PowerApps.
 
 ### <a name="how-do-i-connect-to-a-rest-api-in-my-flow"></a>¿Cómo me conecto a una API de REST en mi flujo?
-Mediante la creación de [un conector personalizado](register-custom-api.md) puede conectarse a cualquier API de REST que use JSON y sea compatible con al menos uno de los más de diez métodos de autenticación existentes.
+Mediante la creación de [un conector personalizado](developer/register-custom-api.md) puede conectarse a cualquier API de REST que use JSON y sea compatible con al menos uno de los más de diez métodos de autenticación existentes.
 
 ### <a name="how-do-i-connect-to-sql-server-and-other-on-premises-data-sources"></a>¿Cómo me conecto a SQL Server y otros orígenes de datos locales?
 Puede conectarse a servicios en la red local mediante la [puerta de enlace de datos local](gateway-manage.md).

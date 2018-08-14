@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: barathb
-ms.openlocfilehash: a3f1e21cfbf00749a0ef09c0363da162f0419f42
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 1bcdbf3772ab2481b15bd224523dff74afc53101
+ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439711"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39718290"
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Inicio de la compilación con Microsoft Flow
 
@@ -56,11 +56,11 @@ Después de enviar esta información, Microsoft empezará a evaluar la funcional
 
 ## <a name="embed-the-flow-experience-into-your-website-or-app"></a>Inserción de la experiencia de flujo en un sitio web o una aplicación
 
-Puede [insertar](embed-flow-dev.md) Microsoft Flow en su aplicación para habilitar la integración profunda y en contexto entre la aplicación y el resto de servicios que admite Microsoft Flow. Por ejemplo, puede:
+Puede [insertar](developer/embed-flow-dev.md) Microsoft Flow en su aplicación para habilitar la integración profunda y en contexto entre la aplicación y el resto de servicios que admite Microsoft Flow. Por ejemplo, puede:
 
 * Examinar todas las plantillas relacionadas con el servicio y que permiten que el usuario seleccione una plantilla.
 * Administrar los flujos que los usuarios han relacionado con su aplicación.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Obtenga información sobre cómo [insertar](embed-flow-dev.md) Microsoft Flow en su aplicación.
+Obtenga información sobre cómo [insertar](developer/embed-flow-dev.md) Microsoft Flow en su aplicación.
