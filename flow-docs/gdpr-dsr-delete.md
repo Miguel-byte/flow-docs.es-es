@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
-ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
+ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175141"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520086"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Respuesta a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -73,7 +73,7 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 
 *Con la introducción de Common Data Service for Apps, si se crea una base de datos dentro del entorno, los permisos del entorno y los permisos de aplicaciones controlados por modelo se almacenan como registros dentro de la instancia de la base de datos de Common Data Service for Apps. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
 
-\*\*Un administrador solo podrá obtener acceso a estos recursos desde el portal de creador de Microsoft Flow si el administrador le asignado acceso desde el centro de administración de Microsoft Flow.
+\*\* Un administrador solo podrá acceder a estos recursos desde el portal de creador de Microsoft Flow si el administrador le asignado acceso desde el Centro de administración de Microsoft Flow.
 
 ## <a name="manage-delete-requests"></a>Administración de las solicitudes de eliminación
 

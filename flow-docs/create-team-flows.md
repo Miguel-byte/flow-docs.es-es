@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2017
 ms.author: deonhe
-ms.openlocfilehash: d4e8de2f9f67c07861297e079948a5336ff66e7f
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: ec7801f249ce4f3a1e33a6092726a6574a2e6d4c
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439693"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520017"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
 Cree un flujo de equipo mediante la adición de otros usuarios de su organización como propietarios. Todos los propietarios de un flujo de equipo pueden realizar estas acciones:
@@ -64,6 +64,10 @@ Siga estos pasos para crear un flujo de equipo o para agregar más propietarios 
     ![nuevo propietario](./media/create-team-flows/addowner4.png)
    
      Ya se ha creado el flujo del equipo.
+
+##<a name="add-a-list-as-a-co-owner"></a>Agregar una lista como copropietario
+
+Puede agregar listas de SharePoint como copropietario a un flujo para que todos los usuarios con acceso de edición a la lista obtengan automáticamente acceso de edición para el flujo. Una vez que se haya compartido el flujo, solo tendrá que distribuir un vínculo que dirija a este.
 
 ## <a name="remove-an-owner"></a>Eliminación de un propietario
 > [!IMPORTANT]

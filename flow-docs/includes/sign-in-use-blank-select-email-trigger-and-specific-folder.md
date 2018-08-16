@@ -1,8 +1,8 @@
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com) y seleccione la pestaña **Mis flujos**.
 2. Seleccione **Crear desde cero**.
    
-    ![flujo en blanco](media/email-triggers/email-triggers-create-blank.png)
+    ![Flujo en blanco](media/email-triggers/email-triggers-create-blank.png)
 3. Busque "correo electrónico" y, después, seleccione **Office 365 Outlook - Cuando llega un correo electrónico nuevo** en la lista de desencadenadores. Este desencadenador se ejecuta cada vez que llega un correo electrónico.
    
-    ![buscar correo electrónico](media/email-triggers/email-triggers-1.png)
+    ![Buscar correo electrónico](media/email-triggers/email-triggers-1.png)
 

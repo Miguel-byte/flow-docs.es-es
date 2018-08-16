@@ -7,7 +7,8 @@
     ![desencadenador de correo electrónico](media/email-triggers/email-triggers-1.png)
 4. Seleccione la carpeta que desea que el flujo supervise los correos electrónicos entrantes y, después, seleccione **Mostrar opciones avanzadas**.
    
-     Nota: Para mostrar todas las carpetas de correo electrónico, seleccione el icono **Mostrar selector**, que se encuentra a la derecha del cuadro **Carpeta** en la tarjeta **Cuando llega un correo electrónico nuevo**.
+     >[!NOTE]
+     > Para mostrar todas las carpetas de correo electrónico, seleccione el icono **Mostrar selector**, que se encuentra a la derecha del cuadro **Carpeta** en la tarjeta **Cuando llega un correo electrónico nuevo**.
    
     ![propiedad de carpeta](media/email-triggers/email-triggers-subject-folder.png)
 
