@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 06/19/2018
 ms.author: stepsic
-ms.openlocfilehash: 0595fa9113d85c6517392149f510a3a11df36061
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+ms.openlocfilehash: dcdd82b358737867372c1adece907158fa2ee77b
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519879"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774234"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Límites y configuración en Microsoft Flow
 Este tema contiene información sobre los límites actuales y detalles de la configuración de flujos.
@@ -46,7 +46,9 @@ Límites para una única solicitud saliente.
 
 | Nombre | Límite |
 | --- | --- |
-| Número de reintentos |4 |
+| Número de reintentos |90 | El valor predeterminado es 4. Para cambiar el valor predeterminado, use la configuración de la acción | 
+| Reintentar retraso máximo |1 día | |
+| Reintentar retraso mínimo |5 segundos | |
 
 ## <a name="run-duration-and-retention"></a>Duración y retención de la ejecución
 Estos son los límites de una sola ejecución de flujo.
@@ -64,10 +66,12 @@ Estos son los límites de una sola ejecución de flujo.
 
 | Nombre | Límite | Notas |
 | --- | --- | --- |
-| Elementos para ForEach |5000 |Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
+| Aplicar a cada elemento |100 000 |100 000 solo está disponible para los planes premium. De lo contrario, tiene un límite de 5000. Puede usar la acción de filtrado para filtrar matrices de mayor tamaño según sea necesario. |
 | Iteraciones Until |5000 | |
-| Elementos de SplitOn |5000 | |
-| Paralelismos para ForEach |1 | |
+| Elementos de SplitOn |100 000 |Al igual que en el caso de Aplicar a cada uno, el límite será de 5000 a menos que su plan sea premium. |
+| Aplicar a cada paralelismo |50 |De forma predeterminada, los bucles se ejecutan en secuencia (básicamente, el paralelismo es 1). Puede configurar hasta 50 en paralelo. |
+| Ejecuciones de acciones cada 5 minutos | 100 000 | Además, puede distribuir una carga de trabajo por más de un flujo según sea necesario. |
+| Llamadas salientes simultáneas de acciones | ~2500 | Reduzca la cantidad de solicitudes simultáneas o la duración según sea necesario. | 
 
 ## <a name="definition-limits"></a>Límites de definición
 Estos son los límites de un solo flujo.

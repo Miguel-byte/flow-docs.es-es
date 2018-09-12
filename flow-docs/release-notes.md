@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/04/2018
+ms.date: 07/21/2018
 ms.author: stepsic
-ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
-ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
+ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755584"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774259"
 ---
 # <a name="release-notes"></a>Notas de la versión
 ## <a name="top-questions"></a>Preguntas importantes
@@ -45,6 +45,35 @@ ms.locfileid: "34755584"
 3. Los desencadenadores de archivo no se activarán para los archivos que se agreguen dentro de carpetas anidadas dentro de la carpeta que seleccione.
 
 ## <a name="whats-new"></a>Novedades
+
+### <a name="release-2018-07-23"></a>Versión 2018-07-23
+
+- **Compilación y ejecución de flujos desde Excel**: con el botón **Flujo** (al que se obtiene acceso desde la pestaña **Datos** de la cinta), puede crear y desencadenar automatizaciones desde Flujo en sus datos de tabla en Excel. Automatice el procesamiento de datos o el copiado o la importación de datos.
+- **Creación de un flujo de proceso de negocio**: un flujo de proceso de negocio es un nuevo tipo de flujo con estado y de interacción humana basado en Common Data Service para aplicaciones. Utilice estos nuevos flujos para definir un conjunto de fases y pasos que sigan los usuarios. Pueden avanzar y retroceder según sea necesario.
+- **Creación de un flujo para Microsoft To-Do en Outlook Web App** : si se \@menciona a alguien en Outlook Web App, verá un acceso directo para crear un flujo. Este flujo crea tareas automáticamente para la \@persona mencionada en Microsoft To-Do, basadas en el contenido del correo electrónico.
+- **Compatibilidad con vistas de SharePoint**: ahora, el conector SharePoint admite la selección de una vista de SharePoint específica en desencadenadores y acciones. Esto filtra las columnas a solo los campos que se encuentran en la vista seleccionada.
+- **Cuatro nuevos conectores**: Azure IoT Central agregado (una solución de software como servicio (SaaS) de IoT de alta escalabilidad), Survey 123, LMS365 y ProjectWise Design Integration.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/) acerca de esta versión.
+
+### <a name="release-2018-06-29"></a>Versión 2018-06-29
+
+- **Solicitud de flujo de aprobación creado en SharePoint**: al seleccionar un archivo o elemento en SharePoint, verá un nuevo flujo **Solicitar aprobación**. Este flujo no requiere configuración o instalación alguna y envía una solicitud de aprobación con un solo clic.
+- **Dos nuevos conectores**: Cloud Connect Studio y PoliteMail agregados.
+- **Mejoras en el historial y la página de creación**: estamos actualizando el historial de ejecución incluyendo tiempos de ejecución exactos y la página de creación agregando un nuevo vídeo tutorial.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/request-sign-off-four-connectors/) acerca de esta versión.
+
+### <a name="release-2018-06-08"></a>Versión 2018-06-08
+
+- **Cmdlets de PowerShell**: ahora, tanto los creadores de flujo como los administradores de inquilinos pueden usar PowerShell para administrar sus flujos mediante programación.
+- **Mejoras en el bot de flujo de Teams**: el bot de flujo en Microsoft Teams puede ejecutar botones de flujo y describir sus flujos.
+- **Tres nuevos conectores**: compatibilidad agregada con Marketo, ElasticOCR y DynamicSignal. 
+- **Información de uso compartido adicional**: información adicional agregada al compartir flujos (o ejecutar flujos compartidos) para que sepa exactamente qué permisos van a recibir otras personas.
+- **Direcciones URL de SharePoint de recorte automático**: al copiar y pegar una dirección URL de SharePoint en el explorador que puede incluir texto adicional más allá del sitio, este texto se quitará automáticamente para que pueda conectarse únicamente al sitio.
+- **Documentación sobre solicitudes de RGPD**: hemos creado una guía y un conjunto de herramientas completos para que las organizaciones empresariales gestionen las solicitudes de derechos del interesado.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/) acerca de esta versión.
 
 ### <a name="release-2018-05-21"></a>Versión 21-05-2018
 
