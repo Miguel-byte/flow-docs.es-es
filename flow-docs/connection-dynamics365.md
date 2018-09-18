@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: ffce0a2fcc77d2bf2ff132e589410cc032bf63fd
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 9a054ab8179d4c2a06cbab95cd2633088bbf7458
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519902"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727214"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
@@ -28,7 +33,7 @@ Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuand
 En Microsoft Flow se pueden configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones y recopilar datos, entre otras operaciones. Para más información, consulte [Introducción a Microsoft Flow](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar un desencadenador de flujos, la entidad de compromiso del cliente de Dynamics 365 utilizada con el flujo en cuestión debe tener activada la opción **Seguimiento de cambios**. Para obtener más información, consulte [Habilitación del seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
+> Para invocar un desencadenador de flujos, la entidad de compromiso del cliente de Dynamics 365 utilizada con el flujo en cuestión debe tener activada la opción **Seguimiento de cambios**. Para obtener más información, consulte [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
 
 ## <a name="create-a-flow-from-a-template"></a>Creación de un flujo desde una plantilla
 Para crear un flujo se puede utilizar una de las muchas plantillas disponibles, como en estos ejemplos:
@@ -56,7 +61,7 @@ Si no hay una plantilla disponible para lo que necesita, cree un flujo desde el 
      Para este tutorial, seleccione **Leads**.
    
     ![Detalles del flujo](./media/connection-dynamics365/flow-details.png)
-    > [IMPORTANTE] Para que el flujo se pueda desencadenar en la entidad de Dynamics 365, la definición de esta debe tener habilitado el seguimiento de cambios. Consulte [Habilitación del seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization).
+    > [IMPORTANTE] Para que el flujo se pueda desencadenar en la entidad de Dynamics 365, la definición de esta debe tener habilitado el seguimiento de cambios. Consulte [Habilitación del seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization).
     
 7. Haga clic o pulse **Nuevo paso** y, después, **Agregar una acción**.
 8. Haga clic o pulse **Dynamics 365 – Al crear un registro**.

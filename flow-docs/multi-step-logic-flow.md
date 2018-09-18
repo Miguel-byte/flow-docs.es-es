@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
-ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 9dd2aed8b8cdb1f0a8e673c5466291f60baaf41d
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23442123"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689396"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Agregar varias acciones y opciones avanzadas a un flujo
 Para personalizar un flujo, agregue una o varias opciones avanzadas y varias acciones al mismo desencadenador. Por ejemplo, agregue una opción avanzada que envíe un mensaje de correo electrónico con prioridad alta. Además de enviar correo cuando se agrega un elemento a una lista de SharePoint, cree un archivo en Dropbox que contenga la misma información.

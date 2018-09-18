@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 2804c683defb94f87c40452a27382bc143c11f10
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 77b46d10ec3856054dcc8e1734b327bac9a01596
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23442267"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690354"
 ---
 # <a name="share-button-flows-in-microsoft-flow"></a>Compartir flujos de botones en Microsoft Flow
 En la aplicación móvil Microsoft Flow, puede compartir [flujos de botones](introduction-to-button-flows.md) (botones) con otros usuarios o grupos de su organización. Cuando se comparte un botón, la persona o grupo con quien se haga puede ejecutarlo de la misma forma que sus propios botones. También puede [compartir un vínculo](share-buttons.md#re-share-a-button) a los botones que otra persona ha compartido con usted. Los botones se pueden [dejar de compartir](share-buttons.md#stop-sharing-a-button) en cualquier momento.

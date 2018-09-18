@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
-ms.openlocfilehash: c021f4fee692863bdeaa71d2d49901fbb603aa31
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 94af3389301f40aa5caaa46eda98c8b1c9be0228
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519971"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689810"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Desencadenamiento de un flujo basado en las propiedades del correo electrónico
 Use el desencadenador **Cuando llega un correo electrónico nuevo** para crear un flujo que se ejecuta cuando una o varias de las propiedades de correo electrónico que se indican a continuación coinciden con los criterios que ha proporcionado:

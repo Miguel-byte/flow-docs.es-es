@@ -15,12 +15,16 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/09/2017
 ms.author: litran
-ms.openlocfilehash: 41d53a6f7382365dfcabbc98a2fa362d465720fa
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- developer
+ms.openlocfilehash: ac71b9b2d991496121d910e9e74b83e69d74c098
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39720078"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689511"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>Permitir a los clientes la realización de pruebas de los flujos en AppSource
 ¿Desea mostrar cómo se integra la aplicación con Microsoft Flow? Ya están disponibles las soluciones Test Drive en [AppSource.com](https://appsource.microsoft.com) como una manera de compartir la integración de Microsoft Flow con clientes y generar clientes potenciales para su empresa.

@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39520086"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727191"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Respuesta a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -276,7 +281,7 @@ Con la introducción de Common Data Service for Apps, si se crea una base de dat
 Para obtener más información acerca de cómo quitar el permiso de un usuario en un entorno, vaya a [Uso de entornos en Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## <a name="delete-gateway-settings"></a>Eliminar la configuración de puerta de enlace
-Las respuestas a las solicitudes de eliminación del interesado para puertas de enlace de datos locales se pueden encontrar [aquí](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+Las respuestas a las solicitudes de eliminación del interesado para puertas de enlace de datos locales se pueden encontrar [aquí](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## <a name="delete-user-details"></a>Eliminar los detalles del usuario
 Los detalles del usuario ofrecen una vinculación entre un usuario y un inquilino específico. Antes de ejecutar este comando, asegúrese de que se hayan reasignado o eliminado todos los flujos de este usuario. Una vez que se haya completado esto, un administrador puede eliminar los detalles del usuario mediante una llamada al cmdlet **Remove-AdminFlowUserDetails** y pasar el identificador de objeto para el usuario.

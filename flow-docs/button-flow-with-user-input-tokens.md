@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34308726"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689971"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Presentación de los flujos de botones con entradas del usuario
 Cree un flujo de botón para ejecutar tareas rutinarias simplemente con pulsar un botón. Para personalizar un flujo, permita al usuario proporcionar detalles específicos que se usarán al ejecutarlo. Este tema le guía a través de la creación de un flujo de botón que usa las entradas de los usuarios y, después, la ejecución del flujo de botón, y resalta cómo proporcionar la entrada del usuario.
