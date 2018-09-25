@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4746fa74911126f3e23ed009dd109a2766dae12a
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690937"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711620"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introducción a los tokens de desencadenadores de botones
 ## <a name="what-are-button-trigger-tokens"></a>¿Qué son los tokens de desencadenadores de botones?
@@ -97,6 +97,4 @@ Enhorabuena, ha creado un flujo de botones que utiliza los tokens de desencadena
 
 ## <a name="next-steps"></a>Pasos siguientes
 * [Compartir flujos de botones](share-buttons.md)
-* [Más información sobre los flujos de botones](introduction-to-button-flows.md)  
-* [Más información sobre los flujos](guided-learning/get-started.yml?tutorial-step=1)
-
+* [Más información sobre los flujos de botones](introduction-to-button-flows.md)
