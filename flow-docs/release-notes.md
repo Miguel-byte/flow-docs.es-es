@@ -13,14 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
-ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "43774259"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727260"
 ---
 # <a name="release-notes"></a>Notas de la versión
 ## <a name="top-questions"></a>Preguntas importantes
@@ -45,6 +50,29 @@ ms.locfileid: "43774259"
 3. Los desencadenadores de archivo no se activarán para los archivos que se agreguen dentro de carpetas anidadas dentro de la carpeta que seleccione.
 
 ## <a name="whats-new"></a>Novedades
+
+### <a name="release-2018-08-31"></a>Versión del 31-08-2018
+
+- **Probar el flujo con datos de ejemplo**: use los datos de ejemplo de conectores para probar el flujo a medida que lo compila desde el diseñador de Microsoft Flow. Cuando pruebe el flujo con datos de ejemplo, confirme que el flujo se ejecutará según lo esperado cuando se implemente en producción.
+- **Cinco nuevos conectores**: hemos agregado cinco nuevos conectores de administración: PowerApps para creadores de aplicaciones, Power Platform para administradores, PowerApps para administradores, Microsoft Flow para administradores y Microsoft School Data Sync.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/test-data-management-connectors/) acerca de esta versión.
+
+### <a name="release-2018-08-24"></a>Versión del 24-08-2018
+
+- **Nuevas plantillas de sincronización de calendario**: nuevas plantillas que copian eventos entre Google Calendar y Office 365 u Outlook.com.
+- **Compatibilidad con varios valores para SharePoint**: lectura y escritura para campos de varios valores en SharePoint, que son los tipos Elección, Persona o Búsqueda.
+- **Enviar aprobaciones en nombre de otros usuarios de la organización**: envíe aprobaciones en nombre de otros usuarios de la organización, como por ejemplo, la persona que cargó el archivo en la lista de SharePoint, en lugar de la persona que creó el flujo.
+- **Más tipos de entrada de botón**: los botones tienen dos nuevos tipos de entrada: Número y Sí/No.
+- **Actualizaciones de conector**: Un nuevo conector de NetDocuments, mejoras en los conectores de Azure y mucho más.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/button-types-more/) acerca de esta versión.
+
+### <a name="release-2018-08-02"></a>Versión del 02-08-2018
+
+El programa de versión preliminar de Microsoft Flow es la manera de acceder con antelación a las actualizaciones y nuevas funciones de Microsoft Flow. Para tener acceso anticipado a las características más recientes, solo tiene que crear y, después, usar un entorno en la región de versión preliminar.
+
+[Obtenga más información y envíe sus preguntas](https://flow.microsoft.com/blog/flow-preview-program/) acerca de esta versión.
 
 ### <a name="release-2018-07-23"></a>Versión 2018-07-23
 

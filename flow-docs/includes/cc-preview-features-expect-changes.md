@@ -1,0 +1,1 @@
+Se esperan cambios en esta característica, por lo que no debería usarla en entorno de producción. Úsela únicamente en entornos de prueba y desarrollo.

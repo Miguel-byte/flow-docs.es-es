@@ -1,16 +1,6 @@
 ---
 title: Uso de expresiones con condiciones. | Microsoft Docs
-description: 'Uso de expresiones avanzadas como '
-"\"and\"\",": ''
-"\"\"or\"\",": ''
-"\"\"empty\"\",": ''
-"\"\"less\"\"": ''
-and: ''
-"\"\"greater\"\"": ''
-with: ''
-microsoft: ''
-flow: ''
-conditions.": ''
+description: Usar expresiones avanzadas como "and", "or", "empty", "less" y "greater" con las condiciones de Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -25,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/01/2017
 ms.author: deonhe
-ms.openlocfilehash: 3a089735cc2d8c9144e18a2765b549b528470d1e
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
+ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "31008646"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874446"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Uso de expresiones en condiciones para comprobar varios valores
 En este tutorial, aprenderá a utilizar expresiones y **condiciones** para comparar varios valores en **modo avanzado**.
@@ -49,7 +44,7 @@ Expresión|Descripción|Ejemplo
 |[greater](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
 |greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Devuelve true si el objeto, matriz o cadena están vacíos.|Esta expresión devuelve true:<br>empty('')
-|not|Toma dos argumentos y devuelve true si los argumentos son false. <br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
+|not|Devuelve el opuesto de un valor booleano. |Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
 |if|Devuelve un valor específico si el resultado de la expresión es true o false.|Esta expresión devuelve "yes":<br>if(equals(1, 1), 'yes', 'no')
 
 ## <a name="prerequisites"></a>Requisitos previos

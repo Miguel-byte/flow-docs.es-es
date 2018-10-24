@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: af179e30c3b8b7c6d4200f10f122f0d928526f1b
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39718313"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711666"
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ## <a name="audience-and-strategy"></a>Destinatarios y estrategia
@@ -43,8 +48,23 @@ Microsoft Flow forma parte de una plataforma de aplicaciones empresariales efica
 ### <a name="what-do-i-need-to-use-microsoft-flow"></a>¿Qué se necesita para usar Microsoft Flow?
 Lo único que necesita para usar Microsoft Flow es un explorador web y una dirección de correo electrónico.
 
-### <a name="what-browsers-does-microsoft-flow-support"></a>¿Qué exploradores admite Microsoft Flow?
-Microsoft Flow admite Microsoft Edge y las versiones actuales de Chrome y Safari.
+### <a name="what-browsers-and-devices-can-i-use-with-microsoft-flow"></a>¿Qué exploradores y dispositivos puedo usar con Microsoft Flow?
+
+Microsoft Flow se puede ejecutar en todos los exploradores y dispositivos modernos.
+
+#### <a name="supported-devices"></a>Dispositivos compatibles
+
+Microsoft Flow funciona perfectamente en los dispositivos modernos. Si necesita administrar Microsoft Flow desde un dispositivo móvil, pruebe la aplicación Microsoft Flow para móviles, que está disponible en [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) y [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+
+#### <a name="supported-browsers"></a>Exploradores compatibles
+
+Se recomienda que use el explorador más reciente que sea compatible con el sistema operativo. Se admiten estos exploradores:
+
+* Microsoft Edge
+* Internet Explorer 11
+* Safari
+* Chrome
+* Firefox
 
 ### <a name="which-email-addresses-are-supported"></a>¿Qué direcciones de correo electrónico se admiten?
 Microsoft Flow admite direcciones de correo electrónico que tengan cualquier terminación, excepto .gov y .mil.  
@@ -125,6 +145,10 @@ Microsoft Flow es el sucesor de SharePoint Designer para muchos escenarios empre
 ### <a name="how-does-microsoft-flow-ensure-that-corporate-data-isnt-accidentally-released-to-social-media-services"></a>¿Cómo garantiza Microsoft Flow que no se publiquen accidentalmente datos corporativos en las redes sociales?
 Los administradores pueden crear [directivas de prevención de pérdida de datos](prevent-data-loss.md) para asegurarse de que solo se puedan utilizar los servicios autorizados en Microsoft Flow.
 
+### <a name="does-microsoft-flow-support-service-accounts"></a>¿Las cuentas de servicio son compatibles con Microsoft Flow?
+
+Aunque puede crear flujos con una cuenta de servicio, no se recomienda hacerlo si se comparten las credenciales para la cuenta de servicio.
+
 ## <a name="licensing"></a>Licencias
 ### <a name="will-microsoft-flow-still-have-a-free-or-trial-option"></a>¿Microsoft Flow sigue teniendo una opción gratuita o de evaluación?
 Sí. Puede usar una oferta gratuita con derechos de usuario limitados, o bien puede registrarse para obtener una evaluación gratuita de 90 días de Microsoft Flow. La suscripción se puede activar en cualquier momento del periodo de evaluación.
@@ -134,5 +158,5 @@ Microsoft Flow ofrece niveles de servicio gratuito y de pago. [Más información
 
 ## <a name="learn-more"></a>Más información
 
-* Realice un [paseo por el aprendizaje guiado](guided-learning/index.yml) de Microsoft Flow
+* Realice un [paseo por el aprendizaje guiado](https://docs.microsoft.com/learn/paths/automate-process-using-flow) de Microsoft Flow
 * Obtenga información sobre los conceptos básicos de Microsoft Flow en la [guía de introducción](getting-started.md)

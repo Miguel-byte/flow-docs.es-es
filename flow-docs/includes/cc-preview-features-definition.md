@@ -1,0 +1,1 @@
+Las características en vista previa (GB) no están pensadas para usarlas en el entorno de producción y su funcionalidad puede estar restringida. Estas características están disponibles antes de una versión oficial para que los clientes puedan obtener acceso anticipado y proporcionar comentarios.
