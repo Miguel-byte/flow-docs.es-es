@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 94c38a54fec91e6a480cd90d0a72f19ca56ae51c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689534"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51225549"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Procedimientos recomendados para los procesos de flujo de trabajo
 
@@ -61,7 +61,7 @@ Para los flujos de trabajo que no se ejecutan en segundo plano (sincrónicos), s
 ![Conservación de registros para la opción de flujos de trabajo con errores](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Límite del número de flujos de trabajo que actualizan la misma entidad
-La ejecución de más de un flujo de trabajo que actualiza la misma entidad puede causar problemas de bloqueo de recursos. Imagine varios flujos de trabajo en ejecución donde todas las actualizaciones de oportunidad desencadenan una actualización de la cuenta asociada. Si varias instancias de estos flujos de trabajo ejecutan e intentan actualizar el mismo registro de cuenta al mismo tiempo, pueden provocar problemas de bloqueo de recursos. Se producen errores de flujo de trabajo y se registra un mensaje de error, como **Se ha agotado el tiempo de espera de SQL: No se puede obtener un bloqueo en el recurso *nombre del recurso***. 
+La ejecución de más de un flujo de trabajo que actualiza la misma entidad puede causar problemas de bloqueo de recursos. Imagine varios flujos de trabajo en ejecución donde todas las actualizaciones de oportunidad desencadenan una actualización de la cuenta asociada. Si varias instancias de estos flujos de trabajo ejecutan e intentan actualizar el mismo registro de cuenta al mismo tiempo, pueden provocar problemas de bloqueo de recursos. Se producen errores de flujo de trabajo y se registra un mensaje de error, como **Se ha agotado el tiempo de espera de SQL: No se puede obtener un bloqueo en el recurso _nombre del recurso_**. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
