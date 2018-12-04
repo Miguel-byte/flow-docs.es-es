@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "44691075"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Uso de flujos de proceso de negocio con código
@@ -354,7 +354,7 @@ De forma predeterminada, para una entidad que tiene varios flujos de proceso de 
 1. Se identifican todos los flujos de proceso de negocio aplicables para el registro de entidad nuevo en función del atributo **Workflow.PrimaryEntity** de los registros de definición de flujo de proceso de negocio.
 2. Se identifican las definiciones de flujo de proceso de negocio a las que el usuario actual tiene acceso. Para obtener información sobre cómo se determina y administra el acceso a un flujo de proceso de negocio, vea [Administración de la seguridad para los flujos de proceso de negocio](#BPFSecurity) anteriormente en este tema.<br/>  
 3. Todas las definiciones de flujo de proceso de negocio del sistema están sujetas a un orden global por entidad. El orden del flujo de proceso de negocio se almacena en el atributo **Workflow.ProcessOrder**. Las definiciones de flujo de proceso de negocio de una entidad se ordenan en función de este orden, y se elige la que tenga el valor de orden menor.
-4. Por último, si el registro de entidad se crea a partir de una aplicación empresarial (módulo de aplicación), se aplica un nivel más de filtrado para seleccionar el flujo de proceso de negocio que se va a aplicar de forma automática al nuevo registro de entidad. Cuando se trabaja en una aplicación, los usuarios solo pueden acceder a las entidades relevantes, flujos de proceso de negocio, vistas y formularios a los que tienen acceso en virtud de los roles de seguridad asignados a la aplicación empresarial. 
+4. Por último, si el registro de entidad se crea a partir de una aplicación empresarial (módulo de aplicación), se aplica un nivel más de filtrado para seleccionar el flujo de proceso de negocio que se va a aplicar de forma automática al nuevo registro de entidad. Cuando se trabaja en una aplicación, los usuarios solo pueden acceder a las entidades relevantes, flujos de proceso de negocio, vistas y formularios a los que tienen acceso en virtud de los roles de seguridad asignados a la aplicación empresarial. 
     - Si la aplicación empresarial no contiene ningún flujo de proceso de negocio, el flujo de proceso de negocio se aplica como se ha explicado hasta el paso 3.
     - Si la aplicación empresarial tiene uno o más flujos de proceso de negocio, solo serían aplicables los que estén presentes en la aplicación. En este caso, cuando el usuario está trabajando dentro de un contexto de aplicación empresarial, la lista de flujos de proceso de negocio del paso 3 se filtra hasta los que forman parte de la aplicación empresarial que están presentes dentro del módulo de aplicación, y se ordenan en función del orden de los procesos. 
     - Si no hay ningún flujo de proceso de negocio disponible en una aplicación empresarial para la entidad, o bien uno al que el usuario tenga acceso, no se aplica ningún flujo de proceso de negocio al nuevo registro de entidad.
