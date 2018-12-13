@@ -5,7 +5,7 @@ Para aprobar una solicitud:
 ### <a name="from-email"></a>Desde el correo electrónico
 1. Seleccione **Aprobar** en el correo electrónico que recibe cuando se agrega un elemento a la lista de SharePoint Online.
    
-     Nota: Si usa un dispositivo móvil con la aplicación Microsoft Flow instalada, inicie la aplicación Microsoft Flow; de lo contrario, el centro de aprobaciones se abre en el explorador.
+     Nota: Si usa un dispositivo móvil con la aplicación Microsoft Flow instalada, esta se iniciará; de lo contrario, el centro de aprobaciones se abrirá en el explorador.
    
     ![correo electrónico de solicitud](media/modern-approvals/email-approval-request.png)
 2. Escriba un comentario y, después, seleccione el botón **Confirmar**.
@@ -35,5 +35,5 @@ Para aprobar una solicitud:
    
     ![página correcta](media/modern-approvals/mobile-approval-confirmation.png)
 
-Nota: En Android, iOS y Windows Phone, las pantallas pueden diferir ligeramente; sin embargo, la funcionalidad es la misma en todos los dispositivos.
+Nota: En Android, iOS y Windows Phone, las pantallas pueden diferir ligeramente, pero la funcionalidad es la misma en todos los dispositivos.
 

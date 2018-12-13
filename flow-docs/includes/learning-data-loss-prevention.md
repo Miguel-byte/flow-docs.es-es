@@ -19,7 +19,7 @@ Una directiva DLP simplemente es una regla con nombre que coloca cada servicio e
 | **Business data only** |Todos los servicios de este grupo pueden compartir datos entre ellos. No pueden compartir datos con el grupo de datos **no business data allowed**. |
 | **No Business data allowed** |Todos los servicios de este grupo pueden compartir datos entre ellos. No pueden compartir datos con el grupo de datos **business data only**. |
 
-**Nota**: Al agregar automáticamente un servicio al grupo de datos, se quita del otro grupo. Por ejemplo, si actualmente Twitter está en el grupo de datos **business data only** y no desea permitir que los datos empresariales se compartan con Twitter, basta con agregar el servicio Twitter al grupo **no business data allowed**. Así se quita Twitter del grupo de datos **business data only**.
+**Nota**: Al agregar un servicio a un grupo de datos, automáticamente se quita del otro grupo de datos. Por ejemplo, si actualmente Twitter está en el grupo de datos **business data only** y no desea permitir que los datos empresariales se compartan con Twitter, basta con agregar el servicio Twitter al grupo **no business data allowed**. Así se quita Twitter del grupo de datos **business data only**.
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>Qué se necesita para crear una DLP
 * Acceso al [centro de administración](https://admin.flow.microsoft.com) de Microsoft Flow  

@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: 1283d9d0a8e7f2b9b0495400c5db1f624ef91954
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "44691075"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007010"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Uso de flujos de proceso de negocio con código
 
@@ -46,7 +46,7 @@ Para habilitar una entidad para el flujo de proceso de negocio, establezca la pr
 <a name="DefineBPF"></a>   
 ## <a name="define-business-process-flow"></a>Definición de un flujo de proceso de negocio
   
-Use el diseñador visual de flujos de proceso de negocio para definir un flujo de proceso de negocio. Más información: [Creación de un flujo de proceso de negocio](../create-business-process-flow.md)
+Use el diseñador visual de flujos de proceso de negocio para definir un flujo de proceso de negocio. Más información: [Crear un flujo de proceso de negocio](../create-business-process-flow.md)
 
 De forma predeterminada, un registro de flujo de proceso de negocio se crea en el estado `Draft`.  
 
@@ -65,7 +65,7 @@ La definición de un flujo de proceso de negocio se almacena en la entidad <xref
   
  Por ejemplo, si especifica "Mi FPN personalizado" como el nombre de la definición de flujo de proceso de negocio y usa el publicador predeterminado (nuevo) para la solución activa, el nombre de la entidad personalizada que se crea para almacenar las instancias del proceso será "new_mi fpnpersonalizado".  
   
- Si el valor `uniquename` no está disponible para una definición de flujo de proceso de negocio, por ejemplo, si el flujo de proceso de negocio se ha importado como parte de la solución desde una versión anterior, el nombre predeterminado de la entidad personalizada será "*\<prefijo_de_la_solución_activa>*\_bpf\_*<GUID_de_la_definición_de_FPN>*:  
+ Si el valor `uniquename` no está disponible para una definición de flujo de proceso de negocio, por ejemplo, si el flujo de proceso de negocio se ha importado como parte de la solución desde una versión anterior, el nombre predeterminado de la entidad personalizada será "`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`":  
   
 > [!IMPORTANT]
 >  Los registros de flujo de proceso de negocio de ejemplo usan las entidades del sistema para almacenar los registros de instancia de flujo de proceso de negocio correspondientes.  
@@ -74,10 +74,10 @@ La definición de un flujo de proceso de negocio se almacena en la entidad <xref
 
 Puede recuperar el nombre de la entidad de flujo de proceso de negocio mediante cualquiera de las maneras siguientes:
 
-- **Mediante la interfaz de usuario**: use la interfaz de usuario de personalización para ir a la entidad de flujo de proceso de negocio:
+- **Mediante la UI**: Use la interfaz de usuario de personalización para ir a la entidad de flujo de proceso de negocio:
 
     ![](media/bpf-entity-name.png)
-- **Mediante la API web**: use la solicitud siguiente:
+- **Mediante la API web**: Use la siguiente solicitud:
 
     **Solicitud**
 
@@ -97,8 +97,8 @@ Puede recuperar el nombre de la entidad de flujo de proceso de negocio mediante 
          }
       ]
     }
-
-- **Using the Organization service**: Use the following code sample:
+    ```
+- **Mediante el servicio de organización**: Use el siguiente ejemplo de código:
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -119,35 +119,35 @@ Puede recuperar el nombre de la entidad de flujo de proceso de negocio mediante 
         }
     };
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
-
+    ```
 > [!NOTE]
-> The <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> property is `true` for business process flow entities. You can retrieve all the business process flow entities in your instance by running the following Web API request:
+> La propiedad <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> es `true` para entidades de flujo de proceso de negocio. Puede recuperar todas las entidades de flujo de proceso de negocio de la instancia ejecutando la siguiente solicitud de la API web:
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## Manage security for business process flows
+## <a name="manage-security-for-business-process-flows"></a>Administración de la seguridad de flujos de proceso de negocio
 
-The custom entity that is automatically created on activating a business process flow to store business process flow instances adheres to the standard security model as for any other custom entity in Customer Engagement. This implies that privileges granted on these entities define the runtime permissions for users for business process flows.
+La entidad personalizada que se crea automáticamente al activar un flujo de proceso de negocio para almacenar instancias de flujo de proceso de negocio se ajusta al modelo de seguridad estándar del mismo modo que para cualquier otra entidad personalizada de Customer Engagement. Esto implica que los privilegios concedidos en estas entidades definen los permisos de runtime de los usuarios para los flujos de proceso de negocio.
 
-The custom business process flow entity has organization scope. The regular create, retrieve, update and delete privileges on this entity define the permission the user would have based on his/her assigned roles. By default, when the business process flow custom entity is created, only **System Administrator** and **System Customizer** security roles are granted access to it, and you must explicitly grant permissions to the new business process flow entity (for example, **My Custom BPF**) for other security roles as required.
+La entidad de flujo de proceso de negocio personalizada tiene el ámbito de la organización. Los privilegios de creación, recuperación, actualización y eliminación normales de esta entidad definen los permisos que tendría el usuario en función de sus roles asignados. De forma predeterminada, cuando se crea la entidad de flujo de proceso de negocio personalizada, solo los roles de seguridad **Administrador del sistema** y **Personalizador del sistema** tienen acceso a esta. Además, deberá conceder explícitamente permisos para la nueva entidad de flujos de proceso de negocio (por ejemplo, **Mi FPN personalizado**), a otros roles de seguridad según sea necesario.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## Create, retrieve, update, and delete business process flow entity records (process instances)  
- The custom entity that is automatically created on activating a business process flow definition stores all the process instances for the business process flow definition. The custom entity supports the standard programmatic creation and management of records (process instances) using Web API and CRM 2011 endpoint.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Creación, recuperación, actualización y eliminación de registros de entidades de flujo de proceso de negocio (instancias de proceso)  
+ La entidad personalizada que se crea automáticamente al activar una definición de flujo de proceso de negocio almacena todas las instancias de la definición de flujo de proceso de negocio. La entidad personalizada admite la creación mediante programación estándar y la administración de registros (instancias de proceso) mediante la API web y el punto de conexión de CRM 2011.
 
 > [!IMPORTANT]
-> Switching to another process instance for an entity record is only supported through UI (client) or programmatically using information available in this section. You can no longer use the `SetProcess` message (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> or <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) to programmatically switch processes (set another business process flow as the active process instance) for the target entity record. 
+> El cambio a otra instancia de proceso desde un registro de entidad solo se admite mediante la interfaz de usuario (cliente) o mediante programación siguiendo la información disponible en esta sección. Ya no puede usar el mensaje `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> o <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) para cambiar procesos mediante programación (establecer otro flujo de proceso de negocio como instancia de proceso activa) en el registro de entidad de destino. 
 
- Lets consider the following example where we have a cross-entity business process flow, "My Custom BPF," with 3 stages: S1:Account, S2:Account, and S3:Contact. 
+ Pongamos como ejemplo un flujo de proceso de negocio de varias entidades, "Mi FPN personalizado", que cuenta con 3 fases: Cuenta, Cuenta y Contacto. 
 
  ![](media/sample-bpf.png)
  
-### Retrieve all the records (instances) for a business process flow entity
- If the name of your business process flow entity is "new_mycustombpf", use the following query to retrieve all the records (process instances) for your business process flow entity:  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Recuperación de todos los registros (las instancias) de una entidad de flujo de proceso de negocio
+ Si el nombre de la entidad de flujo de proceso de negocio es "nuevo_mifpnpersonalizado", use la siguiente consulta para recuperar todos los registros (las instancias del proceso) de la entidad de flujo de proceso de negocio:  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -266,16 +266,16 @@ OData-Version: 4.0
 
 #### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Cambio del estado de una instancia de proceso: Anular, Reactivar o Finalizar 
 
-Una instancia de proceso puede tener uno de los estados siguientes: **Activo**, **Finalizada** o **Anulada**. El estado se determina por los atributos siguientes en el registro de la instancia de proceso:
+Una instancia de proceso puede tener uno de los siguientes estados: **Activa**, **Finalizada** o **Anulada**. El estado se determina por los atributos siguientes en el registro de la instancia de proceso:
 
-- **statecode**: muestra el estado de la instancia del proceso.
+- **statecode**: Muestra el estado de la instancia del proceso.
 
     |Valor|Etiqueta|
     |-----|-----|
     |0    |Activo|
     |1    |Inactivo|
 
-- **statuscode**: muestra información sobre el estado de la instancia del proceso.
+- **statuscode**: Muestra información sobre el estado de la instancia del proceso.
 
     |Valor|Etiqueta|
     |-----|-----|
@@ -372,7 +372,7 @@ Si no establece un valor para el atributo **ProcessId** durante la creación del
 
 Los atributos heredados relacionados con los procesos (como **ProcessId**, **StageId** y **TraversedPath**) en las entidades habilitadas para los flujos de proceso de negocio ya están en desuso. La manipulación de estos atributos heredados relacionados con los procesos para seleccionar como destino registros de entidad no garantiza la coherencia del estado de flujo de proceso de negocio y ***no*** es un escenario admitido. La manera recomendada es usar los atributos de la entidad de flujo de proceso de negocio como se explicó anteriormente en la sección [Creación recuperación, actualización y eliminación de registros de entidad de flujo de proceso de negocio (instancias de proceso)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances).
 
-La única excepción es modificar mediante programación el atributo **ProcessId** durante la creación de un registro de entidad para invalidar la aplicación predeterminada del flujo de proceso de negocio para el nuevo registro, como se explicó en la sección anterior: [Aplicación del flujo de proceso de negocio al crear un registro de entidad](#ApplyBPF).
+La única excepción es modificar mediante programación el atributo **ProcessId** durante la creación de un registro de entidad para invalidar la aplicación predeterminada del flujo de proceso de negocio para el nuevo registro, como se ha explicado en la sección anterior: [Aplicación del flujo de proceso de negocio al crear un registro de entidad](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
 ## <a name="client-side-programmability-support-for-business-process-flows"></a>Compatibilidad con la programación del lado cliente para los flujos de proceso de negocio  

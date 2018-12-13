@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
+ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690914"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179826"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Información acerca de las puertas de enlace de datos locales de Microsoft Flow
 Use la puerta de enlace de datos local con Microsoft Flow para establecer conexiones seguras con los orígenes de datos locales, como Microsoft SQL Server.
@@ -130,7 +130,7 @@ Más información acerca de las [soluciones híbridas](https://azure.microsoft.c
 | Nombres de dominio | Puertos de salida | Descripción |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Agentes de escucha en Service Bus Relay sobre TCP (requiere 443 para la adquisición del token de Access Control) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -154,7 +154,7 @@ No hay actualmente un único lugar donde los administradores de inquilinos pueda
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="general-questions"></a>Preguntas generales
-**Pregunta:** ¿qué orígenes de datos admite la puerta de enlace?
+**Pregunta:** ¿Qué orígenes de datos admite la puerta de enlace?
 **Respuesta:**
 
 * SQL Server
@@ -164,54 +164,54 @@ No hay actualmente un único lugar donde los administradores de inquilinos pueda
 * Sistema de archivos
 * DB2
 
-**Pregunta:** ¿se necesita una puerta de enlace para los orígenes de datos en la nube, como SQL Azure?
-**Respuesta:** no. Una puerta de enlace solo se conecta a orígenes de datos locales.
+**Pregunta:** ¿Se necesita una puerta de enlace para los orígenes de datos en la nube, como SQL Azure?
+**Respuesta:** No. Una puerta de enlace solo se conecta a orígenes de datos locales.
 
-**Pregunta:** ¿cómo se denomina el servicio de Windows real?
-**Respuesta:** en Servicios, la puerta de enlace se denomina **Servicio de Power BI Enterprise Gateway**.
+**Pregunta:** ¿Cómo se denomina el servicio de Windows real?
+**Respuesta:** En Servicios, la puerta de enlace se denomina **Servicio de Power BI Enterprise Gateway**.
 
-**Pregunta:** ¿hay conexiones de entrada con a la puerta de enlace desde la nube?
-**Respuesta:** no. La puerta de enlace usa conexiones de salida con Azure Service Bus.
+**Pregunta:** ¿Hay conexiones de entrada con a la puerta de enlace desde la nube?
+**Respuesta:** No. La puerta de enlace usa conexiones de salida con Azure Service Bus.
 
-**Pregunta:** ¿qué ocurre si bloqueo las conexiones de salida? ¿Qué necesito abrir?
-**Respuesta:** consulte los [puertos](gateway-reference.md#configure-ports) y hosts que utiliza la puerta de enlace.
+**Pregunta:** ¿Qué ocurre si bloqueo las conexiones de salida? ¿Qué necesito abrir?
+**Respuesta:** Consulte los [puertos](gateway-reference.md#configure-ports) y hosts que utiliza la puerta de enlace.
 
-**Pregunta:** ¿tiene que estar la puerta de enlace instalada en la misma máquina que el origen de datos?
-**Respuesta:** no. La puerta de enlace se conectará al origen de datos con la información de conexión que se proporcionó. A este respecto, considere la puerta de enlace como una aplicación cliente. Solo será preciso que se pueda conectar con el nombre del servidor que se proporcionó.
+**Pregunta:** ¿La puerta de enlace tiene que estar instalada en la misma máquina que el origen de datos?
+**Respuesta:** No. La puerta de enlace se conectará al origen de datos con la información de conexión que se proporcionó. A este respecto, considere la puerta de enlace como una aplicación cliente. Solo será preciso que se pueda conectar con el nombre del servidor que se proporcionó.
 
-**Pregunta:** ¿cuál es la latencia para ejecutar consultas en un origen de datos desde la puerta de enlace? ¿Cuál es la mejor arquitectura?
-**Respuesta:** para reducir la latencia de la red, instale la puerta de enlace lo más cerca posible del origen de datos. Si se puede instalar la puerta de enlace en el origen de datos real, se minimizará la latencia. Considere también los centros de datos. Por ejemplo, si el servicio utiliza el centro de datos del oeste de EE. UU. y tiene SQL Server hospedado en una máquina virtual de Azure, será conveniente que la máquina virtual de Azure se encuentre también en el oeste de EE. UU. Así se minimizará la latencia y se evitarán los cargos de salida en la máquina virtual de Azure.
+**Pregunta:** ¿Cuál es la latencia para ejecutar consultas en un origen de datos desde la puerta de enlace? ¿Cuál es la mejor arquitectura?
+**Respuesta:**  Para reducir la latencia de la red, instale la puerta de enlace lo más cerca posible del origen de datos. Si se puede instalar la puerta de enlace en el origen de datos real, se minimizará la latencia. Considere también los centros de datos. Por ejemplo, si el servicio utiliza el centro de datos del oeste de EE. UU. y tiene SQL Server hospedado en una máquina virtual de Azure, será conveniente que la máquina virtual de Azure se encuentre también en el oeste de EE. UU. Así se minimizará la latencia y se evitarán los cargos de salida en la máquina virtual de Azure.
 
-**Pregunta:** ¿hay requisitos relativos al ancho de banda de la red?
-**Respuesta:** se recomienda que la conexión de red tenga un buen rendimiento. Cada entorno es diferente y la cantidad de datos que se envían afectará a los resultados. El uso de ExpressRoute puede ayudarle a garantizar un nivel de rendimiento entre las instalaciones locales y los centros de datos de Azure.
+**Pregunta:** ¿Hay requisitos relativos al ancho de banda de la red?
+**Respuesta:** Se recomienda que la conexión de red tenga un buen rendimiento. Cada entorno es diferente y la cantidad de datos que se envían afectará a los resultados. El uso de ExpressRoute puede ayudarle a garantizar un nivel de rendimiento entre las instalaciones locales y los centros de datos de Azure.
 
 Para determinar dicho rendimiento, se puede usar una herramienta de terceros, [Azure Speed Test](http://azurespeedtest.azurewebsites.net/).
 
-**Pregunta:** ¿se puede ejecutar el servicio de Windows de la puerta de con una cuenta de Azure Active Directory?
-**Respuesta:** no. El servicio de Windows debe tener una cuenta de Windows válida. De manera predeterminada, se ejecutará con el SID de servicio *NT SERVICE\PBIEgwService*.
+**Pregunta:** ¿Se puede ejecutar el servicio de Windows de la puerta de enlace con una cuenta de Azure Active Directory?
+**Respuesta:** No. El servicio de Windows debe tener una cuenta de Windows válida. De manera predeterminada, se ejecutará con el SID de servicio *NT SERVICE\PBIEgwService*.
 
-**Pregunta:** ¿cómo se envían los resultados a la nube?
-**Respuesta:** los resultados se envían mediante Azure Service Bus. Para más información, consulte el [funcionamiento](gateway-reference.md#how-the-gateway-works).
+**Pregunta:** ¿Cómo se envían los resultados a la nube?
+**Respuesta:** Los resultados se envían mediante Azure Service Bus. Para más información, consulte el [funcionamiento](gateway-reference.md#how-the-gateway-works).
 
-**Pregunta:** ¿dónde se almacenan las credenciales?
-**Respuesta:** las credenciales que especifique para un origen de datos se cifran y almacenan en el servicio en la nube de la puerta de enlace. Las credenciales se descifran en la parte local de la puerta de enlace.
+**Pregunta:** ¿Dónde se almacenan las credenciales?
+**Respuesta:** Las credenciales que especifique para un origen de datos se cifran y almacenan en el servicio en la nube de la puerta de enlace. Las credenciales se descifran en la parte local de la puerta de enlace.
 
 ### <a name="high-availabilitydisaster-recovery"></a>Alta disponibilidad/recuperación ante desastres
-**Pregunta:** ¿existen planes para habilitar escenarios de alta disponibilidad con la puerta de enlace?
+**Pregunta:** ¿Existen planes para habilitar escenarios de alta disponibilidad con la puerta de enlace?
 **Respuesta:** Sí, la alta disponibilidad [ya está disponible](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
-**Pregunta:** ¿qué opciones hay disponibles para la recuperación ante desastres?
-**Respuesta:** puede usar la clave de recuperación para restaurar o mover una puerta de enlace.
+**Pregunta:** ¿Qué opciones hay disponibles para la recuperación ante desastres?
+**Respuesta:** Puede usar la clave de recuperación para restaurar o mover una puerta de enlace.
 
-**Pregunta:** ¿cuál es el beneficio de la clave de recuperación?
-**Respuesta:** proporciona una forma de migrar o recuperar la configuración de cualquier puerta de enlace.
+**Pregunta:** ¿Cuál es la ventaja de la clave de recuperación?
+**Respuesta:** Proporciona una forma de migrar o recuperar la configuración de cualquier puerta de enlace.
 
 ### <a name="troubleshooting-questions"></a>Preguntas acerca de la solución de problemas
-**Pregunta:** ¿dónde están los registros de la puerta de enlace?
-**Respuesta:** consulte la sección [Herramientas](gateway-reference.md#tools) de este mismo tema, que encontrará más adelante.
+**Pregunta:** ¿Dónde están los registros de la puerta de enlace?
+**Respuesta:** Consulte la sección [Herramientas](gateway-reference.md#tools) de este mismo tema, que encontrará más adelante.
 
-**Pregunta:** ¿cómo se puede ver las consultas que se envían al origen de datos local?
-**Respuesta:** puede habilitar el seguimiento de consultas, que incluye las consultas que se envían. Cuando solucione el problema, no olvide devolverlo a su valor original. Si deje habilitado el seguimiento de consultas, los registros sean mayores.
+**Pregunta:** ¿Cómo se pueden ver las consultas que se envían al origen de datos local?
+**Respuesta:** Puede habilitar el seguimiento de consultas, que incluye las consultas que se envían. Cuando solucione el problema, no olvide devolverlo a su valor original. Si deje habilitado el seguimiento de consultas, los registros sean mayores.
 
 También puede examinar las herramientas que tiene su origen de datos para realizar un seguimiento de las consultas. Por ejemplo, puede utilizar eventos extendidos o SQL Profiler para SQL Server y Analysis Services.
 
@@ -231,7 +231,7 @@ Cuando un usuario interactúa con un elemento que está conectado a un origen de
 ### <a name="update-to-the-latest-version"></a>Actualización a la versión más reciente
 Si la versión de la puerta de enlace no está actualizada, pueden aparecer muchos problemas. Asegúrese de usar la versión más reciente.  Si no ha actualizado la puerta de enlace recientemente, considere la posibilidad de instalar la versión más reciente y ver si puede reproducir el problema.
 
-#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Error: no se pudo agregar el usuario al grupo.  (-2147463168   PBIEgwService   Usuarios del registro de rendimiento   )
+#### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Error: No se pudo agregar el usuario al grupo.  (-2147463168   PBIEgwService   Usuarios del registro de rendimiento   )
 Este error puede producirse si se intenta instalar la puerta de enlace en un controlador de dominio que no sea compatible. Tendrá que instalar la puerta de enlace en una máquina que no sea un controlador de dominio.
 
 ## <a name="tools"></a>Herramientas

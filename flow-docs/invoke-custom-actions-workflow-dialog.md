@@ -2,7 +2,7 @@
 title: Invocación de acciones personalizadas desde un flujo de trabajo | Microsoft Docs
 description: Obtenga información sobre cómo invocar una acción personalizada desde un flujo de trabajo
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 11/22/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -22,21 +22,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b2904632f4b3bf097275906d917e686cace67ba
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: e4dbedbd8157f2dd1814bbbbd080a6b366c04938
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688528"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53006987"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Invocación de acciones personalizadas desde un flujo de trabajo
 
-Los flujos de trabajo tienen numerosas funciones que admiten escenarios empresariales. Llamar a acciones básicas de SDK para un registro, como crear, actualizar y eliminar, desde un flujo de trabajo, resuelve bastante escenarios empresariales. Pero si se combinan las funciones de los flujos de trabajo con la eficacia de las acciones personalizadas que se invocan directamente desde dentro de un flujo de trabajo, se agrega una gama de escenarios empresariales completamente nueva para la aplicación sin necesidad de escribir código.  
+Los flujos de trabajo tienen numerosas funciones que admiten escenarios empresariales. Llamar a acciones básicas de operaciones de datos para un registro, como crear, actualizar y eliminar, desde un flujo de trabajo resuelve bastante escenarios empresariales. Pero si se combinan las funciones de los flujos de trabajo con la eficacia de las acciones personalizadas que se invocan directamente desde dentro de un flujo de trabajo, se agrega una gama de escenarios empresariales completamente nueva para la aplicación sin necesidad de escribir código.  
   
  Veamos el escenario en el que se invoca una acción personalizada desde un flujo de trabajo. Se invocará una acción personalizada para solicitar la aprobación del administrador cuando el descuento para una oportunidad concreta supere el 20 %.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Ejemplo de Dynamics 365 Customer Engagement: creación de una acción personalizada mediante la entidad de oportunidad
+## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Ejemplo de involucración de los clientes de Dynamics 365: Creación de una acción personalizada mediante la entidad de oportunidad
   
 1. En el [Explorador de soluciones](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) haga clic en **Procesos**.  
   
