@@ -61,7 +61,7 @@ La definición de un flujo de proceso de negocio se almacena en la entidad <xref
 
 <a name="BPFEntity"></a>   
 ## <a name="business-process-flow-entity"></a>Entidad de flujo de proceso de negocio 
- Después de activar una definición de flujo de proceso de negocio cambiando el estado del registro de la entidad `Workflow` correspondiente o mediante el diseñador de flujos de proceso de negocio, se crea automáticamente una entidad personalizada con el nombre siguiente para almacenar las instancias de flujo de proceso de negocio activadas: "*\<prefijo_de_la_solución_activa>*_*\<nombre_único>*", donde "nombre_único" se deriva del nombre que especifique.  
+ Después de activar una definición de flujo de proceso de negocio cambiando el estado del registro de la entidad `Workflow` correspondiente o mediante el diseñador de flujos de proceso de negocio, se crea automáticamente una entidad personalizada con el nombre siguiente para almacenar las instancias de flujo de proceso de negocio activadas: "*\<prefijo\_d\e_la\_solución\_activa>*_*\<nombre\_único>*", donde "nombre\_único" se deriva del nombre que especifique.  
   
  Por ejemplo, si especifica "Mi FPN personalizado" como el nombre de la definición de flujo de proceso de negocio y usa el publicador predeterminado (nuevo) para la solución activa, el nombre de la entidad personalizada que se crea para almacenar las instancias del proceso será "new_mi fpnpersonalizado".  
   
