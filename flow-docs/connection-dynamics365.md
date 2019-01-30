@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188625"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905720"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
@@ -33,7 +33,7 @@ Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuand
 En Microsoft Flow se pueden configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones y recopilar datos, entre otras operaciones. Para más información, consulte [Introducción a Microsoft Flow](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar un desencadenador de flujos, la entidad de compromiso del cliente de Dynamics 365 utilizada con el flujo en cuestión debe tener activada la opción **Seguimiento de cambios**. Para obtener más información, consulte [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
+> Para invocar un desencadenador de flujos, la entidad de compromiso del cliente de Dynamics 365 utilizada con el flujo en cuestión debe tener activada la opción **Seguimiento de cambios**. Más información: [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
 
 ## <a name="create-a-flow-from-a-template"></a>Creación de un flujo desde una plantilla
 Para crear un flujo se puede utilizar una de las muchas plantillas disponibles, como en estos ejemplos:
@@ -78,7 +78,7 @@ Si no hay una plantilla disponible para lo que necesita, cree un flujo desde el 
     
     ![Flujo agregar tema](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Sugerencia:** en el panel de contenido dinámico, haga clic o pulse **Ver más** para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
+    > **Sugerencia:** En el panel de contenido dinámico, haga clic en **Ver más** o pulse dicho vínculo para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
     > 
     > 
 12. Haga clic o pulse **Crear flujo**.

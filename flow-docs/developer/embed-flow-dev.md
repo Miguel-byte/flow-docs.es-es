@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: aa5e0a7d143e0e1486533131f90d6b04c6fbc20c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 00f802a1776ed36755f73437e272c6ca975ac8bd
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690023"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905717"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integre Microsoft Flow con sitios web y aplicaciones
 Inserte Microsoft Flow en su aplicación o sitio web para proporcionar a los usuarios una manera sencilla de automatizar sus tareas profesionales o personales.
@@ -43,7 +43,7 @@ Para empezar, agregue este código para mostrar las plantillas de flujo directam
 &pagesize={number of templates}&destination={destination}"></iframe>
 ```
 
-**Nota**: hemos agregado un salto de línea para que el código aparezca mejor en la página.
+**Nota**: Hemos agregado un salto de línea para que el código aparezca mejor en la página.
 
 | Parámetro | Descripción |
 | --- | --- |

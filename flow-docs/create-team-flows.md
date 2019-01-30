@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 238ef8eac80d3259981cb11cc21e3b05eb83e0ec
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
+ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689741"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204948"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
 Cree un flujo de equipo mediante la adición de otros usuarios de su organización como propietarios. Todos los propietarios de un flujo de equipo pueden realizar estas acciones:
@@ -70,11 +70,12 @@ Siga estos pasos para crear un flujo de equipo o para agregar más propietarios 
    
      Ya se ha creado el flujo del equipo.
 
-##<a name="add-a-list-as-a-co-owner"></a>Agregar una lista como copropietario
+## <a name="add-a-list-as-a-co-owner"></a>Agregar una lista como copropietario
 
 Puede agregar listas de SharePoint como copropietario a un flujo para que todos los usuarios con acceso de edición a la lista obtengan automáticamente acceso de edición para el flujo. Una vez que se haya compartido el flujo, solo tendrá que distribuir un vínculo que dirija a este.
 
 ## <a name="remove-an-owner"></a>Eliminación de un propietario
+
 > [!IMPORTANT]
 > Al quitar un propietario cuyas credenciales se usan para acceder a los servicios de Microsoft Flow, debe actualizar las credenciales de esas conexiones para que el flujo siga funcionando correctamente.
 > 
@@ -93,7 +94,20 @@ Puede agregar listas de SharePoint como copropietario a un flujo para que todos 
    
     ![usuario eliminado](./media/create-team-flows/removeowner4.png)
 
+
+## <a name="update-connection-owner"></a>Actualización del propietario de la conexión
+
+Es posible que deba cambiar el propietario de una conexión en un flujo si quita el propietario existente. Siga estos pasos para cambiar el propietario de un flujo:
+
+1. Seleccione el flujo que contiene la conexión que desea actualizar en la lista **Flujos del equipo**.
+1. Seleccione **Ver todo** en la lista **PROPIETARIOS**.
+1. Seleccione **Administrar conexiones** en la lista **Conexiones en uso**.
+1. Busque la conexión que desea actualizar y selecciónela.
+1. Seleccione **...**  (más comandos) y luego seleccione **Cambiar cuenta**.
+1. Siga los pasos para usar una cuenta diferente para la conexión.
+
 ## <a name="embedded-and-other-connections"></a>Conexiones insertadas y otras
+
 Las conexiones que se usan en un flujo se dividen en dos categorías:
 
 * **Insertadas**: estas conexiones se utilizan en el flujo.
