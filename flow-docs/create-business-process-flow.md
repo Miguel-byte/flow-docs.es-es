@@ -22,14 +22,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
+ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691052"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55501443"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutorial: Creación de un flujo de proceso de negocio para estandarizar procesos
 
 En este tutorial se explica cómo crear un flujo de proceso de negocio con PowerApps. Para saber más sobre por qué se usan flujos de proceso de negocio, vea [Información general sobre flujos de proceso de negocio](business-process-flows-overview.md). Para más información sobre cómo crear un flujo de tareas móviles, vea [Crear un flujo de tareas móviles](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
@@ -40,7 +40,12 @@ En este tutorial se explica cómo crear un flujo de proceso de negocio con Power
  > [!TIP]
  >  Después de crear una definición de flujo de proceso de negocio, puede proporcionar control sobre quién puede crear, leer, actualizar o eliminar la instancia del flujo de proceso de negocio. Por ejemplo, para los procesos relacionados con el servicio, podría proporcionar acceso completo a los representantes de servicio al cliente para que cambien la instancia del flujo de proceso de negocio, pero proporcionar acceso de solo lectura a la instancia para los representantes de ventas, de modo que puedan supervisar las actividades posventa de sus clientes. Para establecer la seguridad de una definición de flujo de proceso de negocio que ha creado, seleccione **Habilitar roles de seguridad** en la barra de acciones.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Necesita [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) para crear flujos de procesos de negocio. Algunos planes de licencias de Dynamics 365 incluyen Flow Plan 2.
+
 ## <a name="create-a-business-process-flow"></a>Crear un flujo de proceso de negocio  
   
 1. Abra el [explorador de soluciones](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).

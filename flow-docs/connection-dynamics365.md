@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
+ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905720"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504516"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
 Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
@@ -120,6 +120,7 @@ Cuando se agrega un valor a un campo, debe coincidir con el tipo de campo indepe
 | Campos numéricos de tipo entero |Algunos campos requieren un entero o contenido dinámico que sea un campo de tipo entero. Algunos ejemplos son: **Porcentaje completado** y **Duración**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**percentcomplete** |**Número entero** |
 | Campos de fecha |Algunos campos requieren que una fecha escrita en formato dd/mm/aaaa o contenido dinámico que sea un campo de tipo de fecha. Algunos ejemplos son: **Fecha de creación**, **Fecha de inicio**, **Inicio real**, **Último período de retención**, **Finalización real**, y **Fecha de vencimiento**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**createdon** |**Fecha y hora** |
 | Campos que requieren un identificador de registro y un tipo de búsqueda |Algunos campos que hacen referencia a otro registro de entidad requieren tanto el identificador de registro como el tipo de búsqueda. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Cuenta** > **Campos** |**accountid** |**Clave principal** |
+|Conjunto de opciones|Los campos de Conjunto de opciones requieren pasar un valor entero conocido a este tipo de campo.  En el área de personalización de Dynamics 365, puede ver los conjuntos de opciones que respaldan el campo de entero junto con su etiqueta respectiva.|Configuración > Personalización > Personalizar el sistema > Entidades > Cuenta > Campos | Método de contacto preferido| Número entero|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Más ejemplos de campos que requieren un identificador de registro y un tipo de búsqueda
 Ampliemos la información de la tabla anterior, aquí hay más ejemplos de campos que no funcionan con los valores seleccionados de la lista de contenido dinámico. En su lugar, estos campos requieren que se especifiquen tanto un identificador de registro como un tipo de búsqueda en los campos de PowerApps.

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
-ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
+ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
+ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204948"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479428"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
 Cree un flujo de equipo mediante la adición de otros usuarios de su organización como propietarios. Todos los propietarios de un flujo de equipo pueden realizar estas acciones:
@@ -74,6 +74,10 @@ Siga estos pasos para crear un flujo de equipo o para agregar más propietarios 
 
 Puede agregar listas de SharePoint como copropietario a un flujo para que todos los usuarios con acceso de edición a la lista obtengan automáticamente acceso de edición para el flujo. Una vez que se haya compartido el flujo, solo tendrá que distribuir un vínculo que dirija a este.
 
+> [!TIP]
+> Utilice una lista cuando el flujo está conectado a SharePoint, y un grupo en otros casos.
+>
+
 ## <a name="remove-an-owner"></a>Eliminación de un propietario
 
 > [!IMPORTANT]
@@ -114,6 +118,8 @@ Las conexiones que se usan en un flujo se dividen en dos categorías:
 * **Otras** &mdash;: estas conexiones se han definido para un flujo, pero no se utilizan en él.
 
 Si una conexión deja de usarse en un flujo, aparecerá en la lista de **Otras** conexiones, donde permanecerá hasta que un propietario vuelva a incluirla en el flujo.
+
+Siga los pasos para [actualizar el propietario de una conexión](./create-team-flows.md#update-connection-owner) con el fin de realizar cambios en las conexiones insertadas.
 
 La lista de conexiones aparece debajo de la lista de propietarios en las propiedades de un flujo:
 
