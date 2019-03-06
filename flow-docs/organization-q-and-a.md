@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
+ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690569"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56885513"
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
 En este tema se describe cómo los usuarios de su organización pueden usar Flow y cómo controlar el servicio Flow.
@@ -46,6 +46,10 @@ Los usuarios pueden suscribirse en [flow.microsoft.com](https://flow.microsoft.c
 Cuando un usuario de su organización se suscribe a Flow con la opción 2, se le asignará una licencia gratuita de Microsoft Flow automáticamente.
 
 El artículo [Sign up for Flow](sign-up-sign-in.md) (Suscripción a Flow) incluye más información.
+
+### <a name="what-is-the-microsoft-flow-free-plan"></a>¿Qué es el plan gratuito de Microsoft Flow?
+
+El plan gratuito de Microsoft Flow solo se incluye con fines de seguimiento. Habilitarlo o deshabilitarlo no tiene ningún efecto en la capacidad del usuario para crear flujos. Si deshabilita el plan gratuito de Microsoft Flow, se vuelve a habilitar cuando un usuario inicia sesión. Este es el comportamiento esperado.
 
 ### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>¿Puedo bloquear la suscripción de otra persona a Flow?
 Microsoft Flow es un servicio en la nube totalmente público, y todas las personas pueden suscribirse y utilizarlo para automatizar sus tareas diarias. Para utilizar Microsoft Flow no es necesario que los usuarios tengan o usen una cuenta de Office 365. Por este motivo, no hay ningún mecanismo en este momento para impedir que una persona use Flow (como cualquier otra persona del mundo, con independencia de su dirección de correo electrónico).
@@ -147,7 +151,7 @@ Si Microsoft Flow ha creado un inquilino, puede reclamarlo y administrarlo media
    2. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija Administrador.
    3. Lea las instrucciones en la página **Become the Admin** (Convertirse en administrador) y, a continuación, elija **Yes, I want to be the admin** (Sí, quiero ser el administrador).  
       
-       **NOTA**: si no aparece esta opción, se asignará un administrador de Office 365.
+       **NOTA**: Si no aparece esta opción, se asignará un administrador de Office 365.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si dispongo de varios dominios, ¿puedo controlar el inquilino de Office 365 al que se agregan usuarios?
 Si no hace nada, se creará un inquilino para cada dominio y subdominio de correo electrónico del usuario.

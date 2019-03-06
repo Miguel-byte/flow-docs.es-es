@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cfd337180d1517df67864e239b611f6283e3af14
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: bb623e84f309303557d05d82422d2419f8d3ccbe
+ms.sourcegitcommit: 300829df88dfa1d0049ea506f949b29d6bd52e42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689787"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57251823"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Introducción a Microsoft Flow #
 
@@ -93,6 +93,7 @@ Si crea un flujo de trabajo desde cero, podrá controlarlo en su totalidad. Aqu�
 - [Creación de un flujo de aprobación](wait-for-approvals.md)
 - [Visualización de un flujo en acción](see-a-flow-run.md)
 - [Publicación de una plantilla](publish-a-template.md)
+- [Creación de flujos desde una plantilla de Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/)
 
 ## <a name="use-the-mobile-app"></a>Uso de la aplicación móvil ##
 
