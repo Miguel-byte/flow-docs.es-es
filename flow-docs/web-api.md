@@ -1,3 +1,22 @@
+---
+title: Los flujos se almacenan ahora en Common Data Service para aplicaciones y usan la API web enriquecida
+description: Los flujos se almacenan ahora en Common Data Service para aplicaciones y usan la API web enriquecida.
+author: stepsic-microsoft-com
+ms.reviewer: deonhe
+ms.date: 03/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: business-applications
+ms.technology: ''
+ms.author: stepsic
+audience: Power user
+ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463045"
+---
 # <a name="microsoft-flow-web-api"></a>API web de Microsoft Flow
 
 A partir de ahora, todos los flujos se almacenarán en Common Data Service (CDS) for Apps y utilizarán [la API web enriquecida](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
