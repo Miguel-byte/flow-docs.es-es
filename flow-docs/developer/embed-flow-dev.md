@@ -19,12 +19,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 00f802a1776ed36755f73437e272c6ca975ac8bd
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 738e566a9b064231a3bc2fe8bf7317df2bafbfef
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905717"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462818"
 ---
 # <a name="integrate-microsoft-flow-with-websites-and-apps"></a>Integre Microsoft Flow con sitios web y aplicaciones
 Inserte Microsoft Flow en su aplicación o sitio web para proporcionar a los usuarios una manera sencilla de automatizar sus tareas profesionales o personales.
@@ -115,10 +115,10 @@ Tanto para enumerar los flujos que el usuario ya ha creado como para crear flujo
 <script>
     window.msFlowSdkLoaded = function() {
         var sdk = new MsFlowSdk({
-            hostName:'https:/flow.microsoft.com'
+            hostName:'https://flow.microsoft.com'
         });
         var widget = sdk.renderWidget('flows', {
-            container: 'flowDiv'
+            container: 'flowDiv',
             environmentId: '[environmentId]'    // find environment id from browser URL when you 
                                                 // click on 'my flows'
                                                 //ex: https://flow.microsoft.com/manage/environments/[environmentId]/flows
