@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar pasos de flujo de traba
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e34f8ef8847ab08e14c91ee6d7871697b0275ce
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690454"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462864"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>Configuración de fases y pasos de flujo de trabajo
 
@@ -76,7 +76,7 @@ Al diseñar flujos de trabajo tiene la opción de que contengan la lógica que q
   
 |Tipo de condición|Descripción|  
 |--------------------|-----------------|  
-|**Condición de comprobación**|Una instrucción "si \<condición> entonces" lógica.<br /><br /> Puede comprobar los valores actuales del registro en el que se ejecuta el flujo de trabajo, cualquiera de los registros vinculados a ese registro en una relación de varios a uno, o bien todos los registros creados por los pasos anteriores. En función de estos valores, puede definir pasos adicionales cuando la condición es true.<br /><br /> En la instrucción "si \<condición> entonces", puede usar los operadores siguientes: **Es igual a**, **No es igual a**, **Contiene datos**, **No contiene datos**, **Menor que** y **No menor que**. **Nota:** **Menor que** y **No menor que** son operadores jerárquicos. Solo se pueden usar en las entidades que tengan una relación jerárquica definida. Si intenta usar estos operadores en las entidades que no tienen definida la relación jerárquica, verá el mensaje de error: "Está usando un operador jerárquico en una entidad que no tiene ninguna relación de jerarquía definida. Convierta la entidad en jerárquica (marcando una relación como jerárquica) o use un operador diferente". Para obtener más información sobre las relaciones jerárquicas, vea [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data) (Definición y consulta de datos relacionados jerárquicamente). La captura de pantalla que aparece después de la tabla es un ejemplo de la definición del proceso de flujo de trabajo en el que se usan los operadores jerárquicos **Menor que** y **No menor que**.|  
+|**Condición de comprobación**|Una instrucción "si \<condición> entonces" lógica.<br /><br /> Puede comprobar los valores actuales del registro en el que se ejecuta el flujo de trabajo, cualquiera de los registros vinculados a ese registro en una relación de varios a uno, o bien todos los registros creados por los pasos anteriores. En función de estos valores, puede definir pasos adicionales cuando la condición es true.<br /><br /> En la instrucción "if-\<condición> then", puede usar los operadores siguientes: **Es igual a**, **No es igual a**, **Contiene datos**, **No contiene datos**, **Menor que** y **No menor que**. **Nota**:  **Menor que** y **No menor que** son operadores jerárquicos. Solo se pueden usar en las entidades que tengan una relación jerárquica definida. Si está intentando usar estos operadores en las entidades que no tienen definida la relación jerárquica, aparece el mensaje de error: "Está usando un operador jerárquico en una entidad que no tiene ninguna relación de jerarquía definida. Convierta la entidad en jerárquica (marcando una relación como jerárquica) o use un operador diferente". Para obtener más información sobre las relaciones jerárquicas, vea [Define and query hierarchically related data](/powerapps/maker/common-data-service/define-query-hierarchical-data) (Definición y consulta de datos relacionados jerárquicamente). La captura de pantalla que aparece después de la tabla es un ejemplo de la definición del proceso de flujo de trabajo en el que se usan los operadores jerárquicos **Menor que** y **No menor que**.|  
 |**Rama condicional**|Una instrucción "else-if-then" lógica, el editor usa el texto "De lo contrario, si \<condición> entonces:"<br /><br /> Seleccione una condición de comprobación que haya definido previamente y puede agregar una rama condicional para definir pasos adicionales cuando la condición de comprobación devuelve false.|  
 |**Acción predeterminada**|Una instrucción "else" lógica. El editor usa el texto "De lo contrario:"<br /><br /> Seleccione una condición de comprobación, una rama condicional, una condición de espera o una rama de espera paralela que haya definido previamente y puede usar una acción predeterminada para definir pasos para todos los casos que no coincidan con los criterios definidos en los elementos de la condición o la rama.|  
 |**Condición de espera**|Permite que un flujo de trabajo en segundo plano se detenga hasta que se cumplan los criterios definidos por la condición. El flujo de trabajo se inicia de nuevo de forma automática cuando se han cumplido los criterios de la condición de espera.<br /><br /> Los flujos de trabajo en tiempo real no pueden usar condiciones de espera.|  

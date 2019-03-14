@@ -1,10 +1,10 @@
 ---
-title: Procedimientos recomendados para los procesos de flujo de trabajo en PowerApps | Microsoft Docs
+title: Procedimientos recomendados para la administración de procesos de flujo de trabajo | Microsoft Docs
 description: Descripción de los métodos recomendados para usar flujos de trabajo
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51225549"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462795"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Procedimientos recomendados para los procesos de flujo de trabajo
 
@@ -37,7 +37,7 @@ Este tema contiene los procedimientos recomendados para la creación y administr
 ## <a name="avoid-infinite-loops"></a>Evitar los bucles infinitos  
  Es posible crear lógica en un flujo de trabajo que inicie un bucle infinito, lo que consume recursos del servidor y afecta al rendimiento. La situación típica donde se podría producir un bucle infinito es si tiene un flujo de trabajo configurado para que se inicie al actualizar un atributo y, después, actualiza ese atributo en la lógica del flujo de trabajo. La acción de actualización desencadena el mismo flujo de trabajo que actualiza el registro y lo hace forma repetida.  
   
- Los flujos de trabajo que cree incluyen lógica para detectar y detener los bucles infinitos. Si un proceso de flujo de trabajo se ejecuta más de un número determinado de veces en un registro específico en un breve período de tiempo, se produce el siguiente error en el proceso: **Esta tarea de flujo de trabajo se canceló porque el flujo de trabajo que la inició incluía un bucle infinito. Corrija la lógica del flujo de trabajo e inténtelo de nuevo**. El límite de veces es 16.  
+ Los flujos de trabajo que cree incluyen lógica para detectar y detener los bucles infinitos. Si un proceso de flujo de trabajo se ejecuta más de un número determinado de veces en un registro específico en un breve período de tiempo, se produce el siguiente error en el proceso: **Esta tarea de flujo de trabajo se ha cancelado porque el flujo de trabajo que la ha iniciado incluía un bucle infinito. Corrija la lógica del flujo de trabajo e inténtelo de nuevo**. El límite de veces es 16.  
   
 <a name="BKMK_UseWorkflowTemplates"></a>   
 ## <a name="use-workflow-templates"></a>Uso de plantillas de flujo de trabajo  
@@ -61,7 +61,7 @@ Para los flujos de trabajo que no se ejecutan en segundo plano (sincrónicos), s
 ![Conservación de registros para la opción de flujos de trabajo con errores](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Límite del número de flujos de trabajo que actualizan la misma entidad
-La ejecución de más de un flujo de trabajo que actualiza la misma entidad puede causar problemas de bloqueo de recursos. Imagine varios flujos de trabajo en ejecución donde todas las actualizaciones de oportunidad desencadenan una actualización de la cuenta asociada. Si varias instancias de estos flujos de trabajo ejecutan e intentan actualizar el mismo registro de cuenta al mismo tiempo, pueden provocar problemas de bloqueo de recursos. Se producen errores de flujo de trabajo y se registra un mensaje de error, como **Se ha agotado el tiempo de espera de SQL: No se puede obtener un bloqueo en el recurso _nombre del recurso_**. 
+La ejecución de más de un flujo de trabajo que actualiza la misma entidad puede causar problemas de bloqueo de recursos. Imagine varios flujos de trabajo en ejecución donde todas las actualizaciones de oportunidad desencadenan una actualización de la cuenta asociada. Si varias instancias de estos flujos de trabajo ejecutan e intentan actualizar el mismo registro de cuenta al mismo tiempo, pueden provocar problemas de bloqueo de recursos. Se producen errores de flujo de trabajo y se registra un mensaje de error, como **Tiempo de espera de SQL: No se puede obtener el bloqueo en el recurso _nombre de recurso_**. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   

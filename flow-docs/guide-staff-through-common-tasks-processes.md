@@ -4,7 +4,7 @@ description: Obtenga información sobre los diferentes tipos de lógica de negoc
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b6cf8c2bc5e7499e7eaf5feb367c07a3aa94b3f7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188602"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462956"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Creación de lógica de negocios personalizada mediante procesos
 
@@ -68,7 +68,7 @@ PowerApps incluye varios tipos de procesos, cada uno diseñado para un propósit
 <a name="useMSFlow"></a>   
 ## <a name="when-to-use-microsoft-flow"></a>Cuándo usar Microsoft Flow  
  Use Microsoft Flow cuando tenga que crear flujos de trabajo automatizados que realicen acciones entre el entorno y su aplicación o servicio favorito, como Dynamics 365, Twitter, Dropbox, Google Services, Office 365 y SharePoint. Puede desencadenar un flujo en función de una acción específica, o bien invocarlo desde dentro de la aplicación. Más información: [Usar Microsoft Flow para automatizar procesos entre servicios](https://docs.microsoft.com/dynamics365/customer-engagement/basics/use-flow-automate-processes-across-services
-).  
+)  
   
 <a name="BKMK_Where"></a>   
 ## <a name="where-do-i-go-to-create-processes"></a>¿Dónde se crean los procesos?  

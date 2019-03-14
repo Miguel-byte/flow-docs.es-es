@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 809ea2202971df854b2351d57a09da8918d13b8b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
+ms.sourcegitcommit: b684b379e6007d3bd00948525156e7fbd39bf96c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690201"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57665023"
 ---
 # <a name="run-flows-on-a-schedule"></a>Ejecución de flujos de forma programada
 Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por correo electrónico):
@@ -84,4 +84,8 @@ Cree un flujo que lleva a cabo una o varias tareas (como enviar un informe por c
      ![Agregar un retraso](./media/run-scheduled-tasks/add-delay.png)
      ![Especificar un retraso en unidades de tiempo](./media/run-scheduled-tasks/delay.png)
      ![Especificar retraso hasta](./media/run-scheduled-tasks/delay-until.png)
+
+## <a name="learn-more"></a>Más información
+
+Obtenga más información sobre las [opciones avanzadas](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) y cómo configurarlas.
 

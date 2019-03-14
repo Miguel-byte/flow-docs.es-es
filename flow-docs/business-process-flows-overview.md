@@ -3,7 +3,7 @@ title: Introducción a los flujos de proceso de negocio | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: baefae21e605b0e54e32b09dfaee8f2980d73c13
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690331"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463020"
 ---
 # <a name="business-process-flows-overview"></a>Introducción a los flujos de proceso de negocio
 
@@ -92,7 +92,7 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
  Solo puede definir flujos de proceso de negocio para las entidades que los admitan. También deberá tener en cuenta los límites para el número de procesos, fases y pasos que se pueden agregar.  
   
 ### <a name="business-process-flows-that-call-a-workflow"></a>Flujos de proceso de negocio que llaman a un flujo de trabajo  
- Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Para configurarlo desde el nuevo Diseñador de flujos de proceso de negocio, arrastre un componente de flujo de trabajo a una fase del proceso o a la sección de flujos de trabajo globales. Para obtener más información sobre cómo usar flujos de trabajo en flujos de proceso de negocio, vea [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Blog: Automatización de flujos de proceso de negocio en Dynamics 365).  
+ Puede llamar a flujos de trabajo a petición desde dentro de un flujo de proceso de negocio. Para configurarlo desde el nuevo Diseñador de flujos de proceso de negocio, arrastre un componente de flujo de trabajo a una fase del proceso o a la sección de flujos de trabajo globales. Para obtener más información sobre el empleo de flujos de trabajo en flujos de proceso de negocio, vea [Blog: Business process flow automation in Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/) (Blog: Automatización de flujos de proceso de negocio en Dynamics 365).  
   
  Cuando incluye un flujo de trabajo que quiere que se desencadene en la salida de fase de una fase del flujo de proceso de negocio, y esa fase es la última del flujo, el diseñador da la impresión de que el flujo de trabajo se desencadenará cuando que se haya completado la fase. Pero el flujo de trabajo no se desencadenará porque no tiene lugar una transición de fase. No recibirá una advertencia ni un error que le impida incluir el flujo de trabajo en la fase. Cuando un usuario interactúa con el flujo de proceso de negocio, finalizar o abandonar el proceso no produce una transición de fase y, por tanto, el flujo de trabajo no se desencadena. Considere los ejemplos siguientes:  
   
@@ -137,7 +137,7 @@ Los flujos de proceso de negocio proporcionan una guía para que los usuarios re
  Para habilitar una entidad personalizada para flujos de proceso de negocio, active la casilla **Flujos de proceso de negocio (se crearán campos)** de la definición de la entidad. Tenga en cuenta que esta acción no se puede deshacer.  
   
 > [!NOTE]
->  Si navega a la fase de flujo de proceso de negocio que contiene la entidad `Social Activity` y hace clic en el botón **Fase siguiente**, verá la opción **Crear**. Al hacer clic en **Crear**, se carga el formulario **Actividad social**. Pero como `Social Activity` no es válido para `Create` desde la interfaz de usuario de la aplicación, no podrá guardar el formulario y verá el mensaje de error: "Error inesperado".  
+>  Si navega a la fase de flujo de proceso de negocio que contiene la entidad `Social Activity` y hace clic en el botón **Fase siguiente**, verá la opción **Crear**. Al hacer clic en **Crear**, se carga el formulario **Actividad social**. Pero como `Social Activity` no es válido para `Create` desde la interfaz de usuario de la aplicación, no se puede guardar el formulario y aparece el mensaje de error: "Error inesperado".  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Número máximo de procesos, fases y pasos  
@@ -180,4 +180,4 @@ También puede interactuar con las entidades de flujo de proceso de negocio desd
  [Vea un vídeo corto (4:49) sobre los flujos de proceso de negocio](https://go.microsoft.com/fwlink/p/?linkid=842226)   
  [Crear un flujo de proceso de negocio](create-business-process-flow.md)   
  [Mejora de los flujos de proceso de negocio con ramas](enhance-business-process-flows-branching.md) <br/>
- [Notas del producto: Habilitación de procesos con Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [Whitepaper: Process Enablement with Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf) (Notas del producto: Habilitación de procesos con Dynamics 365)</br>

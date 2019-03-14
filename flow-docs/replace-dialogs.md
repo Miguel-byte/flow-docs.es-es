@@ -3,7 +3,7 @@ title: Reemplazo de cuadros de diálogo con aplicaciones de lienzo o flujos de p
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691098"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463044"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Reemplazo de cuadros de diálogo con aplicaciones de lienzo o flujos de proceso de negocio
 
@@ -84,7 +84,7 @@ Por último, configure las fases y los pasos de flujo de proceso de negocio, jun
 
 Para poner este flujo de proceso de negocio a disposición de los usuarios, asegúrese primero de que los usuarios adecuados tienen privilegios para el flujo de proceso de negocio y, después, actívelo.
 
-Para más detalles sobre cómo crear un flujo de proceso de negocio, vea [Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md).
+Para obtener más información sobre cómo crear un flujo de proceso de negocio, vea [Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md).
 
 ## <a name="dialog-replacement-using-canvas-app-scenario"></a>Reemplazar cuadros de diálogo con aplicaciones de lienzo
 
@@ -125,7 +125,7 @@ Si damos un paso más, supongamos que quiere que esta aplicación esté disponib
 
 
 ## <a name="see-also"></a>Vea también
-[Tutorial: Crear un flujo de proceso de negocio para estandarizar procesos](create-business-process-flow.md) </br>
+[Tutorial: Crear un flujo de proceso de negocio para estandarizar los procesos](create-business-process-flow.md) </br>
 [¿Qué son las aplicaciones de lienzo en PowerApps?](/powerapps/maker/canvas-apps/getting-started)
 
 

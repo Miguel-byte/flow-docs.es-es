@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 137cfd02ef3ba41cc9fffacc0aa23dc88e31fcef
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690983"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462919"
 ---
 # <a name="classic-common-data-service-cds-for-apps-workflows"></a>Flujos de trabajo clásicos de Common Data Service (CDS) for Apps 
 
@@ -74,7 +74,7 @@ Los desarrolladores pueden crear flujos de trabajo con la información de la [Gu
  ![Pestaña General de un flujo de trabajo](media/create-workflow-general-tab.PNG "General tab in a workflow")  
   
  **Activar como**  
- Puede elegir **Plantilla de procesos** para crear un punto de partida avanzado para otras plantillas. Si elige esta opción, después de activar el flujo de trabajo no se aplicará, sino que estará disponible para seleccionarlo en el cuadro de diálogo **Crear proceso** si selecciona **Tipo**: **Proceso nuevo a partir de una plantilla existente (seleccione desde la lista)**.  
+ Puede elegir **Plantilla de procesos** para crear un punto de partida avanzado para otras plantillas. Si elige esta opción, después de activar el flujo de trabajo, este no se aplica, sino que está disponible para seleccionarse en el cuadro de diálogo **Crear proceso** al seleccionar **Tipo**: **Proceso nuevo a partir de una plantilla existente (seleccione desde la lista)**  
   
  Las plantillas de procesos resultan prácticas cuando tiene un número de procesos de flujo de trabajo similares y quiere definirlos sin duplicar la misma lógica.  
   
@@ -103,7 +103,7 @@ Los desarrolladores pueden crear flujos de trabajo con la información de la [Gu
 >  Las tareas de flujo de trabajo no se eliminan inmediatamente al finalizar, sino un poco después, mediante un proceso por lotes.  
   
  **Ámbito**  
- Para las entidades que pertenecen al usuario, las opciones son **Organización**, **Primario: unidades de negocio secundarias** , **Unidad de negocio** o **Usuario**. Para las entidades que pertenecen a la organización la única opción es **Organización**.  
+ En las entidades propiedad del usuario, las opciones son **Organización**, **Elemento principal: unidades de negocio secundarias**, **Unidad de negocio** o **Usuario**. Para las entidades que pertenecen a la organización la única opción es **Organización**.  
   
  Si el ámbito es **Organización**, la lógica de flujo de trabajo se puede aplicar a cualquier registro de la organización. En caso contrario, el flujo de trabajo solo se puede aplicar a un subconjunto de los registros que se encuentren dentro del ámbito.  
   
@@ -111,7 +111,7 @@ Los desarrolladores pueden crear flujos de trabajo con la información de la [Gu
 >  El valor de ámbito predeterminado es **Usuario**. Asegúrese de comprobar que el valor de ámbito es adecuado antes de activar el flujo de trabajo.  
   
  **Iniciar al**  
- Use las opciones de esta sección para especificar cuándo se debe iniciar un flujo de trabajo de forma automática. Puede configurar un flujo de trabajo en tiempo real para que se ejecute antes de determinados eventos. Se trata de una característica muy eficaz porque el flujo de trabajo puede detener la acción antes de que se produzca. Más información: [Usar flujos de trabajo en tiempo real](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Las opciones son:  
+ Use las opciones de esta sección para especificar cuándo se debe iniciar un flujo de trabajo de forma automática. Puede configurar un flujo de trabajo en tiempo real para que se ejecute antes de determinados eventos. Se trata de una característica muy eficaz porque el flujo de trabajo puede detener la acción antes de que se produzca. Más información: [Uso de flujos de trabajo en tiempo real](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Las opciones son:  
   
 - **Registro creado**  
   
