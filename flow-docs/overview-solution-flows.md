@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2515b64629436ccb96de497eaf928b83f281dc5f
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
+ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026044"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353015"
 ---
 # <a name="overview"></a>Introducción
 
@@ -40,7 +40,7 @@ Se crea dentro de una solución de flujos se conocen como flujos *compatibles co
 
 Debe tener los siguientes componentes para crear soluciones y flujos compatibles con la solución:
 
-- [Common Data Service para aplicaciones 2.0](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+- [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - Un entorno con la versión 9.1.0.267 o posterior.
 
   Para comprobar la versión, vaya al [centro de administración de Microsoft Flow](https://admin.flow.microsoft.com) y seleccione sucesivamente **Entornos**, seleccione el entorno en el que esté interesado y, a continuación, seleccione la pestaña **Detalles**.
