@@ -1,5 +1,5 @@
 ---
-title: Flujos de trabajo clásicos de Common Data Service (CDS) for Apps | MicrosoftDocs
+title: Flujos de trabajo clásicos de Common Data Service | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/06/2018
 ms.reviewer: matp
@@ -14,14 +14,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: b48fd51fcdf5ea85b564f7e422f72afa3f318060
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462919"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352858"
 ---
-# <a name="classic-common-data-service-cds-for-apps-workflows"></a>Flujos de trabajo clásicos de Common Data Service (CDS) for Apps 
+# <a name="classic-common-data-service-workflows"></a>Flujos de trabajo clásicos de Common Data Service 
 
 Los flujos de trabajo automatizan los procesos de negocio sin una interfaz de usuario. Normalmente, los usuarios utilizan los procesos de flujo de trabajo para iniciar la automatización que no requiere ninguna interacción del usuario.  
   

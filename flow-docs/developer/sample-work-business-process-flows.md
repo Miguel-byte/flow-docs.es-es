@@ -1,5 +1,5 @@
 ---
-title: 'Ejemplo: Trabajar con flujos de proceso de negocio (Guía para desarrolladores de Dynamics 365 Customer Engagement) | Microsoft Docs'
+title: 'Ejemplo: Uso de flujos de proceso de negocio (Guía para desarrolladores de Dynamics 365 Customer Engagement) | Microsoft Docs'
 description: En el ejemplo se muestra cómo trabajar con flujos de proceso de negocio mediante programación, por ejemplo para recuperar instancias del flujo de proceso de negocio para un registro de entidad, recuperar la ruta de acceso activa de una instancia de flujo de proceso de negocio y sus fases, y cambiar la fase activa.
 ms.custom: ''
 ms.date: 04/05/2018
@@ -18,24 +18,24 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6fe2b6d600d86dfd807dbb1ef794a1f428f26fbf
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690063"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352973"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Ejemplo: Trabajar con flujos de proceso de negocio
 
 En este ejemplo se muestra cómo trabajar con flujos de proceso de negocio mediante programación, por ejemplo para recuperar instancias del flujo de proceso de negocio para un registro de entidad, recuperar la ruta de acceso activa de una instancia de flujo de proceso de negocio y sus fases, y cambiar la fase activa. Para obtener información sobre estos conceptos, vea [Work with business process flows using code](business-process-flows-code.md) (Trabajar con flujos de proceso de negocio mediante código).  
 
- Este ejemplo está disponible para descargar desde [Sample: Work with business process flows](https://go.microsoft.com/fwlink/p/?LinkId=846108) (Ejemplo: Trabajar con flujos de proceso de negocio empresariales).  
+ Este ejemplo está disponible para descargar desde [Sample: Work with business process flows](https://go.microsoft.com/fwlink/p/?LinkId=846108) (Ejemplo: Trabajar con flujos de proceso de negocio).  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Requisitos previos  
  Antes de poder ejecutar el ejemplo:  
 
-1. Tener acceso a un entorno de Common Data Service for Apps.  
+1. Tener acceso a un entorno de Common Data Service.  
 
 2. Tener los privilegios adecuados en las entidades Cliente potencial, Oportunidad y Flujo de trabajo, y los registros de entidad de definición de flujo de trabajo de proceso de negocio que se usan en este ejemplo.  
 

@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
-ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
+ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248854"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353088"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Respuesta a solicitudes de eliminación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -49,7 +49,7 @@ En la siguiente tabla se muestra cuáles datos personales se eliminan automátic
 
 *Cada uno de estos recursos contiene registros "Creado por" y "Modificado por" que incluyen datos personales. Por motivos de seguridad, estos registros se conservan hasta que se elimina el recurso.
 
-**En el caso de los entornos que incluyen una base de datos de Common Data Service for Apps, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+**En el caso de los entornos que incluyen una base de datos de Common Data Service, los permisos de entorno (por ejemplo, qué usuarios están asignados a los roles Creador de entorno y Administrador) se almacenan como registros de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
 
 En el caso de los datos y recursos que requieren una revisión manual, Microsoft Flow ofrece las experiencias siguientes para buscar o cambiar los datos personales de un usuario específico:
 
@@ -76,7 +76,7 @@ Este es el desglose de las experiencias que están disponibles para que un admin
 |Permisos de conector personalizado|Portal de creador de Microsoft Flow| ||
 |Historial de aprobación|Portal de creador de Microsoft PowerApps *|||
 
-*Con la introducción de Common Data Service for Apps, si se crea una base de datos dentro del entorno, los permisos del entorno y los permisos de aplicaciones controlados por modelo se almacenan como registros dentro de la instancia de la base de datos de Common Data Service for Apps. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
+*Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, los permisos del entorno y los de las aplicaciones controladas por modelos se almacenan como registros dentro de la instancia de la base de datos de Common Data Service. Vea [Executing DSRs against Common Data Service Customer Data](https://go.microsoft.com/fwlink/?linkid=872251) (Ejecución de derechos de titulares de datos en datos de clientes de Common Data Service) para obtener instrucciones sobre cómo responder a DSR para los usuarios que usan Common Data Service.
 
 \*\* Un administrador solo podrá acceder a estos recursos desde el portal de creador de Microsoft Flow si el administrador le asignado acceso desde el Centro de administración de Microsoft Flow.
 
@@ -137,7 +137,7 @@ Estos pasos copian flujos existentes para un usuario saliente. Si asigna una pro
 
 ## <a name="delete-approval-history-from-microsoft-flow"></a>Eliminación de historial de aprobación de Microsoft Flow
 
- Los datos de aprobación de Microsoft Flow se almacenan en la versión anterior o actual de Common Data Service for Apps. Dentro de una aprobación, existe información personal en forma de asignaciones de aprobación y comentarios incluidos en una respuesta de aprobación. Los administradores pueden tener acceso a esos datos siguiendo estos pasos:
+ Los datos de aprobación de Microsoft Flow se almacenan en la versión anterior o actual de Common Data Service. Dentro de una aprobación, existe información personal en forma de asignaciones de aprobación y comentarios incluidos en una respuesta de aprobación. Los administradores pueden tener acceso a esos datos siguiendo estos pasos:
 
 1. Inicie sesión en [PowerApps](https://web.powerapps.com/).
 
@@ -277,7 +277,7 @@ Un administrador puede conceder acceso de administrador a un entorno creado por 
 
 Es posible asignar permisos a los usuarios (como Administrador de entorno, Creador de entorno, etc.) en un entorno, que se almacenan en el servicio Microsoft Flow como "asignación de roles".
 
-Con la introducción de Common Data Service for Apps, si se crea una base de datos dentro del entorno, estas "asignaciones de roles" se almacenan como registros dentro de la instancia de la base de datos de Common Data Service for Apps.
+Con la introducción de Common Data Service, si se crea una base de datos dentro del entorno, estas "asignaciones de roles" se almacenan como registros dentro de la instancia de la base de datos de Common Data Service.
 
 Para obtener más información acerca de cómo quitar el permiso de un usuario en un entorno, vaya a [Uso de entornos en Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 

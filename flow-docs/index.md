@@ -2,31 +2,25 @@
 layout: HubPage
 hide_bc: true
 title: Documentación de Microsoft Flow | Microsoft Docs
-description: Microsoft Flow es un servicio que le ayuda a crear flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.
+description: 'Microsoft Flow es un servicio que le ayuda a crear flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos, etc.'
 keywords:
-- Microsoft Flow
-- flujo de trabajo
-- flujo
-- flujo de trabajo de aprobación
-- flujo de trabajo de sharepoint
+  - Microsoft Flow
+  - flujo de trabajo
+  - flujo
+  - flujo de trabajo de aprobación
+  - flujo de trabajo de sharepoint
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
-- karann-msft
+  - karann-msft
 search.app:
-- Flow
+  - Flow
 search.audienceType:
-- flowmaker
-- enduser
-ms.openlocfilehash: 03eebb10c1155894b9dc1db5a0283cd72d78a1ae
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711597"
+  - flowmaker
+  - enduser
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -428,12 +422,12 @@ ms.locfileid: "46711597"
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service (CDS) for apps." />
+                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Usar Common Data Service (CDS) para aplicaciones</h3>
-                                            <p>Use Common Data Service (CDS) para aplicaciones con procesos de flujo de trabajo.</p>
+                                            <h3>Uso de Common Data Service</h3>
+                                            <p>Use Common Data Service con procesos de flujo de trabajo.</p>
                                         </div>
                                     </div>
                                 </div>

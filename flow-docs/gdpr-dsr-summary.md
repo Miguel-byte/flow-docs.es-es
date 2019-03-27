@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 6e4763fd3851276d647a302747342a6980293c33
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 1eaa98b674e78f46988d253e2be76a5d92283a76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690816"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353134"
 ---
 # <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Respuesta a solicitudes del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
-Este articulo le prepara tanto a usted como a su organización para cumplir con el Reglamento general de protección de datos (RGPD). En este artículo no solo se describe lo que Microsoft está haciendo para prepararse para el RGPD, sino que también se incluyen ejemplos de medidas que puede adoptar ya para cumplir con el RGPD al usar PowerApps, Microsoft Flow y Common Data Service for Apps.
+Este articulo le prepara tanto a usted como a su organización para cumplir con el Reglamento general de protección de datos (RGPD). En este artículo no solo se describe lo que Microsoft está haciendo para prepararse para el RGPD, sino que también se incluyen ejemplos de medidas que puede adoptar ya para cumplir con el RGPD al usar PowerApps, Microsoft Flow y Common Data Service.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -68,11 +68,11 @@ En este artículo se describe cómo utilizar los productos, servicios y herramie
 
     Puede usar Azure Active Directory para administrar las identidades de los usuarios de Microsoft Flow. Los clientes empresariales pueden administrar las solicitudes de rectificación de derechos de titulares de datos, incluidas las características de edición limitadas, por la naturaleza de un determinado servicio de Microsoft.  Como procesador de datos, Microsoft no ofrece la posibilidad de corregir los registros generados por el sistema, porque estos registros reflejan actividades objetivas y constituyen un registro histórico de eventos dentro de los servicios de Microsoft.  [Obtenga más información sobre los derechos de titulares de datos.](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)
 
-1. Restringir: limite el procesamiento de datos personales, ya sea quitando licencias para varios servicios en línea o desactivando los servicios deseados siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
+1. Restringir: limite el tratamiento de los datos personales, ya sea quitando licencias para varios servicios en línea o desactivando los servicios deseados siempre que sea posible. También puede quitar datos de la nube de Microsoft y conservarlos de manera local o en otra ubicación.
 
     Los titulares de datos pueden solicitar que se restrinja el procesamiento de sus datos personales.  Microsoft proporciona interfaces de programación de aplicaciones (API) e interfaces de usuario (IU) para este propósito.  Estas interfaces permiten al administrador de inquilinos del cliente de empresa administrar estos derechos de titulares de datos a través de una combinación de exportación y eliminación de los datos. Un cliente puede 1) exportar una copia electrónica de los datos personales del usuario, incluidas las cuentas, los registros generados por el sistema y los registros asociados, seguido de 2) la eliminación de la cuenta y los datos asociados que se encuentran dentro de sistemas de Microsoft.
 
-1. Eliminar: quite permanentemente los datos personales que se encuentran en la nube de Microsoft. [Obtenga más información acerca de cómo eliminar datos personales](gdpr-dsr-delete.md).
+1. Eliminar: quite de forma permanente los datos personales que se encuentran en la nube de Microsoft. [Obtenga más información acerca de cómo eliminar datos personales](gdpr-dsr-delete.md).
 
 1. Exportar: proporcione una copia electrónica (en un formato legible) de los datos personales al titular de los datos. Cada sección de este artículo describe los procedimientos técnicos que puede llevar a cabo la organización de un controlador de datos para responder a una solicitud de derechos de titulares de datos en relación con datos personales en la nube de Microsoft. [Obtenga más información acerca de cómo exportar datos personales](gdpr-dsr-export.md).
 

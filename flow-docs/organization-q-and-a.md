@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
-ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
+ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
+ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56885513"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327099"
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
 En este tema se describe cómo los usuarios de su organización pueden usar Flow y cómo controlar el servicio Flow.
@@ -38,7 +38,7 @@ Microsoft Flow es un servicio público en la nube para ayudar a usuarios y equip
 Hay dos formas de suscribirse a Flow mediante el portal web:
 
 #### <a name="option-1"></a>Opción 1
-Los usuarios pueden suscribirse en [flow.microsoft.com](https://flow.microsoft.com); para ello, deben seleccionar la opción **Regístrese gratis** y completar el proceso de suscripción a Flow mediante [portal.office.com](https://portal.office.com/Start?sku=flow_free) o [signup.live.com](https://signup.live.com).
+Los usuarios pueden suscribirse en [flow.microsoft.com](https://flow.microsoft.com); para ello, deben hacer clic en **Regístrese gratis** y completar el proceso de suscripción a Flow desde [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) o [signup.live.com](https://signup.live.com).
 
 #### <a name="option-2"></a>Opción 2
 Los usuarios pueden suscribirse en [flow.microsoft.com](https://flow.microsoft.com) para ello, deben seleccionar **Iniciar sesión** suscribirse con su correo electrónico profesional, educativo o personal y aceptar las condiciones de uso de Flow.    
@@ -147,7 +147,7 @@ Si Microsoft Flow ha creado un inquilino, puede reclamarlo y administrarlo media
 1. Únase al inquilino registrándose en Flow con un dominio de correo electrónico que coincida con el dominio del inquilino que desea administrar. Por ejemplo, si Microsoft creó el inquilino de contoso.com, únase a ese inquilino con una dirección de correo electrónico que termine en @contoso.com.
 2. Reclame el control de la administración comprobando la propiedad del dominio: cuando se encuentre en el inquilino, puede promocionarse a sí mismo al rol de administrador comprobando la propiedad de dominio. Para ello, siga estos pasos:    
    
-   1. Vaya a [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija Administrador.
    3. Lea las instrucciones en la página **Become the Admin** (Convertirse en administrador) y, a continuación, elija **Yes, I want to be the admin** (Sí, quiero ser el administrador).  
       

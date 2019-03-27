@@ -1,6 +1,6 @@
 ---
-title: Crear un flujo automatizado con Common Data Service para aplicaciones | Microsoft Docs
-description: Cree flujos de trabajo mediante una conexión de Common Data Service para aplicaciones y Microsoft Flow
+title: Creación de un flujo automatizado con Common Data Service | Microsoft Docs
+description: Cree flujos de trabajo mediante una conexión de Common Data Service y Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f9a417f99b6ea4105a451b65f7ccabbf36922d78
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524506"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352904"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-for-apps"></a>Crear un flujo automatizado mediante Common Data Service para aplicaciones
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Creación de un flujo automatizado mediante Common Data Service
 
-Con el conector Common Data Service para aplicaciones, puede crear flujos que se inicien mediante la creación y actualización de eventos dentro de la base de datos de Common Data Service. Además, puede llevar a cabo acciones de creación, actualización, recuperación y eliminación en registros dentro de la base de datos de Common Data Service para aplicaciones.
+Con el conector Common Data Service, puede crear flujos que se inicien mediante la creación y actualización de eventos dentro de la base de datos de Common Data Service. Además, puede realizar acciones de creación, actualización, recuperación y eliminación en registros dentro de la base de datos de Common Data Service.
 
-## <a name="initiate-a-flow-from-common-data-service-for-apps"></a>Iniciar un flujo desde Common Data Service para aplicaciones
+## <a name="initiate-a-flow-from-common-data-service"></a>Inicio de un flujo desde Common Data Service
 
 Puede usar cualquiera de los siguientes desencadenadores para iniciar el flujo:
 
@@ -75,9 +75,9 @@ Este flujo se desencadena cada vez que se actualiza el nombre o apellido de cont
 
 Para crear un flujo que se desencadene en función de la creación, actualización o eliminación de un registro, el usuario debe tener permisos de nivel de usuario para crear, leer, escribir y eliminar en la entidad de registro de devolución de llamadas. Además, según los ámbitos definidos, el usuario puede necesitar al menos ese nivel de lectura en la misma entidad.  [Más información](https://docs.microsoft.com/power-platform/admin/database-security) sobre la seguridad del entorno.
 
-## <a name="write-data-into-common-data-service-for-apps"></a>Escribir datos en Common Data Service para aplicaciones
+## <a name="write-data-into-common-data-service"></a>Escritura de datos en Common Data Service
 
-Para escribir datos en Common Data Service para aplicaciones, use cualquiera de las siguientes acciones:
+Para escribir datos en Common Data Service, use cualquiera de las acciones siguientes:
 
 - Crear un nuevo registro
 - Actualizar un registro
