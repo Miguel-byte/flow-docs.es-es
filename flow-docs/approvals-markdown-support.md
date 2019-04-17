@@ -57,23 +57,23 @@ Facilite la lectura de su texto dividiéndolo en párrafos o saltos de línea. I
    
 **Ejemplo**
 
-Agregue las líneas entre el texto con la tecla ENTRAR.
-De esta manera, el texto se espacia mejor y es más fácil leerlo.
+Add lines between your text with the Enter key.
+This spaces your text better and makes it easier to read.
 
 **Resultado:**   
-Agregue las líneas entre el texto con la tecla ENTRAR.      
-De esta manera, el texto se espacia mejor y es más fácil leerlo.
+Add lines between your text with the Enter key.      
+This spaces your text better and makes it easier to read.
 
 
 **Ejemplo 2**
 
-Agregue dos espacios antes del final de la línea.(espacio, espacio)     
-Esto agrega un espacio entre los párrafos.
+Add two spaces prior to the end of the line.(space, space)     
+This adds space in between paragraphs.
 
 **Resultado:**  
-Agregue dos espacios antes del final de la línea.   
+Add two spaces prior to the end of the line.   
 
-Esto agrega un espacio entre los párrafos.
+This adds space in between paragraphs.
   
 
 ## <a name="lists"></a>Listas
@@ -94,9 +94,9 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 
 **Resultado:**
 
-1. Primer elemento.
-2. Segundo elemento.
-3. Tercer elemento.
+1. First item.
+2. Second item.
+3. Third item.
 
 ### <a name="bullet-lists"></a>Listas con viñetas
 
@@ -112,9 +112,9 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 
 **Resultado:**
 
-- Elemento 1
-- Elemento 2
-- Elemento 3
+- Item 1
+- Item 2
+- Item 3
 
 ### <a name="nested-lists"></a>Listas anidadas
 
@@ -134,15 +134,15 @@ Las listas ordenadas empiezan con un número seguido de un punto por cada elemen
 
 **Resultado:**  
 
-1. Primer elemento.
+1. First item.
 
-    - Elemento 1
-    - Elemento 2
-    - Elemento 3
-2. Segundo elemento.
-    - Elemento anidado 1
-    - Elemento anidado 2
-    - Elemento anidado 3
+    - Item 1
+    - Item 2
+    - Item 3
+2. Second item.
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## <a name="links"></a>Vínculos
@@ -212,10 +212,10 @@ Organice datos estructurados con tablas.
 
 **Resultado:**  
 
-| Encabezado 1 | Encabezado 2 | Encabezado 3 |  
+| Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
-| Celda A1 | Celda A2 | Celda A3 |  
-| Celda B1 | Celda B2 | Celda B3<br/>segunda línea de texto |  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Resaltado (negrita, cursiva, tachado)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Resultado:**
 
-Use el _resaltado_ en comentarios para expresar opiniones **seguras** y señalar las <s>correcciones</s>   
-**_Texto en negrita y cursiva_**   
-**~~Texto en negrita y tachado~~**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italicized text_**   
+**~~Bold, strike-through text~~**  
 
 
 ## <a name="special-characters"></a>Caracteres especiales
