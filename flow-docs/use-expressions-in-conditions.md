@@ -6,26 +6,24 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
-ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
+ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874446"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614543"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Uso de expresiones en condiciones para comprobar varios valores
 En este tutorial, aprenderá a utilizar expresiones y **condiciones** para comparar varios valores en **modo avanzado**.
@@ -36,13 +34,13 @@ En las condiciones puede usar cualquier combinación de las siguientes expresion
 
 Expresión|Descripción|Ejemplo
 --------|-----------|-------
-|[and](#use-the-and-expression)|Toma dos argumentos y devuelve true si ambos valores son true.<br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve false: <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|Toma dos argumentos y devuelve true si cualquiera de los dos argumentos es true. <br><b>Nota</b>: ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>or(greater(1,10),equals(0,0))
+|[and](#use-the-and-expression)|Toma dos argumentos y devuelve true si ambos valores son true.<br><b>Nota</b>: Ambos argumentos deben ser valores booleanos.|Esta expresión devuelve false: <br>and(greater(1,10),equals(0,0))
+|[or](#use-the-or-expression)|Toma dos argumentos y devuelve true si cualquiera de los dos argumentos es true. <br><b>Nota</b>: Ambos argumentos deben ser valores booleanos.|Esta expresión devuelve true:<br>or(greater(1,10),equals(0,0))
 |equals|Devuelve true si los dos valores son iguales.|Por ejemplo, si el valor de parameter1 es someValue, esta expresión devuelve true:<br>equals(parameters('parameter1'), 'someValue')
-|[less](#use-the-less-expression)|Toma dos argumentos y devuelve true si el primer argumento es menor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>less(10,100)
-|lessOrEquals|Toma dos argumentos y devuelve true si el primer argumento es menor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
-|greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota</b>: los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
+|[less](#use-the-less-expression)|Toma dos argumentos y devuelve true si el primer argumento es menor que el segundo. <br><b>Nota</b>: Los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>less(10,100)
+|lessOrEquals|Toma dos argumentos y devuelve true si el primer argumento es menor o igual que el segundo. <br><b>Nota</b>: Los tipos admitidos son integer, float y string.|Esta expresión devuelve true:<br>lessOrEquals(10,10)
+|[greater](#use-the-greater-expression)|Toma dos argumentos y devuelve true si el primero es mayor que el segundo. <br><b>Nota</b>: Los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greater(10,10)
+|greaterOrEquals|Toma dos argumentos y devuelve true si el primer argumento es mayor o igual que el segundo. <br><b>Nota</b>: Los tipos admitidos son integer, float y string.|Esta expresión devuelve false:<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Devuelve true si el objeto, matriz o cadena están vacíos.|Esta expresión devuelve true:<br>empty('')
 |not|Devuelve el opuesto de un valor booleano. |Esta expresión devuelve true:<br>not(contains('200 Success','Fail'))
 |if|Devuelve un valor específico si el resultado de la expresión es true o false.|Esta expresión devuelve "yes":<br>if(equals(1, 1), 'yes', 'no')
@@ -94,7 +92,7 @@ Vamos a crear el flujo.
 2. Busque **filas** y seleccione **Excel - 
 Obtener filas**.
 
-    Nota: Seleccione la acción "obtener filas" que corresponda a la hoja de cálculo que vaya a usar. Por ejemplo, si va a utilizar Hojas de cálculo de Google, seleccione **Hojas de cálculo de Google - Obtener filas**.
+    Nota: Seleccione la acción "obtener filas" que corresponda a la hoja de cálculo que esté usando. Por ejemplo, si va a utilizar Hojas de cálculo de Google, seleccione **Hojas de cálculo de Google - Obtener filas**.
 
     ![obtener filas](includes/media/new-step/get-excel-rows.png)
 3. Seleccione el icono de la carpeta en el cuadro **Nombre de archivo**, busque la hoja de cálculo que contiene los datos y selecciónela.
@@ -215,6 +213,6 @@ Esta es la implementación de la expresión **and** que identifica a todas las p
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="learn-more"></a>Más información
-Obtenga información acerca de otras [expresiones](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+## <a name="use-functions-in-expressions"></a>Uso de funciones en expresiones
 
+Algunas expresiones obtienen sus valores de acciones en tiempo de ejecución que es posible que aún no existan cuando un flujo empiece a ejecutarse. Para hacer referencia a estos valores o trabajar con ellos en expresiones, puede usar las funciones que proporciona el lenguaje de definición de flujo de trabajo. Más información: [Referencia de funciones para el lenguaje de definición de flujo de trabajo en Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
