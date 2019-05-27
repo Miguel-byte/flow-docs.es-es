@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711620"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462597"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Introducción a los tokens de desencadenadores de botones
 ## <a name="what-are-button-trigger-tokens"></a>¿Qué son los tokens de desencadenadores de botones?
@@ -84,7 +84,7 @@ Empecemos:
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Ejecución del flujo de botones
-**NOTA**: este flujo de botones enviará su ubicación actual a través de correo electrónico.  
+**NOTA**: Este flujo de botones enviará su ubicación actual a través de correo electrónico.  
 
 1. Pulse la categoría **Botones** en la parte inferior de la pantalla. Verá una lista de los botones de los que tiene permiso para usarlos. Pulse el botón que representa el flujo de botones que acaba de crear:  
    ![token de desencadenador de botones](./media/introduction-to-button-trigger-tokens/10.png)  

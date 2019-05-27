@@ -20,11 +20,11 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: f510d387b594bb11306f8bc2530573b775e5f08e
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690408"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455888"
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow para desarrolladores empresariales, fabricantes de software independientes y asociados
 
@@ -34,11 +34,11 @@ Como desarrollador, puede ampliar Microsoft Flow, lo que permite soluciones más
 
 Como desarrollador empresarial, capacite a su organización para compilar soluciones personalizadas sólidas en Microsoft Flow:
 
-- **Creación de conectores personalizados**: desarrolle conectores personalizados para conectarse a los servicios web y de datos de la organización a través de Microsoft Flow. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
+- **Creación de conectores personalizados**: Desarrolle conectores personalizados para conectarse a los servicios web y de datos de la organización a través de Microsoft Flow. [Más información](https://docs.microsoft.com/connectors/custom-connectors/)
 
-- **Creación de instancias de Azure Functions**: diseñe instancias de Azure Functions para ampliar aplicaciones con lógica personalizada del lado del servidor. [Más información](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
+- **Crear funciones de Azure**: Cree instancias de Azure Functions para ampliar aplicaciones con lógica personalizada del lado del servidor. [Más información](https://docs.microsoft.com/azure/azure-functions/functions-flow-scenario)
 
-- **Inserción de Microsoft Flow**: inserte Microsoft Flow directamente en sus experiencias de sitio web para crear soluciones integradas, flujos de trabajo de superficie o procesos en los que otros usuarios de su organización ya hacen su trabajo. [Más información](embed-flow-dev.md)
+- **Insertar Microsoft Flow**: No inserte Microsoft Flow directamente en sus experiencias de sitio web para crear soluciones integradas, flujos de trabajo de superficie o procesos en los que otros usuarios de su organización ya hacen su trabajo. [Más información](embed-flow-dev.md)
 
 ## <a name="microsoft-flow-for-isvs-and-microsoft-partners"></a>Microsoft Flow para fabricantes de software independientes y asociados de Microsoft
 

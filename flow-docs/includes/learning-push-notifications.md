@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d45bf5974c24a8258f3f4e51e1e4c89b9c74fba7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460340"
+---
 Para este flujo, va a crear una lista de **SharePoint**, en la que el equipo de marketing de **Contoso Flooring** almacena sus **publicaciones en Twitter**  y las fechas de publicación. Después, creará un flujo que publicará automáticamente tweets con su contenido. 
 
 ## <a name="connect-microsoft-flow-services"></a>Conexión de los servicios Microsoft Flow
@@ -81,7 +89,7 @@ Todo esto es para el desencadenador.
 3. Establezca el valor de retraso.
    
    1. Pulse o haga clic en el campo **Marca de tiempo**. 
-   2. Cuando se abra el cuadro de contenido dinámico, desplácese hasta la parte inferior y verá las tres columnas de la lista de SharePoint: **Title**, **Tweet Date** y **Tweet Content**.
+   2. Cuando se abre el cuadro de contenido dinámico, desplácese hasta el final, y verá las tres columnas de la lista de SharePoint: **Título**, **Tweet Date**, y **contenido del Tweet**.
    3. Seleccione **Tweet Date**. 
       
        ![Retrasar hasta la marca de tiempo](./media/learning-push-notifications/14-delay-until-timestamp.png)

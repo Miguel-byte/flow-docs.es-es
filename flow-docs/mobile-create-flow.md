@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688338"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468794"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Creación de un flujo desde un teléfono mediante Microsoft Flow
 Cree un flujo desde un teléfono mediante una plantilla, que se puede encontrar de cualquiera de las tres formas siguientes: búsqueda en una lista de servicios, examen de categorías o especificación de palabras clave. Siga los pasos de este tema para crear un flujo que envíe una notificación push a su teléfono cuando reciba un correo electrónico de un administrador.

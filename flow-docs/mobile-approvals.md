@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689603"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468279"
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aprobación de solicitudes en dispositivos móviles mediante Microsoft Flow
 Si un flujo le identifica como aprobador y ha instalado la aplicación móvil de Microsoft Flow, recibirá una notificación push cada vez que se solicite que lo apruebe.

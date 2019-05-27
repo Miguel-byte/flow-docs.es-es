@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 04/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 8a6ece8d2233703da2cd6eb6ed48d2334d076c39
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690132"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64950507"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Directivas de prevención de pérdida de datos (DLP)
 
@@ -182,6 +182,36 @@ Si no tiene permisos de administrador y desea más información acerca de las di
 ## <a name="dlp-policy-permissions"></a>Permisos de la directiva de DLP
 
 Las directivas de DLP solo pueden crearlas y modificarlas los administradores de inquilinos y de entornos. Puede obtener más información sobre permisos en el artículo sobre [entornos](environments-overview-admin.md).
+
+
+## <a name="custom-and-http-connectors"></a>Conectores personalizados y HTTP
+
+Conectores personalizados y HTTP deben agregarse a DLPs mediante una plantilla de Microsoft Flow o un PowerShell.
+
+> [!TIP]
+> No se puede cambiar de versión 2018-11-01 del esquema. Compatibilidad con HTTP no se puede quitar de una directiva. Si intenta quitar la compatibilidad con HTTP, la directiva de DLP podría estar dañada. Además, si se actualiza una directiva DLP para admitir conectores HTTP, con estas funcionalidades HTTP fluye puedan estar cerrados.
+
+Estos son los conectores HTTP que se pueden agregar a una directiva:
+
+- HTTP (y HTTP + Swagger)
+- HTTP Webhook
+- Solicitud HTTP
+
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Agregar conectores personalizados y conectores HTTP con plantillas
+
+Para agregar un conector personalizado a una directiva con un [plantilla](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), escriba el nombre de directiva, el grupo que se va a agregar el conector y el nombre del conector, identificador y tipo. Ejecutar el flujo una vez para agregar el conector personalizado a la directiva y el grupo dado.
+
+Para agregar los conectores HTTP a una directiva existente a través de la [plantilla](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/), escriba el nombre de la directiva que le gustaría agregar estos elementos a y, a continuación, ejecutar el flujo.
+
+## <a name="add-custom-and-http-connectors-with-powershell"></a>Agregar personalizado y conectores HTTP con PowerShell
+
+Para agregar compatibilidad para conectores personalizados y conectores HTTP a una directiva con PowerShell, [descargar](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) e importar los scripts de PowerShell de PowerApps más recientes y, a continuación, usar estos cmdlets:  'Nuevo-AdminDlpPolicy', 'Set-AdminDlpPolicy', 'Add-CustomConnectorToPolicy' y 'Remove-CustomConnectorFromPolicy' para modificar la directiva. Use el ' Get-Help-detailed' cmdlet como referencia.
+
+
+> [!IMPORTANT]
+> Use la versión 2018-11-01 del esquema al crear o actualizar una directiva DLP para que incluya los conectores HTTP. Adición de HTTP admite el uso de la plantilla o PowerShell solo afectará a la directiva especificada. Nuevas directivas creadas a través del centro de administración no contendrá los conectores HTTP.
+
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

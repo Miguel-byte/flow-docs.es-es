@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ad185613e48273fd16a2b9cf8ec2b7302e7d757f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459122"
+---
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com) y seleccione la pestaña **Mis flujos**.
 2. Seleccione **Crear desde cero**.
    

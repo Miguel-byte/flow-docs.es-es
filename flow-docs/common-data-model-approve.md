@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690891"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471065"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Compilación de un bucle de aprobación con Microsoft Flow y Microsoft Common Data Service
 Common Data Service puede proporcionar una forma de compilar flujos que tengan la información almacenada en una base de datos independiente de un flujo. El mejor ejemplo son las aprobaciones. Si almacena el estado de la aprobación en una entidad, el flujo puede funcionar encima.
@@ -148,7 +148,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
     ![Agregar token de nombre de archivo](./media/common-data-model-approve/add-filename-token.png)
 5. En **Approver**, escriba o pegue la dirección de correo electrónico de la persona que va a revisar los archivos.
    
-    **Nota**: para facilitar la prueba del flujo, especifique su propia dirección. Puede cambiarla más adelante, cuando el flujo esté listo para su uso real.
+    **Nota**: Para realizar la prueba del flujo, especifique su propia dirección. Puede cambiarla más adelante, cuando el flujo esté listo para su uso real.
    
     ![Agregar el aprobador](./media/common-data-model-approve/add-approver.png)
 6. En **Status**, escriba o pegue **Pending**.
@@ -166,7 +166,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Elegir un valor](./media/common-data-model-approve/choose-value.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, haga clic o pulse el cuadro superior que contiene **Elegir un valor**.
+    **Nota**: Si la ventana del explorador no está maximizada, haga clic o pulse en el cuadro superior que contiene **elegir un valor**.
 3. En **Salidas desde Cuando se crea un archivo**, haga clic o pulse **Status** para agregar ese token de parámetro al campo.
    
     ![Agregar token Status](./media/common-data-model-approve/add-status.png)
@@ -177,7 +177,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Especificar el estado que se inspecciona](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, haga clic o pulse el cuadro inferior que contiene **Elegir un valor**.
+    **Nota**: Si la ventana del explorador no está maximizada, haga clic o pulse en el cuadro inferior que contiene **elegir un valor**.
 6. Cerca de la parte inferior de la acción **Do until**, haga clic en **Agregar una acción**.
    
     ![Agregar acción dentro de Do until](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -200,7 +200,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Esquina superior izquierda de la condición](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, haga clic o pulse el cuadro superior que contiene **Elegir un valor**.
+    **Nota**: Si la ventana del explorador no está maximizada, haga clic o pulse en el cuadro superior que contiene **elegir un valor**.
 3. En **Outputs from Get object**, haga clic o pulse el token de parámetro **Status** para agregarlo al campo.
    
     ![Agregar estado a condición](./media/common-data-model-approve/add-status-to-condition.png)
@@ -208,7 +208,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
    
     ![Compruebe si el estado se establece en aprobado](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Nota**: si la ventana del explorador no está maximizada, escriba o pegue **Aprobado** en el cuadro inferior que contiene **Elegir un valor**.
+    **Nota**: Si la ventana del explorador no está maximizada, escriba o pegue **aprobado** en el cuadro inferior que contiene **elegir un valor**.
 
 ## <a name="send-notification-mail"></a>Enviar correo de notificación
 1. En **En caso positivo, no hacer nada**, haga clic o pulse **Agregar una acción**.
@@ -219,7 +219,7 @@ Si sigue los pasos que se describen en esta sección, compilará:
     ![En caso afirmativo, enviar correo](./media/common-data-model-approve/if-yes-send-mail.png)
 3. En **A**, escriba o pegue la dirección de la persona a la que desee enviar una notificación cuando se acepta un elemento.
    
-    **Nota**: para facilitar la prueba del flujo, especifique su propia dirección. Puede cambiarla cuando el flujo esté listo para su uso real.
+    **Nota**: Para realizar la prueba del flujo, especifique su propia dirección. Puede cambiarla cuando el flujo esté listo para su uso real.
    
     ![Destinatario de aprobación](./media/common-data-model-approve/approval-recipient.png)
 4. En **Asunto**, haga clic o pulse el cuadro y, luego, haga clic o pulse el token de parámetro **File name** para agregarlo al campo.

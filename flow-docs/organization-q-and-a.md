@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
-ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58327099"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468972"
 ---
 # <a name="flow-in-your-organization-qa"></a>Preguntas y respuestas sobre Flow en su organización
 En este tema se describe cómo los usuarios de su organización pueden usar Flow y cómo controlar el servicio Flow.

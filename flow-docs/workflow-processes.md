@@ -15,11 +15,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b48fd51fcdf5ea85b564f7e422f72afa3f318060
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352858"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463531"
 ---
 # <a name="classic-common-data-service-workflows"></a>Flujos de trabajo clásicos de Common Data Service 
 

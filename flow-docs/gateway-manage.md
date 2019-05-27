@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
-ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
-ms.translationtype: HT
+ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087917"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054060"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Administración de un puerta de enlace de datos local en Microsoft Flow
 
@@ -60,7 +60,13 @@ Con una puerta de enlace, puede conectarse a datos locales a través de estas co
 > [!NOTE]
 > Las puertas de enlace y las conexiones locales solo puede crearlas en su [entorno predeterminado](environments-overview-maker.md).
 
+## <a name="install-a-gateway"></a>Instalación de una puerta de enlace
 
+1. Descargue el [Asistente para instalación de puerta de enlace](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Ejecute el asistente y especifique las mismas credenciales con las que ha iniciado sesión en Microsoft Flow.
+
+    Después de registrar y configurar la puerta de enlace correctamente, se muestra en la lista **Puertas de enlace** de Microsoft Flow.
 
 ## <a name="view-your-gateways"></a>Visualización de las puertas de enlace
 
@@ -72,14 +78,22 @@ En la esquina superior derecha del [sitio web de Microsoft Flow](https://flow.mi
 > Si ha creado o se le ha concedido acceso a una puerta de enlace en PowerApps, aparecerá en la lista **Mis puertas de enlace** de Microsoft Flow.
 
 
+## <a name="cluster-your-gateways"></a>Las puertas de enlace del clúster
 
-## <a name="install-a-gateway"></a>Instalación de una puerta de enlace
+Puede crear *clústeres de alta disponibilidad de las instalaciones de puerta de enlace de datos locales* para evitar puntos únicos de error al obtener acceso a recursos de datos locales. 
 
-1. Descargue el [Asistente para instalación de puerta de enlace](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+De forma predeterminada, Microsoft Flow usa la puerta de enlace principal del clúster. Si la puerta de enlace principal no está disponible, el servicio se activa en la siguiente puerta de enlace en el clúster y así sucesivamente.
 
-1. Ejecute el asistente y especifique las mismas credenciales con las que ha iniciado sesión en Microsoft Flow.
+Una vez que haya configurado un clúster de puerta de enlace, puede permitir el tráfico se distribuyan a través de las puertas de enlace en el clúster. 
 
-    Después de registrar y configurar la puerta de enlace correctamente, se muestra en la lista **Puertas de enlace** de Microsoft Flow.
+Siga estos pasos para distribuir el tráfico entre las puertas de enlace:
+
+1. Seleccione **datos** en la barra de navegación del lado izquierdo.
+1. Seleccione **puertas de enlace**.
+1. Seleccione cualquiera de las puertas de enlace.
+1. Seleccione **distribuir las solicitudes entre todas las puertas de enlace activas en este clúster**.
+1. Seleccione **aplicar** para guardar los cambios.
+
 
 Para más información, consulte [Información acerca de las puertas de enlace de datos locales de Microsoft Flow](gateway-reference.md).
 

@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 65f2776af5b0219ea887302d5cfa9e101f62c309
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690293"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460685"
 ---
 # <a name="billing-and-metering-questions"></a>Preguntas acerca de la facturación y la medición
 

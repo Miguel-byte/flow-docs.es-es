@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4c1189e943d5e1f48507bd3e55b5f2d8fe52a8c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460508"
+---
 En este tema, verá cómo ejecutar flujos programados previamente mediante un desencadenador denominado **Periodicidad**.  Creará un flujo para el equipo de marketing de Contoso que extrae automáticamente las direcciones de correo electrónico de los clientes de una tabla de Excel en OneDrive. Configurará el flujo de forma que, una vez al día, las nuevas direcciones de correo electrónico que se hayan agregado a la hoja de cálculo se agreguen a una lista de clientes de MailChimp. 
 
 ## <a name="create-a-scheduled-flow"></a>Creación de un flujo programado
@@ -15,7 +23,7 @@ En este tema, verá cómo ejecutar flujos programados previamente mediante un de
    
     ![](./media/learning-recurrence/excel-get-rows.png)
    
-    **Nota**: Asegúrese de seleccionar **Obtener filas**, no **Obtener fila**. 
+    **Nota**: No olvide seleccionar **obtener filas**, no **obtener fila**. 
 6. Seleccione **Nombre de archivo** y navegue hasta la ubicación del archivo. Seleccione **Nombre de la tabla** y seleccione la tabla deseada en la hoja de cálculo. 
    
     ![](./media/learning-recurrence/excel-get-file.png)
@@ -26,7 +34,7 @@ En este tema, verá cómo ejecutar flujos programados previamente mediante un de
    
     ![](./media/learning-recurrence/select-mailchimp.png)
    
-    **Nota:** MailChimp es un conector *premium*. En función de su licencia de Microsoft Flow, es posible que tenga que registrarse para obtener una versión de prueba para usar este conector.
+    **Nota**: MailChimp es un *premium* conector. En función de su licencia de Microsoft Flow, es posible que tenga que registrarse para obtener una versión de prueba para usar este conector.
 9. Agregue los campos **List Id** (Identificador de lista) y **Status** (Estado) en los menús desplegables:
    
    * **List Id** (Identificador de lista): seleccione la lista de distribución de correo de MailChimp que desee

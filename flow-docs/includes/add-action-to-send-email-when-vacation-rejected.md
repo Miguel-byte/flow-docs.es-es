@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 05c2f4add521300687b1a7bf21580977a161e241
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471885"
+---
 1. Seleccione **Agregar una acción** en la rama **IF NO, DO NOTHING** (En caso negativo, no hacer nada).
 2. Escriba **Enviar correo electrónico** en el cuadro de búsqueda de la tarjeta **Elegir una acción**.
    

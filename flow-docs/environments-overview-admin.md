@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: b9dd1fd2f3c00870b0a713f50cc567d5d79385d8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 43f6f36cc32ec40088bd9b4c61e2895a7de78589
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690638"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035037"
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Uso de entornos en Microsoft Flow
 
@@ -33,21 +33,21 @@ ms.locfileid: "44690638"
 
 Los entornos proporcionan las ventajas siguientes:
 
-* **Localidad de los datos**: los entornos se pueden crear en distintas regiones y enlazarse a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se enruta a todos los centros de datos de su ubicación geográfica. Esto también mejora el rendimiento.
+* **Localidad de los datos**: Se pueden crear entornos en diferentes regiones y enlazarse a esa ubicación geográfica. Cuando se crea un flujo en un entorno, dicho flujo se enruta a todos los centros de datos de su ubicación geográfica. Esto también mejora el rendimiento.
 
     Si los usuarios están en Europa, cree y use el entorno en la región de Europa. Si los usuarios están en Estados Unidos, cree y use el entorno de Estados Unidos. 
 
     > [!IMPORTANT]
     > Si elimina el entorno, también se eliminarán todos los flujos dentro de ese entorno. Esto es aplicable a cualquier elemento que haya creado en ese entorno, incluidas las conexiones, las puertas de enlace, PowerApps y otros.
-* **Prevención de pérdida de datos**: los administradores no desean flujos que obtengan datos de una ubicación interna (como *OneDrive para la Empresa* o una lista de SharePoint que contenga información sobre salarios) y que, después, publiquen los datos públicamente (como en to *Twitter*). Use la prevención de pérdida de datos para controlar los servicios que pueden compartir datos dentro de la implementación de Microsoft Flow.
+* **Prevención de pérdida de datos**: Como administrador, no desea flujos que obtienen datos de una ubicación interna (como *OneDrive para la empresa* o una lista de SharePoint que contiene información de salario) y, a continuación, exponer datos públicamente (como en * Twitter*). Use la prevención de pérdida de datos para controlar los servicios que pueden compartir datos dentro de la implementación de Microsoft Flow.
 
     Por ejemplo, puede agregar los servicios *SharePoint* y *OneDrive para la Empresa* a una directiva solo de datos empresariales. Los flujos creados en este entorno pueden usar los servicios *SharePoint* y *OneDrive para la Empresa*. Pero no podrán compartir datos con otros servicios que no estén incluidos en la directiva solo de datos empresariales.
 
   > [!NOTE]
   > Prevención de pérdida de datos está disponible con los SKU de algunas licencias, entre las que se incluye la licencia de P2.
 
-* **Límite de aislamiento para todos los recursos**: todos los flujos, puertas de enlace, conexiones, conectores personalizados, etc. residen en un entorno específico. No existen en ningún otro entorno.
-* **Common Data Service**: estas son las opciones que tiene si desea crear un flujo que inserte datos en un servicio:
+* **Límite de aislamiento para todos los recursos**: Los flujos, puertas de enlace, conexiones, conectores personalizados etc. residen en un entorno específico. No existen en ningún otro entorno.
+* **Common Data Service**: Estas son las opciones si desea crear un flujo que inserta datos en un servicio:
 
   * Insertar datos en un archivo de Excel y almacenar este archivo en una cuenta de almacenamiento en la nube, como OneDrive.
   * Cree una instancia de SQL Database y almacene los datos en ella.
@@ -70,7 +70,7 @@ Todos los usuarios comparten el entorno **predeterminado** y cualquier usuario p
 
 Los administradores usan el centro de administrador para crear y administrar los entornos. El centro de administrador se puede abrir de cualquiera de estas dos formas:
 
-### <a name="option-1-select-settings"></a>Opción 1: seleccione Configuración
+### <a name="option-1-select-settings"></a>Opción 1: Seleccione la configuración
 
 1. Inicie sesión en [flow.microsoft.com](https://flow.microsoft.com).
 1. Seleccione el icono de engranaje para la configuración y elija **Centro de administrador** en la lista:
@@ -78,13 +78,13 @@ Los administradores usan el centro de administrador para crear y administrar los
    ![Configuración y Portal de administrador](./media/environments-overview-admin/settings.png)
 1. Se abre el centro de administrador.
 
-### <a name="option-2-open-adminflowmicrosoftcom"></a>Opción 2: abra admin.flow.microsoft.com
+### <a name="option-2-open-adminflowmicrosoftcom"></a>Opción 2: Abra admin.flow.microsoft.com
 
 Vaya a [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e inicie sesión con su cuenta de trabajo.
 
 ## <a name="create-an-environment"></a>Creación de un entorno
 
-1. En el [Centro de administración de Microsoft Flow](https://admin.flow.microsoft.com), seleccione **Entornos**. Verá todos los entornos existentes: ![entornos](./media/environments-overview-admin/environments-list.png)
+1. En el [Centro de administración de Microsoft Flow](https://admin.flow.microsoft.com), seleccione **Entornos**. Verá todos los entornos existentes: ![Entornos](./media/environments-overview-admin/environments-list.png)
 2. Seleccione **Nuevo entorno** y proporcione la información necesaria:
 
 
@@ -92,7 +92,7 @@ Vaya a [admin.flow.microsoft.com](https://admin.flow.microsoft.com) e inicie ses
    |------------------|-------------------------------------------------------------------------------------------------------------|
    | Nombre de entorno |              Escriba el nombre del entorno, como `Human Resources` o `Europe flows`.              |
    |      Región      | Elija la ubicación para hospedar el entorno. Para obtener un rendimiento óptimo, use la región más cercana a los usuarios. |
-   | Tipo de entorno |                  Elija un tipo de entorno en función de la licencia, ya sea de producción o de evaluación.                   |
+   | Tipo de entorno |                  Elija un tipo de entorno en función de la licencia: Versión de prueba o producción.                   |
 
      ![configuración del entorno](./media/environments-overview-admin/new-environment-dialog.png)
 3. Haga clic en **Crear entorno**.
@@ -115,14 +115,14 @@ Ahora puede agregar usuarios al entorno.
    ![pestaña detalles](./media/environments-overview-admin/open-environment.png)
 1. Seleccione **Seguridad**.
 
-    Si no seleccionó **Crear base de datos** en los pasos anteriores, hay dos opciones en **Roles de entorno**: **Administrador de entornos** y **Creador de entornos**:
+    Si no seleccionó **Create Database** en pasos anteriores, en **roles de entorno**, allí está dos opciones: **Administrador de entorno** y **creador de entorno**:
 
     ![los roles de administrador](./media/environments-overview-admin/environment-roles.png)
 
     Un **Creador** puede crear recursos nuevos como flujos, conexiones de datos y puertas de enlace en un entorno.
 
    > [!NOTE]
-   > No es necesario que un usuario sea **Creador** para *editar* los recursos de un entorno. Cada Creador determina quién puede editar sus recursos. Para ello, concede permisos a usuarios que no son Creadores de entorno.
+   > No es necesario que un usuario sea **Creador** para *editar* los recursos de un entorno. Cada creador determina quién puede editar sus recursos mediante la concesión de permisos a los usuarios que no son creadores del entorno.
    > 
    > 
 

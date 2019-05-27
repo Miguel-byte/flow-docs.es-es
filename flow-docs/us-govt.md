@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 705051668c4e25d5bddc3e6f92e445f3474baad1
-ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
-ms.translationtype: HT
+ms.openlocfilehash: a32b80ce9dba28f0c94c13989e4892fe6533813f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58059823"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035190"
 ---
 # <a name="microsoft-flow-us-government"></a>Microsoft Flow para Gobierno de EE. UU.
 
@@ -143,7 +143,7 @@ Los servicios Microsoft Flow Administración Pública para Estados Unidos se imp
 
 Cuando un usuario de una organización que emplea ADFS intenta acceder a Microsoft Flow Administración Pública para Estados Unidos, el usuario se redirige a una página de inicio de sesión hospedada en el servidor de AD FS de la organización.
 
-El usuario proporciona sus credenciales al servidor de AD FS de su organización. El servidor de AD FS de la organización intenta autenticar las credenciales mediante la infraestructura de Active Directory de la organización.
+El usuario proporciona credenciales para el servidor ADFS de su organización. El servidor de AD FS de la organización intenta autenticar las credenciales mediante la infraestructura de Active Directory de la organización.
 
 Si la autenticación se realiza correctamente, el servidor de AD FS de la organización emite un vale de SAML (Lenguaje de marcado de aserción de seguridad) que contiene información sobre la pertenencia a grupos y la identidad del usuario.
 

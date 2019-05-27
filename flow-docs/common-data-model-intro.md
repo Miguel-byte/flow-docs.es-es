@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690844"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460001"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Cree de un flujo que use Common Data Service
 Mejore la eficacia operativa con una vista unificada de los datos empresariales mediante la creación de un flujo que use [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Implemente esta base de datos profesional segura que incluye las entidades empresariales estándar con formato correcto (como Ventas, Compras, Atención al cliente y Productividad) de su organización. Almacene los datos de la organización en una o varias [entidades personalizadas](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), que ofrecen varias ventajas sobre los orígenes de datos externos, como Microsoft Excel y Salesforce.
@@ -85,12 +85,12 @@ Por ejemplo, puede sacar provecho de Common Data Service en Microsoft Flow de la
     ![Especificar instancia de Dynamics 365](./media/common-data-model-intro/specify-instance.png)
 2. (opcional) Cerca de la parte superior de la pantalla, especifique otro nombre para el flujo que va a crear.
    
-    **Nota**: si la ventana del explorador no está maximizada, es posible que la interfaz de usuario sea un poco diferente.
+    **Nota**: Si la ventana del explorador no está maximizada, la interfaz de usuario podría ser ligeramente diferente.
    
     ![Flujo de nombre](./media/common-data-model-intro/name-flow.png)
 3. Haga clic o pulse **Crear flujo**.
    
-    **Nota**: si la ventana del explorador no está maximizada, es posible que solo aparezca la marca de verificación.
+    **Nota**: Si la ventana del explorador no está maximizada, puede aparecer solo en la marca de verificación.
    
     ![Crear flujo](./media/common-data-model-intro/create-flow.png)
 

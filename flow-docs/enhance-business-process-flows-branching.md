@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a7e1dc8d366ac9f23682362c8a673eb67df65975
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690523"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054100"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Tutorial: Mejora de los flujos de proceso de negocio con ramas
 
@@ -58,10 +58,10 @@ Los flujos de proceso de negocio le guían por las distintas fases de ventas, ma
 > - Una entidad que se use en el proceso se puede revisitar varias veces (varios bucles de entidad cerrados).  
 > - Un proceso puede volver a la fase anterior con independencia del tipo de la entidad. Por ejemplo, si la fase activa es **Entregar oferta** en un registro de oferta, los usuarios del proceso pueden cambiar la fase activa a la fase **Proponer** en un registro de oportunidad.  
 >   
->   En otro ejemplo, supongamos que un proceso se encuentra actualmente en la fase **Presentar propuesta** del flujo de proceso: **Aprobar el cliente potencial** > **Identificar las necesidades** > **Crear propuesta** > **Presentar propuesta** > **Cerrar**. Si la propuesta que se presenta al cliente requiere más investigaciones para identificar las necesidades del cliente, los usuarios pueden seleccionar simplemente la fase **Identificar las necesidades** del proceso y elegir **Establecer como activa**.  
+>   En otro ejemplo, supongamos que un proceso está actualmente en el **propuesta presente** fase en el flujo del proceso: **Calificar cliente potencial** > **identificar necesidades** > **Crear propuesta** > **presentar propuesta**  >  **Cerrar**. Si la propuesta que se presenta al cliente requiere más investigaciones para identificar las necesidades del cliente, los usuarios pueden seleccionar simplemente la fase **Identificar las necesidades** del proceso y elegir **Establecer como activa**.  
   
 <a name="CarSelling365"></a>   
-## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Ejemplo de Dynamics 365 Customer Engagement: flujo de proceso de venta de automóviles con dos ramas
+## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Ejemplo de involucración de los clientes de Dynamics 365: Flujo del proceso con dos bifurcaciones de venta del automóvil
  
 Veamos el ejemplo del flujo de proceso de negocio con dos ramas, para la venta de automóviles nuevos y usados.  
   
@@ -104,11 +104,11 @@ Veamos el ejemplo del flujo de proceso de negocio con dos ramas, para la venta d
   
  ![Diagrama de flujo en el que se muestran los pasos en un proceso de ejemplo para evitar la divulgación de información](media/example-car-sales-flow-chart-process-prevent-information-disclosure.png "Flow chart showing the steps in an example process to prevent information disclosure")  
   
- En este escenario, el gestor de préstamos del banco necesita tener acceso al registro Solicitud, pero no debería tener ninguna visibilidad en la investigación de la solicitud. A primera vista, parece que se puede hacer fácilmente mediante la asignación de un rol de seguridad al gestor de préstamos en el que se especifique que no tiene acceso a la entidad de investigación. Pero veamos el ejemplo con más detalle para comprobar si es lo que realmente ocurre.  
+ En este escenario, el Gestor de préstamos bank necesita tener acceso al registro de solicitud, pero el Gestor de préstamos no debería tener ninguna visibilidad en la investigación de la solicitud. A primera vista, parece que se puede hacer fácilmente mediante la asignación de un rol de seguridad al gestor de préstamos en el que se especifique que no tiene acceso a la entidad de investigación. Pero veamos el ejemplo con más detalle para comprobar si es lo que realmente ocurre.  
   
- Supongamos que un cliente solicita al banco un préstamo de 60 000 EUR. El gestor de préstamos revisa la solicitud en la primera fase. Si se cumple la regla de creación de ramas que comprueba si la cantidad adeudada al banco superará los 50 000 EUR, la siguiente fase del proceso consiste en investigar si la solicitud es fraudulenta. Si se determina que realmente se trata de un caso de fraude, el proceso pasa emprender acciones legales contra el solicitante. El gestor de préstamos no debería tener visibilidad a las dos fases de investigación, ya que no tiene acceso a la entidad de investigación.  
+ Supongamos que un cliente solicita al banco un préstamo de 60 000 EUR. El gestor de préstamos revisa la solicitud en la primera fase. Si se cumple la regla de creación de ramas que comprueba si la cantidad adeudada al banco superará los 50 000 EUR, la siguiente fase del proceso consiste en investigar si la solicitud es fraudulenta. Si se determina que realmente se trata de un caso de fraude, el proceso pasa emprender acciones legales contra el solicitante. El Gestor de préstamos no debería tener visibilidad en las dos fases de investigación porque el officer no tiene acceso a la entidad de investigación.  
   
- Pero si el gestor de préstamos, abre el registro Solicitud, podría ver el proceso completo. No solo podrá ver la fase de investigación del fraude, sino también identificar el resultado de la investigación ya que podrá ver la fase Acciones legales del proceso. Además, podrá acceder a la vista previa de los pasos de las fases de investigación si selecciona la fase. Aunque no podrá ver los datos ni el estado de finalización del paso, podrá identificar las posibles acciones que se tomaron contra el remitente de la solicitud durante las fases de investigación y acciones legales.  
+ Sin embargo, si el Gestor de préstamos, abre el registro de solicitud, todas estarían capaz de ver todo el proceso de extremo a otro. No sólo el Gestor de préstamos será capaz de ver el escenario de investigación de fraude, sino también podrá identificar el resultado de la investigación por haber estado capaz de ver el escenario de acciones legales en el proceso. Además, el officer será capaz de mostrar en vista previa de los pasos en las fases de investigación eligiendo la fase. Mientras que el Gestor de préstamos no podrá ver los datos o el estado de finalización del paso, ella podrá identificar las posibles acciones que se realizaron en el remitente de la solicitud durante la investigación y fases de acciones legales.  
   
  En este flujo de proceso, el gestor de préstamos podrá ver las fases Investigación de fraude y Acción legal, lo que constituye una divulgación de información incorrecta. Se recomienda prestar especial atención a la información que se pueda revelar debido a la creación de ramas. En nuestro ejemplo, el proceso se divide en dos procesos independientes, uno para el procesamiento de la solicitud y otro para la investigación de fraude, para evitar la divulgación de información. El proceso para el gestor de préstamos tendrá este aspecto:  
   

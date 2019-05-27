@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: af2e113278f480eb3c748cb1a2f9a81e34d32258
-ms.sourcegitcommit: a35abc6a2148cbfb48ca36d4af09bfd90eaffa42
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55647861"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64454802"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Información acerca de las puertas de enlace de datos locales de Microsoft Flow
 Use la puerta de enlace de datos local con Microsoft Flow para establecer conexiones seguras con los orígenes de datos locales, como Microsoft SQL Server.

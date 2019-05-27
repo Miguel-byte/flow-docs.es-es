@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691007"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457891"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Uso de operaciones de datos con Microsoft Flow
 En este tutorial, obtendrá información acerca de algunas de las operaciones de datos más usadas de Microsoft Flow, como componer, combinar, seleccionar, filtrar matriz, crear tabla y analizar JSON que se pueden usar para manipular datos al crear flujos.
@@ -145,7 +145,7 @@ Use la acción **Operaciones de datos - Crear tabla CSV** (create csv table) par
    
     ![configurar la acción crear tabla csv](./media/data-operations/create-csv-table.png)
    
-    Nota: El token **Cuerpo** de esta imagen procede de una acción **Solicitud/respuesta – Respuesta**; sin embargo, los datos de entrada de la acción **Crear tabla CSV** se pueden obtener de la salida de cualquier acción anterior del flujo, o bien se pueden escribir directamente en el cuadro **Desde**.
+    Nota: El **cuerpo** token en esta imagen procede de un **de solicitud / respuesta – respuesta** acción, sin embargo, podría obtener la entrada para el **crear tabla CSV** acción de la salida de cualquier la acción anterior en el flujo, o bien puede escribirla directamente en el **desde** cuadro.
 2. Guarde el flujo y ejecútelo.
    
     Cuando se ejecuta el flujo, la salida de **Crear tabla CSV** es similar a esta imagen:

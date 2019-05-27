@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2780850e521e208c3ab047543f00cab0b9a17f69
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463351"
+---
 Un uso común de **Microsoft Flow** consiste en generar una **notificación** cuando sucede algo.  Las notificaciones pueden ser **correos electrónicos**, **mensajes de texto** o **notificaciones push en el teléfono**.
 
 ![A partir de una plantilla](./media/learning-get-notifications/template-notifications.png)

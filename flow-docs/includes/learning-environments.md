@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e46ba9a9ff1044e72b8550b47d126e2999cfb71
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461025"
+---
 ## <a name="what-is-an-environment"></a>Qué es un entorno:
 Un entorno es un espacio virtual que se utiliza para almacenar, administrar y compartir aplicaciones, flujos y datos empresariales en Common Data Service. Los entornos están geolocalizados, por lo que todas las aplicaciones y los datos almacenados en la base de datos de un entorno también lo están.  
 

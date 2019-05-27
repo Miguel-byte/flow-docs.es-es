@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035169"
+---
 En este tema, aprenderá a **crear un flujo de botón** para la empresa Contoso Flooring. 
 
 Los flujos de botón se pueden usar para **enviar correo electrónico** a un equipo para **alertarles de las tareas** que se deben realizar. La **propiedad** de los flujos se **puede asignar a un** trabajador o la pueden **compartir varios** miembros de un equipo.  
@@ -48,7 +56,7 @@ Los flujos de botón se pueden usar para **enviar correo electrónico** a un equ
      ![Crear flujo](./media/learning-create-button-flow/12-create-flow.png)
 
 ## <a name="create-a-team-flow"></a>Creación de un flujo de equipo
-Este flujo de botón se puede usar como ejemplo de cómo crear un flujo de equipo. ¿Qué pasa si el creador del flujo está de baja por enfermedad? ¿Qué pasa si abandona la empresa? Para asegurarse de que el flujo no deja de ejecutarse, agregue copropietarios.
+Este flujo de botón se puede usar como ejemplo de cómo crear un flujo de equipo. ¿Qué pasa si el creador del flujo está de baja por enfermedad? ¿Qué ocurre si esa persona abandona la empresa? Para asegurarse de que el flujo no deja de ejecutarse, agregue copropietarios.
 
 1. Seleccione el **icono del equipo** en el flujo para agregar un copropietario.
    
@@ -66,9 +74,9 @@ Este flujo de botón se puede usar como ejemplo de cómo crear un flujo de equip
 ## <a name="summary"></a>Resumen
 En esta lección, ha visto cómo **crear un flujo de botón**. 
 
-En cuestión de minutos, el flujo dio a una trabajadora del almacén la capacidad de **alertar a su equipo** ante la **llegada de una entrega**, con el fin de que el equipo no tuviera que estar esperando y perdieran un tiempo valioso que podrían emplear en realizar otras tareas. 
+En cuestión de minutos, el flujo dio a una trabajadora del almacén la capacidad de **alertar al equipo** a un **llegada entrega**, de modo que el equipo no tiene que esperar y todo ello en torno a desperdiciar tiempo valioso que podrían emplear en otras tareas . 
 
-Luego, la trabajadora ha compartido dicho botón con su equipo para que otros puedan desencadenar el mismo flujo cuando ella no esté.
+El trabajo, a continuación, había compartido dicho botón al equipo, por lo que otros puedan desencadenar el mismo flujo si esa persona no era todo.
 
 ## <a name="next-lesson"></a>Siguiente lección
 En la siguiente lección se explicará cómo crear un flujo que usa **notificaciones push**.

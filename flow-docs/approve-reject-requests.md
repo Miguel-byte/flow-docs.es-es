@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 0197d117f2e7a7e22dbe77e64111b21dc890f83b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689005"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462153"
 ---
 # <a name="manage-approval-requests-in-microsoft-flow"></a>Administración de solicitudes de aprobación en Microsoft Flow
 Microsoft Flow facilita la automatización de [procesos de flujo de trabajo de aprobación](modern-approvals.md). En este tutorial, aprenderá a ver, aprobar y rechazar solicitudes de aprobación enviadas desde Microsoft Flow.

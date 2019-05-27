@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09f1d3ca4cfb79cb73c91aa77d18be07c047c028
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462832"
+---
 Bienvenido al aprendizaje guiado de Microsoft Flow. En este **curso en línea autodidáctico** se explica Microsoft Flow de forma secuencial, con el fin de que pueda adquirir los conocimientos poco a poco. El curso está diseñado para proporcionar **instrucciones en fragmentos comprensibles** con gran cantidad de **objetos visuales y ejemplos**, y sigue una progresión lógica que le facilita el aprendizaje de los principios y los detalles.
 
 En este curso, aprenderá qué es Microsoft Flow y sus conceptos, verá cómo **generar flujos** y **administrarlos** en su entorno. Se usarán tanto la información como los escenarios de una compañía ficticia denominada Contoso Flooring, pero verá cómo usar los mismos escenarios en su empresa o en las de los clientes.

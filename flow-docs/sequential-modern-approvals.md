@@ -20,17 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690753"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65019863"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Administración de aprobaciones secuenciales con Microsoft Flow
 Algunos flujos de trabajo requieren la aprobación previa antes de que se requiera al aprobador final que cierre la sesión. Por ejemplo, una compañía puede tener una directiva de aprobación secuencial que requiere la aprobación previa de las facturas de más de 1000 USD antes de que estén aprobados por el departamento de finanzas.
 
 En este tutorial, creamos un flujo de aprobación secuencial que administra las solicitudes de vacaciones de los empleados.
+
+> [!NOTE]
+> SharePoint se utiliza aquí únicamente como ejemplo; no es necesario para crear flujos de aprobación. Puede usar cualquiera de los más de 200 servicios con el que se integra Microsoft Flow para la realización de los flujos.
+
 
 ## <a name="detailed-steps-in-the-flow"></a>Pasos detallados del flujo
 El flujo:
@@ -52,7 +56,7 @@ Esta imagen resume los pasos anteriores:
 ## <a name="prerequisites"></a>Requisitos previos
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-La lista de SharePoint Online que cree debe incluir las columnas siguientes:
+Para los fines de este tutorial, la lista de SharePoint Online que cree debe incluir las columnas siguientes:
 
    ![Columnas de la lista de SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
 
@@ -85,7 +89,7 @@ Después de cada operación de guardado, seleccione **Editar flujo** en la parte
 ## <a name="add-an-approval-action-for-pre-approvals"></a>Adición de una acción de aprobación para aprobaciones previas
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Nota: Esta acción envía la solicitud de aprobación previa a la dirección de correo electrónico en el cuadro **Asignado a**.
+Nota: Esta acción envía la solicitud de aprobación previa a la dirección de correo electrónico en el **asignado a** cuadro.
 
 ## <a name="add-a-condition"></a>Adición de una condición
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
@@ -137,7 +141,7 @@ Nota: Esta acción envía la solicitud de aprobación previa a la dirección de 
 
    ![configuración de solicitudes rechazadas](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Nota: Esta acción debe agregarse a la rama **IF NO, DO NOTHING** (En caso negativo, no hacer nada) que aparece en la tarjeta **Condición**.
+Nota: Esta acción debe agregarse a la **si NO, no haga nada** rama que aparece la **condición** tarjeta.
 
 ## <a name="update-sharepoint-with-pre-approval-rejection"></a>Actualización de SharePoint con el rechazo de la aprobación previa
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
@@ -147,7 +151,7 @@ Nota: Esta acción debe agregarse a la rama **IF NO, DO NOTHING** (En caso negat
 ## <a name="send-email-with-final-rejection"></a>Envío de correo electrónico con rechazo final
 1. Siga los pasos de [Envío de correo electrónico con el rechazo de la aprobación previa](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) para agregar y configurar una acción que envía un correo electrónico cuando el aprobador final rechaza la solicitud de vacaciones.
    
-    Nota: Esta acción debe agregarse a la rama **IF NO, DO NOTHING** (En caso negativo, no hacer nada) que aparece en la tarjeta **Condición 2**.
+    Nota: Esta acción debe agregarse a la **si NO, no haga nada** rama que aparece la **condición 2** tarjeta.
 2. Cuando haya terminado, la tarjeta debe ser similar a esta imagen:
    
    ![configuración de solicitudes rechazadas](./media/sequential-modern-approvals/final-rejection-email-card.png)
@@ -183,7 +187,7 @@ La solicitud debe ser similar a la de esta imagen:
 ## <a name="approve-the-request"></a>Aprobación de la solicitud
 Los pasos para aprobar una solicitud son idénticos a los pasos para [aprobar previamente una solicitud](sequential-modern-approvals.md#pre-approve-a-request).
 
-Nota: El aprobador final obtiene la solicitud de vacaciones solo después de la aprobación previa de la solicitud.
+Nota: El aprobador final obtiene la solicitud de vacaciones solo después de la solicitud ha sido aprobada previamente.
 
 ## <a name="reject-a-request"></a>Rechazo de una solicitud
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]

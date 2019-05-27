@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cbcbce51bb950ef9154f356ce44a651f25ce55bd
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690100"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464153"
 ---
 # <a name="introducing-button-flows"></a>Presentación de los flujos de botón
 ## <a name="what-are-button-flows"></a>¿Qué son los flujos de botón?
@@ -65,14 +65,14 @@ En este tutorial, vamos a crear un botón que inicia una compilación de Visual 
    ![Imagen de información general](./media/introduction-to-button-flows/create-button-8.png)  
 9. A continuación, configure las propiedades de la notificación push en la tarjeta **Send a push notification** (Enviar una notificación push). De manera predeterminada, esta notificación push está configurada para enviar un vínculo HTML a una página web que muestre el estado de la compilación:  
    ![Imagen de información general](./media/introduction-to-button-flows/create-button-9.png)  
-10. Seleccione el botón **Crear flujo** para guardar el flujo de botón: ![imagen de información general](./media/introduction-to-button-flows/create-button-10.png)  
+10. Seleccione el **Crear flujo** botón para guardar el flujo de botón: ![Imagen de información general](./media/introduction-to-button-flows/create-button-10.png)  
 11. En poco tiempo verá este mensaje de operación correcta:  
     ![Imagen de información general](./media/introduction-to-button-flows/create-button-11.png)  
 
 Enhorabuena, ha creado un flujo de botón. Ahora puede ejecutar este flujo de botón en cualquier momento y lugar desde la pestaña **Botones** de la aplicación Flow. Solo tiene que presionar el "botón" y se ejecutará. La aplicación móvil de Microsoft Flow está disponible para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>Desde un dispositivo móvil
-**Nota**: en este tutorial se muestran las pantallas de un dispositivo Android, pero las de un dispositivo iOS son similares.
+**Nota**: Aunque este tutorial muestran pantallas de un dispositivo Android, las pantallas y experiencia en un dispositivo iOS son similares.
 
 En la aplicación Flow:
 
@@ -117,7 +117,7 @@ Ahora debe recibir la notificación push que indica que se ha enviado el correo 
 Los flujos de botón se pueden supervisar desde la pestaña **Activity** (Actividad) de la aplicación Flow:   
 ![Imagen de información general](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
-**Nota**: Pulse cualquier actividad para aumentar el detalle de los resultados de la ejecución, con el fin de obtener información acerca de la ejecución.  
+**Nota**: Pulse cualquier actividad para profundizar en los resultados de la ejecución para obtener información acerca de la ejecución.  
 
 ![Imagen de información general](./media/introduction-to-button-flows/activity-details-1.png)  
 

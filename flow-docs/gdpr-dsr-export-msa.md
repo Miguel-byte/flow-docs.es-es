@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690778"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035017"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Respuesta a solicitudes de exportación del titular de los datos de acuerdo con el RGPD para Microsoft Flow
 
@@ -33,7 +33,7 @@ Como parte de nuestro compromiso de acompañarle en su viaje de adaptación al R
 
 ## <a name="manage-export-requests"></a>Administrar solicitudes de exportación
 
-El *derecho de portabilidad de datos* permite al interesado solicitar una copia de sus datos personales en un formato electrónico (es decir, en un "formato estructurado, de uso común, de lectura mecánica e interoperable") que se pueda transmitir a otro responsable de los datos.
+El *derecho de portabilidad de los datos* permite a los sujetos de datos solicitar una copia de sus datos personales en formato electrónico (es decir, un "máquina estructurado, comúnmente utilizado, legible, formato e interoperable") que se transmita a otro controlador de datos.
 
 Use el [Panel de privacidad de Microsoft](https://account.microsoft.com/privacy/), o bien [Microsoft Flow](https://flow.microsoft.com/) para buscar o exportar datos personales para un usuario específico.
 
@@ -98,7 +98,7 @@ El historial de ejecuciones se descarga como un archivo .csv para que pueda abri
 
 ## <a name="export-a-users-activity-feed"></a>Exportación de la fuente de actividad de un usuario
 
-En [Microsoft Flow](https://flow.microsoft.com/), la fuente de actividad muestra el historial de actividades, errores y notificaciones de un usuario. Un usuario puede ver su fuente de actividad siguiendo estos pasos:
+En [Microsoft Flow](https://flow.microsoft.com/), la fuente de actividad muestra el historial de actividades, errores y notificaciones de un usuario. Los usuarios pueden ver su fuente siguiendo estos pasos de actividad:
 
 1. Inicie sesión en [Microsoft Flow](http://flow.microsoft.com/), seleccione el icono de campana cerca de la esquina superior derecha y, a continuación, seleccione **Mostrar todas las actividades**.
 

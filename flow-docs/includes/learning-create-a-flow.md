@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f5fd6ecb3ace5d2e11f4929fe94124b231cccf2a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463738"
+---
 Bienvenido otra vez al aprendizaje guiado de Microsoft Flow. En esta lección, recibirá más información acerca del entorno de Microsoft Flow y podrá **crear su primer flujo**.
 
 Es fácil empezar a usar Microsoft Flow, ya que hay un ingente número de **plantillas para elegir**, que le ayudarán a conectarse a los servicios ya usa de formas con más sentido.  

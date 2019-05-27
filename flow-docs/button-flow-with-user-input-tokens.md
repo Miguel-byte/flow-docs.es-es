@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.openlocfilehash: 5c1aed64ad5ac8fc1cced9290b376cb54f97e65a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711574"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64992299"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Presentación de los flujos de botones con entradas del usuario
 Cree un flujo de botón para ejecutar tareas rutinarias simplemente con pulsar un botón. Para personalizar un flujo, permita al usuario proporcionar detalles específicos que se usarán al ejecutarlo. Este tema le guía a través de la creación de un flujo de botón que usa las entradas de los usuarios y, después, la ejecución del flujo de botón, y resalta cómo proporcionar la entrada del usuario.
@@ -118,7 +118,28 @@ En este tutorial, usará la aplicación móvil para Microsoft Flow para ejecutar
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
 7. (opcional) Para mostrar los resultados detallados de la ejecución del flujo, pulse el paso **Create a new work item** (Crear un nuevo elemento de trabajo).
    
-    ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
+    ![](./media/button-flow-with-user-input-tokens/runmt6.png)
+
+
+## <a name="use-different-input-types"></a>Usar diferentes tipos de entrada
+
+Los flujos de botón también pueden aceptar tipos de datos enriquecidos. Esta es la lista de tipos de entrada de datos que aceptan flujos de botón: 
+
+- Texto
+- Listas desplegables (como botones de radio)
+- Dirección de correo electrónico
+- Archivo (por ejemplo, una foto en su teléfono)
+- Casilla de verificación Sí o No
+- número
+- Fecha (con un selector de calendario)
+
+Para usar estos tipos de entrada, agregue el **desencadenar manualmente un flujo** desencadenar y, a continuación, agregue cualquiera de estos tipos al flujo:
+
+![Opciones de entrada](media/button-flow-with-user-input-tokens/input-options.png)
+
+Además, es posible que desee designar algunas entradas según sea necesario y otros como opcional. Use el menú Acción (...) en el lado derecho) en cada campo de entrada. Hay un límite de cinco entradas por cada botón.
+
+![Seleccionar tokens opcionales](media/button-flow-with-user-input-tokens/required-optional.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 * [Compartir flujos de botones](share-buttons.md)

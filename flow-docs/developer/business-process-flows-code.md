@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
-ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
-ms.translationtype: HT
+ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362987"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054091"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Uso de flujos de proceso de negocio con código
 
@@ -131,7 +131,7 @@ Puede recuperar el nombre de la entidad de flujo de proceso de negocio mediante 
 
 La entidad personalizada que se crea automáticamente al activar un flujo de proceso de negocio para almacenar instancias de flujo de proceso de negocio se ajusta al modelo de seguridad estándar del mismo modo que para cualquier otra entidad personalizada de Customer Engagement. Esto implica que los privilegios concedidos en estas entidades definen los permisos de runtime de los usuarios para los flujos de proceso de negocio.
 
-La entidad de flujo de proceso de negocio personalizada tiene el ámbito de la organización. Los privilegios de creación, recuperación, actualización y eliminación normales de esta entidad definen los permisos que tendría el usuario en función de sus roles asignados. De forma predeterminada, cuando se crea la entidad de flujo de proceso de negocio personalizada, solo los roles de seguridad **Administrador del sistema** y **Personalizador del sistema** tienen acceso a esta. Además, deberá conceder explícitamente permisos para la nueva entidad de flujos de proceso de negocio (por ejemplo, **Mi FPN personalizado**), a otros roles de seguridad según sea necesario.
+La entidad de flujo de proceso de negocio personalizada tiene el ámbito de la organización. Los privilegios create, retrieve, update y delete regulares en esta entidad definen el permiso a los usuarios habría según sus roles asignados. De forma predeterminada, cuando se crea la entidad de flujo de proceso de negocio personalizada, solo los roles de seguridad **Administrador del sistema** y **Personalizador del sistema** tienen acceso a esta. Además, deberá conceder explícitamente permisos para la nueva entidad de flujos de proceso de negocio (por ejemplo, **Mi FPN personalizado**), a otros roles de seguridad según sea necesario.
 
 ![](media/bpf-privileges.png)
 

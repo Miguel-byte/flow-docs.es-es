@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58656140"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455172"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Uso de Markdown para dar formato a las solicitudes de aprobación de Microsoft Flow
 
@@ -67,7 +67,7 @@ This spaces your text better and makes it easier to read.
 
 **Ejemplo 2**
 
-Add two spaces prior to the end of the line.(space, space)     
+Agregue dos espacios antes del final de la línea.(espacio, espacio)     
 This adds space in between paragraphs.
 
 **Resultado:**  

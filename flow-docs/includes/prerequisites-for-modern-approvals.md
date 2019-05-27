@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b865743f52ca1e654f573cbccb8db8b851f0b3c6
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469930"
+---
 * [Microsoft Flow](https://flow.microsoft.com).
 * Una lista de SharePoint Online.
 * Cuenta de Office 365 Outlook y de Usuarios de Office 365.

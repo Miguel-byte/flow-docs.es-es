@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0422f774f18fd7ac49bed005755be251a7f24c1f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462456"
+---
 Si es el aprobador de un flujo de aprobación, recibirá un correo electrónico cada vez que alguien cree una solicitud. También se envía la solicitud de aprobación al centro de aprobaciones. Después puede aprobar o rechazar las solicitudes desde el correo electrónico, el centro de aprobaciones o la aplicación Microsoft Flow.
 
 Para aprobar una solicitud:

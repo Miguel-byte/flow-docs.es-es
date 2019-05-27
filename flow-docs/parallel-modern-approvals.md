@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: ec3c6725ca6c0b1e03738f50132464b00c1f8695
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690707"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469611"
 ---
 # <a name="create-parallel-approval-workflows-with-microsoft-flow"></a>Creación de flujos de trabajo de aprobaciones en paralelo con Microsoft Flow
 
@@ -161,7 +161,7 @@ Repita los pasos anteriores en las ramas **Start an approval 2** (Iniciar una ap
 
 Realice los pasos siguientes para actualizar SharePoint cuando se toman decisiones.
 
-   Nota: Asegúrese de realizar estos pasos en ambos lados **IF YES** (En caso positivo) y **IF NO** (En caso negativo) de la sucursal.
+   Nota: Asegúrese de realizar estos pasos en ambos el **si Sí** y **caso negativo** lados de la rama.
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
-ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479428"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64458142"
 ---
 # <a name="create-team-flows"></a>Creación de flujos de equipo
 Cree un flujo de equipo mediante la adición de otros usuarios de su organización como propietarios. Todos los propietarios de un flujo de equipo pueden realizar estas acciones:

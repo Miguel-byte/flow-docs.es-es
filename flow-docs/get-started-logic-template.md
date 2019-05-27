@@ -21,16 +21,16 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 52aae570f65eaae537f548e686f437592eb5ef03
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689465"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461170"
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Creación de un flujo desde una plantilla en Microsoft Flow
 Cree un flujo desde una de las muchas plantillas integradas que pueden, por ejemplo, enviarle un mensaje Slack cuando un administrador le envíe un correo electrónico en Office 365.
 
-**Nota:** use la opción de [crear un flujo desde cero](get-started-logic-flow.md) si ya tiene un proceso en mente y no encuentra una plantilla para él.
+**Nota**: [Crear un flujo desde cero](get-started-logic-flow.md) si ya tiene un proceso en mente y no se encuentra una plantilla para él.
 
 **Requisitos previos**
 

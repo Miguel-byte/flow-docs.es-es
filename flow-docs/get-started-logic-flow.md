@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db0d7003017eb9929b03a89f697defb40c5ed6e4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: 4ea24ed12ab12d2d52502477cdb7a4a9eb822076
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690865"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64992613"
 ---
 # <a name="create-a-flow-in-microsoft-flow"></a>Creación de un flujo en Microsoft Flow
 
@@ -88,6 +88,11 @@ En primer lugar, será preciso que seleccione el evento, o *desencadenador*, que
 1. Envíe un tweet con la palabra clave que ha indicado o espere a que otra persona publique un tweet de este tipo.
 
      Menos de un minuto después de la publicación del tweet, un mensaje de correo electrónico le notifica el nuevo tweet.
+
+> [!TIP]
+> Utilice la **enviar correo electrónico (V2)** acción para dar formato a correo electrónico en la que personalizar la fuente, el uso en negrita, cursiva o subrayado, personalizar el color de resalte y crear listas o vínculos y mucho más.
+
+![Enriquecido Editar correo electrónico](media/get-started-logic-flow/email-rich-text.png)
 
 ## <a name="manage-a-flow"></a>Administración de un flujo
 

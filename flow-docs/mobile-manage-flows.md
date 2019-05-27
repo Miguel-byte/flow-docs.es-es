@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689557"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64467701"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Administración de flujos en Microsoft Flow desde un teléfono
 Vea una lista de todos los flujos que ha creado y habilite o deshabilite cada uno de ellos, vea sus eventos y acciones, y explore su historial de ejecución.
@@ -45,7 +45,7 @@ Cuando se ejecuta el flujo, envía una notificación push personalizada, con est
 
 ![Enviar mensaje Slack](./media/mobile-manage-flows/create-event.png)
 
-**Nota**: también puede [supervisar la actividad del flujo](mobile-monitor-activity.md) desde la aplicación móvil.
+**Nota**: También puede [supervisar la actividad de flujo](mobile-monitor-activity.md) desde la aplicación móvil.
 
 ## <a name="manage-a-flow"></a>Administración de un flujo
 1. Abra la aplicación móvil y pulse **My flows** (Mis flujos) en la parte inferior de la pantalla para enumerar todos los flujos.

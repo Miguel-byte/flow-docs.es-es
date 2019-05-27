@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690491"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455638"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Ejecute flujos presionando un botón inteligente Flic (versión preliminar)
 Desencadene flujos presionando un botón físico, conocido como Flic, de Shortcut Labs. Por ejemplo, presione un Flic para realizar un seguimiento de las horas de trabajo, bloquear el calendario, contar los visitantes de un evento o guardar ubicaciones geográficas.
@@ -57,7 +57,7 @@ Una vez que haya vinculado un evento de Flic a Microsoft Flow, puede seleccionar
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Cree un flujo desencadenado por un Flic
 En este tutorial, usamos un Flic para ejecutar un flujo que registra el tiempo que un consultor invierte en cada cliente. El consultor pulsa el Flic al llegar y vuelve a pulsarlo inmediatamente antes de salir del cliente. Cada vez que se pulsa el Flic se inicia una ejecución del flujo al que está conectado. El flujo guarda la hora actual en Hojas de cálculo de Google y, después, envía una notificación por correo electrónico. El correo electrónico contiene detalles acerca de la ejecución de flujo.
 
-Nota: asegúrese de que ha usado la aplicación móvil Flic para realizar el emparejamiento y configure al menos una acción **click** que desencadene Microsoft Flow. En esta captura de pantalla, he configurado la acción **click** para desencadenar Microsoft Flow. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
+Nota: Asegúrese de que ha usado la aplicación móvil de Flic al par y configure al menos uno **haga clic en** acción para desencadenar Microsoft Flow. En esta captura de pantalla, he configurado la acción **click** para desencadenar Microsoft Flow. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
 
    ![configuración de flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -80,11 +80,11 @@ Vamos a empezar a crear un flujo.
    ![revisar detalles de plantilla](./media/flic-button-flows/flic-template-details.png)
 2. En Hojas de cálculo de Google, cree una hoja de cálculo que contenga una hoja con las columnas **ClickType** y **TimeStamp**.
    
-      Sugerencia: para asignar nombres a las columnas en Hojas de cálculo de Google escriba el nombre al principio de la columna. Por consiguiente, la hoja debería ser como la que aparece en esta captura de pantalla:
+      Sugerencia: Nombre de las columnas en hojas de cálculo de Google, escriba el nombre de columna en la parte superior de la columna. Por consiguiente, la hoja debería ser como la que aparece en esta captura de pantalla:
    
    ![Hoja de cálculo de Google](./media/flic-button-flows/flic-google-sheet.png)
    
-   Nota: esta hoja se usa más adelante en este mismo tutorial.
+   Nota: Utilice esta hoja más adelante en este tutorial.
 
 ### <a name="add-the-flic-trigger-to-your-flow"></a>Agregue el desencadenador de Flic al flujo
 1. Inicie sesión en los servicios de la plantilla y seleccione **Continuar**.
@@ -112,7 +112,7 @@ Vamos a empezar a crear un flujo.
 1. Seleccione la hoja de cálculo que creó anteriormente en la lista **Archivo**.
 2. Seleccione la hoja en la lista **Hoja de cálculo**.
    
-   Nota: después de seleccionar la hoja aparecen dos cuadros adicionales en la tarjeta **Insert row** (Insertar tarjeta). Dichos cuadros representan las dos columnas de la hoja que creó anteriormente.
+   Nota: Aparecen dos cuadros adicionales en el **Insertar fila** después de seleccionar la hoja de la tarjeta. Dichos cuadros representan las dos columnas de la hoja que creó anteriormente.
 3. Seleccione el cuadro **ClickType** y, después, seleccione el token **Click type** (Tipo de clic).
 4. Seleccione el cuadro **Timestamp** y, después, seleccione el token **Click time** (Hora de clic).
    

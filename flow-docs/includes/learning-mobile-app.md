@@ -1,4 +1,12 @@
-Esta lección versará acerca de la aplicación móvil Microsoft Flow y sus funcionalidades. Desde la aplicación móvil se puede acceder a estas características: **Fuente de actividades**, **Exploración**, **Botones** y **Administración de flujos**.
+---
+ms.openlocfilehash: af3b0e4171e49cc918d8a18985136ffb760c1473
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462781"
+---
+Esta lección versará acerca de la aplicación móvil Microsoft Flow y sus funcionalidades. Desde la aplicación móvil, puede tener acceso a estas características: **Fuente de actividades**, **exploración**, **botones**, y **administrar los flujos de**.
 
 En primer lugar, hay que **descargar** la aplicación Microsoft Flow de la tienda de aplicaciones e **instalarla**.
 

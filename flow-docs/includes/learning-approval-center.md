@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 431bb579e19f89132f5ea0ca772a89ea17988de2
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463432"
+---
 En un tema anterior, ya se ha visto cómo alimentar una fuente de Twitter con una lista de SharePoint de una manera sencilla. En este tema, aprenderá a crear un escenario empresarial más favorable mediante aprobaciones. De esta forma, cualquier persona con acceso a la lista de SharePoint puede enviar tweets y el equipo de redes sociales puede aprobar o rechazar dichos tweets. El equipo mantiene el control de la cuenta y el contenido que se envía a los clientes. 
 
 ## <a name="create-an-approval-request-flow"></a>Creación de un flujo de solicitud de aprobación
