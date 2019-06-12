@@ -109,6 +109,10 @@
           href: use-cds-for-apps-dialogs.md
         - name: Sustitución de diálogos clásicos de Common Data Service
           href: replace-dialogs.md
+- name: Generador de IA
+  items:
+    - name: "Uso del generador de IA en Microsoft\_Flow"
+      href: use-ai-builder.md
 - name: Procedimientos
   items:
     - name: Agregar una acción
