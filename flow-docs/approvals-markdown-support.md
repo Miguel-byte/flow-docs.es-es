@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: MT
+ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455172"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58656140"
 ---
 # <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Uso de Markdown para dar formato a las solicitudes de aprobación de Microsoft Flow
 
@@ -57,23 +57,23 @@ Facilite la lectura de su texto dividiéndolo en párrafos o saltos de línea. I
    
 **Ejemplo**
 
-Add lines between your text with the Enter key.
-This spaces your text better and makes it easier to read.
+Agregue líneas en su texto con la tecla Entrar.
+De esta forma, habrá más espacio en su texto y será más fácil de leer.
 
-**Resultado:**   
-Add lines between your text with the Enter key.      
-This spaces your text better and makes it easier to read.
+**Resultado:**    
+Agregue líneas en su texto con la tecla Entrar.      
+De esta forma, habrá más espacio en su texto y será más fácil de leer.
 
 
 **Ejemplo 2**
 
-Agregue dos espacios antes del final de la línea.(espacio, espacio)     
-This adds space in between paragraphs.
+Agregue dos espacios antes del final de la línea (espacio, espacio).     
+De esta forma, habrá más espacio entre los párrafos.
 
 **Resultado:**  
-Add two spaces prior to the end of the line.   
+Agregue dos espacios antes del final de la línea.   
 
-This adds space in between paragraphs.
+De esta forma, habrá más espacio entre los párrafos.
   
 
 ## <a name="lists"></a>Listas
@@ -240,7 +240,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 **Resultado:**
 
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**   
+**_Bold, italicized text_**    
 **~~Bold, strike-through text~~**  
 
 
