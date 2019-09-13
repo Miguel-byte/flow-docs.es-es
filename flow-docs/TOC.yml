@@ -32,6 +32,8 @@
       href: connection-cds.md
     - name: Creación de un flujo con Dynamics 365
       href: connection-dynamics365.md
+    - name: Creación de un flujo con OneDrive para la Empresa
+      href: onedrive-business-launch-panel.md
     - name: Filtrado y copia de datos
       href: odata-filters.md
     - name: Uso de un Flic
@@ -126,6 +128,8 @@
       href: data-operations.md
     - name: Uso de expresiones en condiciones
       href: use-expressions-in-conditions.md
+    - name: Uso de Visio para modelar flujos
+      href: visio-flows.md
     - name: 'Referencia: Uso de funciones en expresiones'
       href: 'https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference'
     - name: Flujos de aprobación
