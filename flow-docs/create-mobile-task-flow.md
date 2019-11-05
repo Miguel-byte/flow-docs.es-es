@@ -1,12 +1,12 @@
 ---
-title: Creación de un flujo de tareas móvil con PowerApps | Microsoft Docs
+title: Creación de un flujo de tareas móviles con PowerApps | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -21,65 +21,66 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7f15f11a4e66d80762384f8183af7973fcca76bf
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ccd3b6c0e8cf97a490d01bb9ba5e5c3c4043fda5
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456221"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546423"
 ---
-# <a name="create-a-mobile-task-flow"></a>Creación de un flujo de tareas móvil
+# <a name="create-a-mobile-task-flow"></a>Crear un flujo de tareas móviles
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Diseñe un flujo en Dynamics 365 para teléfonos o tabletas en función de las tareas comunes que realicen los usuarios. Por ejemplo, si periódicamente tienen que realizar una serie de pasos de seguimiento después de las reuniones con los clientes, cree un flujo de tareas. Cuando los usuarios pulsen en la nueva tarea en su aplicación móvil, les guiará de principio a fin, para que no olviden un paso importante.  
+Diseñe un flujo en Dynamics 365 para teléfonos o Dynamics 365 para tabletas basadas en las tareas comunes que realizan los usuarios. Por ejemplo, si necesitan realizar regularmente una serie de pasos de seguimiento después de las reuniones de cliente, cree un flujo de tareas. Cuando los usuarios tocan la nueva tarea en su aplicación móvil, se dirigirán de principio a fin para que no olviden un paso importante.  
   
- Los flujos de tareas pueden usar formularios y lógica de varias entidades, y pueden tener lógica de formulario que se ejecute en todas las páginas del flujo de tareas.  
+ Los flujos de tareas pueden usar la lógica y los formularios de varias entidades, y pueden tener lógica de formulario que se ejecuta en las páginas de flujo de tareas.  
   
-## <a name="create-a-task-flow"></a>Creación de un flujo de tareas
+## <a name="create-a-task-flow"></a>Crear un flujo de tareas
   
-1. Asegúrese de que tiene el rol de seguridad Administrador del sistema o Personalizador del sistema, o permisos equivalentes. Si usa Dynamics 365 Customer Engagement, los roles de seguridad Administrador, Vicepresidente o Director general también pueden crear flujos de tareas móviles. 
+1. Asegúrese de que tiene el rol de seguridad Administrador del sistema o Personalizador del sistema o permisos equivalentes. Los roles de seguridad Director de administrador, vicepresidente o director general también pueden crear flujos de tareas móviles. 
   
-2. Abra el [Explorador de soluciones](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) y haga clic en **Procesos**.  
+2. Abra el [Explorador de soluciones](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer) y seleccione **procesos**.  
   
-3.  En la barra de herramientas **Acciones**, haga clic en **Nuevo**.  
+3.  En la barra de herramientas **acciones** , seleccione **nuevo**.  
   
-4.  En el cuadro de diálogo **Crear proceso**, rellene los campos obligatorios:  
+4.  En el cuadro de diálogo **Crear proceso** , complete los campos obligatorios:  
   
     -   Escriba un nombre de proceso.  
   
-    -   En la lista **Categoría**, seleccione **Flujo de proceso de negocio**.  
+    -   En la lista **categoría** , seleccione **flujo de procesos empresariales**.  
   
-    -   En la lista **Entidad**, seleccione la entidad que quiera.  
+    -   En la lista **entidad** , seleccione la entidad que desee.  
   
-5.  Haga clic en la opción **Ejecutar proceso como un flujo de tareas (solo móvil)**.  
+5.  Seleccione la opción **Ejecutar proceso como flujo de tareas (móvil en línea)** .  
   
-6.  Haga clic en **Aceptar**.
+6.  Seleccione **Aceptar**.
   
-     El Diseñador de flujo de tareas se abrirá en una nueva ventana.  
+     El diseñador de flujo de tareas se abre en una nueva ventana.  
   
-     ![Ventana Diseñador de flujo de tareas](media/task-flow-designer-window.png "Task flow designer window") 
+     ![Ventana del diseñador de flujo de tareas](media/task-flow-designer-window.png "Ventana del diseñador de flujo de tareas") 
   
-7.  Si los usuarios van a avanzar en orden desde una página a otra, arrastre el componente **Página** desde la pestaña **Componentes** en el lado derecho de la pantalla y colóquelo sobre el signo + en el lugar apropiado. Para agregar un nombre para una página, seleccione la página, haga clic en la pestaña **Propiedades**, escriba un nombre nuevo y, después, haga clic en **Aplicar**.  
+7.  Si los usuarios van progresando de una página a otra en orden, arrastre el componente de **Página** desde la pestaña **componentes** en el lado derecho de la pantalla y colóquelo en el signo + en el lugar adecuado. Para agregar un nombre a una página, seleccione la página, seleccione la pestaña **propiedades** , escriba un nuevo nombre y, a continuación, seleccione **aplicar**.  
   
-8.  Para agregar una rama al flujo de tareas, arrastre el componente **Condición** desde la pestaña **Componentes** y colóquelo sobre el signo + en el lugar apropiado. Para establecer las propiedades de la condición, seleccione la condición, establezca las propiedades en la pestaña **Propiedades** y, después, haga clic en **Aplicar**.  
+8.  Para agregar una rama al flujo de tareas, arrastre el componente **condición** desde la pestaña **componentes** y colóquelo en el signo + en el punto adecuado. Para establecer las propiedades de la condición, seleccione la condición, establezca las propiedades en la pestaña **propiedades** y, a continuación, seleccione **aplicar**.  
   
     > [!NOTE]
-    >  A medida que agregue páginas y condiciones al flujo de tareas, verá un minimapa en la esquina inferior izquierda de la ventana en el que se muestran todas las páginas y condiciones del flujo de tareas.  
+    >  A medida que agrega páginas y condiciones al flujo de tareas, verá un minimapa en la esquina inferior izquierda de la ventana en la que se muestran todas las páginas y condiciones del flujo de tareas.  
   
-9. Para agregar un campo, una etiqueta o una etiqueta de sección a una página, arrastre **Campo**, **Etiqueta** o **Etiqueta de sección** desde la pestaña **Componentes** a la página correspondiente. Para cambiar las propiedades de uno de estos elementos, seleccione el elemento, establezca las propiedades en la pestaña **Propiedades** y, después, haga clic en **Aplicar**.  
+9. Para agregar una etiqueta de campo, etiqueta o sección a una página, arrastre la etiqueta **campo**, **etiqueta**o **sección** desde la pestaña **componentes** a la página correspondiente. Para cambiar las propiedades de uno de estos elementos, seleccione el elemento, establezca las propiedades en la pestaña **propiedades** y, a continuación, seleccione **aplicar**.  
   
-10. Para validar el flujo de tareas, haga clic en **Validar** en la barra de acciones.  
+10. Para validar el flujo de tareas, seleccione **validar** en la barra de acciones.  
   
-11. Para guardar el proceso como un borrador, haga clic en **Guardar** en la parte superior de la pantalla. (Mientras un proceso sea un borrador, los demás usuarios no podrán usarlo).  
+11. Para guardar el proceso como borrador, seleccione **Guardar** en la parte superior de la pantalla. (Siempre que un proceso sea un borrador, los usuarios no podrán utilizarlo).  
   
-12. Para activar el flujo de tareas para que los usuarios lo puedan utilizar, haga clic en **Activar**.  
+12. Para activar el flujo de tareas para que los usuarios puedan usarlo, seleccione **Activar**.  
   
 > [!TIP]
->  Estas son algunas sugerencias que debe tener en cuenta cuando trabaje con el flujo de tareas en la ventana del diseñador:  
+>  Estas son algunas sugerencias que hay que tener en cuenta al trabajar en el flujo de tareas en la ventana del diseñador:  
 >   
-> -  Para realizar una instantánea de todo el contenido de la ventana del flujo de tareas, haga clic en **Instantánea** en la barra de acciones.  
-> -  Para conectar un componente válido a otro componente válido en el diseñador, haga clic en **Conector** en la barra de acciones.  
-> -  Puede ampliar o reducir las imágenes en la pantalla si hace clic en los botones **Aumentar el nivel de zoom** o **Disminuir el nivel de zoom** en la esquina superior derecha de la pantalla. Haga clic en el botón **Ajustar al lienzo** para ampliar las imágenes hasta el tamaño más grande que quepa en la pantalla.  
+> -  Para tomar una instantánea de todo en la ventana flujo de tareas, seleccione **instantánea** en la barra de acciones.  
+> -  Para conectar un componente válido a otro componente válido en el diseñador, seleccione **conector** en la barra de acciones.  
+> -  Puede hacer que las imágenes de la pantalla sean más grandes o más pequeñas si selecciona los botones **aumentar el nivel de zoom** o **reducir el nivel de zoom** en la esquina superior derecha de la pantalla. Seleccione el botón **ajustar al lienzo para colocar** las imágenes hasta el tamaño más grande que quepa en la pantalla.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- [Crear un flujo de proceso de negocio](create-business-process-flow.md)   
+ [Crear un flujo de procesos empresariales](create-business-process-flow.md)   
 

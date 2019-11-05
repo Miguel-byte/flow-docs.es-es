@@ -1,6 +1,6 @@
 ---
-title: Importación de una solución | Microsoft Docs
-description: Aprenda a importar una solución.
+title: Obtenga información sobre cómo importar una solución | Microsoft Docs
+description: Obtenga información sobre cómo importar una solución.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,48 +20,50 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7b0b809b30e59cbdb4ffa66d39fede89a6124548
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: db90ed07e4c5b6da858782e496d6b47df2ecb0cd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460768"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548278"
 ---
-# <a name="import-a-solution"></a>Importación de una solución
+# <a name="import-a-solution"></a>Importar una solución
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Después de exportar su solución, puede importarla a cualquier entorno que cumpla los requisitos previos. Siga estos pasos para importar una solución:
+> [!TIP]
+> Si desea que los flujos se inicien automáticamente después de importar una solución, use Common Data Service conector de (entorno actual) en el flujo al crearla.
 
-1. Inicie sesión en Microsoft Flow y seleccione **Soluciones** en la barra de navegación superior.
+Después de haber exportado la solución, puede importarla en cualquier entorno que cumpla los requisitos previos. Siga estos pasos para importar una solución:
+
+1. Inicie sesión en Microsoft Flow y, a continuación, seleccione **soluciones** en la barra de navegación.
 
    ![](./media/import-flow-solution/select-solutions-from-left-nav.png)
 
-
-<!--from editor: I don't think you need the symbols on the left of Import, below. They don't look like the arrow icon, and I think Import is clear enough. -->
-
-1. Seleccione **< Importar**.
+1. Seleccione **importar**.
 
    ![](./media/import-flow-solution/select-import.png)
 
-1. Seleccione **Examinar** en la página **Importar solución** que se abre.
+1. Seleccione **examinar** en la página **importar solución** que se abre.
 1. Busque y seleccione la solución que desea importar.
-1. Seleccione **Abrir**.
+1. Seleccione **abrir**.
 
-   Ahora debería ver la página **Seleccionar paquete de solución** similar a esta imagen:
+   Ahora debería ver la página **seleccionar paquete de solución** similar a esta imagen:
 
    ![](./media/import-flow-solution/import-solution.png)
 
-1. Seleccione **Siguiente**.
+1. Seleccione **siguiente**.
 
-   Si no hay ningún error, la importación se completa en unos minutos.
+   Si no hay ningún error, la importación se completa en unos momentos.
 
 > [!NOTE]
-> No se puede importar una solución a un entorno en el que ya existe la solución.
+> No se puede importar una solución en un entorno en el que la solución ya existe.
 
-## <a name="learn-more"></a>Más información
+
+## <a name="learn-more"></a>Aprende más
 
 <!--from editor: Do you want to add Remove a solution-aware flow to this list?-->
 
-- [Creación de una solución](./overview-solution-flows.md)
+- [Crear una solución](./overview-solution-flows.md)
 - [Creación de un flujo en una solución](./create-flow-solution.md)
-- [Exportación de una solución](./export-flow-solution.md)
-- [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)
+- [Exportar una solución](./export-flow-solution.md)
+- [Editar un flujo compatible con soluciones](./edit-solution-aware-flow.md)

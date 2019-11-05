@@ -1,5 +1,5 @@
 ---
-title: Más información sobre los entornos de Microsoft Flow | Microsoft Docs
+title: Más información acerca de los entornos de Microsoft Flow | Microsoft Docs
 description: Aprenda a usar entornos para aislar los flujos
 services: ''
 suite: flow
@@ -20,78 +20,79 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0e6b410f75f28ba13357878a5cda178bc66b69ff
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 8890e621d14fb0f2d00af4cdf767f05ddeab9f21
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460878"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547933"
 ---
 # <a name="choosing-an-environment"></a>Elección de un entorno
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-En este artículo se describen los **entornos** de Microsoft Flow en los que puede crear y aislar de forma segura los flujos, puertas de enlace, conexiones y otros recursos.
+En este artículo se explica cómo Microsoft Flow **entornos** en los que puede crear y aislar de forma segura los flujos, las puertas de enlace, las conexiones y otros recursos.
 
-Obtendrá información sobre:
+Aprenderá lo siguiente:
 
-* Las características que proporcionan los entornos.
-* Cómo cambiar entre entornos.
+* Características que proporcionan los entornos.
+* Cambiar entre entornos.
 * Cómo crear un flujo en el entorno adecuado.
 
-## <a name="environments-overview"></a>Introducción a los entornos
+## <a name="environments-overview"></a>Información general sobre entornos
 
-Cuando se crea un flujo, se puede elegir en qué entorno se va a hospedar y los recursos que va a usar. Se pueden usar entornos distintos para diferentes escenarios.
+Cuando se crea un flujo, se elige un entorno para hospedar el flujo y los recursos que usa el flujo. Puede usar entornos independientes para diferentes escenarios.
 
-## <a name="here-are-a-few-scenarios-for-using-environments"></a>Estos son algunos escenarios para usar entornos
+## <a name="here-are-a-few-scenarios-for-using-environments"></a>Estos son algunos escenarios para el uso de entornos
 
-Escenario|Recomendación
+Escenario|Norma
 -----|-----
-Quiere crear un flujo que use una conexión a Microsoft Common Data Service.|Coloque el flujo y Common Data Service en el mismo entorno. Esto garantiza que todos los datos se aíslan en dicho entorno (límite de aislamiento).
-Va a crear un flujo para el departamento de recursos humanos. Desea asegurarse de que los usuarios del departamento de recursos humanos son los únicos que tienen acceso al flujo.|Cree un entorno y agregue solo a los usuarios de recursos humanos a él. Coloque el flujo y los demás recursos que el flujo utilice en este entorno.
-Hay usuarios en Europa que utilizan un flujo para mostrar datos de SharePoint.|Cree un entorno en Europa y, a continuación, cree el flujo y la conexión de SharePoint a este. Este entorno de Europa ofrece a los usuarios europeos el mejor rendimiento, ya que todos los recursos son locales en Europa (localidad de los datos).
+Desea crear un flujo que use una conexión a Microsoft Common Data Service.|Coloque el flujo y el Common Data Service en el mismo entorno. Esto garantiza que todos los datos se aíslan dentro de ese entorno (límite de aislamiento).
+Está creando un flujo para el Departamento de recursos humanos. Desea asegurarse de que solo los usuarios del Departamento de recursos humanos tienen acceso al flujo.|Cree un entorno y agréguele solo los usuarios de recursos humanos. Coloque el flujo y cualquier otro recurso que use el flujo en este entorno.
+Hay usuarios en Europa que utilizan un flujo para Mostrar datos de SharePoint.|Cree un entorno en Europa y, a continuación, cree el flujo y la conexión de SharePoint en él. Este entorno de Europa ofrece a los usuarios europeos el mejor rendimiento, ya que todos los recursos son locales en Europa (localidad de datos).
 
-Para crear entornos, debe ser un administrador de Microsoft Flow. Los administradores controlan quién tiene acceso a los entornos. Para más información acerca de cómo crearlos y administrarlos, consulte el tema sobre [administración de entornos](environments-overview-admin.md).
+Para crear entornos, debe ser un administrador de Microsoft Flow. Los administradores controlan quién tiene acceso a los entornos. Para más información sobre cómo crear y administrar entornos, consulte el tema [administrar entornos](environments-overview-admin.md) .
 
 ## <a name="switching-environments"></a>Cambio de entornos
 
-Microsoft Flow facilita el cambio de entorno. Al cambiar de entorno, solo verá los elementos que se han creado en ese entorno específico; no podrá ver ni acceder a los elementos de ningún otro entorno.
+Microsoft Flow facilita el cambio entre entornos. Al cambiar de entorno, solo verá los elementos creados en ese entorno específico; no podrá ver ni tener acceso a los elementos de ningún otro entorno.
 
-Aquí se muestra un ejemplo.
+A continuación se muestra un ejemplo.
 
-Cree un flujo denominado *NewEmployee* en el entorno de *recursos humanos*. En [Microsoft Flow](https://flow.microsoft.com), abra el entorno de *ventas*. El flujo *NewEmployee* no aparece en la lista. Para ver el flujo *NewEmployee*, abra el entorno de *recursos humanos*. Recuerde que las mismas reglas se pueden aplicar a todos los elementos que creó en ese entorno, incluidas las conexiones, las puertas de enlace y los flujos, entre otras cosas.
+Ha creado un flujo denominado *NewEmployee* en el entorno de *recursos humanos* . En [Microsoft Flow](https://flow.microsoft.com), abra el entorno de *ventas* . El flujo *NewEmployee* no aparece en la lista. Para ver el flujo *NewEmployee* , abra el entorno de *recursos humanos* . Recuerde que las mismas reglas se aplican a cualquier otro elemento que haya creado en el entorno, incluidas las conexiones, las puertas de enlace, los flujos, etc.
 
 Siga estos pasos para cambiar de entorno:
 
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com).
-1. En la esquina superior derecha, verá una imagen que representa su perfil.
+1. En la esquina superior derecha, verá una imagen que representa el perfil.
 
    ![imagen de perfil](./media/environments-overview-maker/default-environment.png)
 
-1. Seleccione la imagen. Aparece una lista desplegable que muestra todos los entornos disponibles. El entorno en el que ha iniciado sesión aparece seleccionado:
+1. Seleccione la imagen. En una lista desplegable se muestran todos los entornos disponibles. Se comprueba el entorno en el que está conectado actualmente:
 
-   ![lista de imágenes de entornos](./media/environments-overview-maker/all-environments.png)
+   ![imagen de la lista de entornos](./media/environments-overview-maker/all-environments.png)
 1. Para cambiar a otro entorno, seleccione ese entorno en la lista:
 
    ![seleccionar un entorno al que cambiar](./media/environments-overview-maker/select-europe.png)
-1. Microsoft Flow cambiará al nuevo entorno.
+1. Microsoft Flow cambia al nuevo entorno.
 
-## <a name="create-flows-in-the-right-environment"></a>Creación de flujos en el entorno adecuado
+## <a name="create-flows-in-the-right-environment"></a>Crear flujos en el entorno adecuado
 
-Antes de crear un flujo, seleccione el entorno en el que se agregará el flujo y sus recursos.
+Antes de crear un flujo, seleccione el entorno en el que va a agregar el flujo y sus recursos.
 
 > [!NOTE]
-> Si crea un flujo en el entorno incorrecto, tendrá que eliminarlo y, posteriormente, volver a crearlo en el entorno correcto.
+> Si crea un flujo en un entorno equivocado, tendrá que eliminarlo y, a continuación, crearlo en el entorno correcto.
 
-Considere los siguientes factores al elegir en qué entorno quiere hospedar los flujos:
+Tenga en cuenta los siguientes factores al elegir un entorno para hospedar los flujos:
 
-* Solo puede crear puertas de enlace en el entorno predeterminado. Por tanto, si desea usar una puerta de enlace para conectar el flujo a datos locales, tendrá que usar el entorno predeterminado.
-* Las bases de datos de Microsoft Common Data Service están asociadas a un entorno específico. Por lo tanto, si desea crear un flujo que use Common Data Service, debe crear el flujo en el entorno que hospeda la base de datos.
-* Verá todos los entornos en los que se pueden editar recursos. Sin embargo, tendrá que pedir a un administrador que lo agregue como creador a todos los entornos en los que desee crear flujos.
+* Solo puede crear puertas de enlace en el entorno predeterminado. Por lo tanto, si desea utilizar una puerta de enlace para conectar el flujo a datos locales, deberá usar el entorno predeterminado.
+* Las bases de datos de Microsoft Common Data Service están asociadas a un entorno específico. Por lo tanto, si desea crear un flujo que use el Common Data Service, debe crear el flujo en el entorno que hospeda la base de datos.
+* Verá todos los entornos en los que puede editar recursos. Sin embargo, deberá pedir a un administrador que le agregue como creador a todos los entornos en los que desea crear flujos.
 
 > [!NOTE]
 > Siempre podrá crear flujos en el entorno predeterminado.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Creación de un flujo desde una plantilla](get-started-logic-template.md)
-* [Crear un flujo](get-started-logic-flow.md)
-* [Introducción acerca de los entornos para administradores](environments-overview-admin.md)
+* [Creación de un flujo a partir de una plantilla](get-started-logic-template.md)
+* [Creación de un flujo](get-started-logic-flow.md)
+* [Información general del entorno para administradores](environments-overview-admin.md)

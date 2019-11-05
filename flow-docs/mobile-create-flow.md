@@ -1,6 +1,6 @@
 ---
-title: Creación de un flujo desde un teléfono | Microsoft Docs
-description: Cree un flujo desde una plantilla que, por ejemplo, envía una notificación push cuando se recibe correo desde la dirección que especifique
+title: Crear un flujo desde el teléfono | Microsoft Docs
+description: Cree un flujo a partir de una plantilla que, por ejemplo, envíe una notificación de envío cuando reciba correo de una dirección que especifique.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,78 +20,79 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 095b3a7f6565afff0a944bb08aee8f3a06ea114b
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468794"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73549055"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Creación de un flujo desde un teléfono mediante Microsoft Flow
-Cree un flujo desde un teléfono mediante una plantilla, que se puede encontrar de cualquiera de las tres formas siguientes: búsqueda en una lista de servicios, examen de categorías o especificación de palabras clave. Siga los pasos de este tema para crear un flujo que envíe una notificación push a su teléfono cuando reciba un correo electrónico de un administrador.
+# <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Cree un flujo desde el teléfono mediante Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Cree un flujo desde el teléfono mediante una plantilla, que puede encontrar buscando en una lista de servicios, examinando categorías o especificando palabras clave. Siga los pasos de este tema para crear un flujo que envíe una notificación de envío a su teléfono cuando reciba correo de su administrador.
 
-Si nunca ha usado Microsoft Flow, [aquí puede obtener una visión general](getting-started.md).
+Si no está familiarizado con Microsoft Flow, [obtenga información general](getting-started.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
-* Una [cuenta de Microsoft Flow](sign-up-sign-in.md).
-* La aplicación móvil de Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows) en un [dispositivo compatible](getting-started.md#use-the-mobile-app). Los elementos gráficos de este tema reflejan la versión de iPhone de la aplicación, pero la interfaz en un dispositivo Android o Windows Phone es similar.
-* Para utilizar la plantilla que se muestra en este tema, también necesitará:
+* Una [cuenta para Microsoft Flow](sign-up-sign-in.md).
+* La aplicación móvil Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)o [Windows Phone](https://aka.ms/flowmobilewindows) en un [dispositivo compatible](getting-started.md#use-the-mobile-app). Los gráficos de este tema reflejan la versión de iPhone de la aplicación, pero la interfaz de un dispositivo Android o Windows Phone es similar.
+* Para usar la plantilla que se muestra en este tema, también necesitará:
   
   * Credenciales de Office 365.
-  * Notificaciones push habilitadas en el teléfono.
+  * Notificaciones de envío habilitadas en el teléfono.
 
-## <a name="find-a-template"></a>Busqueda de una plantilla
-1. Abra la aplicación móvil y pulse **Examinar** en la parte inferior de la pantalla.
+## <a name="find-a-template"></a>Buscar una plantilla
+1. Abra la aplicación móvil y pulse **examinar** en la parte inferior de la pantalla.
    
-    ![Icono Examinar](./media/mobile-create-flow/browse-icon.png)
+    ![Icono examinar](./media/mobile-create-flow/browse-icon.png)
    
-    Puede utilizar cualquiera de estas acciones para buscar la plantilla:
+    Puede encontrar una plantilla de cualquiera de estas maneras:
    
    * Especifique una palabra clave en el cuadro de búsqueda de la parte superior de la pantalla.
-   * Pulse cualquiera de las opciones de la lista de servicios.
-   * Desplácese hacia abajo para mostrar varias categorías y, luego, pulse una plantilla de cualquiera de las categorías.
+   * Puntee en una opción de la lista de servicios.
+   * Desplácese hacia abajo para mostrar una variedad de categorías y, a continuación, puntee en una plantilla en cualquier categoría.
      
-       ![Pestaña Examinar](./media/mobile-create-flow/browse-tab.png)
+       ![Pestaña examinar](./media/mobile-create-flow/browse-tab.png)
      
-     A efectos de este tutorial, abrirá la plantilla que envía una notificación push cuando reciba un correo electrónico de un administrador.
-2. En la lista de servicios, pulse **See all** (Ver todos).
+     En este tutorial, abrirá la plantilla que envía una notificación de envío cuando recibe correo de su administrador.
+2. En la lista de servicios, pulse **ver todo**.
    
     ![Mostrar lista de servicios](./media/mobile-create-flow/list-services.png)
-3. Pulse el icono de **notificación push**.
+3. Pulse el icono de **notificación**de la extracción.
    
-    ![Notificaciones push](./media/mobile-create-flow/push-notifications.png)
-4. En la barra de búsqueda, escriba **correo electrónico** y pulse la plantilla para enviar una notificación push cuando reciba un mensaje de un administrador.
+    ![Notificaciones de envío](./media/mobile-create-flow/push-notifications.png)
+4. En la barra de búsqueda, escriba **correo electrónico**y, a continuación, puntee en la plantilla para enviar una notificación de envío cuando reciba un mensaje de su administrador.
    
     ![Elegir plantilla](./media/mobile-create-flow/choose-template.png)
-5. En la pantalla que proporciona detalles acerca de la plantilla que ha seleccionado, pulse **Use this template** (Usar esta plantilla).
+5. En la pantalla que proporciona detalles sobre la plantilla que ha seleccionado, pulse **usar esta plantilla**.
    
     ![Confirmar plantilla](./media/mobile-create-flow/confirm-template.png)
 
-## <a name="finish-the-flow"></a>Finalización del flujo
-1. Si se le solicita, pulse **Sign in** (Iniciar sesión) y especifique las credenciales de Office 365 Outlook, Usuarios de Office 365, o ambos.
+## <a name="finish-the-flow"></a>Finalizar el flujo
+1. Si se le solicita, pulse **iniciar sesión**y proporcione sus credenciales para Office 365 Outlook, usuarios de Office 365 o ambos.
    
     ![Iniciar sesión en Office 365](./media/mobile-create-flow/office-signin.png)
    
-    Al crear otros flujos se pueden usar las mismas conexiones.
-2. En la esquina superior derecha, pulse **Next** (Siguiente).
+    Puede usar las mismas conexiones al crear otros flujos.
+2. En la esquina superior derecha, puntee en **siguiente**.
    
-    ![Pulsar Next (Siguiente)](./media/mobile-create-flow/next.png)
+    ![Puntee en siguiente](./media/mobile-create-flow/next.png)
    
-    La pantalla siguiente muestra el efecto desencadenante y todas las acciones resultantes.
+    En la pantalla siguiente se muestra el evento desencadenador y todas las acciones resultantes.
    
-    ![Desencadenar evento y acciones](./media/mobile-create-flow/flow-structure.png)
+    ![Desencadenar eventos y acciones](./media/mobile-create-flow/flow-structure.png)
    
-    Para esta plantilla, el correo nuevo desencadena el flujo, que recupera la información (incluida la dirección de un administrador) y le envía una notificación push cuando reciba correo de dicha dirección. Algunas plantillas requieren cierta personalización para funcionar correctamente, pero esta no.
-3. (opcional) Cerca de la parte superior de la pantalla, escriba otro nombre para el flujo.
+    Para esta plantilla, el correo nuevo desencadena el flujo, que recupera la información (incluida la dirección de su administrador) y le envía una notificación de envío cuando recibe correo de esa dirección. Algunas plantillas requieren cierta personalización para funcionar correctamente, pero esta plantilla no.
+3. opta Cerca de la parte superior de la pantalla, escriba un nombre diferente para el flujo.
    
-    ![Cambiar nombre de flujo](./media/mobile-create-flow/rename-flow.png)
-4. En la esquina superior derecha, pulse **Create** (Crear).
+    ![Cambiar el nombre del flujo](./media/mobile-create-flow/rename-flow.png)
+4. En la esquina superior derecha, pulse **crear**.
    
     ![Crear flujo](./media/mobile-create-flow/create-flow.png)
    
-    Se crea el flujo, que comprobará si ha llegado correo del administrador hasta que se pause o se elimine dicho flujo.
+    Se creará el flujo y comprobará si hay correo electrónico desde el administrador hasta que PAUSE o elimine el flujo.
 
 ## <a name="next-steps"></a>Pasos siguientes
-* [Monitor activity in Microsoft Flow from your phone](mobile-monitor-activity.md) (Supervisión de la actividad en Microsoft Flow desde un teléfono).
-* [Manage flows in Microsoft Flow from your phone](mobile-manage-flows.md) (Administración de flujos en Microsoft Flow desde un teléfono).
+* [Supervise la actividad de Flow](mobile-monitor-activity.md).
+* [Administrar los flujos](mobile-manage-flows.md).
 

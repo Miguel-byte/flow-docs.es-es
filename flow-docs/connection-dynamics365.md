@@ -20,151 +20,152 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: c3a138cef3761b188998766a60ceb84619ae5f0a
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64457186"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546911"
 ---
-# <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (con conexión)
-Mediante un conector de Dynamics 365 se pueden crear flujos que se inician cuando se produce un evento en 365 Dynamics, o algún otro servicio, que realiza una acción en Dynamics 365, o en algún otro servicio. 
+# <a name="create-a-flow-by-using-dynamics-365-online"></a>Creación de un flujo mediante Dynamics 365 (en línea)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Mediante el uso de un conector de Dynamics 365, puede crear flujos que se inician cuando se produce un evento en Dynamics 365, o algún otro servicio, que realiza una acción en Dynamics 365 o algún otro servicio. 
 
-En Microsoft Flow se pueden configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones y recopilar datos, entre otras operaciones. Para más información, consulte [Introducción a Microsoft Flow](getting-started.md).
+En Microsoft Flow, puede configurar flujos de trabajo automatizados entre sus aplicaciones y servicios favoritos para sincronizar archivos, obtener notificaciones, recopilar datos y mucho más. Para obtener más información, consulte Introducción [a Microsoft Flow](getting-started.md).
 
 > [!IMPORTANT] 
-> Para invocar un desencadenador de flujos, la entidad de compromiso del cliente de Dynamics 365 utilizada con el flujo en cuestión debe tener activada la opción **Seguimiento de cambios**. Más información: [Habilitar seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization). 
+> Para invocar un desencadenador de flujo, la entidad Common Data Service utilizada con el flujo debe tener **Change Tracking** habilitado. Más información: [Habilitar el seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
-## <a name="create-a-flow-from-a-template"></a>Creación de un flujo desde una plantilla
-Para crear un flujo se puede utilizar una de las muchas plantillas disponibles, como en estos ejemplos:
+## <a name="create-a-flow-from-a-template"></a>Creación de un flujo a partir de una plantilla
+Puede crear un flujo mediante una de las numerosas plantillas disponibles, como estos ejemplos:
 
-* Cuando se crea un objeto en Dynamics 365, cree un elemento de lista en SharePoint.
-* Cree registros de clientes potenciales de Dynamics 365 desde una tabla de Excel.
-* Copie cuentas de Dynamics 365 a los clientes de Dynamics 365 for Operations.
+* Cuando se crea un objeto en Dynamics 365, se crea un elemento de lista en SharePoint.
+* Cree registros de clientes potenciales de Dynamics 365 a partir de una tabla de Excel.
+* Copie las cuentas de Dynamics 365 a los clientes en Dynamics 365 para las operaciones.
 
-Para crear un flujo desde una plantilla, siga estos pasos.
-
-1. Inicie sesión en el [sitio web de Microsoft Flow](https://flow.microsoft.com/).
-2. Haga clic o pulse **Servicios** y, después, haga clic o pulse **Dynamics 365**.
-3. Hay varias plantillas disponibles. Para empezar, seleccione la plantilla que desee.
-
-## <a name="create-a-task-from-a-lead"></a>Creación de una tarea desde un cliente potencial
-Si no hay una plantilla disponible para lo que necesita, cree un flujo desde el principio. En este tutorial, se muestra cómo crear una tarea en Dynamics 365 siempre que se crea un cliente potencial en Dynamics 365.
+Para crear un flujo a partir de una plantilla, siga estos pasos.
 
 1. Inicie sesión en el [sitio web de Microsoft Flow](https://flow.microsoft.com/).
-2. Haga clic o pulse **Mis flujos** y, después, haga clic o pulse **Crear desde cero**.
-3. En la lista de desencadenadores de flujo, haga clic o pulse **Dynamics 365 - Al crear un registro**.
+2. Pulse o haga clic en **servicios**y, a continuación, haga clic o pulse en **Dynamics 365**.
+3. Hay disponibles varias plantillas. Para empezar, seleccione la plantilla que desee.
+
+## <a name="create-a-task-from-a-lead"></a>Crear una tarea a partir de un cliente potencial
+Si una plantilla no está disponible para lo que necesita, cree un flujo desde cero. En este tutorial se muestra cómo crear una tarea en Dynamics 365 cada vez que se crea un cliente potencial en Dynamics 365.
+
+1. Inicie sesión en el [sitio web de Microsoft Flow](https://flow.microsoft.com/).
+2. Pulse o haga clic en **Mis flujos**y, después, haga clic o pulse en **crear en blanco**.
+3. En la lista de desencadenadores de flujo, pulse o haga clic en **Dynamics 365-cuando se crea un registro**.
 4. Si se le solicita, inicie sesión en Dynamics 365.
-5. En **Nombre de la organización**, seleccione la instancia de Dynamics 365 en que desea que el flujo escuche.
-6. En **Nombre de entidad**, seleccione la entidad que desea escuchar, que actuará como desencadenador que inicia el flujo.
+5. En **nombre**de la organización, seleccione la instancia de Dynamics 365 donde quiere que el flujo escuche.
+6. En **nombre de entidad**, seleccione la entidad que desea escuchar, que actuará como desencadenador que inicia el flujo.
    
-     Para este tutorial, seleccione **Leads**.
+     Para este tutorial, seleccione **leads**.
    
-    ![Detalles del flujo](./media/connection-dynamics365/flow-details.png)
-    > [IMPORTANTE] Para que el flujo se pueda desencadenar en la entidad de Dynamics 365, la definición de esta debe tener habilitado **Seguimiento de cambios**. Consulte [Habilitación del seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization).
+    ![Detalles de flujo](./media/connection-dynamics365/flow-details.png)
+    > AÚN Para que el flujo se desencadene en la entidad Dynamics 365, la definición de la entidad debe tener **Change Tracking** habilitado. Vea [Habilitar el seguimiento de cambios para controlar la sincronización de datos](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
-7. Haga clic o pulse **Nuevo paso** y, después, **Agregar una acción**.
-8. Haga clic o pulse **Dynamics 365 – Al crear un registro**.
-9. En **Nombre de la organización**, seleccione la instancia de Dynamics 365 en que desea que el flujo cree el registro. Tenga en cuenta que no es preciso que sea la instancia desde la que se desencadena el evento.
-10. En **Nombre de entidad**, seleccione la entidad que creará un registro cuando se produzca el evento.
+7. Pulse o haga clic en **nuevo paso**y, a continuación, haga clic o pulse en **Agregar una acción**.
+8. Pulse o haga clic en **Dynamics 365: crear un nuevo registro**.
+9. En **nombre**de la organización, seleccione la instancia de Dynamics 365 en la que desea que el flujo cree el registro. Tenga en cuenta que no tiene que ser la misma instancia desde la que se desencadena el evento.
+10. En **nombre de entidad**, seleccione la entidad que creará un registro cuando se produzca el evento.
     
-     Para este tutorial, seleccione **Tasks**.
-11. Aparece el cuadro **Asunto**. Al hacer clic en él o pulsarlo, aparece un panel de contenido dinámico en el que puede seleccionar cualquiera de estos campos.
+     Para este tutorial, seleccione **tareas**.
+11. Aparece un cuadro **asunto** . Al hacer clic o pulsar en él, aparece un panel de contenido dinámico donde puede seleccionar cualquiera de estos campos.
     
-    * **Apellido**. Si selecciona este campo, el apellido del cliente potencial se insertará en el campo **Asunto** de la tarea cuando se crea.
-    * **Tema**. Si selecciona este campo, el campo **Tema** del cliente potencial se insertará en el campo **Asunto** de la tarea cuando se crea.
+    * **Apellido**. Si selecciona este campo, el apellido del cliente potencial se insertará en el campo **asunto** de la tarea cuando se cree.
+    * **Tema**. Si selecciona este campo, el campo **tema** del cliente potencial se insertará en el campo **asunto** de la tarea cuando se cree.
     
-    Para este tutorial, seleccione **Topic**.
+    Para este tutorial, seleccione **tema**.
     
-    ![Flujo agregar tema](./media/connection-dynamics365/flow-addtopic.png)
+    ![Tema de adición de Flow](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Sugerencia:** En el panel de contenido dinámico, haga clic en **Ver más** o pulse dicho vínculo para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **Asunto** de la tarea con los campos **Nombre de la compañía**, **Cliente**, **Descripción**, o **Correo electrónico** del cliente potencial.
+    > **Sugerencia:** En el panel de contenido dinámico, haga clic o pulse en **Ver más** para mostrar más campos asociados a la entidad. Por ejemplo, también puede rellenar el campo **asunto** de la tarea con el campo **nombre**de la compañía, **cliente**, **Descripción**o **correo electrónico** del cliente potencial.
     > 
     > 
-12. Haga clic o pulse **Crear flujo**.
+12. Pulse o haga clic en **Crear flujo**.
 
 ## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Creación de una tarea de Wunderlist desde una tarea de Dynamics 365
-En este tutorial, se muestra cómo crear una tarea en [Wunderlist](https://www.wunderlist.com) siempre que se crea una tarea en Dynamics 365. Wunderlist es un servicio basado en Internet que se puede usar para crear listas de tareas pendientes, agregar avisos o realizar un seguimiento de los recados.
+En este tutorial se muestra cómo crear una tarea en [Wunderlist](https://www.wunderlist.com) cada vez que se crea una tarea en Dynamics 365. Wunderlist es un servicio basado en Internet que puede usar para crear listas de tareas pendientes, agregar recordatorios o realizar un seguimiento de los recados.
 
 1. Inicie sesión en el [sitio web de Microsoft Flow](https://flow.microsoft.com/).
-2. Haga clic o pulse **Mis flujos** y, después, haga clic o pulse **Crear desde cero**.
-3. En la lista de desencadenadores de flujo, haga clic o pulse **Dynamics 365 - Al crear un registro**.
-4. En **Nombre de la organización**, seleccione la instancia de Dynamics 365 en que desea que el flujo escuche.
-5. En **Nombre de entidad**, seleccione la entidad que desea escuchar, que actuará como desencadenador para iniciar el flujo.
+2. Pulse o haga clic en **Mis flujos**y, después, haga clic o pulse en **crear en blanco**.
+3. En la lista de desencadenadores de flujo, pulse o haga clic en **Dynamics 365-cuando se crea un registro**.
+4. En **nombre**de la organización, seleccione la instancia de Dynamics 365 donde quiere que el flujo escuche.
+5. En **nombre de entidad**, seleccione la entidad que desea escuchar, que actuará como desencadenador para iniciar el flujo.
    
-    Para este tutorial, seleccione **Tasks**.
-6. Haga clic o pulse **Nuevo paso** y, después, **Agregar una acción**.
-7. Escriba de *crear una tarea* y, después, haga clic o pulse **Wunderlist - Crear una tarea**.
-8. En **Id. de la lista**, seleccione **Bandeja de entrada**.
-9. En **Título**, seleccione **Asunto** en el panel de contenido dinámico.
-10. Haga clic o pulse **Crear flujo**.  
+    Para este tutorial, seleccione **tareas**.
+6. Pulse o haga clic en **nuevo paso**y, a continuación, haga clic o pulse en **Agregar una acción**.
+7. Escriba *crear una tarea*y, luego, pulse o haga clic en **Wunderlist: crear una tarea**.
+8. En **ID**. de lista, seleccione **bandeja de entrada**.
+9. En **título**, seleccione **asunto** en el panel de contenido dinámico.
+10. Pulse o haga clic en **Crear flujo**.  
 
-## <a name="trigger-based-logic"></a>Lógica basada en desencadenadores
-Los desencadenadores como **Al crear un registro**, **Al actualizar un registro** y **Al eliminar un registro** inician el flujo a los pocos minutos de que se produzca el evento.  En casos aislados, el flujo puede tardar hasta dos horas en desencadenarse.
+## <a name="trigger-based-logic"></a>Lógica basada en desencadenador
+Desencadenadores como **cuando se crea un registro**, **cuando se actualiza un registro**y **cuando se elimina un registro** , inicie el flujo en unos minutos después de que se produzca el evento.  En raras ocasiones, el flujo puede tardar hasta 2 horas en desencadenarse.
 
-Cuando se produce el desencadenador, el flujo recibe una notificación, pero se ejecuta en los datos que existen en el momento de ejecución de la acción.  Por ejemplo, si el flujo se desencadena cuando se crea un registro, y actualiza el registro dos veces antes de la ejecución de flujo, el flujo se ejecuta una sola vez con los datos más recientes.
+Cuando se produce el desencadenador, el flujo recibe una notificación, pero el flujo se ejecuta en los datos existentes en el momento en que se ejecuta la acción.  Por ejemplo, si el flujo se desencadena cuando se crea un nuevo registro y actualiza el registro dos veces antes de que se ejecute el flujo, el flujo solo se ejecuta una vez con los datos más recientes.
 
-## <a name="specify-advanced-options"></a>Especificación de opciones avanzadas
-Cuando se agrega un paso a un flujo, se puede hacer clic o pulsar **Mostrar opciones avanzadas** para agregar un filtro o un pedido por la consulta que controla cómo se filtran los datos en el flujo.
+## <a name="specify-advanced-options"></a>Especificar opciones avanzadas
+Al agregar un paso a un flujo, puede pulsar o hacer clic en **Mostrar opciones avanzadas** para agregar un filtro o un orden por consulta que controla cómo se filtran los datos en el flujo.
 
-Por ejemplo, puede usar una consulta de filtro para recuperar únicamente los contactos activos y puede ordenarlos por apellido. Para ello, escriba la consulta de filtro OData **statuscode eq 1** y seleccione **Apellidos** en el panel de contenido dinámico. Para más información acerca de las consultas de filtro y ordenar por, vea [MSDN: $filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) y [MSDN: $orderby](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
+Por ejemplo, puede usar una consulta de filtro para recuperar solo los contactos activos y puede ordenarlos por Apellido. Para ello, escriba la consulta de filtro OData **StatusCode EQ 1** y seleccione **Last Name (apellidos** ) en el panel de contenido dinámico. Para obtener más información acerca de las consultas de filtro y de ordenación, vea [MSDN: $Filter](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_1) y [MSDN: $OrderBy](https://msdn.microsoft.com/library/gg309461.aspx#Anchor_2).
 
-  ![Consulta de orderby de flujo](./media/connection-dynamics365/flow-orderby-query.png)
+  ![Consulta OrderBy de flujo](./media/connection-dynamics365/flow-orderby-query.png)
 
-### <a name="best-practices-when-using-advanced-options"></a>Procedimientos recomendados cuando se usan las opciones avanzadas
-Cuando se agrega un valor a un campo, debe coincidir con el tipo de campo independientemente de que escriba un valor o lo seleccione en el panel de contenido dinámico.
+### <a name="best-practices-when-using-advanced-options"></a>Prácticas recomendadas al usar opciones avanzadas
+Al agregar un valor a un campo, debe coincidir con el tipo de campo si escribe un valor o selecciona uno en el panel de contenido dinámico.
 
-| Tipo de campo | Cómo se usa | Dónde se encuentra | Nombre | Tipo de datos |
+| Tipo de campo | Cómo usar | Dónde encontrar | Name | Tipo de datos |
 | --- | --- | --- | --- | --- |
-| Campos de texto |Los campos de texto requieren una sola línea de texto o contenido dinámico que es un campo de tipo texto. Entre los ejemplos se incluyen los campos **Categoría** y **Subcategoría**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**category** |**Una línea de texto** |
-| Campos numéricos de tipo entero |Algunos campos requieren un entero o contenido dinámico que sea un campo de tipo entero. Algunos ejemplos son: **Porcentaje completado** y **Duración**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**percentcomplete** |**Número entero** |
-| Campos de fecha |Algunos campos requieren que una fecha escrita en formato dd/mm/aaaa o contenido dinámico que sea un campo de tipo de fecha. Algunos ejemplos son: **Fecha de creación**, **Fecha de inicio**, **Inicio real**, **Último período de retención**, **Finalización real**, y **Fecha de vencimiento**. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Tarea** > **Campos** |**createdon** |**Fecha y hora** |
-| Campos que requieren un identificador de registro y un tipo de búsqueda |Algunos campos que hacen referencia a otro registro de entidad requieren tanto el identificador de registro como el tipo de búsqueda. |**Configuración** > **Personalizaciones** > **Personalizar el sistema** > **Entidades** > **Cuenta** > **Campos** |**accountid** |**Clave principal** |
-|Conjunto de opciones|Los campos de Conjunto de opciones requieren pasar un valor entero conocido a este tipo de campo.  En el área de personalización de Dynamics 365, puede ver los conjuntos de opciones que respaldan el campo de entero junto con su etiqueta respectiva.|Configuración > Personalización > Personalizar el sistema > Entidades > Cuenta > Campos | Método de contacto preferido| Número entero|
+| Campos de texto |Los campos de texto requieren una sola línea de texto o contenido dinámico que sea un campo de tipo texto. Entre los ejemplos se incluyen los campos **categoría** y **Subcategoría** . |**Configuración** > **personalizaciones** > **personalizar las** **entidades** > del sistema > **campos** > de **tareas** |**Categoría** |**Línea de texto única** |
+| Campos de entero |Algunos campos requieren un entero o contenido dinámico que sea un campo de tipo entero. Entre los ejemplos se incluyen **porcentaje completado** y **duración**. |**Configuración** > **personalizaciones** > **personalizar las** **entidades** > del sistema > **campos** > de **tareas** |**PercentComplete** |**Número entero** |
+| Campos de fecha |Algunos campos requieren una fecha escrita en formato mm/dd/aaaa o contenido dinámico que sea un campo de tipo de fecha. Entre los ejemplos se incluyen **creado en**, **fecha de inicio**, **Inicio real**, **último tiempo de espera**, **finalización real**y **fecha de vencimiento**. |**Configuración** > **personalizaciones** > **personalizar las** **entidades** > del sistema > **campos** > de **tareas** |**CreatedOn** |**Fecha y hora** |
+| Campos que requieren un identificador de registro y un tipo de búsqueda |Algunos campos que hacen referencia a otro registro de entidad requieren el ID. de registro y el tipo de búsqueda. |**Configuración** > **personalizaciones** > **personalizar las** **entidades** > del sistema > **campos** > de **cuenta** |**accountID** |**Clave principal** |
+|Conjunto de opciones|Los campos de conjuntos de opciones requieren que se pase un valor entero conocido a este tipo de campo.  En el área de personalización de Dynamics 365, puede ver la opción establecer el campo de número entero de respaldo junto con su etiqueta correspondiente.|Configuración > Personalización > personalizar las entidades > del sistema > campos > de cuenta | Método de contacto preferido| Número entero|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Más ejemplos de campos que requieren un identificador de registro y un tipo de búsqueda
-Ampliemos la información de la tabla anterior, aquí hay más ejemplos de campos que no funcionan con los valores seleccionados de la lista de contenido dinámico. En su lugar, estos campos requieren que se especifiquen tanto un identificador de registro como un tipo de búsqueda en los campos de PowerApps.
+A partir de la tabla anterior, a continuación se muestran más ejemplos de campos que no funcionan con valores seleccionados de la lista de contenido dinámico. En su lugar, estos campos requieren un identificador de registro y un tipo de búsqueda introducidos en los campos de PowerApps.
 
-* **Propietario** y **Tipo de propietario**.
+* **Propietario** y **tipo de propietario**.
   
-  * El campo **Propietario** debe ser un identificador de registro de usuario o equipo válido.
-  * **Tipo de propietario** debe ser **systemusers** o **teams**.
-* **Cliente** y **Tipo de cliente**.
+  * El campo **propietario** debe ser un identificador de registro de equipo o usuario válido.
+  * El **tipo de propietario** debe ser **systemusers** o **Teams**.
+* **Cliente** y **tipo de cliente**.
   
-  * El campo **Cliente** debe ser una cuenta o un identificador de registro de contacto válidos.
-  * **Tipo de cliente** debe ser **accounts** o **contacts**.
-* **Referente a** y **Tipo referente a**.
+  * El campo **Customer** debe ser un identificador de registro de contacto o cuenta válido.
+  * El **tipo de cliente** debe ser **accounts** o **Contacts**.
+* **Con respecto** al **tipo**.
   
-  * El campo **Referente a** debe ser un identificador de registro válido, como una cuenta o un identificador de registro de contacto.
-  * **Tipo referente a** debe ser el tipo de búsqueda para el registro, como **accounts** o **contacts**.
+  * El campo **referente** a debe ser un identificador de registro válido, como una cuenta o un identificador de registro de contacto.
+  * El **tipo referente** a debe ser el tipo de búsqueda para el registro, como **cuentas** o **contactos**.
 
-Este ejemplo agrega al campo **Referente a** de la tarea un registro de cuenta que corresponde al identificador de registro.
+En este ejemplo se agrega un registro de cuenta que corresponde al identificador de registro y se agrega al campo **referente** a de la tarea.
 
-  ![recordId y tipo de cuenta de flujo](./media/connection-dynamics365/flow-recordid-account.png)
+  ![Flujo de la cuenta de tipo recordId y tipo](./media/connection-dynamics365/flow-recordid-account.png)
 
-En este ejemplo también se asigna la tarea a un usuario concreto en función del identificador de registro del usuario.
+En este ejemplo también se asigna la tarea a un usuario específico en función del identificador de registro del usuario.
 
-  ![recordId y tipo de usuario de flujo](./media/connection-dynamics365/flow-recordid-user.png)
+  ![Tipo recordId y tipo de usuario](./media/connection-dynamics365/flow-recordid-user.png)
 
-Para buscar el identificador de un registro, consulte [Búsqueda del identificador de registro](#find-the-records-id) en este mismo tema.
+Para buscar el identificador de un registro, consulte [Buscar el ID](#find-the-records-id) . de registro más adelante en este tema.
 
-> **Importante:** los campos cuya descripción sea "Para uso interno" no deben contener ningún valor. Entre estos campos se incluyen **Ruta recorrida**, **Parámetros adicionales** y **Número de versión de regla de zona horaria.**
+> **Importante:** Los campos no deben contener un valor si tienen una descripción de "solo para uso interno". Estos campos incluyen la **ruta de acceso recorrida**, **parámetros adicionales**y **el número de versión de la regla de zona horaria.**
 > 
 > 
 
-## <a name="find-the-records-id"></a>Búsqueda del identificador del registro
+## <a name="find-the-records-id"></a>Buscar el identificador del registro
 1. En la aplicación web Dynamics 365, abra un registro, como un registro de cuenta.
-2. En la barra de herramientas de acciones, haga clic o pulse **Emergente**
-   ![registro emergente](./media/connection-dynamics365/popout.png) (o bien haga clic o pulse **ENVIAR UN VÍNCULO POR CORREO ELECTRÓNICO** para copiar la dirección URL completa en el programa de correo electrónico predeterminado).
+2. En la barra de herramientas acciones, haga clic o **Pulse en extraer
+   ![** registro emergente](./media/connection-dynamics365/popout.png) (o pulse o haga clic en **Enviar un vínculo por correo electrónico** para copiar la dirección URL completa en el programa de correo electrónico predeterminado).
    
-    En la barra de direcciones del explorador web, la dirección URL contiene el identificador de registro entre los caracteres de codificación %7b y %7d.
+    En la barra de direcciones del explorador Web, la dirección URL contiene el ID. de registro entre los caracteres de codificación% 7B y% 7D.
    
    ![RecordId](./media/connection-dynamics365/recordid.png)
 
 ## <a name="related-topics"></a>Temas relacionados
-[Solución de problemas en un flujo](fix-flow-failures.md)
+[Solución de problemas de un flujo](fix-flow-failures.md)
 
-[Preguntas y respuestas sobre Flow en su organización](organization-q-and-a.md)
+[El flujo de la organización Q & A](organization-q-and-a.md)
 
 [Preguntas más frecuentes](frequently-asked-questions.md)
 

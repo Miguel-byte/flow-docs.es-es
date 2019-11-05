@@ -1,5 +1,5 @@
 ---
-title: Preguntas acerca de la facturación y las mediciones | Microsoft Docs
+title: Preguntas sobre facturación y medición | Microsoft Docs
 description: Respuestas a las preguntas más frecuentes sobre la facturación y la medición en Microsoft Flow
 services: ''
 suite: flow
@@ -13,81 +13,85 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/21/2017
+ms.date: 08/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 65f2776af5b0219ea887302d5cfa9e101f62c309
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 69fecb42ba2b89f7a3f5b7541f62a4ee984832ea
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460685"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546197"
 ---
-# <a name="billing-and-metering-questions"></a>Preguntas acerca de la facturación y la medición
+# <a name="billing-and-metering-questions"></a>Preguntas sobre facturación y medición
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-En este artículo se responden las preguntas más frecuentes acerca de la facturación y la medición en Microsoft Flow.
+En este artículo se responden las preguntas más frecuentes sobre la facturación y la medición en Microsoft Flow.
 
-## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>¿Dónde puedo encontrar los precios planes disponibles?
+>[!NOTE]
+> PowerApps y Microsoft Flow usarán un [nuevo modelo de licencias](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) a partir del 1 de octubre de 2019. 
 
-Consulte la [página de precios](https://flow.microsoft.com/pricing/).
+## <a name="where-can-i-find-out-what-pricing-plans-are-available"></a>¿Dónde puedo averiguar qué planes de precios están disponibles?
 
-## <a name="where-can-i-find-out-what-my-plan-is"></a>¿Dónde puedo encontrar averiguar cuál es mi plan?
+Vea la [Página de precios](https://flow.microsoft.com/pricing/).
 
-Consulte la [página de precios](https://flow.microsoft.com/pricing/).
+## <a name="where-can-i-find-out-what-my-plan-is"></a>¿Dónde puedo averiguar cuál es mi plan?
 
-## <a name="how-do-i-switch-plans"></a>¿Cómo se cambiar de plan?
+Vea la [Página de precios](https://flow.microsoft.com/pricing/).
 
-En el menú de navegación superior, seleccione **Información** > **Precios** y seleccione el plan al que quiera cambiar.
+## <a name="how-do-i-switch-plans"></a>Cómo cambiar planes?
 
-![Más información > Precios](./media/billing-questions/learn-pricing.png)
+En el menú de navegación superior, seleccione **aprender** > **precios**y, a continuación, seleccione el plan al que desea cambiar.
 
-## <a name="how-do-i-know-how-much-ive-used"></a>¿Cómo sé cuánto he usado?
+![Obtener información sobre los precios de >](./media/billing-questions/learn-pricing.png)
 
-Si tiene un plan gratuito o un plan de evaluación, haga clic o pulse el icono del engranaje de la barra de navegación superior para mostrar su uso actual en el plan. 
+## <a name="how-do-i-know-how-much-ive-used"></a>¿Cómo sabe cuánto he usado?
 
-![Botón Configuración](./media/billing-questions/settings.png)
+Si tiene un plan gratuito o un plan de evaluación, haga clic o pulse en el icono de engranaje de la barra de navegación superior para mostrar su uso actual en el plan. 
 
-Si tiene un plan de pago, las ejecuciones se agrupan entre todos los usuarios de la organización. Estamos trabajando en características que muestren la cuota disponible y el uso en una organización.
+![Botón configuración](./media/billing-questions/settings.png)
+
+Si se encuentra en un plan de pago, las ejecuciones se agrupan en todos los usuarios de la organización. Estamos trabajando en características para exponer la cuota y el uso disponibles en una organización.
 
 ## <a name="what-happens-if-my-usage-exceeds-the-limits"></a>¿Qué ocurre si mi uso supera los límites?
 
-Microsoft Flow limita las ejecuciones de flujos.
+Microsoft Flow limita las ejecuciones de flujo.
 
-## <a name="where-can-i-find-more-information-regarding-the-usage-limits"></a>¿Dónde puedo encontrar más información acerca de los límites de uso?
+## <a name="where-can-i-find-more-information-regarding-the-usage-limits"></a>¿Dónde puedo encontrar más información sobre los límites de uso?
 
-En el [página de precios](https://flow.microsoft.com/pricing/), consulte la sección de **preguntas más frecuentes**.
+En la [Página de precios](https://flow.microsoft.com/pricing/), consulte la sección de **preguntas más frecuentes** .
 
-## <a name="what-happens-if-i-try-to-execute-runs-too-frequently"></a>¿Qué sucede si intento realizar ejecuciones con demasiada frecuencia?
+## <a name="what-happens-if-i-try-to-execute-runs-too-frequently"></a>¿Qué ocurre si intento ejecutar ejecuciones con demasiada frecuencia?
 
-El plan determina la frecuencia con que se ejecutan los flujos. Por ejemplo, en los planes gratuitos, los flujos pueden ejecutarse cada 15 minutos. Si un flujo se desencadena menos de 15 minutos después de su última ejecución, se pone en cola hasta que hayan transcurrido los 15 minutos.
+El Plan determina la frecuencia con que se ejecutan los flujos. Por ejemplo, los flujos pueden ejecutarse cada 15 minutos si está en el plan gratis. Si un flujo se desencadena menos de 15 minutos después de su última ejecución, se pone en cola hasta que hayan transcurrido 15 minutos.
 
-## <a name="what-counts-as-a-run"></a>¿Qué se considera una ejecución?
+## <a name="what-counts-as-a-run"></a>¿Qué cuenta como una ejecución?
 
-Cada vez que se desencadene un flujo, independientemente de que lo haga un desencadenador automático o se inicie manualmente, se considera una ejecución. Las comprobaciones de la existencia de datos nuevos no cuentan como ejecuciones.
+Cada vez que se desencadena un flujo, ya sea por un desencadenador automático o por su inicio manual, se considera una ejecución. Las comprobaciones de datos nuevos no se cuentan como ejecuciones.
 
-## <a name="are-there-differences-between-microsoft-accounts-and-work-or-school-accounts-for-billing"></a>¿Hay diferencias entre las cuentas Microsoft y las cuentas profesionales o educativo de cara a la facturación?
+## <a name="are-there-differences-between-microsoft-accounts-and-work-or-school-accounts-for-billing"></a>¿Existen diferencias entre las cuentas de Microsoft y las cuentas profesionales o educativas para la facturación?
 
-Sí. Si inicia sesión con una cuenta Microsoft (por ejemplo, una cuenta que termine eh @outlook.com o @gmail.com), solo puede utilizar el plan gratuito. Para sacar provecho de las características del plan de pago, inicie sesión con una dirección de correo electrónico profesional o educativa.
+?. Si inicia sesión con una cuenta de Microsoft (por ejemplo, una cuenta que termina con @outlook.com o @gmail.com), solo puede usar el plan gratuito. Para aprovechar las ventajas de las características del plan de pago, inicie sesión con una dirección de correo electrónico profesional o educativa.
 
-## <a name="im-trying-to-upgrade-but-im-told-my-account-isnt-eligible"></a>Al intentar realizar una actualización, se me indica que mi cuenta no es apta.
+## <a name="im-trying-to-upgrade-but-im-told-my-account-isnt-eligible"></a>Estoy intentando actualizar, pero me he indicado que mi cuenta no es válida.
 
-Para actualizar, use una cuenta profesional o educativa, o cree una [cuenta de prueba de Office 365](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
+Para actualizar, use una cuenta profesional o educativa o cree una [cuenta de prueba de Office 365](https://powerbi.microsoft.com/documentation/powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial/).
 
-## <a name="why-did-i-run-out-of-runs-when-my-flow-only-ran-a-few-times"></a>Mi flujo se ha ejecutado muy pocas veces, ¿por qué me he quedado sin ejecuciones?
+## <a name="why-did-i-run-out-of-runs-when-my-flow-only-ran-a-few-times"></a>¿Por qué me he quedado sin ejecuciones cuando el flujo solo se ejecutó varias veces?
 
-Ciertos flujos pueden ejecutarse con mayor frecuencia de la esperada. Por ejemplo, puede crear un flujo que le envíe una notificación push cada vez que su jefe le envíe un correo electrónico. Dicho flujo debe ejecutarse cada vez que reciba un correo electrónico (de cualquier persona), ya que el flujo debe comprobar si el correo electrónico procede de su jefe. Esta acción cuenta como su ejecución.
+Algunos flujos pueden ejecutarse con más frecuencia de lo esperado. Por ejemplo, puede crear un flujo que le envíe una notificación de envío cada vez que el administrador le envíe un correo electrónico. Ese flujo debe ejecutarse cada vez que reciba un correo electrónico (de cualquier persona) porque el flujo debe comprobar si el correo electrónico procede de su jefe. Esta acción cuenta como una ejecución.
 
-Para solucionar este problema coloque en el desencadenador todos los filtros que sean necesarios. En el ejemplo de notificación de inserción, expanda el menú **Opciones avanzadas** y proporcione la dirección de correo electrónico de su administrador en el campo **De**.
+Puede solucionar este problema colocando todo el filtrado que necesita en el desencadenador. En el ejemplo de notificación de extracción, expanda el menú **Opciones avanzadas** y, a continuación, proporcione la dirección de correo electrónico del administrador en el campo **de** .
 
 ## <a name="other-limits-and-caveats"></a>Otros límites y advertencias
 
-* Cada cuenta puede tener:
-  * 250 flujos.
+* Cada cuenta puede tener tantos como:
+  * flujos de 250.
   * 15 conectores personalizados.
-  * 20 conexiones por API y un total de 100 conexiones.
-* Puede instalar una puerta de enlace solo en el entorno predeterminado.
-* Algunos conectores externos, como Twitter, implementan la limitación de conexiones para controlar la calidad del servicio. Se produce un error en los flujos al estar en vigor la limitación. Si se producen errores en los flujos, revise los detalles de la ejecución con errores en el historial de ejecuciones del flujo.
+  * 20 conexiones por API y 100 conexiones en total.
+* Solo puede instalar una puerta de enlace en el entorno predeterminado.
+* Algunos conectores externos, como Twitter, implementan la limitación de la conexión para controlar la calidad del servicio. Los flujos producen un error cuando la limitación está en vigor. Si se producen errores en los flujos, revise los detalles de la ejecución en la que se produjo el error en el historial de ejecución del flujo.

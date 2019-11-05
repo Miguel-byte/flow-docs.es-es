@@ -1,6 +1,6 @@
 ---
-title: Creación de flujos compatibles con la solución | Microsoft Docs
-description: Aprenda cómo crear flujos compatibles con la solución.
+title: Obtenga información sobre cómo crear flujos compatibles con soluciones | Microsoft Docs
+description: Aprenda a crear flujos que reconocen soluciones.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,60 +20,61 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cbc6e3a8ffe50eb7ad27e80eba044957647a1da3
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 6cbd1ee543cfe5f54b61486eefbacbd5bb837f33
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456615"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546465"
 ---
 # <a name="create-a-flow-in-a-solution"></a>Creación de un flujo en una solución
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Los flujos que cree en una solución se conocen como flujos *compatibles con la solución*. Siga estos pasos para crear un flujo compatible con la solución.
+Los flujos que se crean en una solución se conocen como flujos *con reconocimiento de la solución* . Siga estos pasos para crear un flujo compatible con soluciones.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Debe tener al menos una solución para poder crear un flujo compatible con la solución.
+Debe tener al menos una solución antes de poder crear un flujo compatible con soluciones.
 
 ## <a name="create-the-flow"></a>Creación del flujo 
 
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com).
-1. Seleccione **Soluciones** desde la barra de navegación.
+1. Seleccione **soluciones** en la barra de navegación.
 
    ![](./media/create-flow-solution/select-solutions-from-left-nav.png)
 
-1. Seleccione la solución en la que creará el flujo.
+1. Seleccione la solución en la que va a crear el flujo.
 
    ![](./media/create-flow-solution/new-solution-created.png)
 
-1. Seleccione **+ Nuevo** y, a continuación, seleccione **Flujo**.
+1. Seleccione **+ nuevo**y, a continuación, seleccione **flujo**.
 
    ![](./media/create-flow-solution/select-new-flow.png)
 
    Se abre Microsoft Flow.
 
-1. Utilice los conectores y desencadenadores disponibles para aumentar el flujo.
+1. Use los conectores y desencadenadores disponibles para compilar el flujo.
 
-   En este ejemplo, crearemos un flujo simple que envía una notificación cuando un correo electrónico llega a su bandeja de entrada.
-1. Busque y seleccione **Office 365 Outlook**.
-1. Seleccione el desencadenador **Cuando llega un nuevo correo electrónico**.
-1. Seleccione **+ Nuevo paso**.
-1. Seleccione la acción **Send me a mobile notification** (Enviarme una notificación del servicio móvil).
-1. Añada el token dinámico **Asunto** al campo **Texto** de la casilla **Send me a mobile notification** (Enviarme una notificación del servicio móvil).
-1. Asigne un nombre al flujo y guárdelo.
+   En este ejemplo, crearemos un flujo sencillo que enviará una notificación cuando llegue un correo electrónico a la bandeja de entrada.
+1. Busque y, a continuación, seleccione **Office 365 Outlook**.
+1. Seleccione el desencadenador **cuando llega un nuevo correo electrónico** .
+1. Seleccione **+ nuevo paso**.
+1. Seleccione la acción **enviarme una notificación de Mobile** .
+1. Agregue el token dinámico de **asunto** al campo de **texto** del cuadro **enviarme una notificación de Mobile** .
+1. Asigne un nombre al flujo y, a continuación, guarde el flujo.
 
-   El flujo debe tener este aspecto:
+   El flujo debe ser similar al siguiente:
 
    ![](./media/create-flow-solution/new-email-notification-flow.png)
    
-1. Seleccione **Soluciones** para ver el flujo de la solución:
+1. Seleccione **soluciones** para ver el flujo en la solución:
 
    ![](./media/create-flow-solution/new-flow-inside-solution.png)
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
-* [Creación de una solución](./overview-solution-flows.md)
-* [Exportación de una solución](./export-flow-solution.md)
-* [Importación de una solución](./import-flow-solution.md)
-* [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)
-* [Eliminación de un flujo compatible con la solución](./remove-solution-aware-flow.md)
+* [Crear una solución](./overview-solution-flows.md)
+* [Exportar una solución](./export-flow-solution.md)
+* [Importar una solución](./import-flow-solution.md)
+* [Editar un flujo compatible con soluciones](./edit-solution-aware-flow.md)
+* [Quitar un flujo compatible con soluciones](./remove-solution-aware-flow.md)

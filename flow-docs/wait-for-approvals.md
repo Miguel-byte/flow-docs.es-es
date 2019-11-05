@@ -1,11 +1,12 @@
 ---
-title: Espera de la aprobación de un flujo | Microsoft Docs
-description: Los flujos pueden esperar hasta que se produzca un evento externo, como que un usuario apruebe o rechace un cambio, antes de realizar una acción, como enviar la notificación de la decisión.
+title: Esperar aprobación en un flujo | Microsoft Docs
+description: Los flujos pueden esperar a que se produzca un evento externo, como que un usuario apruebe o rechace un cambio, antes de realizar una acción, como el envío de una notificación de la decisión.
 services: ''
 suite: flow
 documentationcenter: na
-author: merwanhade
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,106 +15,106 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2018
-ms.author: merwanhade
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 0cc750dd9601e7675cee148882c6aaee9250b92e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ea6be2d1deae080df58afd94c1f1e8d0c13c9fcd
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464815"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548349"
 ---
-# <a name="wait-for-approval-in-microsoft-flow"></a>Espera de la aprobación en Microsoft Flow
+# <a name="wait-for-approval-in-microsoft-flow"></a>Esperar aprobación en Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 > [!VIDEO https://www.youtube.com/embed/W6oxcYRtW-8?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF]
 >
 
 
-Cree un flujo que, si crea un elemento en SharePoint, envíe un mensaje de aprobación y luego le avise de si el elemento se ha aprobado o rechazado. Para seguir este tutorial con precisión, cree una lista simple de SharePoint como acción desencadenante, pero puede usar otro origen de datos, como Dropbox o OneDrive.
+Cree un flujo que, si crea un elemento en SharePoint, envía un correo electrónico de aprobación y le notifica si el elemento se ha aprobado o rechazado. Para seguir este tutorial exactamente, cree una lista de SharePoint simple como una acción de desencadenador, pero puede usar otro origen de datos, como Dropbox o OneDrive.
 
 **Requisitos previos**
 
-* Cree una lista simple de SharePoint denominada **Seguimiento de proyectos**, agregue una columna denominada **Título** y luego una columna de persona o grupo denominada **Asignado a**.
+* Cree una lista de SharePoint simple denominada **Project Tracker**, agregue una columna denominada **title**y, a continuación, agregue una columna Person o Group denominada **asignado a**.
 
-   ![Imagen de la lista de SharePoint Online Seguimiento de proyectos](./media/wait-for-approvals/project-tracker.png)
+   ![Imagen de la lista de SPO del seguimiento de proyectos](./media/wait-for-approvals/project-tracker.png)
 
-## <a name="add-an-event-to-trigger-the-flow"></a>Adición de un evento que desencadene el flujo
+## <a name="add-an-event-to-trigger-the-flow"></a>Agregar un evento para desencadenar el flujo
 
-1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com), seleccione **Mis flujos** en la barra de navegación superior y luego **Crear desde cero**.
+1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com), seleccione **Mis flujos** en la barra de navegación superior y, después, seleccione **crear desde**cero.
 
-1. Seleccione el cuadro **Buscar entre cientos de conectores y desencadenadores**, escriba **nuevo elemento** y luego vaya a **SharePoint - Cuando se crea un elemento**.
+1. Seleccione el cuadro **Buscar cientos de conectores y desencadenadores** , escriba **nuevo elemento**y, a continuación, vaya a **SharePoint: cuando se crea un elemento**.
 
-1. Si se le pide, inicie sesión en SharePoint.
-1. En **Dirección del sitio**, escriba la dirección URL del sitio de SharePoint que contiene la lista.
+1. Si se le solicita, inicie sesión en SharePoint.
+1. En **dirección del sitio**, escriba la dirección URL del sitio de SharePoint que contiene la lista.
 
-1. En **Nombre de lista**, seleccione la lista que ha creado anteriormente. Si va siguiendo el tutorial, el nombre es **Seguimiento de proyectos**.
+1. En **nombre de lista**, seleccione la lista que creó anteriormente. Si está siguiendo, el nombre es **Project Tracker**.
 
     ![Imagen de nombre de lista de SPO](./media/wait-for-approvals/SPO-list-name.png)
 
-## <a name="add-the-resulting-action"></a>Adición de la acción resultante
+## <a name="add-the-resulting-action"></a>Agregar la acción resultante
 
-1. Seleccione el botón **Nuevo paso** y luego **Agregar una acción**.
+1. Seleccione el botón **nuevo paso** y, a continuación, seleccione **Agregar una acción.**
 
-1. En el cuadro **Buscar en todos los conectores y acciones**, escriba o pegue **enviar correo electrónico** y luego seleccione **Office 365 Outlook - Enviar correo electrónico con opciones**.
+1. En el cuadro **Buscar todos los conectores y acciones** , escriba o pegue **Enviar correo electrónico**y, a continuación, seleccione **Office 365 Outlook-enviar correo electrónico con opciones**.
 
-1. Si se le pide, inicie sesión en Office 365 Outlook.
+1. Si se le solicita, inicie sesión en Office 365 Outlook.
 
-1. Seleccione el campo **Para** y luego el token **Asignado a correo electrónico**.
+1. Seleccione el campo **para** y, a continuación, seleccione el token **asignado a correo electrónico** .
 
-    El usuario de la columna **Asignado a** recibe el correo electrónico para aprobar o rechazar elementos. Cuando cree un elemento para probar el flujo, especifíquese a sí mismo en este campo. De esa forma, no solo aprueba o rechaza el elemento, sino que también recibe el correo electrónico de notificación.
+    El usuario de la columna **asignado a** recibe el correo electrónico para aprobar o rechazar elementos. Cuando cree un elemento para probar el flujo, especifíquelo en este campo. De este modo, no solo aprobará o rechazará el elemento, sino que también recibirá el correo electrónico de notificación.
 
     > [!NOTE]
-    > Puede personalizar los campos **Asunto** y **Opciones de usuario** para que se ajusten a sus necesidades.
+    > Puede personalizar los campos **asunto** y **Opciones de usuario** para que se ajusten a sus necesidades.
 
-    ![Imagen del campo Enviar correo electrónico de aprobación a](./media/wait-for-approvals/send-approval-email-to.png)
+    ![Imagen del campo enviar correo electrónico de aprobación a](./media/wait-for-approvals/send-approval-email-to.png)
 
-## <a name="add-a-condition"></a>Adición de una condición
+## <a name="add-a-condition"></a>Agregar una condición
 
-1. Seleccione el botón **Nuevo paso** y luego **Agregar una condición**.
+1. Seleccione el botón **nuevo paso** y, a continuación, seleccione **Agregar una condición**.
 
-    ![Imagen de Agregar una condición](./media/wait-for-approvals/add-a-condition.png)
-1. Seleccione el primer cuadro y luego el token **SelectedOption**.
-1. Seleccione el último cuadro y luego escriba **Aprobar**.
+    ![Imagen de agregar una condición](./media/wait-for-approvals/add-a-condition.png)
+1. Seleccione el primer cuadro y, a continuación, seleccione el token **SelectedOption** .
+1. Seleccione el último cuadro y, a continuación, escriba **aprobar**.
 
     ![Imagen de la tarjeta de condición](./media/wait-for-approvals/condition-card-2.png)
 
-1. En el área **Si sí**, seleccione **Agregar una acción**.
+1. En el área **si es así** , seleccione **Agregar una acción**.
 
-1. En el cuadro **Buscar en todos los conectores y acciones**, escriba o pegue **enviar correo electrónico** y luego seleccione **Office 365 Outlook - Enviar correo electrónico**.
+1. En el cuadro **Buscar todos los conectores y acciones** , escriba o pegue **Enviar correo electrónico**y, a continuación, seleccione **Office 365 Outlook-enviar un correo electrónico**.
 
-1. En el campo **Para**, escriba un destinatario como **Creado por correo electrónico**.
+1. En el campo **para** , escriba un destinatario como **creado por correo electrónico**.
 
-1. En el cuadro **Asunto**, especifique un asunto.
+1. En el cuadro **asunto** , especifique un asunto.
 
-    Por ejemplo, seleccione **Assigned To DisplayName**, escriba **ha aprobado** con un espacio en cada lado y, luego, seleccione **Título**.
+    Por ejemplo, seleccione **asignado a DisplayName**, el tipo **ha aprobado** con un espacio en cada lado y, a continuación, seleccione **título**.
 
-1. En el cuadro **Cuerpo**, especifique un cuerpo del correo electrónico como **Listo para continuar con la siguiente fase del proyecto.**
+1. En el cuadro **cuerpo** , especifique un cuerpo de correo electrónico como **listo para continuar con la siguiente fase del proyecto.**
 
     > [!NOTE]
-    > A la persona que creó el elemento en la lista de SharePoint se le notificará si el proyecto se ha aprobado o rechazado.
+    > Se notificará a la persona que creó el elemento en la lista de SharePoint si el proyecto se ha aprobado o rechazado.
 
-    ![Imagen de Sí-enviar-correo electrónico](./media/wait-for-approvals/if-yes-send-email-card-3.png)
+    ![Imagen de sí-enviar-correo electrónico](./media/wait-for-approvals/if-yes-send-email-card-3.png)
 
-1. En el área **Si no**, repita los últimos cinco pasos, excepto cambiar el contenido de los campos **Asunto** y **Cuerpo** para reflejar que el proyecto se ha rechazado.
+1. En el área **si no** , repita los cinco últimos pasos, excepto cambiar el **asunto** y el **cuerpo** para reflejar que el proyecto se ha rechazado.
 
-     ![Imagen de No-enviar-correo electrónico](./media/wait-for-approvals/no-send-email-2.png)
+     ![Imagen de no-Send-email](./media/wait-for-approvals/no-send-email-2.png)
 
-## <a name="finish-and-test-your-flow"></a>Finalización y prueba del flujo
+## <a name="finish-and-test-your-flow"></a>Finalizar y probar el flujo
 
-1. Asigne un nombre al flujo y, luego, seleccione **Crear flujo**.
+1. Asigne un nombre al flujo y seleccione **Crear flujo**.
 
-     ![Imagen de Crear flujo](./media/wait-for-approvals/create-flow.png)
+     ![Imagen del flujo de creación](./media/wait-for-approvals/create-flow.png)
 1. Cree un elemento en la lista de SharePoint.
 
-    Se envía un correo electrónico de aprobación al destinatario especificado. Cuando el destinatario selecciona **Aprobar** o **Rechazar** en ese correo, usted recibe un correo electrónico en el que se indica la respuesta.
+    Se envía un correo electrónico de aprobación al destinatario especificado. Cuando el destinatario selecciona **aprobar** o **rechazar** en ese correo electrónico, recibirá un correo electrónico que indica la respuesta.
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
-* [Tutorial de aprobaciones modernas de un aprobador único](modern-approvals.md)
+* [Tutorial de aprobaciones modernas de aprobador único](modern-approvals.md)
 * Crear [aprobaciones secuenciales](sequential-modern-approvals.md)
 * Crear [aprobaciones en paralelo](parallel-modern-approvals.md)
 * Aprobar [solicitudes sobre la marcha](mobile-approvals.md)

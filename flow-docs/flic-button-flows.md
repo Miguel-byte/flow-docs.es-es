@@ -1,6 +1,6 @@
 ---
-title: Inicio de flujos con botones Flic | Microsoft Docs
-description: Inicie fácilmente flujos de botón con botones físicos Flic de Shortcut Labs.
+title: Iniciar flujos con botones de FLIC | Microsoft Docs
+description: Inicie fácilmente los flujos de botón con botones físicos de Flic en los laboratorios de acceso directo.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,131 +20,132 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e6430f78ad2eccecc5af7f6606bb56e1a7eb4599
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455638"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544805"
 ---
-# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Ejecute flujos presionando un botón inteligente Flic (versión preliminar)
-Desencadene flujos presionando un botón físico, conocido como Flic, de Shortcut Labs. Por ejemplo, presione un Flic para realizar un seguimiento de las horas de trabajo, bloquear el calendario, contar los visitantes de un evento o guardar ubicaciones geográficas.
+# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Ejecute los flujos presionando un botón inteligente de FLIC (versión preliminar)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Desencadene los flujos presionando un botón físico, conocido como Flic, desde los laboratorios de acceso directo. Por ejemplo, presione una FLIC para realizar un seguimiento de las horas de trabajo, bloquear el calendario, contar los visitantes de un evento o guardar las ubicaciones geográficas.
 
 > [!IMPORTANT]
-> Antes de crear un flujo, configure todas las propiedades del Flic mediante la aplicación móvil de Flic para [Android](https://play.google.com/store/apps/details?id=io.flic.app) o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8).
+> Configure todas las propiedades de FLIC mediante la aplicación móvil de FLIC para [Android](https://play.google.com/store/apps/details?id=io.flic.app) o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) antes de crear el flujo.
 > 
 > 
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para usar Flics con Microsoft Flow, es preciso:
+Para usar Flics con Microsoft Flow, debe tener:
 
-* Tener acceso a [Microsoft Flow](https://flow.microsoft.com).
-* Haber descargado la aplicación móvil de Flic para [Android](https://play.google.com/store/apps/details?id=io.flic.app) o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8), y haberla usado para emparejar uno o varios Flics.
+* Acceso a [Microsoft Flow](https://flow.microsoft.com).
+* Se descargó la aplicación móvil [Android](https://play.google.com/store/apps/details?id=io.flic.app) o [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) de FLIC y se usó para emparejar una o más Flics.
 
-## <a name="configure-flic-properties"></a>Configurar las propiedades del Flic
-Usar la aplicación móvil de Flic para programar los eventos del Flic. Los eventos son:
+## <a name="configure-flic-properties"></a>Configuración de las propiedades de FLIC
+Use la aplicación móvil de FLIC para programar los eventos de FLIC. Los eventos son:
 
-* click (presionar una vez rápidamente)
-* double-click (presionar dos veces rápidamente)
-* hold (presionar una vez de manera prolongada)
+* hacer clic (una rápida)
+* doble clic (dos pulsaciones rápidas)
+* Hold (una prensa larga)
 
-En esta captura de pantalla se muestra un ejemplo de cómo podría ser el proceso de configuración de un Flic:
+En esta captura de pantalla se muestra un ejemplo de cómo podría ser el proceso de configuración de Flic:
 
-![configurar Flics](./media/flic-button-flows/configure-flic-actions.png)
+![configuración de Flics](./media/flic-button-flows/configure-flic-actions.png)
 
-Una vez que haya vinculado un evento de Flic a Microsoft Flow, puede seleccionar dicho flic como desencadenador para sus flujos. Los desencadenadores los seleccionará más adelante en el tutorial.
+Después de vincular un evento Flic a Microsoft Flow, puede seleccionar ese Flic como un desencadenador para los flujos. Los desencadenadores se seleccionan más adelante en este tutorial.
 
-## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Cree un flujo desencadenado por un Flic
-En este tutorial, usamos un Flic para ejecutar un flujo que registra el tiempo que un consultor invierte en cada cliente. El consultor pulsa el Flic al llegar y vuelve a pulsarlo inmediatamente antes de salir del cliente. Cada vez que se pulsa el Flic se inicia una ejecución del flujo al que está conectado. El flujo guarda la hora actual en Hojas de cálculo de Google y, después, envía una notificación por correo electrónico. El correo electrónico contiene detalles acerca de la ejecución de flujo.
+## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Creación de un flujo desencadenado por un Flic
+En este tutorial, usamos un FLIC para ejecutar un flujo que registra el tiempo que un consultor invierte en cada cliente. El consultor presiona el FLIC una vez cuando llega y, a continuación, lo vuelve a presionar justo antes de salir del cliente. Cada vez que se presiona el FLIC, se inicia una ejecución del flujo al que está conectado. El flujo guarda la hora actual en hojas de Google y, después, envía una notificación por correo electrónico. El correo electrónico contiene detalles sobre la ejecución del flujo.
 
-Nota: Asegúrese de que ha usado la aplicación móvil de Flic al par y configure al menos uno **haga clic en** acción para desencadenar Microsoft Flow. En esta captura de pantalla, he configurado la acción **click** para desencadenar Microsoft Flow. Más adelante configuraremos que se desencadene nuestro flujo cuando el Flic se pulsa una vez (se hace clic en él).
+Nota: Asegúrese de que ha usado la aplicación móvil FLIC para emparejar y configurar al menos una acción de **clic** para desencadenar Microsoft Flow. En esta captura de pantalla, he configurado la acción de **clic** para desencadenar Microsoft Flow. Más adelante en este tutorial, configuraremos el flujo para que se desencadene cuando el FLIC se presione una vez (se haga clic en él).
 
-   ![configuración de flic](./media/flic-button-flows/flic-configured-for-flow.png)
+   ![configuración de FLIC](./media/flic-button-flows/flic-configured-for-flow.png)
 
-Vamos a empezar a crear un flujo.
+Vamos a empezar a crear el flujo.
 
-### <a name="start-with-a-template"></a>Empiece con una plantilla
+### <a name="start-with-a-template"></a>Comenzar con una plantilla
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com).
    
-    ![iniciar sesión](./media/flic-button-flows/sign-into-flow.png)
-2. Escriba **flic** en el cuadro de búsqueda y seleccione el icono de búsqueda.
+    ![Inicia sesión](./media/flic-button-flows/sign-into-flow.png)
+2. Escriba **Flic** en el cuadro de búsqueda y, a continuación, seleccione el icono de búsqueda.
    
-    ![buscar flic](./media/flic-button-flows/search-flic.png)
-3. Seleccione la plantilla **Track your working hours with Flic smart button** (Seguimiento de horas trabajadas con botón inteligente Flic).
+    ![buscar Flic](./media/flic-button-flows/search-flic.png)
+3. Seleccione la plantilla **realizar un seguimiento de las horas de trabajo con el botón inteligente Flic** .
    
-    ![seleccionar plantilla](./media/flic-button-flows/flic-templates.png)
+    ![Seleccionar plantilla](./media/flic-button-flows/flic-templates.png)
 
-### <a name="create-a-spreadsheet-in-google-sheets"></a>Creación de una hoja de cálculo en Hojas de cálculo de Google
-1. Revise los detalles de la plantilla y verá que requiere una plantilla en Hojas de cálculo de Google.
+### <a name="create-a-spreadsheet-in-google-sheets"></a>Crear una hoja de cálculo en hojas de cálculo de Google
+1. Revise los detalles de la plantilla y tenga en cuenta que esta plantilla requiere una hoja de cálculo en hojas de cálculo de Google.
    
-   ![revisar detalles de plantilla](./media/flic-button-flows/flic-template-details.png)
-2. En Hojas de cálculo de Google, cree una hoja de cálculo que contenga una hoja con las columnas **ClickType** y **TimeStamp**.
+   ![revisar detalles de la plantilla](./media/flic-button-flows/flic-template-details.png)
+2. En hojas de cálculo de Google, cree una hoja de cálculo que contenga una hoja con columnas denominadas **ClickType** y **timestamp**.
    
-      Sugerencia: Nombre de las columnas en hojas de cálculo de Google, escriba el nombre de columna en la parte superior de la columna. Por consiguiente, la hoja debería ser como la que aparece en esta captura de pantalla:
+      Sugerencia: para asignar un nombre a las columnas de Google Sheets, escriba el nombre de la columna en la parte superior de la columna. Por lo tanto, la hoja debe aparecer como en esta captura de pantalla:
    
-   ![Hoja de cálculo de Google](./media/flic-button-flows/flic-google-sheet.png)
+   ![Hoja de Google](./media/flic-button-flows/flic-google-sheet.png)
    
-   Nota: Utilice esta hoja más adelante en este tutorial.
+   Nota: esta hoja se usa más adelante en este tutorial.
 
-### <a name="add-the-flic-trigger-to-your-flow"></a>Agregue el desencadenador de Flic al flujo
-1. Inicie sesión en los servicios de la plantilla y seleccione **Continuar**.
+### <a name="add-the-flic-trigger-to-your-flow"></a>Adición del desencadenador Flic al flujo
+1. Inicie sesión en los servicios de la plantilla y seleccione **Continue (continuar**).
    
-     La opción **Continuar** está habilitada después de iniciar sesión en todos los servicios requeridos para la plantilla.
+     **Continue** se habilita después de iniciar sesión en todos los servicios necesarios para la plantilla.
    
     ![proporcionar credenciales](./media/flic-button-flows/flic-template-services-sign-in.png)
-2. Escriba **flic** en el cuadro de búsqueda y seleccione **Flic - When a Flic is pressed** (Flic: cuando se presiona un Flic).
+2. Escriba **Flic** en el cuadro de búsqueda y, a continuación, seleccione el desencadenador **Flic-When a Flic pressed** .
    
-    ![buscar desencadenador de flic](./media/flic-button-flows/flic-search-trigger.png)
-3. En la lista **Flic button** (Botón Flic) de la tarjeta **Flic - When a Flic is pressed** (Flic: cuando se presiona un Flic), seleccione el Flic que desea usar.
-4. Seleccione **click** en la lista **Events** (Eventos) para indicar que desea desencadenar el flujo cuando el Flic se presione una vez.
+    ![buscar desencadenador Flic](./media/flic-button-flows/flic-search-trigger.png)
+3. Seleccione el FLIC que quiere usar en la lista de **botones Flic** de la tarjeta **Flic-cuando se presiona una Flic** .
+4. Seleccione **hacer clic** en la lista **eventos** para indicar que desea desencadenar el flujo cuando el FLIC se presiona una vez.
    
-    ![seleccionar acción de flic](./media/flic-button-flows/select-flic.png)
+    ![selección de la acción Flic](./media/flic-button-flows/select-flic.png)
    
-   Si lo desea, puede seleccionar **any** para indicar que todos los eventos del Flic (click, double-click o hold) desencadenan el flujo.
+   Opcionalmente, puede seleccionar **cualquiera** para indicar que cada evento de FLIC (hacer clic, hacer doble clic o retener) desencadena el flujo.
    
-   **Double-click** indica que el flujo se desencadena cuando el Flic se presiona rápidamente dos veces. **Hold** indica que una presión prolongada en el Flic desencadena el flujo.
+   Hacer **doble clic** indica que el flujo se desencadena cuando el FLIC se presiona rápidamente dos veces. **Hold** indica que una presión larga en el FLIC desencadena el flujo.
    
-   Puede crear otros flujos y desencadenarlo con los restantes eventos de la lista **Events** (Eventos). Por ejemplo, puede usar el evento **double-click** para registrar la hora a la que sale del cliente.
+   Puede crear otros flujos y desencadenarlos mediante el resto de eventos de la lista de **eventos** . Por ejemplo, puede usar el evento **de doble clic** para registrar la hora de salida de un cliente.
 
 ### <a name="configure-the-sheet"></a>Configurar la hoja
-   En la tarjeta **Insert row** (Insertar fila):
+   En la tarjeta **Insertar fila** :
 
-1. Seleccione la hoja de cálculo que creó anteriormente en la lista **Archivo**.
-2. Seleccione la hoja en la lista **Hoja de cálculo**.
+1. Seleccione la hoja de cálculo que creó anteriormente en la lista de **archivos** .
+2. Seleccione la hoja de la lista de **hojas de cálculo** .
    
-   Nota: Aparecen dos cuadros adicionales en el **Insertar fila** después de seleccionar la hoja de la tarjeta. Dichos cuadros representan las dos columnas de la hoja que creó anteriormente.
-3. Seleccione el cuadro **ClickType** y, después, seleccione el token **Click type** (Tipo de clic).
-4. Seleccione el cuadro **Timestamp** y, después, seleccione el token **Click time** (Hora de clic).
+   Nota: aparecen dos cuadros adicionales en la tarjeta **Insertar fila** después de seleccionar la hoja. Estos cuadros representan las dos columnas de la hoja que creó anteriormente.
+3. Seleccione el cuadro **ClickType** y, a continuación, seleccione el token de **tipo click** .
+4. Seleccione el cuadro **marca** de tiempo y, a continuación, seleccione el token de **hora de clic** .
    
-    ![configurar datos de Hojas de cálculo de Google](./media/flic-button-flows/flick-insert-row-card.png)
+    ![configuración de datos de hojas de Google](./media/flic-button-flows/flick-insert-row-card.png)
 
-### <a name="confirm-the-email-settings-are-correct"></a>Confirme que la configuración del correo electrónico es correcta
-1. Confirme que la tarjeta **Send me an email notification** (Enviarme una notificación por correo electrónico).
+### <a name="confirm-the-email-settings-are-correct"></a>Confirmar que la configuración de correo electrónico es correcta
+1. Confirme que la tarjeta de **notificación enviarme un correo electrónico** es similar a esta captura de pantalla.
    
-    ![confirmar notificación por correo electrónico](./media/flic-button-flows/email-settings.png)
+    ![confirmar notificación de correo electrónico](./media/flic-button-flows/email-settings.png)
 
-### <a name="save-your-flow-and-test-it"></a>Guarde el flujo y pruébelo.
+### <a name="save-your-flow-and-test-it"></a>Guarde el flujo y pruébelo
 1. Asigne un nombre al flujo y guárdelo.
    
     ![guardar el flujo](./media/flic-button-flows/save.png)
 
-Si ha seguido todos los pasos, al presionar el Flic una vez se desencadena el flujo. Después, el flujo registra el tipo de clic y la hora actual en la hoja y le envía un correo electrónico.
+Si ha seguido las veces, al presionar el FLIC una vez, se desencadena el flujo. Después, el flujo registra el tipo de clic y la hora actual en la hoja y, a continuación, le envía un correo electrónico.
 
-1. Presione una vez el Flic.
-2. Abra la hoja de cálculo en Hojas de cálculo de Google. Debería ver que las columnas **ClickType** y **Timestamp** están llenas con el "clic" y la hora, respectivamente.
+1. Presione el FLIC una vez.
+2. Abra la hoja de cálculo en hojas de cálculo de Google. Debería ver las columnas **ClickType** y **timestamp** rellenadas con "click" y la hora, respectivamente.
    
-    ![ver resultados de ejecución](./media/flic-button-flows/flic-google-sheet-after-run.png)
-3. Los resultados de la ejecución también se pueden ver desde el sitio web de Microsoft Flow o desde la aplicación móvil Microsoft Flow. Esta es una captura de pantalla de la ejecución de prueba.
+    ![vea resultados de la ejecución](./media/flic-button-flows/flic-google-sheet-after-run.png)
+3. También puede ver los resultados de la ejecución desde el sitio web de Microsoft Flow o desde la aplicación móvil Microsoft Flow. Esta es una captura de pantalla de la serie de pruebas.
    
     ![guardar el flujo](./media/flic-button-flows/flic-test-run-results-portal.png)
-4. Este es el cuerpo del correo electrónico de notificación que he recibido de la ejecución del flujo.
+4. Este es el cuerpo del mensaje de correo electrónico de notificación que recibí de la ejecución del flujo.
    
     ![guardar el flujo](./media/flic-button-flows/flic-email-body.png)
 
-Si lo desea, puede considerar la posibilidad de extender el flujo para grabar automáticamente su ubicación (latitud y longitud) cuando se presiona el Flic.
+Como crédito adicional, considere la posibilidad de extender el flujo para grabar automáticamente la ubicación (latitud y longitud) cuando se presiona el FLIC.
 
 ## <a name="more-information"></a>Más información
-* [Compartir flujos de botones en Microsoft Flow](share-buttons.md).
-* Aprenda a usar [tokens de desencadenadores de botones](introduction-to-button-trigger-tokens.md) para enviar datos activos cuando se ejecuten los flujos de botón.
-* Instale la aplicación móvil de Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) o [Windows Phone](https://aka.ms/flowmobilewindows).
+* [Compartir flujos de botones](share-buttons.md).
+* Aprenda a usar [tokens de desencadenadores de botones](introduction-to-button-trigger-tokens.md) para enviar datos actuales cuando se ejecutan los flujos de botón.
+* Instale la aplicación móvil Microsoft Flow para [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)o [Windows Phone](https://aka.ms/flowmobilewindows).
 

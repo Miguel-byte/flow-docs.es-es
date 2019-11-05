@@ -1,6 +1,6 @@
 ---
 title: Aprenda a crear y administrar flujos en Microsoft Teams | Microsoft Docs
-description: Crear y administrar flujos para registrar los mensajes y a petición, @mention a los usuarios y los canales, tarjetas de entrada con las opciones de respuesta y más.
+description: Cree y administre flujos para publicar mensajes a petición, @mention usuarios y canales, publicar tarjetas con opciones de respuesta, etc.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,91 +15,92 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: 4987d1f4fb504c0279540eb86dcb6ad1b983ff4a
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 34cb8577d57d70686fd9811db9146443b56a07b3
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061857"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547991"
 ---
 # <a name="microsoft-flow-in-teams"></a>Microsoft Flow en los equipos
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 1. Acceso a Microsoft Teams.
 1. Acceso a Microsoft Flow.
 
-## <a name="install-the-microsoft-flow-app-in-teams"></a>Instalar la aplicación Microsoft Flow en los equipos
+## <a name="install-the-microsoft-flow-app-in-teams"></a>Instalación de la aplicación Microsoft Flow en Teams
 
 Siga estos pasos para instalar la aplicación Microsoft Flow en Microsoft Teams.
 
 1. Inicie sesión en Microsoft Teams.
 
-1. Pulse el **aplicaciones** situado en la esquina inferior izquierda de la barra de navegación de los equipos.
+1. Puntee en el icono **aplicaciones** en la parte inferior izquierda de la barra de navegación equipos.
 
     ![Seleccionar aplicaciones](media/flows-teams/apps.png)
 
-1. Seleccione el **flujo** app. Es posible que deba buscar **flujo** si no lo ve.
+1. Seleccione la aplicación **Flow** . Es posible que tenga que buscar **Flow (flujo** ) si no lo ve.
 
-    ![Seleccione la aplicación flow](media/flows-teams/select-flow-app.png)
+    ![Selección de la aplicación Flow](media/flows-teams/select-flow-app.png)
 
-1. Haga clic en **Instalar**.
+1. Seleccione **instalar**.
 
     ![Botón instalar](media/flows-teams/select-install.png)
 
 1. Microsoft Flow ya está instalado.
 
-    ![Instalado](media/flows-teams/flow-installed.png)
+    ![Instalación](media/flows-teams/flow-installed.png)
 
 
-## <a name="create-a-flow-in-teams"></a>Creación de un flujo en Teams
+## <a name="create-a-flow-in-teams"></a>Crear un flujo en Teams
 
 1. Inicie sesión en Microsoft Teams.
 
-1. Seleccione el **agregan más aplicaciones** vínculo (...) en la barra de navegación y, a continuación, seleccione el **flujo** app.
+1. Seleccione el vínculo **aplicaciones más agregadas** (...) en la barra de navegación y, a continuación, seleccione la aplicación **Flow** .
 
-    ![Icono aplicaciones agregadas](media/flows-teams/added-apps-icon.png)
+    ![Icono de aplicaciones agregadas](media/flows-teams/added-apps-icon.png)
 
-1. Si no lo ha hecho antes, es posible que deba iniciar sesión y conceder permisos.
+1. Si no lo ha hecho antes, puede que tenga que iniciar sesión y conceder permisos.
 
-    ![Inicio de sesión](media/flows-teams/grant-permissions-sign-in.png)
+    ![Inicia sesión](media/flows-teams/grant-permissions-sign-in.png)
 
 
     Tenga en cuenta las siguientes pestañas:
 
-    ![Página de inicio del flujo](media/flows-teams/flow-landing-page.png)
+    ![Página de aterrizaje de Flow](media/flows-teams/flow-landing-page.png)
 
-    Nombre|Propósito
+    Name|Función
     ----|-----|
-    conversación|Interactuar con el bot de flujo.
-    Flujos|Crear y administrar flujos.
-    Aprobaciones|Listas reciben y envían solicitudes de aprobación.
-    acerca de|Muestra la versión y otra información sobre Microsoft Flow.
+    Voz|Interactúe con el bot de flujo.
+    Fluyen|Crear y administrar flujos.
+    Aprobaciones|Muestra las solicitudes de aprobación recibidas y enviadas.
+    Sobre|Muestra la versión y otra información sobre Microsoft Flow.
 
 
-    Ahora verá todos los flujos que se ha creado desde el Diseñador de Microsoft Flow (si existe). 
+    Ahora verá todos los flujos que ha creado a partir del diseñador de Microsoft Flow (si existe). 
 
-    También puede crear flujos desde una plantilla personalizada o desde una plantilla en blanco, igual que haría desde el Diseñador de Microsoft Flow. 
+    También puede crear flujos a partir de una plantilla personalizada o de una plantilla en blanco, tal como se hace en el diseñador de Microsoft Flow. 
 
 ## <a name="manage-approvals"></a>Administrar aprobaciones
 
-Puede administrar [aprobaciones](modern-approvals.md) en Microsoft Teams, tal como lo haría en Microsoft Flow. Siga estos pasos para administrar las aprobaciones:
+Puede administrar [aprobaciones](modern-approvals.md) en Microsoft Teams, al igual que haría en Microsoft Flow. Siga estos pasos para administrar las aprobaciones:
 
 1. Inicie sesión en Microsoft Teams.
-1. Seleccione la pestaña **Aprobaciones**.
+1. Seleccione la pestaña **aprobaciones** .
 
     ![Pestaña aprobaciones](media/flows-teams/approvals-tab.png)
 
-    Observará el subfichas siguientes:
+    Observará las siguientes subpestañas:
 
-    Pestaña|Propósito
+    Ficha|Función
     ----|-----|
-    Recibido|Muestra las solicitudes de aprobación le ha enviado y que está pendientes de acción del usuario.
-    Enviado|Muestra las solicitudes de aprobación que ha enviado y está pendiente de acción de otras personas.
-    Historial|Listas reciben y envían solicitudes de aprobación.
-    Crear un flujo de aprobación|Crear flujos de aprobación.
+    Recibieron|Muestra las solicitudes de aprobación que ha recibido y que están pendientes de acción.
+    Envió|Muestra las solicitudes de aprobación que ha enviado y que están pendientes de acción de otros usuarios.
+    Histo|Muestra las solicitudes de aprobación recibidas y enviadas.
+    Crear flujo de aprobación|Cree flujos de aprobación.
 
-1. Seleccione el **recibidos**, **enviados**, o **historial** pestañas para obtener más información.
+1. Seleccione las pestañas **recibido**, **enviado**o **historial** para obtener más información.
 
     ![Pestaña aprobaciones](media/flows-teams/approvals-tab-2.png)
 
@@ -109,37 +110,37 @@ Puede administrar [aprobaciones](modern-approvals.md) en Microsoft Teams, tal co
 
 ## <a name="use-the-bot-with-flows"></a>Usar el bot con flujos
 
-### <a name="list-and-launch-flows-with-the-bot"></a>Lista e iniciar flujos con el bot
+### <a name="list-and-launch-flows-with-the-bot"></a>Enumerar e iniciar flujos con el bot
 
 > [!TIP]
-> El bot se enumera y ejecuta los flujos que se desencadena mediante una programación o desencadene manualmente sin intervención del usuario.
+> El bot muestra y ejecuta los flujos desencadenados por una programación o desencadenados manualmente sin intervención del usuario.
 
 1. Inicie sesión en Microsoft Teams.
-1. Seleccione el **agregan más aplicaciones** vínculo (...) en la barra de navegación y, a continuación, seleccione el **flujo** app.
+1. Seleccione el vínculo **aplicaciones más agregadas** (...) en la barra de navegación y, a continuación, seleccione la aplicación **Flow** .
 
-    ![Icono aplicaciones agregadas](media/flows-teams/added-apps-icon.png)
+    ![Icono de aplicaciones agregadas](media/flows-teams/added-apps-icon.png)
     
-1. Seleccione el **conversación** ficha.
+1. Seleccione la pestaña **conversación** .
 
-    ![Pestaña de conversación](media/flows-teams/conversations-tab.png)
+    ![Pestaña conversación](media/flows-teams/conversations-tab.png)
 
-En el **conversación** ficha, puede enviar comandos al bot, que responde mediante la realización de las acciones de comando que se ejecute. Por ejemplo, para enumerar los flujos y ejecutar el flujo con el índice 1, ejecute los siguientes comandos:
+En la pestaña **conversación** , puede enviar comandos al bot, que responde realizando las acciones que se ejecutan. Por ejemplo, para mostrar los flujos y ejecutar el flujo con el índice 1, ejecute los siguientes comandos:
 
-- ```List flows``` -El bot muestra una lista de los flujos, precedida por un número de índice.
-- ```Run flow 1``` -Ejecuciones de flujo de número 1. En este caso, *1* es el número de índice del flujo que desea ejecutar.
+- ```List flows```: el bot muestra una lista de los flujos, prefijados por un número de índice.
+- ```Run flow 1```: ejecuta el flujo número 1. Aquí, *1* es el número de índice del flujo que desea ejecutar.
 
    ![Comandos de bot](media/flows-teams/bot-commands.png)
 
-### <a name="get-the-description-for-flows"></a>Obtener la descripción de flujos
+### <a name="get-the-description-for-flows"></a>Obtener la descripción de los flujos
 
-Para obtener la descripción para el flujo con el índice 1 en la lista de flujos, ejecute ```describe flow 1```. La respuesta de bot será similar a esta imagen:
+Para obtener la descripción del flujo con el índice 1 de la lista de flujos, ejecute ```describe flow 1```. La respuesta de bot será similar a la de esta imagen:
 
    ![Describir flujos](media/flows-teams/bot-describe.png)
 
-### <a name="get-the-list-of-commands-for-the-bot"></a>Obtiene la lista de comandos para el bot
+### <a name="get-the-list-of-commands-for-the-bot"></a>Obtener la lista de comandos para el bot
 
-Para obtener la lista de comandos de los identificadores de bot, pedirle con este comando: ```learn more``` 
+Para obtener la lista de comandos que controla el bot, pídale este comando: ```learn more``` 
 
-La respuesta de bot será similar a esta imagen:
+La respuesta de bot será similar a la de esta imagen:
 
 ![Describir flujos](media/flows-teams/bot-learn-more.png) 

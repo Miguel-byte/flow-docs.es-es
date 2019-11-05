@@ -1,6 +1,6 @@
 ---
-title: Procedimientos recomendados para el uso de atributos de entidad de flujo de proceso de negocio | Microsoft docs
-description: Conozca los procedimientos recomendados para el uso de atributos de entidad de flujo de proceso de negocio.
+title: Prácticas recomendadas para el uso de atributos de entidad de flujo de procesos empresariales | MicrosoftDocs
+description: Conozca los procedimientos recomendados para usar los atributos de entidad de flujo de procesos empresariales.
 ms.custom: ''
 ms.date: 04/23/2019
 ms.reviewer: ''
@@ -19,95 +19,96 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: 950f03d78e708f00f28b68daf7c1012fae231c95
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b46eac7317db8f5b63ebcd7b8b1fe8c79109bc11
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64472981"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545284"
 ---
-# <a name="best-practices-in-using-business-process-flow-attributes"></a>Prácticas recomendadas de uso de atributos de flujo de proceso de negocio
+# <a name="best-practices-in-using-business-process-flow-attributes"></a>Prácticas recomendadas para el uso de atributos de flujo de procesos empresariales
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 
-Atributos heredados relacionados con el proceso de entidades está en desuso. Estos son algunos procedimientos recomendados para usar el *fase Active* atributo (activestageid) en la entidad de flujo de proceso empresarial. 
+Los atributos relacionados con los procesos heredados de las entidades están desusados. Estos son algunos procedimientos recomendados para usar el atributo *Active Stage* (activestageid) en la entidad flujo de proceso empresarial. 
 
-## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Informes en el escenario activo de un flujo de procesos empresariales
+## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Informes en la fase activa de un flujo de procesos empresariales
 
-Vamos a decir que le gustaría obtener una vista de la canalización de ventas mediante la creación de informes sobre el activo que almacenar provisionalmente la **conducir al proceso de ventas de oportunidad** está activado.
+Supongamos que quiere obtener una vista de su canalización de ventas mediante la generación de informes sobre la fase activa en la que está el **proceso de ventas de clientes potenciales** .
 
-Anteriormente, para informar sobre los procesos de negocio en la fase, uno podría definir una vista en cada entidad relacionada del flujo de procesos empresariales y, a continuación, informar sobre el *fase Active* campo (activestageid).
+Anteriormente, para informar sobre los procesos empresariales por fase, uno podría definir una vista en cada entidad relacionada del flujo de procesos empresariales y, a continuación, generar un informe en el campo *Active Stage* (activestageid).
 
-Con la degradación de la *fase Active* campo (activestageid) en las entidades relacionadas, hay dos maneras para informar sobre los flujos de procesos empresariales.
+Con el desuso del campo *Active Stage* (activestageid) en las entidades relacionadas, hay dos maneras de informar sobre los flujos de procesos empresariales.
 
-### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Opción 1: Las vistas y gráficos en los negocios procesan entidad flujo **(recomendado)**
+### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Opción 1: vistas y gráficos en la entidad flujo de proceso empresarial **(recomendado)**
 
-En las versiones 9.0 y versiones posteriores, cada flujo de procesos empresariales crea su propia entidad de Common Data Service, normalmente con el mismo nombre que el flujo de procesos empresariales. Para informar sobre el flujo de procesos empresariales, seleccione la entidad para el que desea informar sobre el flujo del proceso empresarial y, a continuación, crear vistas y gráficos, tal como hacía antes.
+En las versiones 9,0 y posteriores, cada flujo de procesos empresariales crea su propia entidad Common Data Service, normalmente con el mismo nombre que el flujo del proceso empresarial. Para informar sobre el flujo de procesos empresariales, seleccione la entidad para el flujo de proceso empresarial en el que desea crear un informe y, a continuación, cree vistas y gráficos, tal como hizo antes.
 
-En nuestro ejemplo, siga estos pasos para ir a la **conducir al proceso de ventas de oportunidad** entidad:
+En nuestro ejemplo, siga estos pasos para ir a la entidad **lead to oportunidad sales Process** :
 1. Vaya a https://web.powerapps.com.
-1. Seleccione el **datos**.
-1. Seleccione el **entidades**.
-1. Establezca el filtro en **todas**.
-1. Busque y, a continuación, seleccione el **conducir al proceso de ventas de oportunidad** entidad.
+1. Seleccione los **datos**.
+1. Seleccione las **entidades**.
+1. Establezca el filtro en **todos**.
+1. Busque y, a continuación, seleccione la entidad **lead to oportunidad sales Process** .
 
-   ![dar lugar a la entidad de proceso de ventas de oportunidad](media/best-practices-entity-attributes/lead-opportunity-process.png)
+   ![entidad de proceso de ventas de oportunidades](media/best-practices-entity-attributes/lead-opportunity-process.png)
 
-En este caso, puede definir las vistas y gráficos al igual que en cualquier otra entidad.
+Aquí, puede definir vistas y gráficos del mismo modo que en cualquier otra entidad.
 
-![detalles de entidad del proceso de traducción](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
+![detalles de la entidad del proceso de traducción](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
 
-Una ventaja de este enfoque es que puede usar una vista única o un gráfico al informe en los flujos de procesos empresariales que abarcan varias entidades.
+Una ventaja de este enfoque es que puede usar una vista o un gráfico únicos para informar sobre los flujos de procesos empresariales que abarcan varias entidades.
 
-Además, como la entidad de flujo de proceso empresarial no es diferente de cualquier otra entidad personalizada en Common Data Service, puede agregar campos personalizados a la entidad que se va a realizar un seguimiento de cualquier información adicional que necesita.
+Además, como la entidad flujo de proceso empresarial no es diferente de ninguna otra entidad personalizada en Common Data Service, puede agregar campos personalizados a la entidad para realizar el seguimiento de la información adicional que necesite.
 
-### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Opción 2: copiar fase activa para una entidad relacionada
+### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Opción 2: copiar la fase activa en una entidad relacionada
 
-Como alternativa, para continuar informar de la entidad relacionada, cree un flujo para copiar el *fase Active* campo (activestageid) de la entidad de flujo de proceso empresarial en un campo personalizado en las entidades relacionadas de Common Data Service.
+Como alternativa, para continuar informando de la entidad relacionada, cree un flujo para copiar el campo *Active Stage* (activestageid) de la entidad flujo de proceso empresarial en un campo personalizado en las entidades Common Data Service relacionadas.
 
-Estos son algunos aspectos que debe tener en cuenta al usar este enfoque:
+Estos son algunos aspectos que hay que tener en cuenta al usar este enfoque:
 
-1.  Es posible tener más de un flujo de procesos empresariales que se ejecutan en una sola entidad. Con este enfoque, es mejor tener un campo personalizado que almacena la fase activa para cada flujo de procesos empresariales que se ejecuta en la entidad. Este enfoque garantiza la integridad de los informes.
+1.  Es posible tener más de un flujo de proceso empresarial en ejecución en una sola entidad. Con este enfoque, es mejor tener un campo personalizado que almacene la fase activa para cada flujo de proceso empresarial que se ejecute en la entidad. Este enfoque garantiza la integridad de los informes.
 
-1.  Como reporting está dirigida a partir de la entidad relacionada, no es posible crear una vista única que informa sobre los flujos de procesos empresariales que abarcan varias entidades.
+1.  A medida que la generación de informes se basa en la entidad relacionada, no es posible crear una vista única que informe sobre los flujos de procesos empresariales que abarquen varias entidades.
 
-## <a name="using-the-active-stage-to-run-logic"></a>Uso de la fase de active para ejecutar lógica
+## <a name="using-the-active-stage-to-run-logic"></a>Usar la fase activa para ejecutar la lógica
 
-Estos son algunos casos en los que desea ejecutar la lógica que se basa en la fase de active:
+Estos son algunos casos en los que puede que desee ejecutar la lógica basada en la fase activa:
 
-### <a name="using-the-active-stage-to-run-client-side-logic"></a>Uso de la fase de active para ejecutar lógica de cliente
+### <a name="using-the-active-stage-to-run-client-side-logic"></a>Usar la fase activa para ejecutar la lógica del lado cliente
 
-Si usa el proceso de negocio, hay muchas cosas que puede desear hacer automáticamente. Por ejemplo:
+A medida que se utiliza el proceso empresarial, hay muchas cosas que es posible que desee hacer automáticamente. Por ejemplo:
 
--   Cambiar el flujo del proceso empresarial activa según la información disponible recientemente en el flujo del proceso empresarial o de formulario.
+-   Cambiar el flujo del proceso de negocio activo en función de la información recién disponible en el flujo de proceso de negocio o formulario.
 
--   Mueva la fase activa a la fase siguiente o anterior, según los valores especificados de los usuarios para los pasos o campos de formulario.
+-   Mueve la fase activa a la fase siguiente o anterior, en función de los valores que los usuarios especificaron para los pasos o los campos de formulario.
 
--   Ocultar o mostrar pestañas del formulario y los campos según el escenario seleccionado.
+-   Ocultar o mostrar pestañas y campos de formulario en función de la fase seleccionada.
 
--   Mostrar mensajes informativos y ejecute calulations basándose en los flujos del proceso empresarial activa, el escenario activo o seleccionado o eventos tales como mover la fase activa.
+-   Mostrar mensajes informativos y ejecutar calulations en función de los flujos de procesos empresariales activos, la fase activa o seleccionada, o eventos como mover la fase activa.
 
 > [!TIP]
-> Para escenarios como estos, use el conjunto admitido de [las API de cliente](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) para flujos de procesos empresariales.
+> En escenarios como estos, use el conjunto compatible de [API de cliente](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) para flujos de procesos empresariales.
 >
 
-### <a name="using-the-active-stage-to-run-server-side-logic"></a>Utilización del escenario activo para ejecutar la lógica del lado servidor
+### <a name="using-the-active-stage-to-run-server-side-logic"></a>Usar la fase activa para ejecutar la lógica del lado servidor
 
-Puede haber casos donde automatización basada en las necesidades de flujo de proceso de negocio para realizarse en el servidor. Por ejemplo:
+Puede haber casos en los que la automatización basada en el flujo del proceso empresarial se deba realizar en el lado del servidor. Por ejemplo:
 
--   Enviar un correo electrónico a un usuario si el **calificar** la fase de la **proceso de ventas de oportunidad** está activo durante más de 15 días.
+-   Envíe un correo electrónico a un usuario si la fase **calificada** del **proceso de ventas** de la oportunidad está activa durante más de 15 días.
 
--   Crear automáticamente un conjunto de actividades relevantes para la fase activa de la **proceso de ventas de oportunidad** cada vez que los cambios.
+-   Cree automáticamente un conjunto de actividades relevantes para la fase activa del **proceso de ventas de oportunidades** cada vez que cambie.
 
--   Finalizar automáticamente las **proceso de ventas de oportunidad** cuando se completa la actividad de llamada de teléfono para el cierre.
+-   Finalizar automáticamente el **proceso de ventas de oportunidades** cuando se complete la actividad de llamada de teléfono para el cierre.
 
 > [!TIP]
-> Usar flujos de trabajo de Common Data Service clásicos o flujos que se define en la entidad para el flujo de procesos empresariales.
+> Use flujos de trabajo de Common Data Service clásico o flujos que defina en la entidad para el flujo de procesos empresariales.
 > 
 
-Para crear un flujo de trabajo de Common Data Service clásico que crean actividades para las revisiones de la solución interna y hacer un seguimiento con el cliente en el **proponer** fase de la **proceso de ventas de oportunidad**:
+Para compilar un flujo de trabajo de Common Data Service clásico que crea actividades para revisiones de soluciones internas y para realizar un seguimiento del cliente en la fase de **propuesta** del **proceso de ventas de oportunidades**:
 
-1. Creación en el **oportunidad de proceso de ventas** entidad y establecer que se ejecute cada vez que el **fase activa** campo de los cambios de entidad. 
-1. Definir una condición para comprobar si el **fase Active** campo equals **proponer**. 
-1. Cree un registro de la cita y llamada de teléfono para la revisión interno de la solución y la llamada de cliente para revisar la solución, respectivamente.
+1. Créelo en la entidad **proceso de ventas de oportunidades** y establézcalo para que se ejecute cada vez que cambie el campo de **fase activa** de la entidad. 
+1. Defina una condición para comprobar si el campo de la **fase activa** es **propuesto**. 
+1. Cree una cita y un registro de llamada de teléfono para la revisión interna de la solución y la llamada del cliente para revisar la solución, respectivamente.
 
-   ![seguimiento de la fase de cierre](media/best-practices-entity-attributes/close-stage-followup.png)
+   ![cerrar seguimiento de la fase](media/best-practices-entity-attributes/close-stage-followup.png)

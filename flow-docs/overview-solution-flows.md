@@ -1,6 +1,6 @@
 ---
-title: Introducción a los flujos compatibles con la solución | Microsoft Docs
-description: Aprenda sobre las ventajas de la creación de flujos en soluciones.
+title: Información general de los flujos que reconocen soluciones | Microsoft Docs
+description: Obtenga información sobre las ventajas de la creación de flujos en las soluciones.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,45 +20,46 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 19eb7d051c4d1438ec45305620e369b5499252a0
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465326"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548561"
 ---
-# <a name="overview"></a>Introducción
+# <a name="overview"></a>Visión
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Cuando hospeda sus flujos en una [solución](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), se convierten en portátiles, lo que facilita su traslado y el de todos sus componentes de un entorno a otro. Un caso típico de uso es que un fabricante de software independiente desarrolle flujos en un entorno de espacio aislado y luego los mueva a un entorno de prueba. Después de la prueba, el fabricante de software independiente movería los flujos a un entorno de producción para los clientes que compran estos flujos. Este proceso es mucho más fácil cuando se crean los flujos en las soluciones y, a continuación, se desplazan las soluciones y su contenido.
+Al hospedar los flujos en una [solución](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), estos se convierten en portátiles, lo que dificulta su traslado y todos sus componentes de un entorno a otro. Un caso de uso típico es que un fabricante de software independiente (ISV) desarrolle flujos en un entorno de espacio aislado y, a continuación, mueva esos flujos a un entorno de prueba. Después de la prueba, el ISV trasladaría los flujos a un entorno de producción para los clientes que compran estos flujos. Este proceso es mucho más fácil cuando se crean flujos en soluciones y, a continuación, se mueven las soluciones y su contenido.
 
-Se crea dentro de una solución de flujos se conocen como flujos *compatibles con la solución*. Puede agregar varios flujos en una única solución.
+Los flujos que se crean dentro de una solución se conocen como flujos *con reconocimiento de la solución* . Puede agregar varios flujos en una única solución.
 
 > [!NOTE] 
-> No se puede mover flujos no compatibles con la solución (flujos que no se han creado en una solución) a una solución.
+> No se pueden trasladar flujos no compatibles con soluciones (flujos no creados en una solución) a una solución.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Debe tener los siguientes componentes para crear soluciones y flujos compatibles con la solución:
+Debe tener los siguientes componentes para crear soluciones y flujos compatibles con soluciones:
 
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - Un entorno con la versión 9.1.0.267 o posterior.
 
-  Para comprobar la versión, vaya al [centro de administración de Microsoft Flow](https://admin.flow.microsoft.com) y seleccione sucesivamente **Entornos**, seleccione el entorno en el que esté interesado y, a continuación, seleccione la pestaña **Detalles**.
+  Para comprobar su versión, vaya a [Microsoft Flow centro de administración](https://admin.flow.microsoft.com), seleccione **entornos**, seleccione el entorno que le interese y, a continuación, seleccione la pestaña **detalles** .
 
-## <a name="create-a-solution"></a>Creación de una solución
+## <a name="create-a-solution"></a>Crear una solución
 
 Siga estos pasos para crear una solución:
 
 1. Inicie sesión en [Microsoft Flow](https://flow.microsoft.com).
-1. Seleccione **Soluciones** desde la barra de navegación.
+1. Seleccione **soluciones** en la barra de navegación.
 
    ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)
 
-1. Seleccione **+ Nueva solución**.
+1. Seleccione **+ nueva solución**.
 
    ![](./media/overview-solution-flows/select-new-solution.png)
 
-1. Proporcione toda la información necesaria para la nueva solución, incluidos **Nombre para mostrar**, **Editor**, **Versión** y **Nombre**. También es una buena idea proporcionar una descripción de la solución.
+1. Proporcione toda la información necesaria para la nueva solución, incluidos **el nombre para mostrar**, el **publicador**, la **versión**y **el nombre**. También es una buena idea proporcionar una descripción de la solución.
 
    ![](./media/overview-solution-flows/new-solution.png)
 
@@ -71,12 +72,12 @@ Siga estos pasos para crear una solución:
    ![](./media/overview-solution-flows/new-solution-created.png)
 
    > [!TIP]
-   > Seleccione **Soluciones** para actualizar la lista de soluciones si no aparece la nueva solución.
+   > Seleccione **soluciones** para actualizar la lista de soluciones si la nueva solución no aparece.
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
 - [Creación de un flujo en una solución](./create-flow-solution.md)
-- [Exportación de una solución](./export-flow-solution.md)
-- [Importación de una solución](./import-flow-solution.md)
-- [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)
-- [Eliminación de un flujo compatible con la solución](./remove-solution-aware-flow.md)
+- [Exportar una solución](./export-flow-solution.md)
+- [Importar una solución](./import-flow-solution.md)
+- [Editar un flujo compatible con soluciones](./edit-solution-aware-flow.md)
+- [Quitar un flujo compatible con soluciones](./remove-solution-aware-flow.md)

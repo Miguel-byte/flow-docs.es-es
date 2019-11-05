@@ -1,6 +1,6 @@
 ---
-title: Introducción a los flujos compatibles con la solución | Microsoft Docs
-description: Aprenda sobre las ventajas de la creación de flujos en soluciones.
+title: Información general de los flujos que reconocen soluciones | Microsoft Docs
+description: Obtenga información sobre las ventajas de la creación de flujos en las soluciones.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,37 +20,38 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cee250718b65deaa5d8472eb4eb90965a555674b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3722c0702d21799f63098cb3d8fac619f933aff4
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456290"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544387"
 ---
-# <a name="edit-a-solution-aware-flow"></a>Edición de un flujo compatible con la solución
+# <a name="edit-a-solution-aware-flow"></a>Editar un flujo compatible con soluciones
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Siga estos pasos para editar un flujo compatible con la solución.
+Siga estos pasos para editar un flujo compatible con soluciones.
 
 > [!IMPORTANT]
-> Detenga el flujo antes de comenzar a editarlo, o podría perder los cambios.
+> Detenga el flujo antes de comenzar a editarlo o podría perder los cambios.
 
-1. Inicie sesión en Microsoft Flow y seleccione **Soluciones** en la barra de navegación superior.
+1. Inicie sesión en Microsoft Flow y, a continuación, seleccione **soluciones** en la barra de navegación.
 1. Seleccione la solución que contiene el flujo que desea editar.
 
    ![](./media/edit-solution-aware-flow/new-flow-inside-solution.png)
 
-1. Seleccione **...** (Más comandos) para su flujo y, a continuación, seleccione **Desactivar**.
-1. Seleccione **...** (Más comandos) para su flujo y, a continuación, seleccione **Editar**.
+1. Seleccione **...** (más comandos) para el flujo y, a continuación, seleccione **desactivar**.
+1. Seleccione **...** (más comandos) para el flujo y, a continuación, seleccione **Editar**.
 
    ![](./media/edit-solution-aware-flow/edit-flow.png)
    
-1. Realice las modificaciones en el diseñador de Microsoft Flow, pruebe los cambios y, después, guarde el flujo.
-1. Active el flujo si desea que se ejecute.
+1. Realice las modificaciones en el diseñador de Microsoft Flow, pruebe los cambios y, a continuación, guarde el flujo.
+1. Active el flujo Si quiere que se ejecute.
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
-* [Creación de una solución](./overview-solution-flows.md)
+* [Crear una solución](./overview-solution-flows.md)
 * [Creación de un flujo en una solución](./create-flow-solution.md)
-* [Exportación de una solución](./export-flow-solution.md)
-* [Importación de una solución](./import-flow-solution.md)
-* [Eliminación de un flujo compatible con la solución](./remove-solution-aware-flow.md)
+* [Exportar una solución](./export-flow-solution.md)
+* [Importar una solución](./import-flow-solution.md)
+* [Quitar un flujo compatible con soluciones](./remove-solution-aware-flow.md)

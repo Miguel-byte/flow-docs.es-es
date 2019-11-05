@@ -1,6 +1,6 @@
 ---
-title: Quitar o eliminar flujos compatibles con la solución | Microsoft Docs
-description: Aprenda a quitar o eliminar flujos compatibles con la solución.
+title: Obtenga información acerca de cómo quitar o eliminar flujos que reconocen soluciones | Microsoft Docs
+description: Obtenga información acerca de cómo quitar o eliminar flujos que reconocen soluciones.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,35 +20,36 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 120689bce2100c383297f95371387f9b41559ffe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e4bab1f20abb01682836dcf832abcb65d315334c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465034"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548491"
 ---
-# <a name="remove-a-solution-aware-flow"></a>Quitar un flujo compatibles con la solución
+# <a name="remove-a-solution-aware-flow"></a>Quitar un flujo compatible con soluciones
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Puede quitar un flujo de una solución, o eliminarlo completamente de un entorno.
+Puede quitar un flujo de una solución o eliminar el flujo de un entorno por completo.
 
-Acción|Resultado
+Actuar|Da
 ------|-----------
-Quitar de esta solución|El flujo se quita de la solución seleccionada, pero permanece en el entorno. Puede utilizar el flujo en otras soluciones del entorno en una fecha posterior.
-Eliminación de este entorno|El flujo se elimina y ya no está disponible en el entorno.
+Quitar de esta solución|El flujo se quita de la solución seleccionada, pero permanece en el entorno. Puede usar el flujo en otras soluciones en el entorno en un momento posterior.
+Eliminar de este entorno|Se elimina el flujo; no está disponible en el entorno.
 
-1. Inicie sesión en Microsoft Flow y seleccione **Soluciones** en la barra de navegación superior.
+1. Inicie sesión en Microsoft Flow y, a continuación, seleccione **soluciones** en la barra de navegación.
 1. Seleccione la solución que contiene el flujo que desea eliminar.
 
    ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
    
-1. Seleccione **...** (Más comandos) para el flujo, seleccione **Quitar** y, a continuación, seleccione **Quitar de la solución** o **Eliminar de este entorno**.
+1. Seleccione **...** (más comandos) para el flujo, seleccione **quitar**y, a continuación, seleccione **quitar de esta solución** o **eliminar de este entorno**.
 
    ![](./media/remove-solution-aware-flow/delete-flow-from-solution-options.png)
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
-- [Creación de una solución](./overview-solution-flows.md)
+- [Crear una solución](./overview-solution-flows.md)
 - [Creación de un flujo en una solución](./create-flow-solution.md)
-- [Exportación de una solución](./export-flow-solution.md)
-- [Importación de una solución](./import-flow-solution.md)
-- [Edición de un flujo compatible con la solución](./edit-solution-aware-flow.md)
+- [Exportar una solución](./export-flow-solution.md)
+- [Importar una solución](./import-flow-solution.md)
+- [Editar un flujo compatible con soluciones](./edit-solution-aware-flow.md)

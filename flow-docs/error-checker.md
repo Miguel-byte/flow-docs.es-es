@@ -1,6 +1,6 @@
 ---
-title: Buscar y corregir errores con el Comprobador de Microsoft Flow | Microsoft Docs
-description: Buscar y corregir errores rápidamente con el Comprobador de Microsoft Flow.
+title: Busque y corrija los errores con el comprobador de Microsoft Flow | Microsoft Docs
+description: Busque y corrija los errores rápidamente con el comprobador de Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,37 +20,38 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: a6a7acd464131cebaa692d72a9a0a44a572b2470
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2751b914c9f1afcab9cc5eee8c55e3b85ea07716
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65060868"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547916"
 ---
-# <a name="the-microsoft-flow-checker"></a>El Comprobador de Microsoft Flow
+# <a name="the-microsoft-flow-checker"></a>Comprobador de Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-El Comprobador de Microsoft Flow promueve una mayor calidad flujos asegurándose de siguen los procedimientos recomendados al diseñar flujos. Cuando se ejecuta el Comprobador, obtendrá información sobre preguntas como "las áreas de la implementación de mi flujo suponen un riesgo de rendimiento o confiabilidad?"
+El comprobador de Microsoft Flow promueve flujos de mayor calidad asegurándose de seguir las prácticas recomendadas al diseñar flujos. Al ejecutar el comprobador, obtendrá información sobre preguntas como "¿qué áreas de la implementación de su flujo suponen un riesgo de rendimiento o confiabilidad?".
 
-Para cada problema el Comprobador de identifica, los puntos de comprobador a instancias específicas dentro del flujo que debe considerar realizar mejoras. Y obtenga información sobre cómo implementar estas mejoras, siga las instrucciones detalladas.
+Para cada problema que el comprobador identifica, el comprobador apunta a repeticiones específicas en el flujo en el que debería considerar la posibilidad de realizar mejoras. Además, aprenderá a implementar estas mejoras siguiendo una guía detallada.
 
-El Comprobador de siempre está activo, que aparecen en la barra de comandos en el diseñador. El Comprobador de muestra un punto rojo cuando encuentra uno o varios errores o posibles errores en el flujo.
+El comprobador siempre está activo y aparece en la barra de comandos del diseñador. El comprobador muestra un punto rojo cuando encuentra uno o más errores o posibles errores en el flujo.
 
-![Comprobador de](media/checker/checker-in-designer.png "Comprobador")
+![Probado](media/checker/checker-in-designer.png "Probado")
 
 
-## <a name="view-errors-in-the-checker"></a>Ver los errores en el Comprobador de
+## <a name="view-errors-in-the-checker"></a>Ver errores en el comprobador
 
-Al diseñar el flujo, puede seleccionar el botón de Comprobador de flujo para abrir el Comprobador de para ver los errores y advertencias. 
+Mientras diseña el flujo, puede seleccionar el botón del comprobador de flujo para abrir el comprobador y ver los errores y las advertencias. 
 
-El Comprobador de también se abre automáticamente cuando se guarda el flujo si hay errores o advertencias.  Una vez que se abre el Comprobador, muestra todos los errores y advertencias en el flujo. En cada sección, el Comprobador de llama a las acciones que se produce el error o advertencia. 
+El comprobador también se abre automáticamente cuando se guarda el flujo si hay errores o advertencias.  Una vez que se abra el comprobador, se mostrarán todos los errores y advertencias del flujo. En cada sección, el comprobador llama a las acciones en las que se produce el error o la advertencia. 
 
-## <a name="learn-to-fix-errors-and-warnings"></a>Obtenga información sobre cómo corregir los errores y advertencias
+## <a name="learn-to-fix-errors-and-warnings"></a>Información para corregir errores y advertencias
 
 Expanda cada sección para obtener más información sobre cómo corregir un error.
 
-![Comprobador de detalles](media/checker/checker-detail.png "Comprobador de detalles")
+![Detalles del comprobador](media/checker/checker-detail.png "Detalles del comprobador")
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
 [Introducción a Microsoft Flow](getting-started.md)
 

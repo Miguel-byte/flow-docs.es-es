@@ -1,6 +1,6 @@
 ---
-title: Aprobación de solicitudes en dispositivos móviles | Microsoft Docs
-description: Use cualquier dispositivo móvil para aprobar las solicitudes creadas en Microsoft Flow.
+title: Aprobar solicitudes en un dispositivo móvil | Microsoft Docs
+description: Use un dispositivo móvil para aprobar las solicitudes creadas en Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,66 +20,67 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b41397d74c7396081154526ad2e248cb293e2460
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: a71d1e53199f0dacfc2086812cc3cd2fd9585f4d
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468279"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548667"
 ---
-# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aprobación de solicitudes en dispositivos móviles mediante Microsoft Flow
-Si un flujo le identifica como aprobador y ha instalado la aplicación móvil de Microsoft Flow, recibirá una notificación push cada vez que se solicite que lo apruebe.
+# <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Aprobar solicitudes en el dispositivo móvil mediante el uso de Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Si un flujo lo identifica como aprobador y ha instalado la aplicación móvil para Microsoft Flow, recibirá una notificación de envío cada vez que se solicite su aprobación.
 
-Este artículo le guía a través de varios escenarios comunes que es probable que encuentre al administra solicitudes de aprobación en la aplicación móvil de Microsoft Flow.
+Este artículo le guía a través de algunos escenarios comunes que es probable que encuentre mientras administra las solicitudes de aprobación en la aplicación móvil para Microsoft Flow.
 
 > [!NOTE]
-> Las imágenes de este tema son de un dispositivo Android; sin embargo, en iOS el proceso es similar.
+> Las imágenes de este tema proceden de un dispositivo Android. sin embargo, la experiencia en iOS es similar.
 > 
 > 
 
 ## <a name="prerequisites"></a>Requisitos previos
-Para completar este tutorial, se necesita:
+Para completar este tutorial, necesitará lo siguiente:
 
-* Un dispositivo [Android](https://aka.ms/flowmobiledocsandroid) o [iOS](https://aka.ms/flowmobiledocsios) que ejecute la aplicación móvil de Microsoft Flow.
-* Ser designado aprobador en un flujo de aprobación.
+* Un dispositivo [Android](https://aka.ms/flowmobiledocsandroid) o [iOS](https://aka.ms/flowmobiledocsios) que ejecuta la aplicación móvil para Microsoft Flow.
+* Se debe designar como aprobador en un flujo de aprobación.
 * Solicitudes pendientes de aprobación.
 
-## <a name="view-pending-requests"></a>Visualización de solicitudes pendientes
-1. Abra la aplicación móvil de Microsoft Flow.
+## <a name="view-pending-requests"></a>Ver solicitudes pendientes
+1. Abra la aplicación móvil para Microsoft Flow.
    
-    ![iniciar la aplicación móvil](./media/mobile-approvals/open-app.png)
-2. Seleccione **APROBACIONES** en la esquina superior derecha.
+    ![Inicio de la aplicación móvil](./media/mobile-approvals/open-app.png)
+2. Seleccione **aprobaciones** en la esquina superior derecha.
    
     ![seleccionar aprobaciones](./media/mobile-approvals/select-approvals.png)
-3. Vea todas las aprobaciones pendientes:
+3. Ver todas las aprobaciones pendientes:
    
-    ![ver solicitudes de aprobación pendientes](./media/mobile-approvals/show-pending-approval-requests.png)
+    ![Consulte las solicitudes de aprobación pendientes](./media/mobile-approvals/show-pending-approval-requests.png)
 
-Si no hay solicitudes de aprobación pendientes, cree un [flujo de aprobación](modern-approvals.md), configúrese como aprobador y desencadene el flujo. Las solicitudes de aprobación aparecen en el centro de aprobaciones unos segundos después de que el flujo se desencadena y se envía una solicitud de aprobación.
+Si no tiene ninguna solicitud de aprobación pendiente, cree un [flujo de aprobación](modern-approvals.md), establézcalo como aprobador y, a continuación, desencadene el flujo. Las solicitudes de aprobación aparecen en el centro de aprobación unos segundos después de que el flujo se desencadena y envía una solicitud de aprobación.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>Aprobar solicitudes y dejar un comentario opcional
 1. Si no lo ha hecho, siga los pasos anteriores para [ver las solicitudes pendientes](mobile-approvals.md#view-pending-requests).
-2. Seleccione **APROBAR** en la solicitud que desea aprobar.
+2. Seleccione **aprobar** en la solicitud que desea aprobar.
    
-    ![seleccione aprobar](./media/mobile-approvals/select-approve.png)
-3. (Opcional) seleccione **Agregar comentario (opcional)**.
+    ![seleccionar aprobar](./media/mobile-approvals/select-approve.png)
+3. (Opcional) Seleccione **Agregar Comentario (opcional)** .
    
-    ![seleccione agregar una condición](./media/mobile-approvals/select-add-comment.png)
+    ![seleccionar agregar un comentario](./media/mobile-approvals/select-add-comment.png)
    
-    Escriba un comentario en la pantalla **Agregar comentario**.
+    Escriba un Comentario en la pantalla **Agregar comentario** .
    
-    ![escriba su comentario](./media/mobile-approvals/enter-comment-for-approval.png)
-4. Seleccione **CONFIRMAR** en la esquina superior derecha.
+    ![Escriba su comentario](./media/mobile-approvals/enter-comment-for-approval.png)
+4. Seleccione **confirmar** en la esquina superior derecha.
    
-    ![confirme que ha terminado](./media/mobile-approvals/tap-confirm-button.png)
+    ![confirmar que ha finalizado](./media/mobile-approvals/tap-confirm-button.png)
    
-    La pantalla de operación correcta se muestra después de que el flujo registra su decisión.
+    La pantalla de éxito se muestra después de que el flujo registre su decisión.
    
-    ![pantalla de operación correcta](./media/mobile-approvals/approved.png)
+    ![pantalla de éxito](./media/mobile-approvals/approved.png)
 
 ## <a name="reject-requests-and-leave-an-optional-comment"></a>Rechazar solicitudes y dejar un comentario opcional
-Siga los [pasos para aprobar una solicitud](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), pero seleccione **RECHAZAR** en el segundo paso.
+Siga los [pasos para aprobar una solicitud](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), pero seleccione **rechazar** en el segundo paso.
 
-## <a name="learn-more"></a>Más información
-[Creación de flujos de aprobación modernos](modern-approvals.md).
+## <a name="learn-more"></a>Aprende más
+[Cree flujos de aprobación modernos](modern-approvals.md).
 

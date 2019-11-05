@@ -1,6 +1,6 @@
 ---
-title: Aprenda a crear flujos que registre las tarjetas adaptables a Microsoft Teams | Microsoft Docs
-description: Aprenda a crear flujos que permite publicar contenido con formato enriquecido con las tarjetas adaptables a Microsoft Teams.
+title: Aprenda a crear flujos que publiquen tarjetas adaptables en Microsoft Teams | Microsoft Docs
+description: Aprenda a crear flujos que publiquen contenido con formato enriquecido con tarjetas adaptables en Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,45 +15,46 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d6bb4bb55fe876db1d8b64c157d3b4967e5d067f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0aa5b4727bea569732fe5b76f717a87d8d7ddb02
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061581"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546497"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
-# <a name="use-adaptive-cards-in-microsoft-teams"></a>Usar las tarjetas adaptables en Microsoft Teams
+# <a name="use-adaptive-cards-in-microsoft-teams"></a>Usar tarjetas adaptables en Microsoft Teams
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Puede crear un flujo que envía [las tarjetas adaptables](https://adaptivecards.io) a un canal Microsoft Teams. Con las tarjetas adaptables, puede usar el formato enriquecido para realizar sus publicaciones más claras, interactivas y atractivas. Las tarjetas adaptables pueden contener componentes, como imágenes, gráficos, texto con formato enriquecido y mucho más.
+Puede crear un flujo que publique [tarjetas adaptables](https://adaptivecards.io) en un canal de Microsoft Teams. Con las tarjetas adaptables, puede usar el formato enriquecido para que sus publicaciones sean más claras, interactivas y atractivas. Las tarjetas adaptables pueden contener componentes como imágenes, gráficos, texto con formato enriquecido, etc.
 
-## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Crear un flujo que registra las tarjetas adaptables a un equipo
+## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Crear un flujo que envíe tarjetas adaptables a un equipo
 
-Siga estos pasos para crear un flujo que envía una tarjeta adaptable para el canal general en el equipo de estrategia y planeación. El flujo se crea usa el **publicar su propia tarjeta adaptable con el bot de flujo a un canal (versión preliminar)** acción para publicar contenido de la tarjeta adaptable al canal del equipo cada semana.
+Siga estos pasos para crear un flujo que envíe una tarjeta adaptable al canal general en el equipo de estrategia y planeamiento. El flujo que creamos usa la **tarjeta publicar su propia tarjeta adaptativa como el bot de flujo a una acción de canal (versión preliminar)** para publicar el contenido de la tarjeta adaptable en el canal semanal del equipo.
 
 1. Inicie sesión en Microsoft Teams.
-1. Seleccione el **equipos** icono en el panel de navegación de la barra de la izquierda y, a continuación, seleccione el **planeación y la estrategia** team.
+1. Seleccione el icono **equipos** en la barra de navegación de la izquierda y, a continuación, seleccione el equipo de **estrategia y planeamiento** .
 
-    ![Seleccione los equipos](media/create-adaptive-cards-teams/select-teams-team.png)
+    ![Seleccionar equipos](media/create-adaptive-cards-teams/select-teams-team.png)
 
-1. Seleccione el **flujo** ficha en la parte superior de la pantalla.
-1. Seleccione el **+** icono (crear desde cero).
-1. Busque **periodicidad**y, a continuación, seleccione el **periodicidad** desencadenador.
+1. Seleccione la pestaña **Flow (flujo** ) en la parte superior de la pantalla.
+1. Seleccione el icono de **+** (crear desde cero).
+1. Busque **periodicidad**y, a continuación, seleccione el desencadenador de **periodicidad** .
 
     ![Tarjeta de periodicidad](media/create-adaptive-cards-teams/select-recurrence.png)
 
-1. Configure la programación como se indica a continuación para repetir cada semana, a una hora y zona horaria de su elección:
+1. Establezca la programación como se indica a continuación para repetir cada semana, a una hora y zona horaria de su elección:
     
     ![Tarjeta de periodicidad](media/create-adaptive-cards-teams/recurrence-card.png)
     
-1. Seleccione **Nuevo paso**.
-1. Busque **adaptable**, seleccione **Microsoft Teams**y, a continuación, seleccione el **publicar su propia tarjeta adaptable con el bot de flujo a un canal (versión preliminar)** acción.
+1. Seleccione **nuevo paso**.
+1. Busque **Adaptive**, seleccione **Microsoft Teams**y, después, seleccione la acción **publicar su propia tarjeta adaptativa como bot de flujo en una acción de canal (versión preliminar)** .
 
    ![Tarjeta adaptable](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 
-1. Proporcione un **equipo**, **canal**, y **mensaje** en el **publicar su propia tarjeta adaptable con el bot de flujo a un canal (versión preliminar)** tarjeta para indicar el equipo y el canal al que la tarjeta adaptable **mensaje** se publicará.
+1. Proporcione un **equipo**, un **canal**y un **mensaje** en la tarjeta **publicar su propia tarjeta adaptativa como bot de flujo a una tarjeta de canal (versión preliminar)** para indicar el equipo y el canal en el que se publicará el **mensaje** de la tarjeta adaptable.
 
    ![Tarjeta adaptable](media/create-adaptive-cards-teams/adaptive-card-message.png)
 
@@ -134,14 +135,14 @@ Siga estos pasos para crear un flujo que envía una tarjeta adaptable para el ca
 
 ## <a name="run-the-flow"></a>Ejecución del flujo
 
-Observe que, después de que transcurra el tiempo de periodicidad, el flujo publica contenido de la tarjeta adaptable para el canal de equipo que ha definido.
+Observe que, una vez transcurrido el tiempo de periodicidad, el flujo envía el contenido de la tarjeta adaptable al canal del equipo que ha definido.
 
 ![Ejecución del flujo](media/create-adaptive-cards-teams/flow-run-result.png)
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Aprende más
 
-- Introducción a [ejemplos tarjeta adaptable](https://adaptivecards.io/samples/).
-- Crear [contenido de la tarjeta adaptable](https://adaptivecards.io) de manera sencilla.
+- Introducción a los [ejemplos de tarjetas adaptables](https://adaptivecards.io/samples/).
+- Cree [contenido de tarjeta adaptable](https://adaptivecards.io) de la forma más sencilla.
 
 
 
