@@ -66,6 +66,28 @@
       href: enhance-business-process-flows-branching.md
     - name: Procedimientos recomendados para los atributos de flujo de proceso de negocio
       href: best-practices-entity-attributes.md
+- name: Flujos de la interfaz de usuario (versión preliminar)
+  items:
+    - name: Introducción a los flujos de la interfaz de usuario
+      href: ./ui-flows/overview.md
+    - name: Configuración de los flujos de la interfaz de usuario
+      href: ./ui-flows/setup.md
+    - name: Creación y prueba de los flujos de la interfaz de usuario de escritorio
+      href: ./ui-flows/create-desktop.md
+    - name: Edición de los flujos de la interfaz de usuario de escritorio
+      href: ./ui-flows/edit-desktop.md
+    - name: Uso de entradas y salidas en los flujos de la interfaz de usuario de escritorio
+      href: ./ui-flows/inputs-outputs-desktop.md
+    - name: Creación y prueba de los flujos de la interfaz de usuario web
+      href: ./ui-flows/create-web.md
+    - name: Edición de los flujos de la interfaz de usuario web
+      href: ./ui-flows/edit-web.md
+    - name: Uso de entradas y salidas en los flujos de la interfaz de usuario web
+      href: ./ui-flows/inputs-outputs-web.md
+    - name: Ejecución de los flujos de la interfaz de usuario
+      href: ./ui-flows/run-ui-flow.md
+    - name: Administración de los flujos de la interfaz de usuario
+      href: ./ui-flows/manage.md
 - name: Soluciones
   items:
     - name: Introducción
@@ -116,7 +138,7 @@
           href: replace-dialogs.md
 - name: Generador de IA
   items:
-    - name: "Uso del generador de IA en Microsoft\_Flow"
+    - name: Uso de AI Builder en Power Automate
       href: use-ai-builder.md
 - name: Procedimientos
   items:
@@ -229,7 +251,7 @@
           href: gdpr-dsr-delete-msa.md
         - name: Cierre de solicitudes
           href: gdpr-dsr-accountclose-msa.md
-    - name: "Microsoft Flow para Gobierno de EE.\_UU."
+    - name: Power Automate para la Administración Pública de Estados Unidos
       href: us-govt.md
 - name: Referencia
   items:
@@ -239,7 +261,7 @@
       href: limits-and-config.md
     - name: Notas de la versión
       href: release-notes.md
-    - name: API web de Microsoft Flow
+    - name: API web de Power Automate
       href: web-api.md
     - name: Preguntas más frecuentes
       href: frequently-asked-questions.md
