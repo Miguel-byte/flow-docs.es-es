@@ -10,14 +10,15 @@ ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: ede20606d1d5ba2a97217dfbcfb3c9fffec2c017
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 210965e443f42935529219705cd7b08fe60c92ca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463633"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548650"
 ---
 # <a name="microsoft-flow-web-api"></a>API web de Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 A partir de ahora, todos los flujos se almacenarán en Common Data Service y usarán [la API web enriquecida](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
@@ -29,11 +30,11 @@ Para empezar a crear las solicitudes, primero deberá crear la dirección URL. E
 
 - **Organization ID** es un nombre único del entorno donde se almacenan los flujos. Este identificador de organización se puede ver en el conmutador de entorno, en la parte superior derecha de Microsoft Flow. Cabe decir que **Organization ID** no es lo mismo que **Environment ID** (que es el GUID que aparece en la dirección URL del flujo).
 
-     ![Conmutador de entorno](media/web-api/get-organization-id.png "Environment switcher")
+     ![Conmutador de entorno](media/web-api/get-organization-id.png "Conmutador de entorno")
 
 - **Regional Subdomain** depende de la ubicación de su entorno. Al iniciar sesión en Microsoft Flow, puede ver la región de su entorno en la dirección URL de la página web. Use ese nombre de región para buscar el subdominio correspondiente en la siguiente tabla:
 
-     ![Dirección URL de flujo](media/web-api/get-region-name.png "Flow URL")
+     ![Dirección URL de flujo](media/web-api/get-region-name.png "Dirección URL de flujo")
 
      | Región         | Subdominio   |
      | -------------- | ----------- |
@@ -91,7 +92,7 @@ Tal y como se ha señalado arriba, se puede obtener la lista de flujos de trabaj
 
 | Nombre de la propiedad     | Descripción                                              |
 | ----------------- | -------------------------------------------------------- |
-| category          | Categoría del flujo. Los distintos tipos son: 0 (flujos de trabajo clásicos de Common Data Service), 1 (cuadros de diálogo clásicos de Common Data Service), 2 (reglas de negocio), 3 (acciones clásicas de Common Data Service), 4 (flujos de procesos de negocio) y 5 (flujos automatizados, instantáneos o programados). |
+| category          | Categoría del flujo. Los distintos tipos son los siguientes: 0 (flujos de trabajo clásicos de Common Data Service), 1 (cuadros de diálogo clásicos de Common Data Service), 2 (reglas de negocio), 3 (acciones clásicas de Common Data Service), 4 (flujos de procesos de negocio) y 5 (flujos automatizados, instantáneos o programados). |
 | statecode         | Estado del flujo. El estado puede ser **0** (desactivado) o **1** (activado).|
 | workflowuniqueid  | Identificador único de esta instalación del flujo. |
 | workflowid        | Identificador único de un flujo en todas las importaciones. |
