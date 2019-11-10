@@ -7,9 +7,5 @@
       topicHref: /power-platform/
       items:
         - name: "Power\_Automate"
-          tocHref: /flow/
-          topicHref: /flow/
-          items:
-            - name: Aprendizaje guiado
-              tocHref: /flow/guided-learning/
-              topicHref: /flow/guided-learning/
+          tocHref: /power-automate/
+          topicHref: /power-automate/
