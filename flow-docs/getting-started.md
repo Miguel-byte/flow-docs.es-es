@@ -40,7 +40,7 @@ Los principales tipos de flujos son los flujos de [procesos](business-process-fl
 
 ## <a name="types-of-flows"></a>Tipos de flujos
 
-Power Automatic es uno de los tres pilares de la plataforma de energía. Proporciona una plataforma de código baja para la automatización de procesos y flujos de trabajo. Esta es una lista de los diferentes tipos de flujos:
+Power Automatic es uno de los tres pilares de la plataforma de energía. Proporciona una plataforma de código baja para automatizar los procesos y flujos de trabajo. Esta es una lista de los diferentes tipos de flujos:
 
 | **Tipo de flujo**                                                                       | **Caso de uso**                                                                                  | **Dirigir**                                                                             |
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
